@@ -1,0 +1,86 @@
+.topRight {
+    right: -16px;
+}
+
+.topLeft {
+    left: -13px;
+}
+
+.bottomLeft {
+    left: -13px;
+}
+
+.bottomRight {
+    right: -16px;
+}
+
+.horizontalBottom {
+    bottom: -6px;
+    left: 28px;
+}
+
+.horizontalTop {
+    top: -5px;
+    left: 28px;
+}
+
+.verticalLeft {
+    left: -1px;
+}
+
+.verticalRight {
+    right: -3.5px;
+}
+
+.verticalSpaceLeft {
+    left: -13px;
+}
+
+.verticalSpaceRight {
+    right: -16.5px;
+}
+
+.header {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 22px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.itemTop {
+    max-width: 662px;
+    max-height: 195px;
+    min-width: 662px;
+    min-height: 195px;
+    background-image: url("../../images/news-top.png");
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 19px;
+}
+
+.itemCenter {
+    max-width: 662px;
+    max-height: 195px;
+    min-width: 662px;
+    min-height: 195px;
+    background-image: url("../../images/news-center.png");
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 19px;
+}
+
+.itemBottom {
+    max-width: 662px;
+    max-height: 195px;
+    min-width: 662px;
+    min-height: 195px;
+    background-image: url("../../images/news-bottom.png");
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 19px;
+}

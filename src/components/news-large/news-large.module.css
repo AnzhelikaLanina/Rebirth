@@ -1,0 +1,53 @@
+.bottom {
+    bottom: -6px;
+}
+
+.horizontalTop {
+    top: -5px;
+    left: 20px;
+}
+
+.horizontalBottom {
+    bottom: -6.5px;
+    left: 20px;
+}
+
+.verticalRight {
+    bottom: 86px;
+}
+
+.verticalSpaceLeft {
+    height: 498px;
+    left: -13px;
+}
+
+.verticalSpaceRight {
+    height: 498px;
+    bottom: 85px;
+    right: -12.5px;
+}
+
+.item {
+    max-width: 1146px;
+    min-width: 1146px;
+    max-height: 388px;
+    min-height: 388px;
+    width: 100%;
+    background-position: center;
+}
+
+.container {
+    max-width: 1102px;
+}
+
+.horizontalTopFull {
+    top: -5.5px;
+    left: 77px;
+    width: 994px;
+}
+
+.horizontalBottomFull {
+    bottom: -5.5px;
+    left: 77px;
+    width: 994px;
+}

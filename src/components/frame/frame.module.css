@@ -1,0 +1,68 @@
+.frame {
+    position: absolute;
+    top: 110px;
+    left: 210px;
+    max-width: 350px;
+    min-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.015em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0 0;
+}
+
+.box {
+    margin: 0;
+    padding: 0;
+}
+
+.numberBox {
+    max-width: 72px;
+    max-height: 56px;
+    min-width: 72px;
+    min-height: 56px;
+    background: rgba(255, 214, 68, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+    border: 1px solid rgba(255, 214, 68, 1);
+}
+
+.description {
+    margin: 0;
+    padding: 10px 0 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.015em;
+    color: rgba(132, 142, 156, 1);
+}
+
+.number {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.015em;
+}

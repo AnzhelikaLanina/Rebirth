@@ -1,0 +1,52 @@
+.item {
+    max-width: 402px;
+    min-width: 402px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.icon {
+
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: rgba(132, 142, 156, 1);
+}
+
+.textActive {
+    color: rgba(255, 255, 255, 1);
+}
+
+.tag {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 36px;
+    min-height: 36px;
+    background: rgba(48, 118, 253, 1);
+    padding: 8px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tagsText {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.textNone {
+    text-transform: none;
+}

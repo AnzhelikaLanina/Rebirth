@@ -1,0 +1,46 @@
+.discord {
+    max-width: 1410px;
+    min-width: 1410px;
+    padding: 99px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top {
+    top: -1px;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.horizontalTop {
+    top: -1px;
+    left: 78px;
+    width: 628px;
+}
+
+.horizontalBottom {
+    bottom: -0.5px;
+}
+
+.vertical {
+    bottom: 91px;
+    height: 280.5px;
+}
+
+.verticalSpace {
+    bottom: 91px;
+    height: 280.5px;
+}
+
+.widget {
+    max-width: 570px;
+    max-height: 462px;
+    min-width: 570px;
+    min-height: 462px;
+    border-radius: 6px;
+    background-color: blue;
+    background-size: 100%;
+}

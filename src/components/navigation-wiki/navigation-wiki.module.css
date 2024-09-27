@@ -1,0 +1,15 @@
+.content {
+    padding: 23px;
+    background: rgba(23, 30, 47, 1);
+    border: 1px solid rgba(44, 59, 94, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.boxLine {
+    padding: 24px 0 24px;
+}
+
+.line {
+    border: 1px solid rgba(44, 59, 94, 1);
+}

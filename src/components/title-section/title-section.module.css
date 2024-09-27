@@ -1,0 +1,209 @@
+.titleSection {
+    max-width: 1920px;
+    max-height: 830px;
+    min-width: 1920px;
+    min-height: 728px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: -102px;
+    left: 0;
+    max-width: 1920px;
+    max-height: 830px;
+    min-width: 1920px;
+    min-height: 830px;
+    width: 100%;
+    background: url('../../../src/images/bg-main.svg') no-repeat center center / cover;
+    z-index: 1;
+}
+
+.shadow {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    background: linear-gradient(0deg, rgba(18, 24, 38, 1) 5.81%, rgba(18, 24, 38, 0) 100%);
+    z-index: 4;
+    max-width: 1920px;
+    min-width: 1920px;
+    max-height: 541px;
+    min-height: 541px;
+}
+
+.ellipseConcave {
+    width: 748px;
+    height: 567px;
+    position: absolute;
+    top: 14.5px;
+    left: 557px;
+    z-index: 2;
+}
+
+.ellipseConvex {
+    position: absolute;
+    top: 56.5px;
+    left: 684px;
+    z-index: 2;
+}
+
+.flare {
+    position: absolute;
+    width: 1760.04px;
+    height: 1210.56px;
+    top: -305.5px;
+    left: 61px;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.logo {
+    max-width: 727px;
+    max-height: 725px;
+    position: absolute;
+    top: 1px;
+    left: 597px;
+    z-index: 2;
+}
+
+.imageElfWoman {
+    position: absolute;
+    top: -101.5px;
+    left: 688px;
+    z-index: 3;
+}
+
+.imageWarHuman {
+    position: absolute;
+    top: 36px;
+    left: 399px;
+    z-index: 2;
+}
+
+.circles {
+    position: absolute;
+    top: 113px;
+    left: 782px;
+    z-index: 2;
+}
+
+.sparksLeft {
+    position: absolute;
+    top: -109px;
+    left: 47px;
+    z-index: 3;
+    mix-blend-mode: screen;
+}
+
+.sparksRight {
+    position: absolute;
+    top: 116px;
+    left: 1264px;
+    z-index: 3;
+    mix-blend-mode: screen;
+}
+
+.textBox {
+    padding: 353px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 6;
+    pointer-events: none;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    max-width: 695px;
+    font-family: TrajanPro3, Arial, sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 114px;
+    letter-spacing: 0.68em;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.75);
+}
+
+.subheader {
+    margin: -15px 0 0;
+    padding: 0;
+    max-width: 643px;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.015em;
+}
+
+.description {
+    margin: 0;
+    padding: 12px 0 0;
+    max-width: 695px;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.buttons {
+    padding: 16px 0 0;
+    max-width: 432px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    pointer-events: auto;
+}
+
+.buttonBlue {
+    font-size: 18px;
+    padding: 16px 24px;
+    min-width: 211px;
+    min-height: 60px;
+    background: linear-gradient(to bottom right, rgba(17, 30, 64, 1), rgba(36, 97, 214, 1));
+    overflow: hidden;
+    box-shadow:
+            inset 0 -2px 6px rgba(68, 143, 255, 0.6),
+            inset 0 2px 0 rgba(66, 130, 255, 0.8);
+}
+
+.buttonBlue:hover {
+    transform: scale(1.05);
+    box-shadow:
+            0 0 15px rgba(68, 143, 255, 0.6),
+            inset 0 -2px 6px rgba(68, 143, 255, 0.5),
+            inset 0 2px 0 rgba(66, 130, 255, 0.6);
+}
+
+.buttonBlue:hover::after {
+    opacity: 0.5;
+}
+
+.buttonYellow {
+    font-size: 18px;
+    padding: 16px 24px;
+    min-width: 197px;
+    max-width: 197px;
+    min-height: 60px;
+    background: linear-gradient(to bottom right, rgba(64, 57, 17, 1), rgba(214, 175, 36, 1));
+    overflow: hidden;
+    box-shadow:
+            inset 0 -2px 6px rgba(255, 214, 68, 0.6),
+            inset 0 2px 0 rgba(255, 214, 68, 0.8);
+}
+
+.buttonYellow:hover {
+    transform: scale(1.05);
+    box-shadow:
+            0 0 15px rgba(255, 214, 68, 0.6),
+            inset 0 -2px 6px rgba(255, 214, 68, 0.5),
+            inset 0 2px 0 rgba(255, 214, 68, 0.6);
+}
+
+.buttonYellow:hover::after {
+    opacity: 0.5;
+}
