@@ -9,6 +9,8 @@
     padding-top: 54px;
     padding-bottom: 54px;
     background-color: rgba(9, 13, 23, 1);
+    position: relative;
+    z-index: 3;
 }
 
 .container {
@@ -51,6 +53,19 @@
 .text {
     margin: 0;
     padding: 0;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.textDescription {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .links {
@@ -64,11 +79,41 @@
 }
 
 .link {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color: rgba(132, 142, 156, 1);
     transition: color 0.3s ease;
     position: relative;
     text-transform: uppercase;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+}
+
+.element1 {
+    order: 1;
+}
+
+.element2 {
+    order: 3;
+}
+
+.element3 {
+    order: 5;
+}
+
+.element4 {
+    order: 2;
+}
+
+.element5 {
+    order: 4;
+}
+
+.element6 {
+    order: 6;
 }
 
 .link:hover {
@@ -93,4 +138,56 @@
 .img {
     width: 10.84px;
     height: 14.25px;
+}
+
+@media screen and (max-width: 1410px) {
+    .footer {
+        max-width: 768px;
+        min-width: 376px;
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .container {
+        max-width: 343px;
+        min-width: 343px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .description {
+        gap: 8px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .textDescription {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .link {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

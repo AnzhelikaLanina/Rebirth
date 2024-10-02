@@ -4,7 +4,7 @@
 }
 
 
-.BtnImage {
+.btnImage {
     max-height: 62px;
     object-fit: cover;
     position: relative;
@@ -42,4 +42,20 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
     display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .btnImage {
+        max-height: 30px;
+    }
+
+    .btnNext {
+        top: 25%;
+        right: 5%;
+    }
+
+    .btnPrev {
+        top: 25%;
+        left: 5%;
+    }
 }

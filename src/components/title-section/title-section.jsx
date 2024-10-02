@@ -15,7 +15,7 @@ import styles from "./title-section.module.css";
 import Frame from "../frame/frame";
 import {useNavigate} from "react-router-dom";
 
-const TitleSection = () => {
+const TitleSection = ({ id }) => {
     const navigate = useNavigate();
 
     const handleNavigation = (path) => {
@@ -23,7 +23,7 @@ const TitleSection = () => {
     };
 
     return (
-        <section className={styles.titleSection}>
+        <section className={styles.titleSection} id={id}>
             <div className={styles.background}></div>
             <div className={styles.shadow}></div>
             <img src={ellipseConcave} className={styles.ellipseConcave} alt="" />

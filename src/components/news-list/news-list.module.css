@@ -84,3 +84,42 @@
     background-size: cover;
     padding-bottom: 19px;
 }
+
+@media screen and (max-width: 1024px) {
+    .header {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        width: 100%;
+        -webkit-line-clamp: 2;
+    }
+
+    .itemTop {
+        max-width: 315px;
+        max-height: 254px;
+        min-width: 315px;
+        min-height: 254px;
+        padding-bottom: 21px;
+    }
+
+    .itemCenter {
+        max-width: 315px;
+        max-height: 254px;
+        min-width: 315px;
+        min-height: 254px;
+        padding-bottom: 21px;
+    }
+
+    .itemBottom {
+        max-width: 315px;
+        max-height: 254px;
+        min-width: 315px;
+        min-height: 254px;
+        padding-bottom: 21px;
+    }
+}

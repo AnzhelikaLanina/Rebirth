@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import Ornament from "../ornament/ornament";
 import NewsItem from "../news-item/news-item";
+import styles from "./news-small.module.css";
 
 const NewsSmall = ({ news, lineImages, imgStyles, itemStyle, headerStyle, descriptionStyle, onClick }) => {
     return (
@@ -16,6 +17,7 @@ const NewsSmall = ({ news, lineImages, imgStyles, itemStyle, headerStyle, descri
                 itemStyle={itemStyle}
                 headerStyle={headerStyle}
                 descriptionStyle={descriptionStyle}
+                containerStyle={styles.container}
             />
         </Ornament>
     );

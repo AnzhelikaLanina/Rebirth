@@ -37,6 +37,7 @@
     background-blend-mode: multiply;
     border-radius: 50%;
     clip-path: inset(14px 0 0 0);
+    padding: 16px 24px;
 }
 
 .circles {
@@ -110,4 +111,69 @@
 
 .buttonPink:hover::after {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 4px 0 0;
+        position: relative;
+        max-width: 315px;
+        min-width: 315px;
+        max-height: 383px;
+        min-height: 383px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url("../../../src/images/discord-background.png");
+        background-size: 100%;
+    }
+
+    .header {
+        padding: 80px 0 0;
+        max-width: 295px;
+        font-size: 24px;
+        line-height: 36px;
+        text-shadow: 0 2px rgba(0, 0, 0, 0.75);
+    }
+
+    .description {
+        padding: 8px 0 24px;
+        max-width: 295px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .image {
+        position: absolute;
+        top: -33px;
+        left: 34px;
+        z-index: 1;
+        width: 275px;
+        height: 420px;
+    }
+
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        background-size: 100%;
+        z-index: 2;
+    }
+
+    .eclipse {
+        top: -20px;
+        left: -82px;
+    }
+
+    .circles {
+        top: 118px;
+        left: 118px;
+    }
+
+    .circlesLeft {
+        top: 67px;
+        left: -67px;
+    }
 }

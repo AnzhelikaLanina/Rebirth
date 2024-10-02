@@ -96,3 +96,33 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+@media screen and (max-width: 1024px) {
+    .item {
+        align-items: center;
+        padding: 19px 9px;
+    }
+
+    .tags {
+        max-width: 295px;
+        min-width: 295px;
+    }
+
+    .header {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 22px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .container {
+        gap: 6px;
+    }
+}

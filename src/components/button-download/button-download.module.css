@@ -1,0 +1,40 @@
+.button {
+    min-width: 183px;
+    min-height: 39px;
+    max-height: 39px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgba(44, 59, 94, 1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button:hover {
+    background: rgba(44, 59, 94, 1);
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        min-width: 318px;
+        max-height: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+}

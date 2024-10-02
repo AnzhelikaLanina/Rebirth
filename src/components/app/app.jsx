@@ -35,7 +35,7 @@ const App = () => {
                       <Route path="/patchnote" element={<PatchNotePage />} />
                   </Routes>
               </main>
-              <Footer />
+              <Footer onOpenModal={toggleModal} />
               <Modal isOpen={isOpenModal} onClose={toggleModal} />
           </div>
   )

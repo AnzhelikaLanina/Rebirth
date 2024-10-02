@@ -10,7 +10,7 @@ const Breadcrumbs = ( {newsItemHeader} ) => {
             <span className={styles.divider}> / </span>
             <Link to="/news" className={styles.link}>Новости</Link>
             <span className={styles.divider}> / </span>
-            <span>{newsItemHeader}</span>
+            <span className={styles.newsHeader}>{newsItemHeader}</span>
         </nav>
     )
 }

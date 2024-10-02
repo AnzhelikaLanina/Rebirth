@@ -28,3 +28,22 @@
     line-height: 26px;
     text-transform: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .slide {
+        max-width: 315px;
+        align-items: center;
+    }
+
+    .header {
+        font-size: 24px;
+        max-width: 283px;
+        line-height: 36px;
+    }
+
+    .text {
+        font-size: 16px;
+        max-width: 283px;
+        line-height: 22px;
+    }
+}

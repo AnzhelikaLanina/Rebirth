@@ -5,8 +5,10 @@ import lineHorizontal from "../../images/line-horizontal.svg";
 import lineVertical from "../../images/line-vertical.svg";
 import lineThickVertical from "../../images/line-thick-vertical.svg";
 import SwiperInfo from "../swiper-info/swiper-info";
+import sparksLeft from "../../images/sparks-features-left.svg";
+import sparksRight from "../../images/sparks-features-right.svg";
 
-const Features = () => {
+const Features = ({ id }) => {
 
     const lineImages = {
         horizontalTop: lineHorizontal,
@@ -18,13 +20,16 @@ const Features = () => {
     };
 
     return (
-        <section className={styles.features}>
-            <h2 className={styles.header}>Ключевые особенности</h2>
+        <section className={styles.features} id={id}>
+            <h2 className={styles.header}>Уникальные особенности</h2>
+            <img src={sparksLeft} className={styles.sparksLeft}/>
+            <img src={sparksRight} className={styles.sparksRight}/>
+            <div className={styles.patternBox}></div>
             <Ornament lineImages={lineImages}>
                 <div className={styles.container}>
                     <div className={styles.overlay}></div>
                     <div className={styles.box}>
-                        <SwiperInfo />
+                        <SwiperInfo/>
                     </div>
                 </div>
             </Ornament>

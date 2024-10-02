@@ -66,8 +66,8 @@ const NewsLarge = ({ isWide = false, onClick }) => {
                     tagContentText={news.tag}
                     tagDataText={moment(news.date, "DD.MM.YYYY HH:mm").locale('ru').format("D MMMM")} // Форматируем дату
                     descriptionText={news.description}
-                    itemStyle={isWide ? styles.item: ''}
-                    containerStyle={isWide ? styles.container: ''}
+                    itemStyle={`${styles.itemBase} ${isWide ? styles.item: ''}`}
+                    containerStyle={`${styles.containerBase} ${isWide ? styles.container: ''}`}
                 />
             ))}
         </Ornament>

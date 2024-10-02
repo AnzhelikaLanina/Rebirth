@@ -51,3 +51,20 @@
     left: 77px;
     width: 994px;
 }
+
+@media screen and (max-width: 1024px) {
+    .itemBase,
+    .item {
+        max-width: 313px;
+        max-height: 450px;
+        min-width: 313px;
+        min-height: 450px;
+        background-size: cover;
+    }
+
+    .containerBase,
+    .container {
+        max-width: 295px;
+        min-width: 295px;
+    }
+}

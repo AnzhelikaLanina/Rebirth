@@ -5,7 +5,7 @@ import lineHorizontal from "../../images/line-horizontal-long.svg";
 import lineVertical from "../../images/line-vertical.svg";
 import lineThickVertical from "../../images/line-thick-vertical.svg";
 
-const DiscordSection = () => {
+const DiscordSection = ({ id }) => {
     const lineImages = {
         horizontalTop: lineHorizontal,
         horizontalBottom: lineHorizontal,
@@ -29,7 +29,7 @@ const DiscordSection = () => {
     };
 
     return (
-        <section className={styles.discord}>
+        <section className={styles.discord} id={id}>
             <Ornament lineImages={lineImages} imgStyles={imgStyles}>
                 <DiscordBlock/>
             </Ornament>

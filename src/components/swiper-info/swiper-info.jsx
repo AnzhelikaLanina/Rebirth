@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 import './swiper-info.module.css';
 import styles from "./swiper-info.module.css";
@@ -20,14 +20,26 @@ const SwiperInfo = () => {
     ];
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
     const swiperRef = useRef(null);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         if (swiperRef.current && swiperRef.current.swiper) {
             swiperRef.current.swiper.params.loopedSlides = slides.length;
             swiperRef.current.swiper.update();
         }
-    }, [slides.length]);
+    }, [slides.length, isMobile]);
 
     const handlePaginationClick = (index) => {
         setActiveIndex(index);
@@ -65,10 +77,10 @@ const SwiperInfo = () => {
             </Swiper>
             <PaginationInfo activeIndex={activeIndex} onClick={handlePaginationClick} />
             <div className={`swiper-button-next ${styles.btnNext}`}>
-                <img className={styles.BtnImage} src={arrowRight} alt="правая стрелка"/>
+                <img className={styles.btnImage} src={arrowRight} alt="правая стрелка"/>
             </div>
             <div className={`swiper-button-prev ${styles.btnPrev}`}>
-                <img className={styles.BtnImage} src={arrowLeft} alt="левая стрелка"/>
+                <img className={styles.btnImage} src={arrowLeft} alt="левая стрелка"/>
             </div>
         </div>
     );

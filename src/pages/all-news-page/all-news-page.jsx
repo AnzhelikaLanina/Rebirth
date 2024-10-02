@@ -5,12 +5,14 @@ import "../page.css";
 import NewsLarge from "../../components/news-large/news-large";
 import data from "../../data/newsList.json";
 import moment from "moment";
-import {useState} from "react";
+import React, {useState} from "react";
 import lineHorizontal from "../../images/line-horizontal-middle.svg";
 import lineVertical from "../../images/line-vertical-short.svg";
 import lineThickVertical from "../../images/line-vertical-space-short.svg";
 import NewsSmall from "../../components/news-small/news-small";
 import {useNavigate} from "react-router-dom";
+import sparksTop from "../../images/sparks-news-top.svg";
+import sparksBottom from "../../images/sparks-news-bottom.svg";
 
 const AllNewsPage = () => {
     const navigate = useNavigate();
@@ -64,9 +66,12 @@ const AllNewsPage = () => {
 
     return (
         <div className={"main"}>
+            <img src={sparksTop} className={styles.sparksTop}/>
+            <img src={sparksBottom} className={styles.sparksBottom}/>
+            <div className={styles.patternBox}></div>
             <div className={styles.headerBox}>
                 <h1 className={styles.header}>Последние новости</h1>
-                <Tags onTagClick={handleTagClick} selectedTag={selectedTag} />
+                <Tags onTagClick={handleTagClick} selectedTag={selectedTag}/>
             </div>
             <div className={styles.news}>
                 <NewsLarge isWide={true} onClick={() => handleNewsClick(latestMainNews.id)}/>
@@ -90,7 +95,7 @@ const AllNewsPage = () => {
                 </div>
             </div>
             {newsToDisplay.length < filteredByTag.length && (
-                <ButtonShowMore onClick={handleShowMore} />
+                <ButtonShowMore onClick={handleShowMore}/>
             )}
         </div>
     )

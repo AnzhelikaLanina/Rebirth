@@ -77,3 +77,9 @@
     height: 48px;
     width: 48px;
 }
+
+@media screen and (max-width: 1024px) {
+    .pagination {
+        display: none;
+    }
+}

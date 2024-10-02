@@ -1,17 +1,18 @@
 .titleSection {
     max-width: 1920px;
-    max-height: 830px;
+    max-height: 932px;
     min-width: 1920px;
-    min-height: 728px;
+    min-height: 830px;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .background {
     position: absolute;
-    top: -102px;
+    top: 0;
     left: 0;
     max-width: 1920px;
     max-height: 830px;
@@ -24,7 +25,7 @@
 
 .shadow {
     position: absolute;
-    top: 188px;
+    top: 290px;
     left: 0;
     background: linear-gradient(0deg, rgba(18, 24, 38, 1) 5.81%, rgba(18, 24, 38, 0) 100%);
     z-index: 4;
@@ -38,14 +39,14 @@
     width: 748px;
     height: 567px;
     position: absolute;
-    top: 14.5px;
+    top: 116.5px;
     left: 557px;
     z-index: 2;
 }
 
 .ellipseConvex {
     position: absolute;
-    top: 56.5px;
+    top: 158.5px;
     left: 684px;
     z-index: 2;
 }
@@ -54,7 +55,7 @@
     position: absolute;
     width: 1760.04px;
     height: 1210.56px;
-    top: -305.5px;
+    top: -203.5px;
     left: 61px;
     transform: rotate(0deg);
     z-index: 3;
@@ -64,35 +65,35 @@
     max-width: 727px;
     max-height: 725px;
     position: absolute;
-    top: 1px;
+    top: 103px;
     left: 597px;
     z-index: 2;
 }
 
 .imageElfWoman {
     position: absolute;
-    top: -101.5px;
+    top: 0.5px;
     left: 688px;
     z-index: 3;
 }
 
 .imageWarHuman {
     position: absolute;
-    top: 36px;
+    top: 138px;
     left: 399px;
     z-index: 2;
 }
 
 .circles {
     position: absolute;
-    top: 113px;
+    top: 215px;
     left: 782px;
     z-index: 2;
 }
 
 .sparksLeft {
     position: absolute;
-    top: -109px;
+    top: -7px;
     left: 47px;
     z-index: 3;
     mix-blend-mode: screen;
@@ -100,14 +101,14 @@
 
 .sparksRight {
     position: absolute;
-    top: 116px;
+    top: 218px;
     left: 1264px;
     z-index: 3;
     mix-blend-mode: screen;
 }
 
 .textBox {
-    padding: 353px 0 0;
+    padding: 455px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,4 +207,128 @@
 
 .buttonYellow:hover::after {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .textBox {
+        padding: 300px 0 0;
+    }
+
+    .header {
+        max-width: 343px;
+        font-size: 38px;
+        line-height: 64px;
+        letter-spacing: 0.62em;
+    }
+
+    .subheader {
+        margin: 0;
+        max-width: 343px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .description {
+        max-width: 343px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .buttons {
+        max-width: 343px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .buttonBlue {
+        padding: 16px 0;
+        min-width: 343px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .buttonYellow {
+        padding: 16px 0;
+        min-width: 343px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .titleSection {
+        max-width: 376px;
+        max-height: 693px;
+        min-width: 376px;
+        min-height: 693px;
+    }
+
+    .background {
+        left: -1004px;
+    }
+
+    .shadow {
+        top: 200px;
+        max-width: 376px;
+        min-width: 376px;
+        max-height: 491px;
+        min-height: 491px;
+        background: linear-gradient(0deg, rgba(18, 24, 38, 1) 20%, rgba(18, 24, 38, 0) 100%);
+    }
+
+    .ellipseConcave {
+        width: 583px;
+        height: 443px;
+        top: 589px;
+        left: 487px;
+    }
+
+    .ellipseConvex {
+        width: 373px;
+        height: 256px;
+        top: 162px;
+        left: 3px;
+    }
+
+    .flare {
+        width: 1114.65px;
+        height: 766.66px;
+        top: -70px;
+        left: -360px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .imageElfWoman {
+        top: 44px;
+        left: 6px;
+        max-width: 669px;
+        object-fit: cover;
+    }
+
+    .imageWarHuman {
+        left: -219px;
+        max-width: 540px;
+        object-fit: cover;
+    }
+
+    .circles {
+        top: 212px;
+        left: 80px;
+        max-width: 184px;
+        object-fit: cover;
+    }
+
+    .sparksLeft {
+        display: none;
+    }
+
+    .sparksRight {
+        display: none;
+    }
 }

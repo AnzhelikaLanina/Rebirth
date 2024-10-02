@@ -43,4 +43,22 @@
     border-radius: 6px;
     background-color: blue;
     background-size: 100%;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1024px) {
+    .discord {
+        max-width: 1024px;
+        min-width: 376px;
+        padding: 60px 0 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .widget {
+        max-width: 343px;
+        min-width: 343px;
+    }
 }
