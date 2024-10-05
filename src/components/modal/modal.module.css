@@ -1,9 +1,9 @@
 .modal {
     min-width: 930px;
+    padding: 30px;
     background: rgba(23, 30, 47, 1);
     border: 1px solid rgba(44, 59, 94, 1);
     position: relative;
-    padding: 30px;
     box-sizing: border-box;
 }
 
@@ -41,18 +41,18 @@
 }
 
 .headerBox {
+    padding-bottom: 29px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 29px;
     border-bottom: 1px solid rgba(44, 59, 94, 1);
 }
 
 .footerBox {
+    padding-top: 29px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 29px;
     border-top: 1px solid rgba(44, 59, 94, 1);
 }
 
@@ -131,12 +131,12 @@
     gap: 14px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     .modal {
         min-width: 343px;
         max-width: 343px;
         padding: 24px 12px;
-        max-height: 90vh; /* Аналогично ограничиваем высоту на мобильных */
+        max-height: 90vh;
         overflow-y: auto;
     }
 

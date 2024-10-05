@@ -32,27 +32,23 @@
 .element {
     margin: 0;
     padding: 0;
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 12px;
+    list-style-type: none;
 }
 
 .content {
-    max-width: 930px;
     padding: 33px;
-    background: rgba(23, 30, 47, 1);
-    border: 1px solid rgba(44, 59, 94, 1);
+    max-width: 930px;
     display: flex;
     flex-direction: column;
     gap: 32px;
     box-sizing: border-box;
+    background: rgba(23, 30, 47, 1);
+    border: 1px solid rgba(44, 59, 94, 1);
     position: relative;
     z-index: 3;
-}
-
-.box {
-
 }
 
 .info {
@@ -67,11 +63,11 @@
 }
 
 .tableElement {
+    padding: 14px 14px 13px;
     display: flex;
     flex-direction: row;
     gap: 34px;
     border-bottom: 1px solid rgba(44, 59, 94, 1);
-    padding: 14px 14px 13px;
 }
 
 .tableElementHead {
@@ -100,13 +96,13 @@
 }
 
 .accordion {
+    padding: 14px;
     width: 100%;
-    background: rgba(30, 45, 81, 1);
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 14px;
     box-sizing: border-box;
+    background: rgba(30, 45, 81, 1);
 }
 
 .accordionOpen {
@@ -130,5 +126,5 @@
 }
 
 .arrowOpen {
-    transform: rotate(180deg); /* Поворачиваем стрелку на 180 градусов */
+    transform: rotate(180deg);
 }

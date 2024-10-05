@@ -1,14 +1,14 @@
 import './app.module.css';
 import styles from './app.module.css';
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Header from "../header/header";
-import {Route, Routes, useLocation} from "react-router-dom";
 import Footer from "../footer/footer";
 import MainPage from "../../pages/main-page/main-page";
 import NewsPage from "../../pages/news-page/news-page";
 import AllNewsPage from "../../pages/all-news-page/all-news-page";
 import WikiPage from "../../pages/wiki-page/wiki-page";
 import PatchNotePage from "../../pages/patchnote-page/patchnote-page";
-import {useEffect, useState} from "react";
 import Modal from "../modal/modal";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
     const [isOpenModal, setOpenModal] = useState(false);
 
     useEffect(() => {
-        window.scrollTo(0, 0); // Прокручивает страницу к верхней части при изменении маршрута
+        window.scrollTo(0, 0);
     }, [location]);
 
     const toggleModal = () => {
@@ -38,7 +38,7 @@ const App = () => {
               <Footer onOpenModal={toggleModal} />
               <Modal isOpen={isOpenModal} onClose={toggleModal} />
           </div>
-  )
-}
+        )
+};
 
 export default App;

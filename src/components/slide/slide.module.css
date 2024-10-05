@@ -1,11 +1,11 @@
 .slide {
+    margin: 0 auto;
+    width: 100%;
     max-width: 669px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     text-align: center;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .header {
@@ -29,21 +29,21 @@
     text-transform: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
     .slide {
         max-width: 315px;
         align-items: center;
     }
 
     .header {
-        font-size: 24px;
         max-width: 283px;
+        font-size: 24px;
         line-height: 36px;
     }
 
     .text {
-        font-size: 16px;
         max-width: 283px;
+        font-size: 16px;
         line-height: 22px;
     }
 }

@@ -8,7 +8,7 @@ const Slide = ({ header, text }) => {
             <p className={styles.text}>{text}</p>
         </div>
     )
-}
+};
 
 Slide.propTypes = {
     header: PropTypes.string.isRequired,

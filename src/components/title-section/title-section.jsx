@@ -1,19 +1,19 @@
 import React from "react";
-import ellipseConcave from "../../images/ellipse-concave.svg";
-import ellipseConvex from "../../images/ellipse-convex.svg";
-import flare from "../../images/flare.svg";
-import bigLogo from "../../images/big-logo.svg";
-import elfWoman from "../../images/elf-woman.svg";
-import humanWar from "../../images/human-war.svg";
-import circlesMain from "../../images/circles-main.svg";
-import sparksLeft from "../../images/sparks-left.svg";
-import sparksRight from "../../images/sparks-right.svg";
-import sword from "../../images/sword.svg";
-import tiedScroll from "../../images/tied-scroll.svg";
-import Button from "../button/button";
+import { useNavigate } from "react-router-dom";
 import styles from "./title-section.module.css";
+import ellipseConcaveImage from "../../images/ellipse-concave.svg";
+import ellipseConvexImage from "../../images/ellipse-convex.svg";
+import flareImage from "../../images/flare.svg";
+import logo from "../../images/big-logo.svg";
+import elfWomanImage from "../../images/elf-woman.svg";
+import humanWarImage from "../../images/human-war.svg";
+import circlesImage from "../../images/circles-main.svg";
+import sparksLeftImage from "../../images/sparks-left.svg";
+import sparksRightImage from "../../images/sparks-right.svg";
+import swordIcon from "../../images/sword.svg";
+import scrollIcon from "../../images/tied-scroll.svg";
+import Button from "../button/button";
 import Frame from "../frame/frame";
-import {useNavigate} from "react-router-dom";
 
 const TitleSection = ({ id }) => {
     const navigate = useNavigate();
@@ -26,15 +26,51 @@ const TitleSection = ({ id }) => {
         <section className={styles.titleSection} id={id}>
             <div className={styles.background}></div>
             <div className={styles.shadow}></div>
-            <img src={ellipseConcave} className={styles.ellipseConcave} alt="" />
-            <img src={ellipseConvex} className={styles.ellipseConvex} alt="" />
-            <img src={flare} className={styles.flare} alt="" />
-            <img src={bigLogo} className={styles.logo} alt="" />
-            <img src={elfWoman} className={styles.imageElfWoman} alt="" />
-            <img src={humanWar} className={styles.imageWarHuman} alt="" />
-            <img src={circlesMain} className={styles.circles} alt="" />
-            <img src={sparksLeft} className={styles.sparksLeft} alt="" />
-            <img src={sparksRight} className={styles.sparksRight} alt="" />
+            <img
+                src={ellipseConcaveImage}
+                className={styles.ellipseConcave}
+                alt={"вогнутый эллипс"}
+            />
+            <img
+                src={ellipseConvexImage}
+                className={styles.ellipseConvex}
+                alt={"выпуклый эллипс"}
+            />
+            <img
+                src={flareImage}
+                className={styles.flare}
+                alt={"луч света"}
+            />
+            <img
+                src={logo}
+                className={styles.logo}
+                alt={"логотип"}
+            />
+            <img
+                src={elfWomanImage}
+                className={styles.imageElfWoman}
+                alt={"эльфийка"}
+            />
+            <img
+                src={humanWarImage}
+                className={styles.imageWarHuman}
+                alt={"мужчина"}
+            />
+            <img
+                src={circlesImage}
+                className={styles.circles}
+                alt={"желтые огоньки"}
+            />
+            <img
+                src={sparksLeftImage}
+                className={styles.sparksLeft}
+                alt={"рыжие огоньки"}
+            />
+            <img
+                src={sparksRightImage}
+                className={styles.sparksRight}
+                alt={"рыжие огоньки"}
+            />
             <div className={styles.textBox}>
                 <h1 className={styles.header}>Rebirth</h1>
                 <h2 className={styles.subheader}>Твоя легенда начинается здесь</h2>
@@ -45,19 +81,19 @@ const TitleSection = ({ id }) => {
                     <Button
                         className={styles.buttonBlue}
                         text={"Начать игру"}
-                        imgSrc={sword}
+                        imgSrc={swordIcon}
                         url={""}
                     />
                     <Button
                         className={styles.buttonYellow}
                         text={"Описание"}
-                        imgSrc={tiedScroll}
+                        imgSrc={scrollIcon}
                         onClick={() => handleNavigation('/wiki')}
                     />
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default TitleSection;

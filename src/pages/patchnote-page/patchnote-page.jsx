@@ -1,22 +1,36 @@
 import '../page.css';
 import styles from "./patchnote-page.module.css";
-import WrapperPatchnote from "../../components/wrapper-patchnote/wrapper-patchnote";
-import sparksTop from "../../images/sparks-news-top.svg";
-import sparksBottom from "../../images/sparks-news-bottom.svg";
-import React from "react";
+import WrapperPatchNote from "../../components/wrapper-patchnote/wrapper-patchnote";
+import sparksTopImage from "../../images/sparks-news-top.svg";
+import sparksBottomImage from "../../images/sparks-news-bottom.svg";
+import { useMediaQuery } from "react-responsive";
+import NavigationPatchNoteMobile from "../../components/navigation-patchnote-mobile/navigation-patchnote-mobile";
 
 const PatchNotePage = () => {
+    const isDesktop = useMediaQuery({ query: '(max-width: 1450px)' });
     return (
         <div className={"main"}>
-            <img src={sparksTop} className={"sparksTop"}/>
-            <img src={sparksBottom} className={"sparksBottom"}/>
+            <img
+                src={sparksTopImage}
+                className={"sparksTop"}
+                alt={'рыжие огоньки'}
+            />
+            <img
+                src={sparksBottomImage}
+                className={"sparksBottom"}
+                alt={'рыжие огоньки'}
+            />
             <div className={"patternBox"}></div>
             <div className={styles.headerBox}>
                 <h1 className={styles.header}>Патчноуты</h1>
             </div>
-            <WrapperPatchnote/>
+            {isDesktop?
+                <NavigationPatchNoteMobile />
+                :
+                <WrapperPatchNote/>
+            }
         </div>
     )
-}
+};
 
 export default PatchNotePage;

@@ -63,60 +63,18 @@
     -webkit-box-orient: vertical;
 }
 
-.topRight {
-    right: -16px;
-}
-
-.topLeft {
-    left: -13px;
-}
-
-.bottomLeft {
-    left: -13px;
-}
-
-.bottomRight {
-    right: -16px;
-}
-
-.horizontalBottom {
-    bottom: -6px;
-    left: 28px;
-}
-
-.horizontalTop {
-    top: -5px;
-    left: 28px;
-}
-
-.verticalLeft {
-    left: -1px;
-}
-
-.verticalRight {
-    right: -3.5px;
-}
-
-.verticalSpaceLeft {
-    left: -13px;
-}
-
-.verticalSpaceRight {
-    right: -16.5px;
-}
-
 .sparksTop {
     position: absolute;
-    mix-blend-mode: screen;
     top: 52px;
     left: -186px;
+    mix-blend-mode: screen;
 }
 
 .sparksBottom {
     position: absolute;
-    mix-blend-mode: screen;
     top: 389px;
     left: -312px;
+    mix-blend-mode: screen;
 }
 
 .patternBox {
@@ -124,8 +82,8 @@
     width: 100%;
     height: 1178px;
     background-image: url('../../images/pattern-bottom.svg');
-    background-size: 100%; /* Для четкости фона */
-    background-position: center; /* Центрирование картинки */
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
@@ -134,21 +92,20 @@
 }
 
 .patternBox::after {
-    content: ''; /* Обязательно для псевдоэлементов */
-    position: absolute; /* Абсолютное позиционирование для псевдоэлементов */
+    content: '';
+    position: absolute;
     left: 0;
-    right: 0; /* Ширина псевдоэлементов равна ширине родительского элемента */
-    height: 326px; /* Высота псевдоэлементов */
-    z-index: 2; /* Псевдоэлементы выше фона */
+    right: 0;
+    height: 326px;
+    z-index: 2;
 }
 
 .patternBox::after {
     bottom: 0;
-    /* Положение снизу */
-    background: linear-gradient(180deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%); /* Градиент снизу */
+    background: linear-gradient(180deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
     .headerBox {
         max-width: 343px;
         min-width: 343px;
@@ -168,7 +125,7 @@
     }
 
     .newsList {
-        padding: 16px 0 0;
+        padding-top: 16px;
         max-width: 343px;
         min-width: 343px;
         display: flex;
@@ -189,97 +146,11 @@
         font-size: 18px;
         line-height: 28px;
         max-width: 295px;
-
     }
 
     .descriptionItem {
         font-size: 14px;
         line-height: 20px;
         max-width: 295px;
-    }
-
-    .topRight {
-        right: -16px;
-    }
-
-    .topLeft {
-        left: -13px;
-    }
-
-    .bottomLeft {
-        left: -13px;
-    }
-
-    .bottomRight {
-        right: -16px;
-    }
-
-    .horizontalBottom {
-        bottom: -6px;
-        left: 28px;
-    }
-
-    .horizontalTop {
-        top: -5px;
-        left: 28px;
-    }
-
-    .verticalLeft {
-        left: -1px;
-    }
-
-    .verticalRight {
-        right: -3.5px;
-    }
-
-    .verticalSpaceLeft {
-        left: -13px;
-    }
-
-    .verticalSpaceRight {
-        right: -16.5px;
-    }
-
-    .sparksTop {
-        position: absolute;
-        mix-blend-mode: screen;
-        top: 52px;
-        left: -186px;
-    }
-
-    .sparksBottom {
-        position: absolute;
-        mix-blend-mode: screen;
-        top: 389px;
-        left: -312px;
-    }
-
-    .patternBox {
-        min-width: 1920px;
-        width: 100%;
-        height: 1178px;
-        background-image: url('../../images/pattern-bottom.svg');
-        background-size: 100%; /* Для четкости фона */
-        background-position: center; /* Центрирование картинки */
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        z-index: 1;
-    }
-
-    .patternBox::after {
-        content: ''; /* Обязательно для псевдоэлементов */
-        position: absolute; /* Абсолютное позиционирование для псевдоэлементов */
-        left: 0;
-        right: 0; /* Ширина псевдоэлементов равна ширине родительского элемента */
-        height: 326px; /* Высота псевдоэлементов */
-        z-index: 2; /* Псевдоэлементы выше фона */
-    }
-
-    .patternBox::after {
-        bottom: 0;
-        /* Положение снизу */
-        background: linear-gradient(180deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%); /* Градиент снизу */
     }
 }

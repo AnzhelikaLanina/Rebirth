@@ -1,11 +1,12 @@
-import Button from "../button/button";
-import styles from "./news-section.module.css";
 import React from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import styles from "./news-section.module.css";
 import NewsLarge from "../news-large/news-large";
 import NewsList from "../news-list/news-list";
-import sparksTop from "../../images/sparks-news-top.svg";
-import sparksBottom from "../../images/sparks-news-bottom.svg";
+import Button from "../button/button";
+import sparksTopImage from "../../images/sparks-news-top.svg";
+import sparksBottomImage from "../../images/sparks-news-bottom.svg";
+import PropTypes from "prop-types";
 
 const NewsSection = ({ id }) => {
     const navigate = useNavigate();
@@ -20,8 +21,16 @@ const NewsSection = ({ id }) => {
 
     return (
         <section className={styles.news} id={id}>
-            <img src={sparksBottom} className={styles.sparksBottom}/>
-            <img src={sparksTop} className={styles.sparksTop} />
+            <img
+                src={sparksBottomImage}
+                className={styles.sparksBottom}
+                alt={'рыжие огоньки'}
+            />
+            <img
+                src={sparksTopImage}
+                className={styles.sparksTop}
+                alt={'рыжие огоньки'}
+            />
             <div className={styles.patternBox}></div>
             <h2 className={styles.header}>Последние новости</h2>
             <div className={styles.container}>
@@ -38,6 +47,10 @@ const NewsSection = ({ id }) => {
             />
         </section>
     )
-}
+};
+
+NewsSection.propTypes = {
+    id: PropTypes.string.isRequired
+};
 
 export default NewsSection;

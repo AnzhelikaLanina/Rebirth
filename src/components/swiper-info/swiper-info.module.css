@@ -3,7 +3,6 @@
     z-index: 9;
 }
 
-
 .btnImage {
     max-height: 62px;
     object-fit: cover;
@@ -13,13 +12,13 @@
 }
 
 .wrapper {
+    margin: 0 auto;
+    padding: 162.5px 0 0;
+    max-width: 669px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 669px;
-    margin: 0 auto;
-    padding: 162.5px 0 0;
     position: relative;
 }
 
@@ -44,7 +43,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
     .btnImage {
         max-height: 30px;
     }

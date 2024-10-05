@@ -6,10 +6,10 @@
     box-sizing: border-box;
     border: 1px solid rgba(44, 59, 94, 1);
     cursor: pointer;
-    transition: background 0.3s ease;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    transition: background 0.3s ease;
 }
 
 .button:hover {

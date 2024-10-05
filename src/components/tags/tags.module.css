@@ -1,7 +1,6 @@
 .tags {
     margin: 0;
     padding: 0;
-    list-style-type: none;
     max-width: 367px;
     min-width: 367px;
     width: 100%;
@@ -9,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 
 .tag {

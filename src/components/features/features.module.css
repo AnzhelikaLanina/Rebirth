@@ -1,14 +1,17 @@
 .features {
     padding: 40px 0 0;
-    max-width: 1170px;
     text-align: center;
     position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     margin: 0;
-    font-size: 34px;
     padding: 0 0 38px;
+    font-size: 34px;
     font-family: TrajanPro3, Arial, sans-serif;
     font-weight: 600;
     line-height: 52px;
@@ -19,11 +22,12 @@
 
 .container {
     min-width: 1140px;
+    max-width: 1140px;
     min-height: 444px;
     max-height: 444px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
     position: relative;
     background-image: url("../../../src/images/features.png");
     background-size: 100%;
@@ -42,6 +46,7 @@
 }
 
 .box {
+    margin: 0 auto;
     padding: 162.98px 0 0;
     max-width: 1073.2px;
     min-width: 1073.2px;
@@ -49,22 +54,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    z-index: 5;
 }
 
 .sparksLeft {
     position: absolute;
-    mix-blend-mode: screen;
     top: 60px;
     left: -80px;
+    mix-blend-mode: screen;
 }
 
 .sparksRight {
     position: absolute;
-    mix-blend-mode: screen;
     bottom: -35px;
     right: -183px;
-
+    mix-blend-mode: screen;
 }
 
 .patternBox {
@@ -76,42 +80,61 @@
     background-position: center; /* Центрирование картинки */
     background-repeat: no-repeat;
     position: absolute;
-    left: -388px;
     top: -10px;
     z-index: 1;
 }
 
 .patternBox::before,
 .patternBox::after {
-    content: ''; /* Обязательно для псевдоэлементов */
-    position: absolute; /* Абсолютное позиционирование для псевдоэлементов */
+    content: '';
+    position: absolute;
     left: 0;
-    right: 0; /* Ширина псевдоэлементов равна ширине родительского элемента */
-    height: 310px; /* Высота псевдоэлементов */
-    z-index: 2; /* Псевдоэлементы выше фона */
+    right: 0;
+    height: 310px;
+    z-index: 2;
 }
 
 .patternBox::before {
-    bottom: 0; /* Положение сверху */
-    background: linear-gradient(180deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%); /* Градиент сверху */
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%);
 }
 
 .patternBox::after {
     top: 0;
-    /* Положение снизу */
-    background: linear-gradient(0deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%); /* Градиент снизу */
+    background: linear-gradient(0deg, rgba(18, 24, 38, 0) 0%, rgba(18, 24, 38, 1) 100%);
 }
 
-@media screen and (max-width: 1024px) {
+.ornamentBox {
+    position: relative;
+    z-index: 1;
+    max-width: 1170px;
+    min-width: 1170px;
+    max-height: 454px;
+    min-height: 454px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ornament {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1250px) {
     .features {
-        padding: 40px 0 0;
         max-width: 343px;
-        text-align: center;
-        position: relative;
     }
 
     .container {
         min-width: 315px;
+        max-width: 315px;
         min-height: 450px;
         max-height: 450px;
         background-position: center;
@@ -120,17 +143,20 @@
 
     .header {
         font-size: 24px;
-        padding: 0 0 24px;
+        padding-bottom: 24px;
         line-height: 36px;
     }
 
     .box {
-        padding: 50% 0 0;
+        padding-top: 50%;
         max-width: 315px;
         min-width: 315px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    }
+
+    .ornamentBox {
+        max-width: 343px;
+        min-width: 343px;
+        max-height: 460px;
+        min-height: 460px;
     }
 }

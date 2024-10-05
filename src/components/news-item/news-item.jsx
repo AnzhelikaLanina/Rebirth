@@ -11,7 +11,8 @@ const NewsItem = ({
                       itemStyle,
                       headerStyle,
                       descriptionStyle,
-                      containerStyle
+                      containerStyle,
+                      isAllNewsPage
                   }) => {
     return (
         <div onClick={onClick} className={`${styles.item} ${itemStyle ? itemStyle : ""}`}>
@@ -25,7 +26,11 @@ const NewsItem = ({
                 </div>
             </div>
             <div className={`${styles.container} ${containerStyle ? containerStyle : ""}`}>
-                <h3 className={`${styles.header} ${headerStyle ? headerStyle : ""}`}>{headerText}</h3>
+                {isAllNewsPage ? (
+                    <h2 className={`${styles.header} ${headerStyle ? headerStyle : ""}`}>{headerText}</h2>
+                ) : (
+                    <h3 className={`${styles.header} ${headerStyle ? headerStyle : ""}`}>{headerText}</h3>
+                )}
                 <p className={`${styles.description} ${descriptionStyle ? descriptionStyle : ""}`}>{descriptionText}</p>
             </div>
         </div>
@@ -40,7 +45,8 @@ NewsItem.propTypes = {
     itemStyle: PropTypes.string,
     headerStyle: PropTypes.string,
     descriptionStyle: PropTypes.string,
-    containerStyle: PropTypes.string
+    containerStyle: PropTypes.string,
+    isAllNewsPage: PropTypes.bool.isRequired
 };
 
 export default NewsItem;

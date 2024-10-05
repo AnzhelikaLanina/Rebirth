@@ -1,52 +1,17 @@
-import Ornament from "../ornament/ornament";
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import NewsItem from "../news-item/news-item";
-import lineHorizontal from "../../images/line-horizontal-long.svg";
-import lineVertical from "../../images/line-vertical-long-short.svg";
-import lineThickVertical from "../../images/line-vertical-long.svg";
-import lineHorizontalShort from "../../images/line-horizontal.svg";
-import lineVerticalShort from "../../images/line-vertical.svg";
-import lineThickVerticalShort from "../../images/line-thick-vertical.svg";
 import styles from "./news-large.module.css";
 import data from '../../data/newsList.json';
 import moment from "moment";
 import "moment/locale/ru";
 import PropTypes from "prop-types";
+import frame from "../../images/ornament-large-news-main.svg";
+import frameMobile from "../../images/features-ornament-mobile.svg";
+import frameWide from "../../images/ornament-news-large.svg";
 
 const NewsLarge = ({ isWide = false, onClick }) => {
-
-    const lineImages = {
-        horizontalTop: lineHorizontal,
-        horizontalBottom: lineHorizontal,
-        verticalLeft: lineVertical,
-        verticalRight: lineVertical,
-        thickVerticalLeft: lineThickVertical,
-        thickVerticalRight: lineThickVertical
-    };
-
-    const lineImagesFull = {
-        horizontalTop: lineHorizontalShort,
-        horizontalBottom: lineHorizontalShort,
-        verticalLeft: lineVerticalShort,
-        verticalRight: lineVerticalShort,
-        thickVerticalLeft: lineThickVerticalShort,
-        thickVerticalRight: lineThickVerticalShort,
-    }
-
-    const imgStyles = {
-        cornerRightBottom: styles.bottom,
-        cornerLeftBottom: styles.bottom,
-        horizontalTop: styles.horizontalTop,
-        horizontalBottom: styles.horizontalBottom,
-        verticalRight: styles.verticalRight,
-        thickVerticalLeft: styles.verticalSpaceLeft,
-        thickVerticalRight: styles.verticalSpaceRight
-    };
-
-    const imgStylesFull = {
-        horizontalTop: styles.horizontalTopFull,
-        horizontalBottom: styles.horizontalBottomFull
-    }
+    const isDesktop = useMediaQuery({ query: '(min-width: 1240px)' });
 
     const mainNews = data.newsList
         .filter(news => news.isMain)
@@ -54,10 +19,13 @@ const NewsLarge = ({ isWide = false, onClick }) => {
         .slice(0, 1);
 
     return (
-        <Ornament
-            lineImages={isWide ? lineImagesFull : lineImages}
-            imgStyles={isWide ? imgStylesFull : imgStyles}
-        >
+        <div className={isWide ? styles.ornamentBoxWide : styles.ornamentBox}>
+            {isDesktop ? (
+                isWide ? <img src={frameWide} className={styles.ornament} alt={'рамка'}/>
+                    : <img src={frame} className={styles.ornament} alt={'рамка'}/>
+            ) : (
+                <img src={frameMobile} className={styles.ornament} alt={'рамка'}/>
+            )}
             {mainNews.map(news => (
                 <NewsItem
                     onClick={() => onClick(news.id)}
@@ -68,14 +36,16 @@ const NewsLarge = ({ isWide = false, onClick }) => {
                     descriptionText={news.description}
                     itemStyle={`${styles.itemBase} ${isWide ? styles.item: ''}`}
                     containerStyle={`${styles.containerBase} ${isWide ? styles.container: ''}`}
+                    isAllNewsPage={isWide}
                 />
             ))}
-        </Ornament>
+        </div>
     )
 }
 
 export default NewsLarge;
 
 NewsLarge.propTypes = {
-    isWide: PropTypes.bool
+    isWide: PropTypes.bool,
+    onClick: PropTypes.func.isRequired
 }

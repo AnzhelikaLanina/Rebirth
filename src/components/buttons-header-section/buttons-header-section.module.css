@@ -1,0 +1,68 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.buttonPink {
+    background: linear-gradient(to bottom, rgba(49, 17, 64, 1), rgba(113, 39, 148, 1));
+    box-shadow:
+            inset 0 -2px 6px rgba(218, 68, 255, 0.3),
+            inset 0 2px 0 rgba(218, 68, 255, 0.4);
+}
+
+.buttonPink:hover {
+    transform: scale(1.05);
+    box-shadow:
+            0 0 15px rgba(218, 68, 255, 0.6),
+            inset 0 -2px 6px rgba(218, 68, 255, 0.5),
+            inset 0 2px 0 rgba(218, 68, 255, 0.6);
+}
+
+.buttonPink:hover::after {
+    opacity: 0.5;
+}
+
+.buttonBlue {
+    background: linear-gradient(to bottom, rgba(17, 30, 64, 1), rgba(36, 97, 214, 1));
+    box-shadow:
+            inset 0 -2px 6px rgba(68, 143, 255, 0.6),
+            inset 0 2px 0 rgba(66, 130, 255, 0.8);
+}
+
+.buttonBlue:hover {
+    transform: scale(1.05);
+    box-shadow:
+            0 0 15px rgba(68, 143, 255, 0.6),
+            inset 0 -2px 6px rgba(68, 143, 255, 0.5),
+            inset 0 2px 0 rgba(66, 130, 255, 0.6);
+}
+
+.buttonBlue:hover::after {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1450px) {
+    .buttons {
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .buttons {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .buttonPink {
+        max-width: 327px;
+        min-width: 327px;
+        justify-content: center;
+    }
+
+    .buttonBlue {
+        max-width: 327px;
+        min-width: 327px;
+        justify-content: center;
+    }
+}

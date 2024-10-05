@@ -1,12 +1,12 @@
 import styles from './modal.module.css';
 import iconClose from '../../images/close-icon.svg';
-import Button from "../button/button";
-import clarityUser from "../../images/clarity_user-solid.svg";
-import iconRaw from "../../images/raw-icon.svg";
-import iconLogo from "../../images/logo-icon-blue.svg";
+import userIcon from "../../images/clarity_user-solid.svg";
+import iconRar from "../../images/raw-icon.svg";
+import logo from "../../images/logo-icon-blue.svg";
 import iconLineage from "../../images/lineage-icon.svg";
+import Button from "../button/button";
 import ButtonDownload from "../button-download/button-download";
-import React from "react";
+import PropTypes from "prop-types";
 
 const Modal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
@@ -17,23 +17,26 @@ const Modal = ({ isOpen, onClose }) => {
             header: 'Игровой клиент (Eng + RU)',
             description: 'пропатченный клиент игры /вес/',
             buttonGoogleHeader: 'Google Drive',
-            buttonYandexDiscHeader: 'Yandex Disc'
+            buttonYandexDiscHeader: 'Yandex Disc',
+            iconText: 'иконка lineage'
         },
         {
-            icon: iconRaw,
+            icon: iconRar,
             header: 'Игровой Патч',
             description: 'Разархивировать в папку с игрой /вес/',
             buttonGoogleHeader: 'Google Drive',
             buttonYandexDiscHeader: 'Yandex Disc',
-            headerDownload: 'Скачать'
+            headerDownload: 'Скачать',
+            iconText: 'иконка rar'
         },
         {
-            icon: iconLogo,
+            icon: logo,
             header: 'Апдейтер',
             description: 'Разархивировать в папку с игрой /вес/',
             buttonGoogleHeader: 'Google Drive',
             buttonYandexDiscHeader: 'Yandex Disc',
-            headerDownload: 'Скачать'
+            headerDownload: 'Скачать',
+            iconText: 'логотип'
         }
     ];
 
@@ -42,13 +45,22 @@ const Modal = ({ isOpen, onClose }) => {
             <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.headerBox}>
                     <h2 className={styles.header}>Файлы для игры</h2>
-                    <img src={iconClose} alt="Закрыть" onClick={onClose} className={styles.closeIcon} />
+                    <img
+                        src={iconClose}
+                        alt="закрыть"
+                        onClick={onClose}
+                        className={styles.closeIcon}
+                    />
                 </div>
                 <div className={styles.content}>
                     {items.map((item, index) => (
                         <div key={index} className={styles.item}>
                             <div className={styles.itemBox}>
-                                <img src={item.icon} className={styles.icon}/>
+                                <img
+                                    src={item.icon}
+                                    className={styles.icon}
+                                    alt={`иконка ${item.iconText}`}
+                                />
                                 <div className={styles.textBox}>
                                     <h3 className={styles.text}>{item.header}</h3>
                                     <p className={styles.textSmall}>{item.description}</p>
@@ -68,7 +80,7 @@ const Modal = ({ isOpen, onClose }) => {
                     <p className={styles.text}>Создайте игровой аккаунт</p>
                     <Button
                         className={styles.buttonBlue}
-                        imgSrc={clarityUser}
+                        imgSrc={userIcon}
                         text={"Регистрация"}
                         classNameText={''}
                         url={""}
@@ -77,6 +89,11 @@ const Modal = ({ isOpen, onClose }) => {
             </div>
         </div>
     )
-}
+};
+
+Modal.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired
+};
 
 export default Modal;

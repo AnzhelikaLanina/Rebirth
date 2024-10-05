@@ -35,7 +35,7 @@
     line-height: 22px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
     .button {
         max-width: 343px;
         min-width: 343px;

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from "./button.module.css";
 
-
 const Button = ({ className, imgSrc, text, classNameText, onClick, url  }) => {
     const handleClick = (e) => {
         if (url) {
@@ -14,8 +13,14 @@ const Button = ({ className, imgSrc, text, classNameText, onClick, url  }) => {
 
     return (
         <div className={`${styles.buttonBase} ${className}`} onClick={handleClick}>
-            {imgSrc ? <img className={styles.icon} src={imgSrc} alt="Button Icon"/> : ''}
-            <p className={`${styles.text} ${classNameText}`}>{text}</p>
+            {imgSrc ?
+                <img
+                    className={styles.icon}
+                    src={imgSrc}
+                    alt={`иконка кнопки ${text}`}
+                />
+            :''}
+            <p className={`${styles.text} ${classNameText ? classNameText : ''}`}>{text}</p>
         </div>
     );
 };

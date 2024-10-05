@@ -1,5 +1,4 @@
 .titleSection {
-    max-width: 1920px;
     max-height: 932px;
     min-width: 1920px;
     min-height: 830px;
@@ -8,13 +7,13 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    width: 100vw;
 }
 
 .background {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 1920px;
     max-height: 830px;
     min-width: 1920px;
     min-height: 830px;
@@ -29,10 +28,10 @@
     left: 0;
     background: linear-gradient(0deg, rgba(18, 24, 38, 1) 5.81%, rgba(18, 24, 38, 0) 100%);
     z-index: 4;
-    max-width: 1920px;
     min-width: 1920px;
     max-height: 541px;
     min-height: 541px;
+    width: 100vw;
 }
 
 .ellipseConcave {
@@ -209,7 +208,105 @@
     opacity: 0.5;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 2451px) {
+    .ellipseConcave {
+        left: 38%;
+    }
+
+    .ellipseConvex {
+        left: 38%;
+    }
+
+    .flare {
+        left: 15%;
+    }
+
+    .logo {
+        left: 38%;
+    }
+
+    .imageElfWoman {
+        left: 40%;
+    }
+
+    .imageWarHuman {
+      left: 25%;
+    }
+
+    .circles {
+        left: 43%;
+    }
+}
+
+@media screen and (min-width: 2201px) and (max-width: 2450px) {
+    .ellipseConcave {''
+        left: 38%;
+    }
+
+    .ellipseConvex {
+        left: 38%;
+    }
+
+    .flare {
+        left: 12%;
+    }
+
+    .logo {
+        left: 38%;
+    }
+
+    .imageElfWoman {
+        left: 40%;
+    }
+
+    .imageWarHuman {
+        left: 25%;
+    }
+
+    .circles {
+        left: 43%;
+    }
+}
+
+@media screen and (min-width: 1921px) and  (max-width: 2200px) {
+    .ellipseConcave {
+        left: 35%;
+    }
+
+    .ellipseConvex {
+        left: 35%;
+    }
+
+    .flare {
+        left: 5%;
+    }
+
+    .logo {
+        left: 32%;
+    }
+
+    .imageElfWoman {
+        left: 36%;
+    }
+
+    .imageWarHuman {
+        left: 22%;
+    }
+
+    .circles {
+        left: 43%;
+    }
+
+    .sparksLeft {
+        left: 47px;
+    }
+
+    .sparksRight {
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .textBox {
         padding: 300px 0 0;
     }

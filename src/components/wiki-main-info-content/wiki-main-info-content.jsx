@@ -1,7 +1,7 @@
 import styles from "./wiki-main-info-content.module.css";
-import polNav from "../../images/polygon-navigation.svg";
+import { useState } from "react";
+import wheelIcon from "../../images/polygon-navigation.svg";
 import arrow from "../../images/arrow-down-accordion.svg";
-import {useState} from "react";
 
 const WikiMainInfoContent = () => {
     const [isAccordionOpen, setIsAccordionOpen] = useState(false);
@@ -38,26 +38,26 @@ const WikiMainInfoContent = () => {
                 <h3 className={styles.header}>Основная информация</h3>
                 <ul className={styles.list}>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Арена Олимпиады открыта по Пятницам и Субботам с 19:00 до 22:00 по
                             серверному времени (GMT+3);</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Доступна активная кнопка блок бафа, при создании персонажа.</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>На сервере перерабон урон по мобам от физ классов.</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Мы переработали квест The Zero Hour , теперь айтемы Fang of Stakato
                             падают сразу на всех
                             членов группы.</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Залёт на Halisha/Anakazel доступен от 2-ух человек.</p>
                     </li>
                 </ul>
@@ -66,23 +66,23 @@ const WikiMainInfoContent = () => {
                 <h3 className={styles.header}>Аугментация оружия</h3>
                 <ul className={styles.list}>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Активный баф с Life Stone пропадает при снятии оружия.</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Аугментированное оружие не передается в трейде</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>На сервере перерабон урон по мобам от физ классов.</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Шанс дропа Top Life Stones с Tyrannosaurus – 25%.</p>
                     </li>
                     <li className={styles.element}>
-                        <img src={polNav}/>
+                        <img src={wheelIcon}/>
                         <p className={styles.text}>Шанс дропа Top Life Stones с Pterosaur – 5%.</p>
                     </li>
                 </ul>
@@ -132,6 +132,6 @@ const WikiMainInfoContent = () => {
                 вид</p>
         </div>
     )
-}
+};
 
 export default WikiMainInfoContent;

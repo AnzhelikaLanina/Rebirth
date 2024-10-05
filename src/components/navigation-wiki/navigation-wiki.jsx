@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./navigation-wiki.module.css";
 import NavigationItem from "../navigation-item/navigation-item";
 import featuresIcon from "../../images/features-icon.svg";
@@ -18,7 +19,7 @@ import balanceIconActive from "../../images/balance-active.svg";
 import olympIconActive from "../../images/olymp-active.svg";
 import clansIconActive from "../../images/clans-active.svg";
 import interfaceIconActive from "../../images/interface-active.svg";
-import React from "react";
+import PropTypes from "prop-types";
 
 const NavigationWiki = ({ activeIndex, setActiveIndex }) => {
 
@@ -35,7 +36,7 @@ const NavigationWiki = ({ activeIndex, setActiveIndex }) => {
     ];
 
     const handleItemClick = (index) => {
-        setActiveIndex(index); // Обновляем активный индекс при нажатии
+        setActiveIndex(index);
     };
 
     return (
@@ -58,6 +59,11 @@ const NavigationWiki = ({ activeIndex, setActiveIndex }) => {
             ))}
         </div>
     )
-}
+};
+
+NavigationWiki.propTypes = {
+    activeIndex: PropTypes.number.isRequired,
+    setActiveIndex: PropTypes.func.isRequired,
+};
 
 export default NavigationWiki;

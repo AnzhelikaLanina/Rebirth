@@ -1,6 +1,7 @@
 import styles from "./news-info.module.css";
+import PropTypes from "prop-types";
 
-const NewsInfo = ( {newsItem} ) => {
+const NewsInfo = ({ newsItem }) => {
     return (
         <div className={styles.container}>
             <div className={styles.image}></div>
@@ -8,6 +9,14 @@ const NewsInfo = ( {newsItem} ) => {
             <p className={styles.description}>{newsItem.description}</p>
         </div>
     )
-}
+};
+
+NewsInfo.propTypes = {
+    newsItem: PropTypes.shape({
+        header: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired
+    }).isRequired
+};
+
 
 export default NewsInfo;

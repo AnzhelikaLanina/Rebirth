@@ -1,17 +1,20 @@
-import NavigationItem from "../navigation-item/navigation-item";
+import React, { useState } from "react";
+import styles from './navigation-patchnote.module.css';
 import icon from '../../images/wheel-icon.svg';
 import iconActive from '../../images/wheel-icon-active.svg';
-import styles from './navigation-patchnote.module.css';
-import React, {useState} from "react";
 import data from '../../data/patchnoteList.json';
+import NavigationItem from "../navigation-item/navigation-item";
 
 const NavigationPatchNote = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
-    const items = [ {icon: icon, iconActive: iconActive, header: 'Обновление'} ];
+    const items = [{
+            icon: icon,
+            iconActive: iconActive,
+            header: 'Обновление'
+        }];
 
     const handleItemClick = (index) => {
-        setActiveIndex(index); // Обновляем активный индекс при нажатии
+        setActiveIndex(index);
     };
 
     return (
@@ -25,14 +28,14 @@ const NavigationPatchNote = () => {
                     )}
                     <div className={styles.item}>
                         <NavigationItem
-                            imgSrc={items[0].icon} // Используем одну и ту же иконку для всех элементов
-                            header={items[0].header} // Одинаковый заголовок для всех
-                            isActive={activeIndex === index} // Определяем активный элемент
+                            imgSrc={items[0].icon}
+                            header={items[0].header}
+                            isActive={activeIndex === index}
                             onClick={() => handleItemClick(index)}
                             activeImgSrc={items[0].iconActive}
                             showDetails={true}
                             version={item.version}
-                            date={item.date}// Активная иконка
+                            date={item.date}
                         />
                     </div>
                 </React.Fragment>

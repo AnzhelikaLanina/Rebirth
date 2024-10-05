@@ -1,40 +1,57 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import styles from "./features.module.css";
-import Ornament from "../ornament/ornament";
-import lineHorizontal from "../../images/line-horizontal.svg";
-import lineVertical from "../../images/line-vertical.svg";
-import lineThickVertical from "../../images/line-thick-vertical.svg";
 import SwiperInfo from "../swiper-info/swiper-info";
-import sparksLeft from "../../images/sparks-features-left.svg";
-import sparksRight from "../../images/sparks-features-right.svg";
+import sparksLeftImage from "../../images/sparks-features-left.svg";
+import sparksRightImage from "../../images/sparks-features-right.svg";
+import frameMobileImage from "../../images/features-ornament-mobile.svg";
+import frameImage from "../../images/ornament-features.svg";
+import PropTypes from "prop-types";
 
 const Features = ({ id }) => {
-
-    const lineImages = {
-        horizontalTop: lineHorizontal,
-        horizontalBottom: lineHorizontal,
-        verticalLeft: lineVertical,
-        verticalRight: lineVertical,
-        thickVerticalLeft: lineThickVertical,
-        thickVerticalRight: lineThickVertical,
-    };
+    const isDesktop = useMediaQuery({ query: '(min-width: 1251px)' });
 
     return (
         <section className={styles.features} id={id}>
             <h2 className={styles.header}>Уникальные особенности</h2>
-            <img src={sparksLeft} className={styles.sparksLeft}/>
-            <img src={sparksRight} className={styles.sparksRight}/>
+            <img
+                src={sparksLeftImage}
+                className={styles.sparksLeft}
+                alt={'рыжие огоньки'}
+            />
+            <img
+                src={sparksRightImage}
+                className={styles.sparksRight}
+                alt={'рыжие огоньки'}
+            />
             <div className={styles.patternBox}></div>
-            <Ornament lineImages={lineImages}>
+            <div className={styles.ornamentBox}>
+                {isDesktop ?
+                    <img
+                        src={frameImage}
+                        className={styles.ornament}
+                        alt={'рамка'}
+                    />
+                    :
+                    <img
+                        src={frameMobileImage}
+                        className={styles.ornament}
+                        alt={'рамка'}
+                    />
+                }
                 <div className={styles.container}>
                     <div className={styles.overlay}></div>
                     <div className={styles.box}>
                         <SwiperInfo/>
                     </div>
                 </div>
-            </Ornament>
+            </div>
         </section>
     )
-}
+};
+
+Features.propTypes = {
+    id: PropTypes.string.isRequired
+};
 
 export default Features;

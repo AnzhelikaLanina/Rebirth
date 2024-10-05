@@ -1,9 +1,9 @@
-import WikiMainInfoContent from "../wiki-main-info-content/wiki-main-info-content";
 import styles from "./wrapper-patchnote.module.css";
-import {useState} from "react";
+import { useState } from "react";
 import NavigationPatchNote from "../navigation-patchnote/navigation-patchnote";
+import WikiMainInfoContent from "../wiki-main-info-content/wiki-main-info-content";
 
-const WrapperPatchnote = () => {
+const WrapperPatchNote = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const components = [
@@ -19,15 +19,15 @@ const WrapperPatchnote = () => {
     ];
 
     const renderContent = () => {
-        return components[activeIndex] || <WikiMainInfoContent />; // Возвращаем компонент по активному индексу
+        return components[activeIndex] || <WikiMainInfoContent />;
     };
 
     return (
         <div className={styles.wrapper}>
             <NavigationPatchNote activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
-            {renderContent()} {/* Отображаем соответствующий контент */}
+            {renderContent()}
         </div>
     )
-}
+};
 
-export default WrapperPatchnote;
+export default WrapperPatchNote;

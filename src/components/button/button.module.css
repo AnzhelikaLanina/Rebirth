@@ -14,17 +14,17 @@
 }
 
 .buttonBase {
-    cursor: pointer;
     position: relative;
     padding: 12px;
-    gap: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     box-sizing: border-box;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .buttonBase::after {

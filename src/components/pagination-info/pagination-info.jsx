@@ -2,46 +2,47 @@ import styles from "./pagination-info.module.css";
 import React from "react";
 import line from "../../images/progress.svg";
 import lineActive from "../../images/progress-active.svg";
-import balance from "../../images/balance.svg";
-import balanceActive from "../../images/balance-active.svg";
-import craft from "../../images/craft.svg";
-import craftActive from "../../images/craft-active.svg";
-import clans from "../../images/clans.svg";
-import clansActive from "../../images/clans-active.svg";
-import olymp from "../../images/olymp.svg";
-import olympActive from "../../images/olymp-active.svg";
-import interfaceImg from "../../images/interface.svg";
-import interfaceActive from "../../images/interface-active.svg";
+import balanceIcon from "../../images/balance.svg";
+import balanceActiveIcon from "../../images/balance-active.svg";
+import craftIcon from "../../images/craft.svg";
+import craftActiveIcon from "../../images/craft-active.svg";
+import clansIcon from "../../images/clans.svg";
+import clansActiveIcon from "../../images/clans-active.svg";
+import olympIcon from "../../images/olymp.svg";
+import olympActiveIcon from "../../images/olymp-active.svg";
+import interfaceIcon from "../../images/interface.svg";
+import interfaceActiveIcon from "../../images/interface-active.svg";
+import PropTypes from "prop-types";
 
 const PaginationInfo = ({ activeIndex, onClick }) => {
     const images = [
         {
-            normalMain: balance,
-            activeMain: balanceActive,
+            normalMain: balanceIcon,
+            activeMain: balanceActiveIcon,
             normalLine: line,
             activeLine: lineActive
         },
         {
-            normalMain: craft,
-            activeMain: craftActive,
+            normalMain: craftIcon,
+            activeMain: craftActiveIcon,
             normalLine: line,
             activeLine: lineActive
         },
         {
-            normalMain: clans,
-            activeMain: clansActive,
+            normalMain: clansIcon,
+            activeMain: clansActiveIcon,
             normalLine: line,
             activeLine: lineActive
         },
         {
-            normalMain: olymp,
-            activeMain: olympActive,
+            normalMain: olympIcon,
+            activeMain: olympActiveIcon,
             normalLine: line,
             activeLine: lineActive
         },
         {
-            normalMain: interfaceImg,
-            activeMain: interfaceActive,
+            normalMain: interfaceIcon,
+            activeMain: interfaceActiveIcon,
             normalLine: line,
             activeLine: lineActive
         },
@@ -55,13 +56,13 @@ const PaginationInfo = ({ activeIndex, onClick }) => {
                         src={activeIndex === 0 ? images[0].activeMain : images[0].normalMain}
                         onClick={() => onClick(0)}
                         className={styles.images}
-                        alt={"Первый элемент"}
+                        alt={"первый элемент"}
                     />
                     <img
                         src={activeIndex === 0 ? images[0].activeLine : images[0].normalLine}
                         onClick={() => onClick(0)}
                         className={styles.imageLineBalCraft }
-                        alt={"Линия элемента 1"}
+                        alt={"линия элемента 1"}
                     />
                 </div>
                 {images.slice(1, 4).map((img, i) => (
@@ -72,13 +73,13 @@ const PaginationInfo = ({ activeIndex, onClick }) => {
                             className={i + 1 === 1 ? styles.imageLineBalCraft
                                         : i + 1 === 2 ? styles.imageLineCraftClans
                                         : styles.imageLineClansOlymp}
-                            alt={`Левая линия элемента ${i + 1}`}
+                            alt={`левая линия элемента ${i + 1}`}
                         />
                         <img
                             src={activeIndex === i + 1 ? img.activeMain : img.normalMain}
                             onClick={() => onClick(i + 1)}
                             className={styles.images}
-                            alt={`Элемент ${i + 1}`}
+                            alt={`элемент ${i + 1}`}
                         />
                         <img
                             src={activeIndex === i + 1 ? img.activeLine : img.normalLine}
@@ -86,7 +87,7 @@ const PaginationInfo = ({ activeIndex, onClick }) => {
                             className={i + 1 === 2 ? styles.imageLineCraftClans
                                         : i + 1 === 3 ? styles.imageLineClansOlymp
                                         : styles.imageLineOlympInter}
-                            alt={`Правая линия элемента ${i + 1}`}
+                            alt={`правая линия элемента ${i + 1}`}
                         />
                     </div>
                 ))}
@@ -95,13 +96,13 @@ const PaginationInfo = ({ activeIndex, onClick }) => {
                         src={activeIndex === 4 ? images[4].activeLine : images[4].normalLine}
                         onClick={() => onClick(4)}
                         className={styles.imageLineOlympInter}
-                        alt={"Линия элемента 5"}
+                        alt={"линия элемента 5"}
                     />
                     <img
                         src={activeIndex === 4 ? images[4].activeMain : images[4].normalMain}
                         onClick={() => onClick(4)}
                         className={styles.images}
-                        alt={"Элемент 5"}
+                        alt={"элемент 5"}
                     />
                 </div>
             </div>
@@ -114,6 +115,11 @@ const PaginationInfo = ({ activeIndex, onClick }) => {
             </div>
         </div>
     )
-}
+};
+
+PaginationInfo.propTypes = {
+    activeIndex: PropTypes.number.isRequired,
+    onClick: PropTypes.func.isRequired
+};
 
 export default PaginationInfo;

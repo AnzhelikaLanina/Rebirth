@@ -13,6 +13,7 @@
     justify-content: space-between;
     background-image: url("../../images/news.png");
     background-position: center top;
+    background-size: cover;
     box-sizing: border-box;
     cursor: pointer;
     transition: transform 0.2s ease;

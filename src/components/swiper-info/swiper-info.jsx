@@ -1,13 +1,12 @@
 import React, {useEffect, useRef, useState} from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {Navigation} from 'swiper/modules';
 import 'swiper/css';
-import './swiper-info.module.css';
 import styles from "./swiper-info.module.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import Slide from "../slide/slide";
 import PaginationInfo from "../pagination-info/pagination-info";
-import arrowRight from "../../images/arrow-right.svg";
-import arrowLeft from "../../images/arrow-left.svg";
+import arrowRightIcon from "../../images/arrow-right.svg";
+import arrowLeftIcon from "../../images/arrow-left.svg";
 
 const SwiperInfo = () => {
 
@@ -77,10 +76,18 @@ const SwiperInfo = () => {
             </Swiper>
             <PaginationInfo activeIndex={activeIndex} onClick={handlePaginationClick} />
             <div className={`swiper-button-next ${styles.btnNext}`}>
-                <img className={styles.btnImage} src={arrowRight} alt="правая стрелка"/>
+                <img
+                    className={styles.btnImage}
+                    src={arrowRightIcon}
+                    alt={"стрелочка"}
+                />
             </div>
             <div className={`swiper-button-prev ${styles.btnPrev}`}>
-                <img className={styles.btnImage} src={arrowLeft} alt="левая стрелка"/>
+                <img
+                    className={styles.btnImage}
+                    src={arrowLeftIcon}
+                    alt={"стрелочка"}
+                />
             </div>
         </div>
     );

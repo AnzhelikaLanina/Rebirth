@@ -1,26 +1,27 @@
+import '../page.css';
+import { useEffect, useState } from "react";
 import Features from "../../components/features/features";
 import TitleSection from "../../components/title-section/title-section";
 import NewsSection from "../../components/news-section/news-section";
 import DiscordSection from "../../components/discord-section/discord-section";
 import NavigationMainPage from "../../components/navigation-main-page/navigation-main-page";
-import {useEffect, useState} from "react";
 
 const MainPage = () => {
     const [activeSection, setActiveSection] = useState('title');
-    const [isManualNavigation, setIsManualNavigation] = useState(false); // Флаг для отслеживания кликов
+    const [isManualNavigation, setIsManualNavigation] = useState(false);
 
     const handleScroll = (section) => {
-        setIsManualNavigation(true); // Устанавливаем флаг при клике
+        setIsManualNavigation(true);
         document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
         setActiveSection(section);
     };
 
     useEffect(() => {
-        const sections = document.querySelectorAll('section'); // Если ваши секции имеют тег <section>
+        const sections = document.querySelectorAll('section');
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.5 // Можно настроить
+            threshold: 0.5
         };
 
         let lastActiveSection = 'title';
@@ -45,23 +46,23 @@ const MainPage = () => {
                 observer.unobserve(section);
             });
         };
-    }, [isManualNavigation]); // Добавьте isManualNavigation в зависимости
+    }, [isManualNavigation]);
 
     useEffect(() => {
         if (isManualNavigation) {
-            const timer = setTimeout(() => setIsManualNavigation(false), 1000); // Сброс флага через 1 секунду
+            const timer = setTimeout(() => setIsManualNavigation(false), 1000);
             return () => clearTimeout(timer);
         }
     }, [isManualNavigation]);
 
     return (
-        <>
+        <div className={"mainPage"}>
             <NavigationMainPage activeSection={activeSection} onNavigate={handleScroll} />
             <TitleSection id="title" />
             <Features id="features" />
             <NewsSection id="news" />
             <DiscordSection id="discord" />
-        </>
+        </div>
     );
 };
 

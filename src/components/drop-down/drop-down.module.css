@@ -1,0 +1,198 @@
+.dropDown {
+    position: relative;
+    max-width: 114px;
+    min-width: 114px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-family: OpenSans, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 21.79px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.text:hover {
+    color: rgba(255, 214, 68, 1);
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.header:hover {
+    color: rgba(255, 214, 68, 1);
+}
+
+.headerActive {
+    color: rgba(255, 214, 68, 1);
+}
+
+.headerLang {
+    text-transform: none;
+}
+
+.dropDownArrow {
+    transition: transform 0.3s ease;
+}
+
+.dropDownContainer {
+    position: absolute;
+    top: 61px;
+    left: -18px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 8;
+}
+.dropDownContainer.show {
+    display: flex;
+    opacity: 1;
+    z-index: 8;
+}
+
+.dropDownArrow.rotate {
+    transform: rotate(180deg);
+}
+
+.dropDownLine {
+    background-color: rgba(255, 214, 68, 1);
+    width: 113px;
+    height: 1px;
+}
+
+.dropDownWikiBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dropDownText {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    color: rgba(255, 255, 255, 1);
+}
+
+.dropDownText:hover {
+    color: rgba(255, 214, 68, 1);
+}
+
+.dropDownBox {
+    min-width: 150px;
+    min-height: 90px;
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: rgba(23, 30, 47);
+    border: 1px solid rgba(44, 59, 94, 1);
+    box-sizing: border-box;
+}
+
+.dropDownBoxFlags {
+    min-width: 150px;
+    min-height: 45px;
+    width: 100%;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+    background: rgba(23, 30, 47);
+    border: 1px solid rgba(44, 59, 94, 1);
+    box-sizing: border-box;
+}
+
+
+.imageFlag {
+    width: 22px;
+    object-fit: contain;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1264px) {
+    .text {
+        font-size: 16px;
+        line-height: 21.79px;
+    }
+
+    .dropDownContainer {
+        position: relative;
+    }
+
+    .dropDownContainer.show {
+        display: flex;
+        opacity: 1;
+        z-index: 8;
+        top: 0;
+        left: 0;
+    }
+
+    .dropDownLine {
+        display: none;
+    }
+
+    .dropDownBox {
+        margin: 8px 0 0;
+        align-items: center;
+        background: rgba(18, 24, 38, 1);
+        border: none;
+        min-width: 327px;
+        max-width: 327px;
+        padding: 12px 0;
+    }
+
+    .dropDownBoxFlags {
+        margin: 8px 0 0;
+        justify-content: center;
+        background: rgba(18, 24, 38, 1);
+        border: none;
+        min-width: 327px;
+        max-width: 327px;
+        padding: 12px 0;
+    }
+
+    .gearWheel {
+        display: none;
+    }
+
+    .dropDown {
+        padding-bottom: 0;
+    }
+}

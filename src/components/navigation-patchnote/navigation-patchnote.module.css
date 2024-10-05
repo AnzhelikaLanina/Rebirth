@@ -15,11 +15,11 @@
 }
 
 .tag {
-    align-content: center;
     max-width: 108px;
     min-width: 108px;
     max-height: 36px;
     min-height: 36px;
+    align-content: center;
     background: rgba(48, 118, 253, 1);
 }
 

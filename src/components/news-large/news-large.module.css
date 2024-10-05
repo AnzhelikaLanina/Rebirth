@@ -1,32 +1,3 @@
-.bottom {
-    bottom: -6px;
-}
-
-.horizontalTop {
-    top: -5px;
-    left: 20px;
-}
-
-.horizontalBottom {
-    bottom: -6.5px;
-    left: 20px;
-}
-
-.verticalRight {
-    bottom: 86px;
-}
-
-.verticalSpaceLeft {
-    height: 498px;
-    left: -13px;
-}
-
-.verticalSpaceRight {
-    height: 498px;
-    bottom: 85px;
-    right: -12.5px;
-}
-
 .item {
     max-width: 1146px;
     min-width: 1146px;
@@ -40,19 +11,44 @@
     max-width: 1102px;
 }
 
-.horizontalTopFull {
-    top: -5.5px;
-    left: 77px;
-    width: 994px;
+.ornamentBox {
+    position: relative;
+    z-index: 1;
+    max-width: 690px;
+    min-width: 690px;
+    max-height: 680px;
+    min-height: 680px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.horizontalBottomFull {
-    bottom: -5.5px;
-    left: 77px;
-    width: 994px;
+.ornamentBoxWide {
+    position: relative;
+    z-index: 1;
+    max-width: 1170px;
+    min-width: 1170px;
+    max-height: 400px;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+.ornament {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1240px) {
     .itemBase,
     .item {
         max-width: 313px;
@@ -66,5 +62,13 @@
     .container {
         max-width: 295px;
         min-width: 295px;
+    }
+
+    .ornamentBox,
+    .ornamentBoxWide {
+        max-width: 343px;
+        min-width: 343px;
+        max-height: 460px;
+        min-height: 460px;
     }
 }

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 import logo from "../../images/logo.svg"
-import polygon from "../../images/polygon.svg";
-import {Link} from "react-router-dom";
+import arrow from "../../images/polygon.svg";
+import PropTypes from "prop-types";
 
 const Footer = ({ onOpenModal }) => {
     return (
@@ -10,7 +11,11 @@ const Footer = ({ onOpenModal }) => {
             <div className={styles.container}>
                 <ul className={styles.info}>
                     <li className={styles.box}>
-                        <img className={styles.logoName} src={logo} alt={"Логотип"} />
+                        <img
+                            className={styles.logoName}
+                            src={logo}
+                            alt={"логотип"}
+                        />
                         <div className={styles.line}></div>
                         <p className={styles.text}>Lineage 2 Essence x1 Server</p>
                     </li>
@@ -43,16 +48,25 @@ const Footer = ({ onOpenModal }) => {
                 </ul>
                 <div className={styles.description}>
                     <p className={styles.textDescription}>
-                        Copyright &copy; 2024, Rebirth. Lineage is a trademark owned by NCSoft Corp, all rights reserved.
+                        Copyright &copy; 2024, Rebirth.
+                        Lineage is a trademark owned by NCSoft Corp, all rights reserved.
                     </p>
                     <div className={styles.designerBox}>
                         <p className={styles.textDescription}>Дизайн — UPNOVA</p>
-                        <img className={styles.img} src={polygon} alt={"Стрелочка вниз"}/>
+                        <img
+                            className={styles.arrow}
+                            src={arrow}
+                            alt={"стрелочка"}
+                        />
                     </div>
                 </div>
             </div>
         </footer>
     );
-}
+};
+
+Footer.propTypes = {
+    onOpenModal: PropTypes.func.isRequired
+};
 
 export default Footer;

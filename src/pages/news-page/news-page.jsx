@@ -1,12 +1,11 @@
+import '../page.css';
+import styles from "./news-page.module.css";
+import { useParams } from "react-router-dom";
 import NewsInfo from "../../components/news-info/news-info";
 import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs";
-import styles from "./news-page.module.css";
-import '../page.css';
-import {useParams} from "react-router-dom";
 import data from "../../data/newsList.json";
-import sparksTop from "../../images/sparks-news-top.svg";
-import sparksBottom from "../../images/sparks-news-bottom.svg";
-import React from "react";
+import sparksTopImage from "../../images/sparks-news-top.svg";
+import sparksBottomImage from "../../images/sparks-news-bottom.svg";
 
 const NewsPage = () => {
     const { id } = useParams();
@@ -18,8 +17,16 @@ const NewsPage = () => {
 
     return (
         <div className={"main"}>
-            <img src={sparksTop} className={"sparksTop"}/>
-            <img src={sparksBottom} className={"sparksBottom"}/>
+            <img
+                src={sparksTopImage}
+                className={"sparksTop"}
+                alt={'рыжие огоньки'}
+            />
+            <img
+                src={sparksBottomImage}
+                className={"sparksBottom"}
+                alt={'рыжие огоньки'}
+            />
             <div className={"patternBox"}></div>
             <div className={styles.container}>
                 <Breadcrumbs newsItemHeader={newsItem.header}/>
@@ -27,6 +34,6 @@ const NewsPage = () => {
             </div>
         </div>
     )
-}
+};
 
 export default NewsPage;

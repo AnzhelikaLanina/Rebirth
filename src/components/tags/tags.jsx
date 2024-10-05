@@ -1,4 +1,5 @@
 import styles from "./tags.module.css";
+import PropTypes from "prop-types";
 
 const Tags = ({ onTagClick, selectedTag }) => {
     const tags = ['Все', 'Обновления', 'Новости', 'Эвенты']; // Список тегов
@@ -20,6 +21,11 @@ const Tags = ({ onTagClick, selectedTag }) => {
             ))}
         </ul>
     );
+};
+
+Tags.propTypes = {
+    onTagClick: PropTypes.func.isRequired,
+    selectedTag: PropTypes.string.isRequired
 };
 
 export default Tags;

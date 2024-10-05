@@ -1,18 +1,15 @@
-import Tags from "../../components/tags/tags";
+import "../page.css";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import moment from "moment";
 import styles from "./all-news-page.module.css";
 import ButtonShowMore from "../../components/button-show-more/button-show-more";
-import "../page.css";
 import NewsLarge from "../../components/news-large/news-large";
-import data from "../../data/newsList.json";
-import moment from "moment";
-import React, {useState} from "react";
-import lineHorizontal from "../../images/line-horizontal-middle.svg";
-import lineVertical from "../../images/line-vertical-short.svg";
-import lineThickVertical from "../../images/line-vertical-space-short.svg";
 import NewsSmall from "../../components/news-small/news-small";
-import {useNavigate} from "react-router-dom";
-import sparksTop from "../../images/sparks-news-top.svg";
-import sparksBottom from "../../images/sparks-news-bottom.svg";
+import Tags from "../../components/tags/tags";
+import data from "../../data/newsList.json";
+import sparksTopImage from "../../images/sparks-news-top.svg";
+import sparksBottomImage from "../../images/sparks-news-bottom.svg";
 
 const AllNewsPage = () => {
     const navigate = useNavigate();
@@ -20,31 +17,9 @@ const AllNewsPage = () => {
     const handleNewsClick = (id) => {
         navigate(`/news/${id}`);
     };
+
     const [selectedTag, setSelectedTag] = useState('Все');
     const [newsCount, setNewsCount] = useState(8);
-
-    const lineImages = {
-        horizontalTop: lineHorizontal,
-        horizontalBottom: lineHorizontal,
-        verticalLeft: lineVertical,
-        verticalRight: lineVertical,
-        thickVerticalLeft: lineThickVertical,
-        thickVerticalRight: lineThickVertical
-    };
-
-    const imgStyles = {
-        cornerRightTop: styles.topRight,
-        cornerLeftTop: styles.topLeft,
-        cornerRightBottom: styles.bottomRight,
-        cornerLeftBottom: styles.bottomLeft,
-        horizontalTop: styles.horizontalTop,
-        horizontalBottom: styles.horizontalBottom,
-        verticalRight: styles.verticalRight,
-        verticalLeft: styles.verticalLeft,
-        thickVerticalLeft: styles.verticalSpaceLeft,
-        thickVerticalRight: styles.verticalSpaceRight
-    };
-
     const sortedNewsList = data.newsList.sort((a, b) => moment(b.date, "DD.MM.YYYY HH:mm") - moment(a.date, "DD.MM.YYYY HH:mm"));
     const latestMainNews = sortedNewsList.find(news => news.isMain);
     const filteredNewsList = sortedNewsList.filter(news => news.id !== latestMainNews?.id);
@@ -66,8 +41,16 @@ const AllNewsPage = () => {
 
     return (
         <div className={"main"}>
-            <img src={sparksTop} className={styles.sparksTop}/>
-            <img src={sparksBottom} className={styles.sparksBottom}/>
+            <img
+                src={sparksTopImage}
+                className={styles.sparksTop}
+                alt={'рыжие огоньки'}
+            />
+            <img
+                src={sparksBottomImage}
+                className={styles.sparksBottom}
+                alt={'рыжие огоньки'}
+            />
             <div className={styles.patternBox}></div>
             <div className={styles.headerBox}>
                 <h1 className={styles.header}>Последние новости</h1>
@@ -81,12 +64,11 @@ const AllNewsPage = () => {
                             <NewsSmall
                                 key={news.id}
                                 news={news}
-                                lineImages={lineImages}
-                                imgStyles={imgStyles}
                                 itemStyle={styles.item}
                                 headerStyle={styles.headerItem}
                                 descriptionStyle={styles.descriptionItem}
                                 onClick={() => handleNewsClick(news.id)}
+                                isSmall={true}
                             />
                         ))
                     ) : (
@@ -99,6 +81,6 @@ const AllNewsPage = () => {
             )}
         </div>
     )
-}
+};
 
 export default AllNewsPage;

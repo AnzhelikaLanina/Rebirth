@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./frame.module.css";
 
 const Frame = () => {
-    const targetDate = new Date("2024-10-31T00:00:00").getTime(); // Задайте свою дату
+    const targetDate = new Date("2024-10-31T00:00:00").getTime();
 
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
@@ -17,19 +17,18 @@ const Frame = () => {
             const distance = targetDate - now;
 
             if (distance <= 0) {
-                clearInterval(interval); // Останавливаем таймер, если время вышло
+                clearInterval(interval);
             } else {
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Обновляем оставшееся время
                 setTimeLeft({ days, hours, minutes, seconds });
             }
         }, 1000);
 
-        return () => clearInterval(interval); // Чистим таймер при размонтировании компонента
+        return () => clearInterval(interval);
     }, [targetDate]);
 
     return (

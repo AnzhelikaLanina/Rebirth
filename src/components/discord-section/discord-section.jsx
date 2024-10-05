@@ -1,41 +1,39 @@
-import DiscordBlock from "../discord-block/discord-block";
-import Ornament from "../ornament/ornament";
+import React from "react";
+import { useMediaQuery } from "react-responsive";
 import styles from "./discord-section.module.css";
-import lineHorizontal from "../../images/line-horizontal-long.svg";
-import lineVertical from "../../images/line-vertical.svg";
-import lineThickVertical from "../../images/line-thick-vertical.svg";
+import frameMobileImage from "../../images/ornament-discord-mobile.svg";
+import frameImage from "../../images/ornament-discord.svg";
+import DiscordBlock from "../discord-block/discord-block";
+import PropTypes from "prop-types";
 
 const DiscordSection = ({ id }) => {
-    const lineImages = {
-        horizontalTop: lineHorizontal,
-        horizontalBottom: lineHorizontal,
-        verticalLeft: lineVertical,
-        verticalRight: lineVertical,
-        thickVerticalLeft: lineThickVertical,
-        thickVerticalRight: lineThickVertical
-    };
-
-    const imgStyles = {
-        cornerRightTop: styles.top,
-        cornerLeftTop: styles.top,
-        cornerRightBottom: styles.bottom,
-        cornerLeftBottom: styles.bottom,
-        horizontalTop: styles.horizontalTop,
-        horizontalBottom: styles.horizontalBottom,
-        verticalLeft: styles.vertical,
-        verticalRight: styles.vertical,
-        thickVerticalLeft: styles.verticalSpace,
-        thickVerticalRight: styles.verticalSpace
-    };
+    const isDesktop = useMediaQuery({ query: '(min-width: 950px)' });
 
     return (
         <section className={styles.discord} id={id}>
-            <Ornament lineImages={lineImages} imgStyles={imgStyles}>
+            <div className={styles.ornamentBox}>
+                {isDesktop ?
+                    <img
+                        src={frameImage}
+                        className={styles.ornament}
+                        alt={'рамка'}
+                    />
+                    :
+                    <img
+                        src={frameMobileImage}
+                        className={styles.ornament}
+                        alt={'рамка'}
+                    />
+                }
                 <DiscordBlock/>
-            </Ornament>
+            </div>
             <div className={styles.widget}></div>
         </section>
     )
-}
+};
+
+DiscordSection.propTypes = {
+    id: PropTypes.string.isRequired
+};
 
 export default DiscordSection;
