@@ -63,6 +63,16 @@ const TitleSection = ({ id }) => {
                     alt={"желтые огоньки"}
                 />
             </div>
+            <img
+                src={sparksLeftImage}
+                className={styles.sparksLeft}
+                alt={"рыжие огоньки"}
+            />
+            <img
+                src={sparksRightImage}
+                className={styles.sparksRight}
+                alt={"рыжие огоньки"}
+            />
             <div className={styles.textBox}>
                 <h1 className={styles.header}>Rebirth</h1>
                 <h2 className={styles.subheader}>Твоя легенда начинается здесь</h2>

@@ -65,7 +65,7 @@ const AllNewsPage = () => {
                     <NewsLarge isWide={true} onClick={() => handleNewsClick(latestMainNews.id)}/>
                     <div className={styles.newsList}>
                         {newsToDisplay.length > 0 ? (
-                            newsToDisplay.map((news, index) => (
+                            newsToDisplay.map((news) => (
                                 <NewsSmall
                                     key={news.id}
                                     news={news}
