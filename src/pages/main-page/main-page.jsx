@@ -1,10 +1,11 @@
 import '../page.css';
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Features from "../../components/features/features";
 import TitleSection from "../../components/title-section/title-section";
 import NewsSection from "../../components/news-section/news-section";
 import DiscordSection from "../../components/discord-section/discord-section";
 import NavigationMainPage from "../../components/navigation-main-page/navigation-main-page";
+import {Helmet} from "react-helmet-async";
 
 const MainPage = () => {
     const [activeSection, setActiveSection] = useState('title');
@@ -56,13 +57,18 @@ const MainPage = () => {
     }, [isManualNavigation]);
 
     return (
-        <div className={"mainPage"}>
-            <NavigationMainPage activeSection={activeSection} onNavigate={handleScroll} />
-            <TitleSection id="title" />
-            <Features id="features" />
-            <NewsSection id="news" />
-            <DiscordSection id="discord" />
-        </div>
+        <>
+            <Helmet>
+                <title>{'Rebirth'}</title>
+            </Helmet>
+            <div className={"mainPage"}>
+                <NavigationMainPage activeSection={activeSection} onNavigate={handleScroll}/>
+                <TitleSection id="title"/>
+                <Features id="features"/>
+                <NewsSection id="news"/>
+                <DiscordSection id="discord"/>
+            </div>
+        </>
     );
 };
 

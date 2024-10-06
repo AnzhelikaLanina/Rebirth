@@ -34,6 +34,12 @@
     width: 100vw;
 }
 
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .ellipseConcave {
     width: 748px;
     height: 567px;
@@ -206,104 +212,6 @@
 
 .buttonYellow:hover::after {
     opacity: 0.5;
-}
-
-@media screen and (min-width: 2451px) {
-    .ellipseConcave {
-        left: 38%;
-    }
-
-    .ellipseConvex {
-        left: 38%;
-    }
-
-    .flare {
-        left: 15%;
-    }
-
-    .logo {
-        left: 38%;
-    }
-
-    .imageElfWoman {
-        left: 40%;
-    }
-
-    .imageWarHuman {
-      left: 25%;
-    }
-
-    .circles {
-        left: 43%;
-    }
-}
-
-@media screen and (min-width: 2201px) and (max-width: 2450px) {
-    .ellipseConcave {''
-        left: 38%;
-    }
-
-    .ellipseConvex {
-        left: 38%;
-    }
-
-    .flare {
-        left: 12%;
-    }
-
-    .logo {
-        left: 38%;
-    }
-
-    .imageElfWoman {
-        left: 40%;
-    }
-
-    .imageWarHuman {
-        left: 25%;
-    }
-
-    .circles {
-        left: 43%;
-    }
-}
-
-@media screen and (min-width: 1921px) and  (max-width: 2200px) {
-    .ellipseConcave {
-        left: 35%;
-    }
-
-    .ellipseConvex {
-        left: 35%;
-    }
-
-    .flare {
-        left: 5%;
-    }
-
-    .logo {
-        left: 32%;
-    }
-
-    .imageElfWoman {
-        left: 36%;
-    }
-
-    .imageWarHuman {
-        left: 22%;
-    }
-
-    .circles {
-        left: 43%;
-    }
-
-    .sparksLeft {
-        left: 47px;
-    }
-
-    .sparksRight {
-        left: 80%;
-    }
 }
 
 @media screen and (max-width: 700px) {

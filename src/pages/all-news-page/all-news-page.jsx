@@ -10,6 +10,7 @@ import Tags from "../../components/tags/tags";
 import data from "../../data/newsList.json";
 import sparksTopImage from "../../images/sparks-news-top.svg";
 import sparksBottomImage from "../../images/sparks-news-bottom.svg";
+import {Helmet} from "react-helmet-async";
 
 const AllNewsPage = () => {
     const navigate = useNavigate();
@@ -40,46 +41,51 @@ const AllNewsPage = () => {
     };
 
     return (
-        <div className={"main"}>
-            <img
-                src={sparksTopImage}
-                className={styles.sparksTop}
-                alt={'рыжие огоньки'}
-            />
-            <img
-                src={sparksBottomImage}
-                className={styles.sparksBottom}
-                alt={'рыжие огоньки'}
-            />
-            <div className={styles.patternBox}></div>
-            <div className={styles.headerBox}>
-                <h1 className={styles.header}>Последние новости</h1>
-                <Tags onTagClick={handleTagClick} selectedTag={selectedTag}/>
-            </div>
-            <div className={styles.news}>
-                <NewsLarge isWide={true} onClick={() => handleNewsClick(latestMainNews.id)}/>
-                <div className={styles.newsList}>
-                    {newsToDisplay.length > 0 ? (
-                        newsToDisplay.map((news, index) => (
-                            <NewsSmall
-                                key={news.id}
-                                news={news}
-                                itemStyle={styles.item}
-                                headerStyle={styles.headerItem}
-                                descriptionStyle={styles.descriptionItem}
-                                onClick={() => handleNewsClick(news.id)}
-                                isSmall={true}
-                            />
-                        ))
-                    ) : (
-                        <p>Нет новостей по выбранному тегу.</p>
-                    )}
+        <>
+            <Helmet>
+                <title>{'Все новости Rebirth'}</title>
+            </Helmet>
+            <div className={"main"}>
+                <img
+                    src={sparksTopImage}
+                    className={styles.sparksTop}
+                    alt={'рыжие огоньки'}
+                />
+                <img
+                    src={sparksBottomImage}
+                    className={styles.sparksBottom}
+                    alt={'рыжие огоньки'}
+                />
+                <div className={styles.patternBox}></div>
+                <div className={styles.headerBox}>
+                    <h1 className={styles.header}>Последние новости</h1>
+                    <Tags onTagClick={handleTagClick} selectedTag={selectedTag}/>
                 </div>
+                <div className={styles.news}>
+                    <NewsLarge isWide={true} onClick={() => handleNewsClick(latestMainNews.id)}/>
+                    <div className={styles.newsList}>
+                        {newsToDisplay.length > 0 ? (
+                            newsToDisplay.map((news, index) => (
+                                <NewsSmall
+                                    key={news.id}
+                                    news={news}
+                                    itemStyle={styles.item}
+                                    headerStyle={styles.headerItem}
+                                    descriptionStyle={styles.descriptionItem}
+                                    onClick={() => handleNewsClick(news.id)}
+                                    isSmall={true}
+                                />
+                            ))
+                        ) : (
+                            <p>Нет новостей по выбранному тегу.</p>
+                        )}
+                    </div>
+                </div>
+                {newsToDisplay.length < filteredByTag.length && (
+                    <ButtonShowMore onClick={handleShowMore}/>
+                )}
             </div>
-            {newsToDisplay.length < filteredByTag.length && (
-                <ButtonShowMore onClick={handleShowMore}/>
-            )}
-        </div>
+        </>
     )
 };
 

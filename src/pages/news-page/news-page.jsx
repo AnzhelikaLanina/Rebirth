@@ -6,6 +6,7 @@ import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs";
 import data from "../../data/newsList.json";
 import sparksTopImage from "../../images/sparks-news-top.svg";
 import sparksBottomImage from "../../images/sparks-news-bottom.svg";
+import { Helmet } from "react-helmet-async";
 
 const NewsPage = () => {
     const { id } = useParams();
@@ -15,24 +16,32 @@ const NewsPage = () => {
         return <p>Новость не найдена.</p>;
     }
 
+    const { header, description } = newsItem;
+
     return (
-        <div className={"main"}>
-            <img
-                src={sparksTopImage}
-                className={"sparksTop"}
-                alt={'рыжие огоньки'}
-            />
-            <img
-                src={sparksBottomImage}
-                className={"sparksBottom"}
-                alt={'рыжие огоньки'}
-            />
-            <div className={"patternBox"}></div>
-            <div className={styles.container}>
-                <Breadcrumbs newsItemHeader={newsItem.header}/>
-                <NewsInfo newsItem={newsItem}/>
+        <>
+            <Helmet>
+                <title>{header}</title>
+                <meta name="description" content={description} />
+            </Helmet>
+            <div className={"main"}>
+                <img
+                    src={sparksTopImage}
+                    className={"sparksTop"}
+                    alt={'рыжие огоньки'}
+                />
+                <img
+                    src={sparksBottomImage}
+                    className={"sparksBottom"}
+                    alt={'рыжие огоньки'}
+                />
+                <div className={"patternBox"}></div>
+                <div className={styles.container}>
+                    <Breadcrumbs newsItemHeader={newsItem.header}/>
+                    <NewsInfo newsItem={newsItem}/>
+                </div>
             </div>
-        </div>
+        </>
     )
 };
 

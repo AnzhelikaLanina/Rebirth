@@ -26,57 +26,49 @@ const TitleSection = ({ id }) => {
         <section className={styles.titleSection} id={id}>
             <div className={styles.background}></div>
             <div className={styles.shadow}></div>
-            <img
-                src={ellipseConcaveImage}
-                className={styles.ellipseConcave}
-                alt={"вогнутый эллипс"}
-            />
-            <img
-                src={ellipseConvexImage}
-                className={styles.ellipseConvex}
-                alt={"выпуклый эллипс"}
-            />
-            <img
-                src={flareImage}
-                className={styles.flare}
-                alt={"луч света"}
-            />
-            <img
-                src={logo}
-                className={styles.logo}
-                alt={"логотип"}
-            />
-            <img
-                src={elfWomanImage}
-                className={styles.imageElfWoman}
-                alt={"эльфийка"}
-            />
-            <img
-                src={humanWarImage}
-                className={styles.imageWarHuman}
-                alt={"мужчина"}
-            />
-            <img
-                src={circlesImage}
-                className={styles.circles}
-                alt={"желтые огоньки"}
-            />
-            <img
-                src={sparksLeftImage}
-                className={styles.sparksLeft}
-                alt={"рыжие огоньки"}
-            />
-            <img
-                src={sparksRightImage}
-                className={styles.sparksRight}
-                alt={"рыжие огоньки"}
-            />
+            <div className={styles.imageContainer}>
+                <img
+                    src={ellipseConcaveImage}
+                    className={styles.ellipseConcave}
+                    alt={"вогнутый эллипс"}
+                />
+                <img
+                    src={ellipseConvexImage}
+                    className={styles.ellipseConvex}
+                    alt={"выпуклый эллипс"}
+                />
+                <img
+                    src={flareImage}
+                    className={styles.flare}
+                    alt={"луч света"}
+                />
+                <img
+                    src={logo}
+                    className={styles.logo}
+                    alt={"логотип"}
+                />
+                <img
+                    src={elfWomanImage}
+                    className={styles.imageElfWoman}
+                    alt={"эльфийка"}
+                />
+                <img
+                    src={humanWarImage}
+                    className={styles.imageWarHuman}
+                    alt={"мужчина"}
+                />
+                <img
+                    src={circlesImage}
+                    className={styles.circles}
+                    alt={"желтые огоньки"}
+                />
+            </div>
             <div className={styles.textBox}>
                 <h1 className={styles.header}>Rebirth</h1>
                 <h2 className={styles.subheader}>Твоя легенда начинается здесь</h2>
                 <p className={styles.description}>Стабильный Лоу-рейт Essence x1 с превосходным комьюнити,
                     постоянной поддержкой и обновлениями</p>
-                <Frame />
+                <Frame/>
                 <div className={styles.buttons}>
                     <Button
                         className={styles.buttonBlue}
