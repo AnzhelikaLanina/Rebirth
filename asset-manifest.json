@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Rebirth/static/css/main.fcb139da.css",
+    "main.css": "/Rebirth/static/css/main.5e775d46.css",
     "main.js": "/Rebirth/static/js/main.43870448.js",
     "static/media/pattern-top.svg": "/Rebirth/static/media/pattern-top.1ddb060654e22b8f460d.svg",
     "static/media/pattern-bottom.svg": "/Rebirth/static/media/pattern-bottom.72b908463833b2a2c1ae.svg",
@@ -93,11 +93,11 @@
     "static/media/nav-icon-horiz-line.svg": "/Rebirth/static/media/nav-icon-horiz-line.f4ef14335315f3d30836983df7eff50a.svg",
     "static/media/progress-active.svg": "/Rebirth/static/media/progress-active.289737fe64c217d7d83079ccb1fd65d9.svg",
     "static/media/progress.svg": "/Rebirth/static/media/progress.042affb7337e0f789782f0bc9c7fd745.svg",
-    "main.fcb139da.css.map": "/Rebirth/static/css/main.fcb139da.css.map",
+    "main.5e775d46.css.map": "/Rebirth/static/css/main.5e775d46.css.map",
     "main.43870448.js.map": "/Rebirth/static/js/main.43870448.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcb139da.css",
+    "static/css/main.5e775d46.css",
     "static/js/main.43870448.js"
   ]
 }
