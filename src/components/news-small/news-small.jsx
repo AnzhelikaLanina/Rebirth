@@ -16,7 +16,7 @@ const NewsSmall = ({
                        onClick,
                        isSmall=false
 }) => {
-    const isDesktop = useMediaQuery({ query: '(min-width: 1240px)' });
+    const isDesktop = useMediaQuery({ query: '(min-width: 1241px)' });
     return (
         <div className={isDesktop ? (isSmall ? styles.ornamentBoxSmall : styles.ornamentBox) : (styles.ornamentBoxMobile) }>
             {isDesktop ? (

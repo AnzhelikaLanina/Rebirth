@@ -11,7 +11,7 @@ import frameMobile from "../../images/features-ornament-mobile.svg";
 import frameWide from "../../images/ornament-news-large.svg";
 
 const NewsLarge = ({ isWide = false, onClick }) => {
-    const isDesktop = useMediaQuery({ query: '(min-width: 1240px)' });
+    const isDesktop = useMediaQuery({ query: '(min-width: 1241px)' });
 
     const mainNews = data.newsList
         .filter(news => news.isMain)
