@@ -7,8 +7,25 @@ import iconLineage from "../../images/lineage-icon.svg";
 import Button from "../button/button";
 import ButtonDownload from "../button-download/button-download";
 import PropTypes from "prop-types";
+import ReactDOM from 'react-dom';
+import { useEffect } from "react";
 
 const Modal = ({ isOpen, onClose }) => {
+    useEffect(() => {
+        if (!isOpen) return;
+
+        const handleEsc = (evt) => {
+            if (evt.key === 'Escape') {
+                onClose();
+            }
+        };
+
+        document.addEventListener("keydown", handleEsc);
+        return () => {
+            document.removeEventListener("keydown", handleEsc);
+        };
+    }, [isOpen, onClose]); // Добавляем isOpen в зависимости
+
     if (!isOpen) return null;
 
     const items = [
@@ -40,7 +57,7 @@ const Modal = ({ isOpen, onClose }) => {
         }
     ];
 
-    return (
+    return ReactDOM.createPortal(
         <div className={styles.overlay} onClick={onClose}>
             <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.headerBox}>
@@ -87,7 +104,8 @@ const Modal = ({ isOpen, onClose }) => {
                     />
                 </div>
             </div>
-        </div>
+        </div>,
+        document.getElementById('modal-root')
     )
 };
 
