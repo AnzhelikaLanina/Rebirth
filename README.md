@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Проект: Rebirth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект создан для игрового сервера с помощью React. Это веб-приложение обеспечивает пользователей необходимой информацией и файлами, связанными с игрой.
 
-## Available Scripts
+## Основные технологии
 
-In the project directory, you can run:
+- **React** - для создания пользовательских интерфейсов.
+- **React Hooks** - для управления состоянием и жизненным циклом компонентов.
+- **React Router DOM** - для управления навигацией и маршрутизацией между страницами.
+- **React Helmet Async** - для управления динамическими мета-тегами для SEO.
+- **Prop-Types** - для проверки типов пропсов, передаваемых компонентам.
+- **Семантические теги** - для улучшения структуры HTML и SEO.
+- **CSS Modules** - для организации и изоляции стилей компонентов.
+- **Адаптивная верстка** и **React Responsive** - для обеспечения корректного отображения на разных устройствах.
+- **Flexbox** и **CSS Grid** - для удобного и гибкого расположения элементов на странице.
+- **Swiper** - для создания сенсорных слайдеров и каруселей.
+- **JavaScript** - основной язык программирования для логики приложения и взаимодействия с DOM.
 
-### `npm start`
+## Установка
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Чтобы клонировать репозиторий и настроить проект локально, выполните следующие шаги:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1.Клонируйте репозиторий:
+```
+git clone https://github.com/AnzhelikaLanina/Rebirth.git
+```
+### 2.Перейдите в директорию проекта:
+```
+cd Rebirth
+```
+### 3.Установите зависимости:
+```
+npm install
+```
 
-### `npm test`
+## Использование
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Чтобы запустить сервер разработки и запустить проект локально:
 
-### `npm run build`
+### 1.Запустите сервер разработки:
+```
+npm start
+```
+### 2.Перейдите в директорию проекта:
+Приложение автоматически откроется в вашем браузере по адресу http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Макет
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Макет в Figma](https://www.figma.com/design/kLofcV4nCzerl0UOQRpBI4/Rebirth?node-id=51-1318&node-type=frame&t=wd8Sh0XWqqyYEYEM-0)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Макет был создан в Figma и представляет собой визуальное руководство для разработки проекта. Обратите внимание, что в финальной версии проекта есть некоторые отличия от оригинального макета, которые были согласованы с заказчиком для улучшения пользовательского опыта и функциональности.
 
-### `npm run eject`
+## GitHub Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [Проект на GitHub Pages](https://anzhelikalanina.github.io/Rebirth/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Данный проект развернут на платформе GitHub Pages, что позволяет легко делиться им с пользователями и получать доступ к нему из любого места. Вы можете просмотреть работу приложения в реальном времени, ознакомиться с его функциональностью и дизайном. Все обновления автоматически применяются после каждой новой сборки.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Дальнейшие планы
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Дполнение проекта** недостающими страницами и контентом, включая англоязычную версию сайта для расширения аудитории и удобства пользователей из других стран.
+- **Создание формы для сбора ошибок и багов**, найденных на сервере игры, чтобы облегчить их устранение.
+- **Подключение проекта к базе данных** для хранения текстовой информации и обеспечения ее динамического обновления.
+- **Разработка страницы для администрации**, на которой будет возможность просматривать сообщения об ошибках и багах, отправленные пользователями через форму.
+- **Переписывание проекта на TypeScript** для улучшения типизации и снижения вероятности ошибок.
+- **Оптимизация кода** для повышения производительности и улучшения читаемости.
+- **Интеграция Redux** для управления состоянием приложения, упрощения работы с данными и улучшения архитектуры проекта, особенно в контексте будущей страницы для администрации.
+- **Покрытие проекта тестами** для проверки ключевых функций и компонентов, таких как навигация, фильтрация новостей, работа с метатегами, чтобы гарантировать корректную работу и предотвратить возможные ошибки в будущем.

@@ -58,7 +58,7 @@ const Modal = ({ isOpen, onClose }) => {
     ];
 
     return ReactDOM.createPortal(
-        <div className={styles.overlay} onClick={onClose}>
+        <section className={styles.overlay} onClick={onClose}>
             <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.headerBox}>
                     <h2 className={styles.header}>Файлы для игры</h2>
@@ -104,7 +104,7 @@ const Modal = ({ isOpen, onClose }) => {
                     />
                 </div>
             </div>
-        </div>,
+        </section>,
         document.getElementById('modal-root')
     )
 };
