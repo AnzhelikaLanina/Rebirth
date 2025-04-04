@@ -15,7 +15,7 @@ import scrollIcon from "../../images/tied-scroll.svg";
 import Button from "../button/button";
 import Frame from "../frame/frame";
 
-const TitleSection = ({ id }) => {
+const TitleSection = () => {
     const navigate = useNavigate();
 
     const handleNavigation = (path) => {
@@ -23,7 +23,7 @@ const TitleSection = ({ id }) => {
     };
 
     return (
-        <section className={styles.titleSection} id={id}>
+        <section className={styles.titleSection}>
             <div className={styles.background}></div>
             <div className={styles.shadow}></div>
             <div className={styles.imageContainer}>

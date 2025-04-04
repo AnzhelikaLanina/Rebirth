@@ -6,13 +6,12 @@ import sparksLeftImage from "../../images/sparks-features-left.svg";
 import sparksRightImage from "../../images/sparks-features-right.svg";
 import frameMobileImage from "../../images/features-ornament-mobile.svg";
 import frameImage from "../../images/ornament-features.svg";
-import PropTypes from "prop-types";
 
-const Features = ({ id }) => {
+const Features = () => {
     const isDesktop = useMediaQuery({ query: '(min-width: 1251px)' });
 
     return (
-        <section className={styles.features} id={id}>
+        <section className={styles.features}>
             <h2 className={styles.header}>Уникальные особенности</h2>
             <img
                 src={sparksLeftImage}
@@ -48,10 +47,6 @@ const Features = ({ id }) => {
             </div>
         </section>
     )
-};
-
-Features.propTypes = {
-    id: PropTypes.string.isRequired
 };
 
 export default Features;

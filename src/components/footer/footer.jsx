@@ -28,13 +28,7 @@ const Footer = ({ onOpenModal }) => {
                 </ul>
                 <ul className={styles.links}>
                     <li className={styles.element1}>
-                        <Link to="/wiki" className={styles.link}>Вики</Link>
-                    </li>
-                    <li className={styles.element2}>
-                        <Link to="/patchnote" className={styles.link}>Патчноуты</Link>
-                    </li>
-                    <li className={styles.element3}>
-                        <p onClick={onOpenModal} className={styles.link}>Файлы</p>
+                        <Link to="/wiki" className={styles.link}>О сервере</Link>
                     </li>
                     <li className={styles.element4}>
                         <a href="/" className={styles.link}>Регистрация</a>
@@ -48,7 +42,7 @@ const Footer = ({ onOpenModal }) => {
                 </ul>
                 <div className={styles.description}>
                     <p className={styles.textDescription}>
-                        Copyright &copy; 2024, Rebirth.
+                        Copyright &copy; 2025, Rebirth.
                         Lineage is a trademark owned by NCSoft Corp, all rights reserved.
                     </p>
                     <div className={styles.designerBox}>

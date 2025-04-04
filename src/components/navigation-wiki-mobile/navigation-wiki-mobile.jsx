@@ -20,23 +20,43 @@ import interfaceIcon from "../../images/interface.svg";
 import interfaceIconActive from "../../images/interface-active.svg";
 import NavigationItem from "../navigation-item/navigation-item";
 import WikiMainInfoContent from "../wiki-main-info-content/wiki-main-info-content";
+import WikiGameAssistantContent from "../wiki-game-assistant-content/wiki-game-assistant-content";
+import WikiCostumesContent from "../wiki-costumes-content/wiki-costumes-content";
+import WikiWorldTradeContent from "../wiki-world-trade-content/wiki-world-trade-content";
+import WikiOfflineHuntingContent from "../wiki-offline-hunting-content/wiki-offline-hunting-content";
+import WikiAutoHuntingContent from "../wiki-auto-hunting-content/wiki-auto-hunting-content";
+import WikiRewardsForTasksContent from "../wiki-rewards-for-tasks-content/wiki-rewards-for-tasks-content";
 
 const NavigationWikiMobile = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const items = [
         { imgSrc: mainInfoIcon, activeImgSrc: mainInfoIconActive, header: 'Основная информация' },
-        { imgSrc: featuresIcon, activeImgSrc: featuresIconActive, header: 'Особенности сервера' },
-        { imgSrc: clansIcon, activeImgSrc: clansIconActive, header: 'Кланы и осады' },
-        { imgSrc: raidIcon, activeImgSrc: raidIconActive, header: 'Рейд боссы и эпики' },
-        { imgSrc: olympIcon, activeImgSrc: olympIconActive, header: 'Олимпиада' },
-        { imgSrc: balanceIcon, activeImgSrc: balanceIconActive,header: 'Баланс классов' },
-        { imgSrc: sealsIcon, activeImgSrc: sealsIconActive, header: 'Семь печатей' },
+        { imgSrc: featuresIcon, activeImgSrc: featuresIconActive, header: 'Игровой помощник' },
+        { imgSrc: clansIcon, activeImgSrc: clansIconActive, header: 'Костюмы' },
+        { imgSrc: raidIcon, activeImgSrc: raidIconActive, header: 'Всемирная торговля' },
+        { imgSrc: olympIcon, activeImgSrc: olympIconActive, header: 'Награды за задания' },
+        { imgSrc: balanceIcon, activeImgSrc: balanceIconActive,header: 'Автоохота' },
+        { imgSrc: sealsIcon, activeImgSrc: sealsIconActive, header: 'Offline охота' },
         { imgSrc: craftIcon, activeImgSrc: craftIconActive, header: 'Система крафта' },
         { imgSrc: interfaceIcon, activeImgSrc: interfaceIconActive, header: 'Интерфейс' }
     ];
 
     const handleItemClick = (index) => {
         setActiveIndex(prevIndex => prevIndex === index ? null : index);
+    };
+
+    const components = [
+        <WikiMainInfoContent />,
+        <WikiGameAssistantContent />,
+        <WikiCostumesContent />,
+        <WikiWorldTradeContent />,
+        <WikiRewardsForTasksContent />,
+        <WikiAutoHuntingContent />,
+        <WikiOfflineHuntingContent />,
+    ];
+
+    const renderContent = () => {
+        return components[activeIndex];
     };
 
     return (
@@ -52,7 +72,7 @@ const NavigationWikiMobile = () => {
                         showDetails={false}
                     />
                     {activeIndex === index && (
-                        <WikiMainInfoContent content={index} />
+                        renderContent()
                     )}
                 </div>
             ))}

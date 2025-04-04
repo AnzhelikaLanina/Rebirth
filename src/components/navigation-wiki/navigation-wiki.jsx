@@ -25,12 +25,12 @@ const NavigationWiki = ({ activeIndex, setActiveIndex }) => {
 
     const items = [
         { imgSrc: mainInfoIcon, activeImgSrc: mainInfoIconActive, header: 'Основная информация' },
-        { imgSrc: featuresIcon, activeImgSrc: featuresIconActive, header: 'Особенности сервера' },
-        { imgSrc: clansIcon, activeImgSrc: clansIconActive, header: 'Кланы и осады' },
-        { imgSrc: raidIcon, activeImgSrc: raidIconActive, header: 'Рейд боссы и эпики' },
-        { imgSrc: olympIcon, activeImgSrc: olympIconActive, header: 'Олимпиада' },
-        { imgSrc: balanceIcon, activeImgSrc: balanceIconActive,header: 'Баланс классов' },
-        { imgSrc: sealsIcon, activeImgSrc: sealsIconActive, header: 'Семь печатей' },
+        { imgSrc: featuresIcon, activeImgSrc: featuresIconActive, header: 'Игровой помощник' },
+        { imgSrc: clansIcon, activeImgSrc: clansIconActive, header: 'Костюмы' },
+        { imgSrc: raidIcon, activeImgSrc: raidIconActive, header: 'Всемирная торговля' },
+        { imgSrc: olympIcon, activeImgSrc: olympIconActive, header: 'Награды за задания' },
+        { imgSrc: balanceIcon, activeImgSrc: balanceIconActive,header: 'Автоохота' },
+        { imgSrc: sealsIcon, activeImgSrc: sealsIconActive, header: 'Offline охота' },
         { imgSrc: craftIcon, activeImgSrc: craftIconActive, header: 'Система крафта' },
         { imgSrc: interfaceIcon, activeImgSrc: interfaceIconActive, header: 'Интерфейс' }
     ];

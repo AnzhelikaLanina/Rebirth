@@ -6,9 +6,8 @@ import NewsList from "../news-list/news-list";
 import Button from "../button/button";
 import sparksTopImage from "../../images/sparks-news-top.svg";
 import sparksBottomImage from "../../images/sparks-news-bottom.svg";
-import PropTypes from "prop-types";
 
-const NewsSection = ({ id }) => {
+const NewsSection = () => {
     const navigate = useNavigate();
 
     const handleNavigation = (path) => {
@@ -20,7 +19,7 @@ const NewsSection = ({ id }) => {
     };
 
     return (
-        <section className={styles.news} id={id}>
+        <section className={styles.news}>
             <img
                 src={sparksBottomImage}
                 className={styles.sparksBottom}
@@ -47,10 +46,6 @@ const NewsSection = ({ id }) => {
             />
         </section>
     )
-};
-
-NewsSection.propTypes = {
-    id: PropTypes.string.isRequired
 };
 
 export default NewsSection;

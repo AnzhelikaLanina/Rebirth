@@ -8,8 +8,8 @@ import MainPage from "../../pages/main-page/main-page";
 import NewsPage from "../../pages/news-page/news-page";
 import AllNewsPage from "../../pages/all-news-page/all-news-page";
 import WikiPage from "../../pages/wiki-page/wiki-page";
-import PatchNotePage from "../../pages/patchnote-page/patchnote-page";
 import Modal from "../modal/modal";
+import {PATHS} from "../../utils/constants/paths";
 
 const App = () => {
     const location = useLocation();
@@ -28,11 +28,10 @@ const App = () => {
               <Header onOpenModal={toggleModal} />
               <main className={styles.main}>
                   <Routes>
-                      <Route path="/" element={<MainPage />} />
-                      <Route path="/news" element={<AllNewsPage />} />
-                      <Route path="/news/:id" element={<NewsPage />} />
-                      <Route path="/wiki" element={<WikiPage />} />
-                      <Route path="/patchnote" element={<PatchNotePage />} />
+                      <Route path={PATHS.HOME} element={<MainPage />} />
+                      <Route path={PATHS.NEWS} element={<AllNewsPage />} />
+                      <Route path={PATHS.NEWSPAGE} element={<NewsPage />} />
+                      <Route path={PATHS.WIKI} element={<WikiPage />} />
                   </Routes>
               </main>
               <Footer onOpenModal={toggleModal} />
