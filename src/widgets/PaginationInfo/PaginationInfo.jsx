@@ -90,7 +90,11 @@ export const PaginationInfo = ({ activeIndex, onClick }) => {
           <p
             key={i}
             className={`${styles.text} ${
-              i === 0 ? styles.textLeft : i === labels.length - 1 ? styles.textRight : ''
+              i === 1
+                ? styles.textCenter
+                : i === 0
+                  ? styles.textRight
+                  : styles.textLeft
             }`}
           >
             {text}

@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import styles from './WrapperWikiMobile.module.css';
 import { useWikiNavigationItems } from '../../shared/lib/hooks';
-import { NavigationItem } from '../../shared/ui';
+import { NavigationItem, Spinner } from '../../shared/ui';
 import { renderWikiComponent } from '../../shared/lib/helpers/renderWikiContent';
 
 export const WrapperWikiMobile = () => {
@@ -23,7 +23,7 @@ export const WrapperWikiMobile = () => {
             onClick={() => handleItemClick(index)}
             activeIcon={item.activeIcon}
           />
-          <Suspense fallback={null}>
+          <Suspense fallback={<Spinner />}>
             {activeIndex === index && renderWikiComponent(activeIndex)}
           </Suspense>
         </div>
