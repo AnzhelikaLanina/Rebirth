@@ -1,0 +1,61 @@
+.scrollButton {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition:
+            opacity 0.4s ease-in-out,
+            transform 0.4s ease-in-out,
+            visibility 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: TrajanPro3, Arial, sans-serif;
+    text-transform: uppercase;
+    width: 65px;
+}
+
+.scrollButtonVisible {
+    opacity: 0.8;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.img {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+}
+
+.scrollButton:hover {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .scrollButton {
+        width: 38px;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+        bottom: 1rem;
+        right: 1rem;
+        transition:
+                opacity 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                visibility 0.2s ease-in-out;
+    }
+
+    .img {
+        width: 38px;
+    }
+}
+

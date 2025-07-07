@@ -7,24 +7,29 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "clsx": "^2.1.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "moment": "^2.30.1",
+    "prettier": "^3.4.2",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.26.2",
-    "react-scripts": "5.0.1",
+    "react-spinners": "^0.17.0",
     "swiper": "^11.1.14",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +50,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "@svgr/webpack": "^8.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "gh-pages": "^6.1.1",
+    "vite": "^6.3.5",
+    "vite-plugin-svgr": "^4.3.0"
   }
 }

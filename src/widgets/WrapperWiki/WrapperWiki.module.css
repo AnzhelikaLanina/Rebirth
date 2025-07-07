@@ -1,0 +1,38 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* или просто scale(0.98) */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.wrapper {
+  max-width: 1410px;
+  min-width: 1410px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: stretch;
+  position: relative;
+  z-index: 3;
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contentAppear {
+  animation: fadeIn 0.5s ease-out;
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+}

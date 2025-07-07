@@ -1,0 +1,109 @@
+.item {
+  max-width: 402px;
+  min-width: 402px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: rgba(132, 142, 156, 1);
+}
+
+.textVer {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: rgba(132, 142, 156, 1);
+  display: block;
+  overflow: hidden;
+  max-width: 170px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.textActive {
+  color: rgba(255, 255, 255, 1);
+}
+
+.tag {
+  padding: 8px 10px;
+  max-width: 80px;
+  min-width: 80px;
+  max-height: 36px;
+  min-height: 36px;
+  background: rgba(48, 118, 253, 1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tagsText {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.textNone {
+  text-transform: none;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (max-width: 1450px) {
+  .item {
+    border: 1px solid rgba(44, 59, 94, 1);
+    background: rgba(23, 30, 47, 1);
+    padding: 12px 12px 12px 12px;
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    min-width: 343px;
+    max-width: 343px;
+    gap: 10px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .arrow.rotate {
+    transform: rotate(180deg);
+  }
+
+  .textVer {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 30px;
+  }
+
+  .icon {
+    width: 34px;
+    height: 34px;
+  }
+}

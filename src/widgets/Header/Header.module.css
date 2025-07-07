@@ -1,0 +1,157 @@
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(9, 13, 23, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 1410px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  max-height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.boxRight {
+  min-width: 525px;
+  max-height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  padding-right: 24px;
+  width: 54px;
+  height: auto;
+}
+
+.line {
+  border-left: 1px solid rgba(44, 59, 94, 1);
+  width: 1px;
+  height: 47px;
+}
+
+.onlineIcon {
+  width: auto;
+  height: 82px;
+}
+
+.onlineStatus {
+  padding-right: 24px;
+  max-width: 156px;
+  min-width: 156px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.onlineStatus .onlineIcon {
+  animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 2px #06be6b) drop-shadow(0 0 4px #06be6b);
+  }
+  50% {
+    filter: drop-shadow(0 0 6px #06be6b) drop-shadow(0 0 10px #06be6b);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px #06be6b) drop-shadow(0 0 4px #06be6b);
+  }
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.textBig {
+  margin: 0;
+  padding: 0;
+  color: rgba(32, 241, 41, 1);
+  font-size: 18px;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.textSmall {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: rgba(132, 142, 156, 1);
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1470px) {
+  .logo {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .header {
+    min-width: 376px;
+    max-width: 1264px;
+  }
+
+  .container {
+    padding: 12px 16px;
+    min-width: 343px;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .onlineStatus {
+    min-width: 128px;
+    padding-right: 12px;
+  }
+
+  .logo {
+    padding-left: 16px;
+    padding-right: 12px;
+    width: 48px;
+    object-fit: cover;
+  }
+
+  .textBig {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .iconMenu {
+    padding-right: 16px;
+    width: 21px;
+    height: auto;
+  }
+
+  .iconMenu:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}

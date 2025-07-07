@@ -1,0 +1,93 @@
+.header {
+  margin: 0;
+  padding: 0;
+  font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.015em;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.textColor {
+  color: rgba(255, 214, 68, 1);
+}
+
+.list {
+  margin: 0;
+  padding: 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.element {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  list-style-type: none;
+}
+
+.content {
+  padding: 33px;
+  max-width: 930px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-sizing: border-box;
+  background: rgba(23, 30, 47, 1);
+  border: 1px solid rgba(44, 59, 94, 1);
+  position: relative;
+  z-index: 3;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.table {
+  text-align: left;
+  width: 100%;
+}
+
+.tableElement {
+  padding: 14px 14px 13px;
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  border-bottom: 1px solid rgba(44, 59, 94, 1);
+}
+
+.tableElementHead {
+  background: rgba(44, 59, 94, 1);
+  padding-bottom: 14px;
+}
+
+.tableText {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.image {
+  width: 862px;
+  height: 411px;
+  background-image: url('../../shared/assets/images/backgrounds/building.png');
+  background-size: cover;
+  background-position: top;
+}

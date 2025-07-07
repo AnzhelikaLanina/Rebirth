@@ -1,0 +1,9 @@
+export { default as OrnamentDiscordFrame } from './ornament-discord.svg?react';
+export { default as OrnamentDiscordMobileFrame } from './ornament-discord-mobile.svg?react';
+export { default as OrnamentFeaturesFrame } from './ornament-features.svg?react';
+export { default as OrnamentFeaturesMobileFrame } from './ornament-features-mobile.svg?react';
+export { default as OrnamentNewsLargeFrame } from './ornament-large-news-main.svg?react';
+export { default as OrnamentNewsSmallFrame } from './ornament-news-small-main.svg?react';
+export { default as OrnamentNewsSmallMobileFrame } from './ornament-news-small-mobile.svg?react';
+export { default as ProgressFrame } from './progress.svg?react';
+export { default as ProgressActiveFrame } from './progress-active.svg?react';
