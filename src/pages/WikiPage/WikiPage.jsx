@@ -6,7 +6,8 @@ import ru from '../../shared/assets/locales/ru/ru';
 import en from '../../shared/assets/locales/en/en';
 import { useLanguage } from '../../shared/lib/hooks';
 import { WrapperWikiMobile, WrapperWiki } from '../../widgets';
-import { SparksNewsBottomEffect, SparksNewsTopEffect } from '../../shared/assets/images';
+import sparksNewsBottomEffect from '../../shared/assets/images/effects/sparks-news-bottom.svg?/url';
+import sparksNewsTopEffect from '../../shared/assets/images/effects/sparks-news-top.svg?/url';
 import { MEDIA_BREAKPOINTS } from '../../shared/lib/constants/mediaQueries';
 
 export const WikiPage = () => {
@@ -19,8 +20,8 @@ export const WikiPage = () => {
         <title>Описание сервера Rebirth</title>
       </Helmet>
       <div className="main">
-        <SparksNewsTopEffect className="sparksTop" />
-        <SparksNewsBottomEffect className="sparksBottom" />
+        <img src={sparksNewsTopEffect} className="sparksTop" />
+        <img src={sparksNewsBottomEffect} className="sparksBottom" />
         <div className="patternBox" />
         <div className={styles.headerBox}>
           <h1 className={styles.header}>{data.wiki.header}</h1>

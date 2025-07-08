@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import { PATHS } from '../../shared/lib/constants/paths';
 import { ButtonsHeaderSection, DropDown, HeaderMenu, HeaderMenuMobile } from './ui';
-import { MenuIcon, OnlineIcon, SmallLogo } from '../../shared/assets/images';
+import { MenuIcon } from '../../shared/assets/images';
+import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
+import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url'
 import { MEDIA_BREAKPOINTS } from '../../shared/lib/constants/mediaQueries';
 
 export const Header = () => {
@@ -20,11 +22,11 @@ export const Header = () => {
       <div className={styles.container}>
         <div className={styles.box}>
           <Link to={PATHS.HOME}>
-            <SmallLogo className={styles.logo} />
+            <img src={smallLogo} className={styles.logo} alt="Logo" />
           </Link>
           <div className={styles.line} />
           <div className={styles.onlineStatus}>
-            <OnlineIcon className={styles.onlineIcon} />
+            <img src={onlineIcon} className={styles.onlineIcon} loading="lazy" />
             <div className={styles.description}>
               <p className={styles.textBig}>Online</p>
               <p className={styles.textSmall}>Essence x1</p>

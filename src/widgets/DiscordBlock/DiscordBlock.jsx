@@ -1,14 +1,12 @@
 import styles from './DiscordBlock.module.css';
-import {
-  CirclesLeftEffect,
-  CirclesRightEffect,
-  DarkElfWomanCharacter,
-  DiscordIcon
-} from '../../shared/assets/images';
+import { DiscordIcon } from '../../shared/assets/images';
 import { useLocalizedData } from '../../shared/lib/hooks';
 import { Button } from '../../shared/ui';
 import { openInNewTab } from '../../shared/lib/utils/openInNewTab';
 import { EXTERNAL_LINKS } from '../../shared/lib/constants/externalLinks';
+import darkElfWomanCharacter from '../../shared/assets/images/characters/dark-elf-woman.svg?/url';
+import circlesLeftEffect from '../../shared/assets/images/effects/circles-left.svg?/url';
+import circlesRightEffect from '../../shared/assets/images/effects/circles-right.svg?/url';
 
 export const DiscordBlock = () => {
   const data = useLocalizedData();
@@ -18,10 +16,10 @@ export const DiscordBlock = () => {
       <div className={styles.shadow} />
       <div className={styles.clipContainer}>
         <div className={styles.ellipse} />
-        <CirclesRightEffect className={styles.circlesRight} />
-        <CirclesLeftEffect className={styles.circlesLeft} />
+        <img src={circlesRightEffect} className={styles.circlesRight} alt="" />
+        <img src={circlesLeftEffect} className={styles.circlesLeft} alt="" />
       </div>
-      <DarkElfWomanCharacter className={styles.characterImage} />
+      <img src={darkElfWomanCharacter} className={styles.characterImage} />
       <h2 className={styles.header}>{data.discord.header}</h2>
       <p className={styles.description}>{data.discord.description}</p>
       <Button

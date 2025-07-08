@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import { PATHS } from '../../shared/lib/constants/paths';
 import { useLocalizedData } from '../../shared/lib/hooks';
-import { NameAndLogo, PolygonIcon } from '../../shared/assets/images';
+import nameAndLogo from '../../shared/assets/images/logos/logo-name.svg?/url';
+import polygonIcon from '../../shared/assets/images/icons/polygon.svg?/url';
 import { EXTERNAL_LINKS } from '../../shared/lib/constants/externalLinks';
 import { ExternalLink } from '../../shared/ui';
 
@@ -15,7 +16,7 @@ export const Footer = () => {
       <div className={styles.container}>
         <ul className={styles.info}>
           <li className={styles.box}>
-            <NameAndLogo className={styles.logo} />
+            <img src={nameAndLogo} className={styles.logo} />
             <div className={styles.line} />
             <p className={styles.text}>Lineage 2 Essence x1 Server</p>
           </li>
@@ -71,7 +72,7 @@ export const Footer = () => {
             <p className={styles.textDescription}>
               {layout.design} — UPNOVA
             </p>
-            <PolygonIcon className={styles.arrow} />
+            <img src={polygonIcon} className={styles.arrow} />
           </div>
         </div>
       </div>

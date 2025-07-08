@@ -5,7 +5,8 @@ import { useLocalizedData } from '../../shared/lib/hooks';
 import { Button } from '../../shared/ui';
 import { PATHS } from '../../shared/lib/constants/paths';
 import { NewsLarge, NewsList } from './ui';
-import { SparksNewsBottomEffect, SparksNewsTopEffect } from '../../shared/assets/images';
+import sparksNewsTopEffect from '../../shared/assets/images/effects/sparks-news-top.svg?/url';
+import sparksNewsBottomEffect from '../../shared/assets/images/effects/sparks-news-bottom.svg?/url';
 
 export const NewsSection = () => {
   const navigate = useNavigate();
@@ -13,8 +14,8 @@ export const NewsSection = () => {
 
   return (
     <section className={styles.news}>
-      <SparksNewsBottomEffect className={styles.sparksBottom} />
-      <SparksNewsTopEffect className={styles.sparksTop} />
+      <img src={sparksNewsTopEffect} className={styles.sparksTop} />
+      <img src={sparksNewsBottomEffect} className={styles.sparksBottom} />
       <div className={styles.patternBox} />
       <h2 className={styles.header}>{newsBlock.header}</h2>
       <div className={styles.container}>

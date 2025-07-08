@@ -21,6 +21,14 @@ import clsx from 'clsx';
 export const PaginationInfo = ({ activeIndex, onClick }) => {
   const data = useLocalizedData();
 
+  const labels = [
+    data.pagination.balance,
+    data.pagination.craft,
+    data.pagination.clans,
+    data.pagination.olymp,
+    data.pagination.interface,
+  ];
+
   const images = [
     { normalMain: BalanceIcon, activeMain: BalanceActiveIcon },
     { normalMain: CraftIcon, activeMain: CraftActiveIcon },
@@ -46,13 +54,12 @@ export const PaginationInfo = ({ activeIndex, onClick }) => {
 
   const getLineClass = (i, side) => lines[side]?.[i] || '';
   const getLineIcon = (isActive) => (isActive ? ProgressActiveFrame : ProgressFrame);
-  const labels = [
-    data.pagination.balance,
-    data.pagination.craft,
-    data.pagination.clans,
-    data.pagination.olymp,
-    data.pagination.interface,
-  ];
+
+  const getTextAlignClass = (i) => {
+    if (i === 0) return styles.textRight;
+    if (i === 1) return styles.textCenter;
+    return styles.textLeft;
+  };
 
   return (
     <div className={clsx('swiper-pagination', styles.pagination)}>
@@ -89,13 +96,7 @@ export const PaginationInfo = ({ activeIndex, onClick }) => {
         {labels.map((text, i) => (
           <p
             key={i}
-            className={`${styles.text} ${
-              i === 1
-                ? styles.textCenter
-                : i === 0
-                  ? styles.textRight
-                  : styles.textLeft
-            }`}
+            className={clsx(styles.text, getTextAlignClass(i))}
           >
             {text}
           </p>

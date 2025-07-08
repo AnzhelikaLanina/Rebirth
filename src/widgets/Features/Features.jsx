@@ -6,10 +6,10 @@ import { useLocalizedData } from '../../shared/lib/hooks';
 import {
   OrnamentFeaturesFrame,
   OrnamentFeaturesMobileFrame,
-  SparksFeaturesLeftEffect,
-  SparksFeaturesRightEffect,
 } from '../../shared/assets/images';
 import { MEDIA_BREAKPOINTS } from '../../shared/lib/constants/mediaQueries';
+import sparksFeaturesLeftEffect from '../../shared/assets/images/effects/sparks-features-left.svg?/url';
+import sparksFeaturesRightEffect from '../../shared/assets/images/effects/sparks-features-right.svg?/url';
 
 export const Features = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_LARGE });
@@ -19,8 +19,8 @@ export const Features = () => {
   return (
     <section className={styles.features}>
       <h2 className={styles.header}>{features.uniqueFeatures}</h2>
-      <SparksFeaturesLeftEffect className={styles.sparksLeft} />
-      <SparksFeaturesRightEffect className={styles.sparksRight} />
+      <img src={sparksFeaturesLeftEffect} className={styles.sparksLeft} />
+      <img src={sparksFeaturesRightEffect} className={styles.sparksRight} />
       <div className={styles.patternBox} />
       <div className={styles.ornamentBox}>
         <Ornament className={styles.ornament} />
