@@ -17,9 +17,9 @@ export default defineConfig({
     }),
     viteCompression({ algorithm: 'brotliCompress' }),
     visualizer({
-      open: true, // Откроется браузер с анализом сразу после сборки
+      open: true,
       filename: 'stats.html',
-      template: 'treemap', // или 'sunburst'
+      template: 'treemap',
     }),
   ],
   build: {
