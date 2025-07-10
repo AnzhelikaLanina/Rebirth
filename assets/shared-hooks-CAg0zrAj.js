@@ -1,1 +1,0 @@
-import{r as t}from"./vendor-DJhlJhqM.js";import{L as o}from"./index-Dpgc9qEs.js";import{r,e as s}from"./locales-CkIBrZ2d.js";import{w as e}from"./shared-constants-T24owaQG.js";import{m as i}from"./shared-utils-DY8vdn0M.js";const n=()=>t.useContext(o),m=()=>{const{language:a}=n();return a==="ru"?r:s},L=()=>{const{wiki:a}=m();return i(e,a)};export{m as a,L as b,n as u};
