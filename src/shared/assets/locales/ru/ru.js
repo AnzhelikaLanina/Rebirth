@@ -205,6 +205,20 @@ const ru = {
       olympiad: 'Не Каждому Дано – Одержите 10 побед подряд на Олимпиаде.',
     },
     buyAllLevels: 'Появилась кнопка покупки сразу всех уровней задания за 40 000 монет L.',
+  },
+  metaTagsInfo: {
+    mainPage: {
+      title: "Rebirth",
+      description: "Описание главной страницы"
+    },
+    wikiPage: {
+      title: "Описание сервера Rebirth",
+      description: "Описание вики"
+    },
+    default: {
+      title: "Rebirth",
+      description: "Lineage II Essence сервер"
+    }
   }
 };
 

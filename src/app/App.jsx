@@ -5,6 +5,7 @@ import { PATHS } from '../shared/lib/constants/paths';
 import { MainPage, WikiPage } from '../pages';
 import { Footer, Header, Modal, ScrollToTopButton } from '../widgets';
 import { ScrollToTop } from '../shared/lib/ScrollToTop';
+import {HeadMeta} from "../shared/ui";
 
 export const App = () => {
   const [isOpenModal, setOpenModal] = useState(false);
@@ -15,6 +16,7 @@ export const App = () => {
 
   return (
     <div className={styles.app}>
+      <HeadMeta />
       <ScrollToTop />
       <Header />
       <main className={styles.main}>

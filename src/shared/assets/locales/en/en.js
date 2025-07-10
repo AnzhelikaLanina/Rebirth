@@ -205,6 +205,20 @@ const en = {
       olympiad: 'Not for Everyone – Win 10 consecutive matches in the Olympiad.',
     },
     buyAllLevels: 'A button has appeared to instantly purchase all task levels for 40,000 L Coins.',
+  },
+  metaTagsInfo: {
+    mainPage: {
+      title: "Rebirth",
+      description: "Описание главной страницы"
+    },
+    wikiPage: {
+      title: "About Rebirth server",
+      description: "Описание вики"
+    },
+    default: {
+      title: "Rebirth",
+      description: "Lineage II Essence сервер"
+    }
   }
 };
 

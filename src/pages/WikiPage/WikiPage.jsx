@@ -16,9 +16,6 @@ export const WikiPage = () => {
   const data = language === 'ru' ? ru : en;
   return (
     <>
-      <Helmet>
-        <title>Описание сервера Rebirth</title>
-      </Helmet>
       <div className="main">
         <img src={sparksNewsTopEffect} className="sparksTop" />
         <img src={sparksNewsBottomEffect} className="sparksBottom" />

@@ -26,15 +26,15 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes('node_modules')) {
-            return 'vendor';
-          }
-          if (id.includes('src/widgets')) {
-            return 'widgets';
-          }
-          if (id.includes('src/pages')) {
-            return 'pages';
-          }
+          if (id.includes('node_modules')) return 'vendor';
+
+          if (id.includes('src/pages')) return 'pages';
+          if (id.includes('src/widgets')) return 'widgets';
+
+          if (id.includes('src/shared/assets/images')) return 'images';
+          if (id.includes('src/shared/assets/locales')) return 'locales';
+
+          return 'misc';
         },
       },
     },
