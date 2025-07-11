@@ -1,9 +1,9 @@
 import styles from './ButtonsHeaderSection.module.css';
-import { Button } from '../../../../shared/ui';
-import { useLocalizedData } from '../../../../shared/lib/hooks';
-import { DiscordIcon, UserIcon } from '../../../../shared/assets/images';
-import { openInNewTab } from '../../../../shared/lib/utils/openInNewTab';
-import { EXTERNAL_LINKS } from '../../../../shared/lib/constants/externalLinks';
+import { Button } from '@/shared/ui';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { DiscordIcon, UserIcon } from '@/shared/assets/images';
+import { openInNewTab } from '@/shared/lib/utils/openInNewTab';
+import { EXTERNAL_LINKS } from '@/shared/lib/constants/externalLinks';
 
 export const ButtonsHeaderSection = () => {
   const { layout } = useLocalizedData();

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import styles from './Features.module.css';
-import { SwiperInfo } from '../SwiperInfo';
-import { useLocalizedData } from '../../shared/lib/hooks';
+import { SwiperInfo } from '@/widgets';
+import { useLocalizedData } from '@/shared/lib/hooks';
 import {
   OrnamentFeaturesFrame,
   OrnamentFeaturesMobileFrame,
 } from '../../shared/assets/images';
-import { MEDIA_BREAKPOINTS } from '../../shared/lib/constants/mediaQueries';
+import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/mediaQueries';
 import sparksFeaturesLeftEffect from '../../shared/assets/images/effects/sparks-features-left.svg?/url';
 import sparksFeaturesRightEffect from '../../shared/assets/images/effects/sparks-features-right.svg?/url';
 

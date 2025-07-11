@@ -3,10 +3,10 @@ import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import styles from './SwiperInfo.module.css';
-import { useLocalizedData } from '../../shared/lib/hooks';
+import { useLocalizedData } from '@/shared/lib/hooks';
 import { Slide } from './ui';
-import { PaginationInfo } from '../PaginationInfo';
-import { ArrowLeftIcon, ArrowRightIcon } from '../../shared/assets/images';
+import { PaginationInfo } from '@/widgets';
+import { ArrowLeftIcon, ArrowRightIcon } from '@/shared/assets/images';
 import clsx from 'clsx';
 
 export const SwiperInfo = () => {

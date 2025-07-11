@@ -1,7 +1,7 @@
 import styles from './WikiWorldTradeContent.module.css';
-import { useLocalizedData } from '../../shared/lib/hooks';
-import { mapWithLocalization } from '../../shared/lib/utils/mapWithLocalization';
-import { worldTradeData } from '../../shared/lib/constants/worldTradeData';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
+import { worldTradeData } from '@/shared/lib/constants/worldTradeData';
 
 export const WikiWorldTradeContent = () => {
   const { worldTrade } = useLocalizedData();

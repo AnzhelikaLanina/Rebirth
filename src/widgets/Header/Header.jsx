@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-import { PATHS } from '../../shared/lib/constants/paths';
+import { PATHS } from '@/shared/lib/constants/paths';
 import { ButtonsHeaderSection, DropDown, HeaderMenu, HeaderMenuMobile } from './ui';
-import { MenuIcon } from '../../shared/assets/images';
+import { MenuIcon } from '@/shared/assets/images';
 import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
 import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url'
-import { MEDIA_BREAKPOINTS } from '../../shared/lib/constants/mediaQueries';
+import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/mediaQueries';
 
 export const Header = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_XL });

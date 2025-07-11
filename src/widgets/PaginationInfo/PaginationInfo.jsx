@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './PaginationInfo.module.css';
-import { useLocalizedData } from '../../shared/lib/hooks';
+import { useLocalizedData } from '@/shared/lib/hooks';
 import {
   BalanceActiveIcon,
   BalanceIcon,
@@ -15,7 +15,7 @@ import {
   OlympIcon,
   ProgressActiveFrame,
   ProgressFrame,
-} from '../../shared/assets/images';
+} from '@/shared/assets/images';
 import clsx from 'clsx';
 
 export const PaginationInfo = ({ activeIndex, onClick }) => {

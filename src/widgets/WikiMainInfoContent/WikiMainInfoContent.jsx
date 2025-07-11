@@ -1,8 +1,8 @@
 import styles from './WikiMainInfoContent.module.css';
 import { Table } from '../Table';
-import { useLocalizedData } from '../../shared/lib/hooks';
-import { mainInfoWikiRatesData } from '../../shared/lib/constants/mainInfoWikiRatesData';
-import { mapWithLocalization } from '../../shared/lib/utils/mapWithLocalization';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { mainInfoWikiRatesData } from '@/shared/lib/constants/mainInfoWikiRatesData';
+import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
 
 export const WikiMainInfoContent = () => {
   const { mainInfoWiki } = useLocalizedData();

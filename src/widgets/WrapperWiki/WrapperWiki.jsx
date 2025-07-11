@@ -1,8 +1,8 @@
 import React, { Suspense, useState } from 'react';
 import styles from './WrapperWiki.module.css';
 import { NavigationWiki } from './ui/NavigationWiki';
-import { renderWikiComponent } from '../../shared/lib/helpers/renderWikiContent';
-import { Spinner } from '../../shared/ui';
+import { renderWikiComponent } from '@/shared/lib/helpers/renderWikiContent';
+import { Spinner } from '@/shared/ui';
 
 export const WrapperWiki = () => {
   const [activeIndex, setActiveIndex] = useState(0);

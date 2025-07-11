@@ -1,7 +1,7 @@
 import styles from './ScrollToTopButton.module.css';
 import { useEffect, useState } from 'react';
-import { useLocalizedData } from '../../shared/lib/hooks';
-import ArrowTopIcon from '../../shared/assets/images/icons/arrow-top.png';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import ArrowTopIcon from '@/shared/assets/images/icons/arrow-top.png';
 import clsx from 'clsx';
 
 export const ScrollToTopButton = () => {

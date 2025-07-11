@@ -1,9 +1,9 @@
 import styles from './DiscordBlock.module.css';
-import { DiscordIcon } from '../../shared/assets/images';
-import { useLocalizedData } from '../../shared/lib/hooks';
-import { Button } from '../../shared/ui';
-import { openInNewTab } from '../../shared/lib/utils/openInNewTab';
-import { EXTERNAL_LINKS } from '../../shared/lib/constants/externalLinks';
+import { DiscordIcon } from '@/shared/assets/images';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { Button } from '@/shared/ui';
+import { openInNewTab } from '@/shared/lib/utils/openInNewTab';
+import { EXTERNAL_LINKS } from '@/shared/lib/constants/externalLinks';
 import darkElfWomanCharacter from '../../shared/assets/images/characters/dark-elf-woman.svg?/url';
 import circlesLeftEffect from '../../shared/assets/images/effects/circles-left.svg?/url';
 import circlesRightEffect from '../../shared/assets/images/effects/circles-right.svg?/url';

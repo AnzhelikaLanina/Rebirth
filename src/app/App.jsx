@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './App.module.css';
-import { PATHS } from '../shared/lib/constants/paths';
-import { MainPage, WikiPage } from '../pages';
-import { Footer, Header, Modal, ScrollToTopButton } from '../widgets';
-import { ScrollToTop } from '../shared/lib/ScrollToTop';
-import {HeadMeta} from "../shared/ui";
+import { PATHS } from '@/shared/lib/constants/paths';
+import { MainPage, WikiPage } from '@/pages';
+import { Footer, Header, Modal, ScrollToTopButton } from '@/widgets';
+import { ScrollToTop } from '@/shared/lib/ScrollToTop';
+import {HeadMeta} from "@/shared/ui";
 
 export const App = () => {
   const [isOpenModal, setOpenModal] = useState(false);

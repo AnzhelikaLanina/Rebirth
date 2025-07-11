@@ -1,8 +1,8 @@
 import React, { Suspense, useState } from 'react';
 import styles from './WrapperWikiMobile.module.css';
-import { useWikiNavigationItems } from '../../shared/lib/hooks';
-import { NavigationItem, Spinner } from '../../shared/ui';
-import { renderWikiComponent } from '../../shared/lib/helpers/renderWikiContent';
+import { useWikiNavigationItems } from '@/shared/lib/hooks';
+import { NavigationItem, Spinner } from '@/shared/ui';
+import { renderWikiComponent } from '@/shared/lib/helpers/renderWikiContent';
 
 export const WrapperWikiMobile = () => {
   const [activeIndex, setActiveIndex] = useState(null);

@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './NewsList.module.css';
 import data from '../../../../shared/assets/locales/newsList.json';
 import { useMediaQuery } from 'react-responsive';
-import { OrnamentNewsSmallFrame, OrnamentNewsSmallMobileFrame } from '../../../../shared/assets/images';
+import { OrnamentNewsSmallFrame, OrnamentNewsSmallMobileFrame } from '@/shared/assets/images';
 import { NewsItem } from '../NewsItem';
-import { MEDIA_BREAKPOINTS } from '../../../../shared/lib/constants/mediaQueries';
+import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/mediaQueries';
 
 export const NewsList = () => {
   const sortedNewsList = data.newsList.slice(1, 4);

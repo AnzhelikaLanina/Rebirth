@@ -1,5 +1,5 @@
 import styles from './WikiAutoHuntingContent.module.css';
-import { useLocalizedData } from '../../shared/lib/hooks';
+import { useLocalizedData } from '@/shared/lib/hooks';
 
 export const WikiAutoHuntingContent = () => {
   const { autoHunting } = useLocalizedData();

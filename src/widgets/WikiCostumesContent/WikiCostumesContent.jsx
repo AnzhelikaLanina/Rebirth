@@ -1,7 +1,7 @@
 import styles from './WikiCostumesContent.module.css';
-import { useLocalizedData } from '../../shared/lib/hooks';
-import { mapWithLocalization } from '../../shared/lib/utils/mapWithLocalization';
-import { costumesItemsData } from '../../shared/lib/constants/costumesItemsData';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
+import { costumesItemsData } from '@/shared/lib/constants/costumesItemsData';
 
 export const WikiCostumesContent = () => {
   const { costumes } = useLocalizedData();

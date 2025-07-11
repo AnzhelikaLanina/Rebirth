@@ -1,9 +1,9 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import styles from './DiscordSection.module.css';
-import { DiscordBlock } from '../DiscordBlock';
-import { OrnamentDiscordFrame, OrnamentDiscordMobileFrame } from '../../shared/assets/images';
-import { MEDIA_BREAKPOINTS } from '../../shared/lib/constants/mediaQueries';
+import { DiscordBlock } from '@/widgets';
+import { OrnamentDiscordFrame, OrnamentDiscordMobileFrame } from '@/shared/assets/images';
+import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/mediaQueries';
 
 export const DiscordSection = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_SMALL });

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
-import { PATHS } from '../../shared/lib/constants/paths';
-import { useLocalizedData } from '../../shared/lib/hooks';
+import { PATHS } from '@/shared/lib/constants/paths';
+import { useLocalizedData } from '@/shared/lib/hooks';
 import nameAndLogo from '../../shared/assets/images/logos/logo-name.svg?/url';
 import polygonIcon from '../../shared/assets/images/icons/polygon.svg?/url';
-import { EXTERNAL_LINKS } from '../../shared/lib/constants/externalLinks';
-import { ExternalLink } from '../../shared/ui';
+import { EXTERNAL_LINKS } from '@/shared/lib/constants/externalLinks';
+import { ExternalLink } from '@/shared/ui';
 
 export const Footer = () => {
   const { layout } = useLocalizedData();

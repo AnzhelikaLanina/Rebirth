@@ -1,10 +1,10 @@
 import styles from './WikiRewardsForTasksContent.module.css';
 import bmlcoin from '../../shared/assets/images/items/bm-lcoin.png';
 import { Table } from '../Table';
-import { useLocalizedData } from '../../shared/lib/hooks';
-import { mapWithLocalization } from '../../shared/lib/utils/mapWithLocalization';
-import { systemRewards } from '../../shared/lib/constants/systemRewards';
-import { uniqueTasks } from '../../shared/lib/constants/uniqueTasks';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
+import { systemRewards } from '@/shared/lib/constants/systemRewards';
+import { uniqueTasks } from '@/shared/lib/constants/uniqueTasks';
 
 export const WikiRewardsForTasksContent = () => {
   const { rewardsForTasks } = useLocalizedData();

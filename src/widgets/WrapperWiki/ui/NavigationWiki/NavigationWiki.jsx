@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './NavigationWiki.module.css';
-import { NavigationItem } from '../../../../shared/ui';
-import { useWikiNavigationItems } from '../../../../shared/lib/hooks';
+import { NavigationItem } from '@/shared/ui';
+import { useWikiNavigationItems } from '@/shared/lib/hooks';
 
 export const NavigationWiki = ({ activeIndex, setActiveIndex }) => {
   const items = useWikiNavigationItems();

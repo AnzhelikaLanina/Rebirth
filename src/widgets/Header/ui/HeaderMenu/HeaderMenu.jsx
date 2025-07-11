@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HeaderMenu.module.css';
-import { PATHS } from '../../../../shared/lib/constants/paths';
-import { useLocalizedData } from '../../../../shared/lib/hooks';
-import { EXTERNAL_LINKS } from '../../../../shared/lib/constants/externalLinks';
-import { ExternalLink } from '../../../../shared/ui';
+import { PATHS } from '@/shared/lib/constants/paths';
+import { useLocalizedData } from '@/shared/lib/hooks';
+import { EXTERNAL_LINKS } from '@/shared/lib/constants/externalLinks';
+import { ExternalLink } from '@/shared/ui';
 
 export const HeaderMenu = () => {
   const { layout } = useLocalizedData();

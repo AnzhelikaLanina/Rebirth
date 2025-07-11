@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import React, { useEffect, useState } from 'react';
 import styles from './DropDown.module.css';
-import { useLanguage, useLocalizedData } from '../../../../shared/lib/hooks';
-import { ArrowDownActiveIcon, ArrowDownIcon, FlagEnIcon, FlagRuIcon } from '../../../../shared/assets/images';
+import { useLanguage, useLocalizedData } from '@/shared/lib/hooks';
+import { ArrowDownActiveIcon, ArrowDownIcon, FlagEnIcon, FlagRuIcon } from '@/shared/assets/images';
 import PropTypes from 'prop-types';
 
 export const DropDown = ({ onLanguageChange }) => {
