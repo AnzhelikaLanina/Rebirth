@@ -53,7 +53,8 @@ export const PaginationInfo = ({ activeIndex, onClick }) => {
   };
 
   const getLineClass = (i, side) => lines[side]?.[i] || '';
-  const getLineIcon = (isActive) => (isActive ? ProgressActiveFrame : ProgressFrame);
+  const getLineIcon = (isActive) =>
+    isActive ? ProgressActiveFrame : ProgressFrame;
 
   const getTextAlignClass = (i) => {
     if (i === 0) return styles.textRight;
@@ -77,10 +78,7 @@ export const PaginationInfo = ({ activeIndex, onClick }) => {
                   className={getLineClass(i, 'left')}
                 />
               )}
-              <MainIcon
-                onClick={() => onClick(i)}
-                className={styles.image}
-              />
+              <MainIcon onClick={() => onClick(i)} className={styles.image} />
               {i !== images.length - 1 && (
                 <LineIcon
                   onClick={() => onClick(i)}
@@ -94,10 +92,7 @@ export const PaginationInfo = ({ activeIndex, onClick }) => {
 
       <div className={styles.description}>
         {labels.map((text, i) => (
-          <p
-            key={i}
-            className={clsx(styles.text, getTextAlignClass(i))}
-          >
+          <p key={i} className={clsx(styles.text, getTextAlignClass(i))}>
             {text}
           </p>
         ))}

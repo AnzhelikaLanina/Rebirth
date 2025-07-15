@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import { useMediaQuery } from 'react-responsive';
 import styles from './NavigationItem.module.css';
-import { ArrowDownActiveIcon, ArrowDownIcon } from '../../../shared/assets/images';
+import {
+  ArrowDownActiveIcon,
+  ArrowDownIcon,
+} from '../../../shared/assets/images';
 import clsx from 'clsx';
 import { MEDIA_BREAKPOINTS } from '../../lib/constants/mediaQueries';
 
@@ -12,7 +15,9 @@ export const NavigationItem = ({
   onClick,
   activeIcon,
 }) => {
-  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_MAX_WIDTH});
+  const isDesktop = useMediaQuery({
+    query: MEDIA_BREAKPOINTS.DESKTOP_MAX_WIDTH,
+  });
   const Arrow = isActive ? ArrowDownActiveIcon : ArrowDownIcon;
   const Item = isActive ? activeIcon : icon;
 
@@ -22,8 +27,9 @@ export const NavigationItem = ({
       <h2 className={clsx(styles.text, isActive && styles.textActive)}>
         {header}
       </h2>
-      {isDesktop &&
-        <Arrow className={clsx(styles.arrow, isActive && styles.rotate)} />}
+      {isDesktop && (
+        <Arrow className={clsx(styles.arrow, isActive && styles.rotate)} />
+      )}
     </div>
   );
 };

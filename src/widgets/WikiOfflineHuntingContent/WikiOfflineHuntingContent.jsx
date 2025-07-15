@@ -1,11 +1,14 @@
 import styles from './WikiOfflineHuntingContent.module.css';
 import { useLocalizedData } from '@/shared/lib/hooks';
 import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
-import { offlineHuntingData } from '@/shared/lib/constants/offlineHuntingData';
+import { offlineHuntingData } from '@/shared/lib/constants/wiki/offlineHuntingData';
 
 export const WikiOfflineHuntingContent = () => {
   const { offlineHunting } = useLocalizedData();
-  const localizedItemsOfflineHunting = mapWithLocalization(offlineHuntingData, offlineHunting);
+  const localizedItemsOfflineHunting = mapWithLocalization(
+    offlineHuntingData,
+    offlineHunting,
+  );
 
   return (
     <div className={styles.content}>

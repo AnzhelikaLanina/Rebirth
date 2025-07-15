@@ -9,7 +9,7 @@ import circlesLeftEffect from '../../shared/assets/images/effects/circles-left.s
 import circlesRightEffect from '../../shared/assets/images/effects/circles-right.svg?/url';
 
 export const DiscordBlock = () => {
-  const data = useLocalizedData();
+  const { discord } = useLocalizedData();
 
   return (
     <div className={styles.container}>
@@ -20,11 +20,11 @@ export const DiscordBlock = () => {
         <img src={circlesLeftEffect} className={styles.circlesLeft} alt="" />
       </div>
       <img src={darkElfWomanCharacter} className={styles.characterImage} />
-      <h2 className={styles.header}>{data.discord.header}</h2>
-      <p className={styles.description}>{data.discord.description}</p>
+      <h2 className={styles.header}>{discord.header}</h2>
+      <p className={styles.description}>{discord.description}</p>
       <Button
         className={styles.buttonPink}
-        text={data.discord.community}
+        text={discord.community}
         icon={<DiscordIcon />}
         onClick={() => openInNewTab(EXTERNAL_LINKS.DISCORD)}
       />

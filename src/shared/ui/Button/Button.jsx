@@ -11,18 +11,13 @@ export const Button = ({
   onClick,
   type = 'button',
 }) => {
-
   return (
     <button
       type={type}
       className={clsx(styles.buttonBase, className)}
       onClick={onClick}
     >
-      {icon && (
-        <span className={styles.icon}>
-          {icon}
-        </span>
-      )}
+      {icon && <span className={styles.icon}>{icon}</span>}
       <p className={clsx(styles.text, classNameText)}>{text}</p>
     </button>
   );

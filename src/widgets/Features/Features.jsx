@@ -14,7 +14,9 @@ import sparksFeaturesRightEffect from '../../shared/assets/images/effects/sparks
 export const Features = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_LARGE });
   const { features } = useLocalizedData();
-  const Ornament = isDesktop ? OrnamentFeaturesFrame : OrnamentFeaturesMobileFrame;
+  const Ornament = isDesktop
+    ? OrnamentFeaturesFrame
+    : OrnamentFeaturesMobileFrame;
 
   return (
     <section className={styles.features}>

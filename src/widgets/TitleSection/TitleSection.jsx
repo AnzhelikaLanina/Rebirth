@@ -4,10 +4,7 @@ import styles from './TitleSection.module.css';
 import { useLocalizedData } from '@/shared/lib/hooks';
 import { Frame } from '../Frame';
 import { Button } from '@/shared/ui';
-import {
-  SwordIcon,
-  TiedScrollIcon,
-} from '@/shared/assets/images';
+import { SwordIcon, TiedScrollIcon } from '@/shared/assets/images';
 import bigLogo from '../../shared/assets/images/logos/big-logo.svg?/url';
 import sparksRightEffect from '../../shared/assets/images/effects/sparks-right.svg?/url';
 import sparksLeftEffect from '../../shared/assets/images/effects/sparks-left.svg?/url';

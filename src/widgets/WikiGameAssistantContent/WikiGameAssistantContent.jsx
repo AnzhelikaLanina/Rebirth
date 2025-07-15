@@ -1,8 +1,8 @@
 import styles from './WikiGameAssistantContent.module.css';
 import { Table } from '../Table';
 import { useLocalizedData } from '@/shared/lib/hooks';
-import { temporaryGameItemsData } from '@/shared/lib/constants/temporaryGameItemsData';
-import { supportItemsData } from '@/shared/lib/constants/supportItemsData';
+import { temporaryGameItemsData } from '@/shared/lib/constants/wiki/temporaryGameItemsData';
+import { supportItemsData } from '@/shared/lib/constants/wiki/supportItemsData';
 import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
 
 export const WikiGameAssistantContent = () => {
@@ -11,7 +11,7 @@ export const WikiGameAssistantContent = () => {
 
   const localizedTemporaryItems = mapWithLocalization(
     temporaryGameItemsData,
-    support.temporaryItems
+    support.temporaryItems,
   );
 
   return (

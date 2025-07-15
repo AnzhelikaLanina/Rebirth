@@ -1,5 +1,5 @@
-import worldShop from '../../assets/images/items/world-shop.png';
-import arenda from '../../assets/images/items/arenda.png';
+import worldShop from '../../../assets/images/items/world-shop.png';
+import arenda from '../../../assets/images/items/arenda.png';
 
 export const worldTradeData = [
   {

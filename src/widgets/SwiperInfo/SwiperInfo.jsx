@@ -88,16 +88,19 @@ export const SwiperInfo = () => {
         onClick={() => !isBeginning && swiperRef.current?.swiper.slidePrev()}
         className={styles.btnPrev}
       >
-        <ArrowLeftIcon className={clsx(styles.btnImage, isBeginning && styles.disabled)} />
+        <ArrowLeftIcon
+          className={clsx(styles.btnImage, isBeginning && styles.disabled)}
+        />
       </div>
 
       <div
         onClick={() => !isEnd && swiperRef.current?.swiper.slideNext()}
         className={styles.btnNext}
       >
-        <ArrowRightIcon className={clsx(styles.btnImage, isEnd && styles.disabled)} />
+        <ArrowRightIcon
+          className={clsx(styles.btnImage, isEnd && styles.disabled)}
+        />
       </div>
-
     </div>
   );
 };

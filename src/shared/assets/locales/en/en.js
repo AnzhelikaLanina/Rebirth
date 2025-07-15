@@ -62,43 +62,59 @@ const en = {
     button: 'Details',
   },
   buttonToTop: {
-    backToTop: 'Back to Top'
+    backToTop: 'Back to Top',
   },
   autoHunting: {
     title: 'Auto-hunting',
     description: 'The revamped auto-hunting system includes:',
     fixedZone: 'fixed hunting area option',
-    skipUnfinishedTarget: 'continuous switching to next target without killing the previous one',
+    skipUnfinishedTarget:
+      'continuous switching to next target without killing the previous one',
     disableRaidBosses: 'disable raid bosses as targets during auto hunting',
     toggleOnMove: 'toggle auto hunting on player movement',
     changeTargetDistance: 'adjust distance for near and far targets',
   },
   costumes: {
     header: 'Costumes',
-    appearanceWeaponsArmor: 'Unique appearance changes are available for weapons, armor, hero’s circlet, and cloak.',
-    uiLocation: 'The appearance customization interface is located in the game menu.',
+    appearanceWeaponsArmor:
+      'Unique appearance changes are available for weapons, armor, hero’s circlet, and cloak.',
+    uiLocation:
+      'The appearance customization interface is located in the game menu.',
     boundToAccount: 'Costumes are bound to the account.',
-    costumePrioritySkill: 'A toggleable skill "Costume Priority" has been added to the character’s abilities, allowing the selected costume to be displayed while ignoring appearance changes from transformation skills.',
+    costumePrioritySkill:
+      'A toggleable skill "Costume Priority" has been added to the character’s abilities, allowing the selected costume to be displayed while ignoring appearance changes from transformation skills.',
   },
   support: {
     header: 'Game Assistant',
-    couponIntro: 'Support coupons are given as the character develops, in the starter pack, and in the achievement chest.',
+    couponIntro:
+      'Support coupons are given as the character develops, in the starter pack, and in the achievement chest.',
     personalStorage: 'Personal storage is available.',
     grocer: 'Grocer is available.',
-    sealedNecklace: 'Sealed Guardian Necklace Chest is available for 8kk adena.',
-    ravenDrop: 'There is a small chance to get the new Guardian Raven from the Sealed Guardian Necklace Chest.',
-    vulkanDrop: 'There is a very small chance to get the new Guardian Vulkan from the Sealed Guardian Necklace Chest.',
-    gemCoupon: 'Gems and chests of levels 1 and 2 can be exchanged for a coupon for a selected gem, which in turn can be combined to obtain higher-level gems.',
-    relicExchange: 'Using materials like metal ingot, wood, varnish, metallograph, leather or cloth, you can exchange them for a Fragment of the Aden Relic, obtainable with a 30% chance through Special Creation.',
-    relicToBook: 'The Aden Relic Fragment can be turned into the Aden Researcher’s Journal through Special Creation with a 30% chance, required to upgrade the Aden Laboratory.',
-    soulBead: 'By dismantling some enhanced gear, you can obtain a Greater Amplification Stone, necessary for safe gear upgrades from +5 to +7.',
-    epicScroll: 'By dismantling epic jewelry, there’s a chance to get Scroll of Modify Rare Accessories and Enhanced Scroll of Modify Rare Accessories.',
+    sealedNecklace:
+      'Sealed Guardian Necklace Chest is available for 8kk adena.',
+    ravenDrop:
+      'There is a small chance to get the new Guardian Raven from the Sealed Guardian Necklace Chest.',
+    vulkanDrop:
+      'There is a very small chance to get the new Guardian Vulkan from the Sealed Guardian Necklace Chest.',
+    gemCoupon:
+      'Gems and chests of levels 1 and 2 can be exchanged for a coupon for a selected gem, which in turn can be combined to obtain higher-level gems.',
+    relicExchange:
+      'Using materials like metal ingot, wood, varnish, metallograph, leather or cloth, you can exchange them for a Fragment of the Aden Relic, obtainable with a 30% chance through Special Creation.',
+    relicToBook:
+      'The Aden Relic Fragment can be turned into the Aden Researcher’s Journal through Special Creation with a 30% chance, required to upgrade the Aden Laboratory.',
+    soulBead:
+      'By dismantling some enhanced gear, you can obtain a Greater Amplification Stone, necessary for safe gear upgrades from +5 to +7.',
+    epicScroll:
+      'By dismantling epic jewelry, there’s a chance to get Scroll of Modify Rare Accessories and Enhanced Scroll of Modify Rare Accessories.',
     gearShop: 'NO Grade, D grade, and C grade gear are available for purchase.',
-    enchantStones: 'You can insert and remove Enchant Stones easily via the Game Assistant interface.',
-    soulCrystal: 'Soul Crystal insertion and removal in weapons and armor is available.',
+    enchantStones:
+      'You can insert and remove Enchant Stones easily via the Game Assistant interface.',
+    soulCrystal:
+      'Soul Crystal insertion and removal in weapons and armor is available.',
     itemTransfer: 'Some items can be transferred within the account.',
     temporaryItems: {
-      couponIntro: 'Temporary game items are available in exchange for support coupons.',
+      couponIntro:
+        'Temporary game items are available in exchange for support coupons.',
       venez: 'Diligent Hero’s Circlet – 7 days',
       helmet: 'Mana Helmet of the Diligent Hero – 7 days',
       gloves: 'Gloves of Silence of the Diligent Hero – 7 days',
@@ -128,7 +144,7 @@ const en = {
       brooch: 'Brooch Lv. 4 – 7 days',
       dimensionBracelet: 'Talisman Bracelet Lv. 4 – 7 days',
       agathionBracelet: 'Agathion Summon Bracelet Lv. 4 – 7 days',
-    }
+    },
   },
   mainInfoWiki: {
     header: 'Main Information',
@@ -161,12 +177,14 @@ const en = {
       dropChance: 'Drop chance x2 +20%',
       spoilCount: 'Spoil amount x1 +20%',
       spoilChance: 'Spoil chance x2 +20%',
-    }
+    },
   },
   offlineHunting: {
     header: 'Offline Hunting',
-    activation: 'To activate, the character must have the Offline Hunting Rune in their inventory and enter the .offline command in chat.',
-    locations: 'Offline Hunting is available in all locations, including Special Hunting Zones.',
+    activation:
+      'To activate, the character must have the Offline Hunting Rune in their inventory and enter the .offline command in chat.',
+    locations:
+      'Offline Hunting is available in all locations, including Special Hunting Zones.',
     limit: 'Limit — one window per HWID.',
     store: 'The rune is available for Einhasad Coins in the store.',
   },
@@ -174,7 +192,8 @@ const en = {
     header: 'World Trade',
     currency: 'The currency of world trade is Einhasad Coin and Adena.',
     equipmentTrade: 'Equipment can be bought and sold.',
-    rental: 'You can now rent or lease weapons and gear through the World Trade interface using Einhasad Coins.',
+    rental:
+      'You can now rent or lease weapons and gear through the World Trade interface using Einhasad Coins.',
   },
   rewardsForTasks: {
     header: 'Rewards for Tasks',
@@ -197,29 +216,35 @@ const en = {
     },
     uniqueTasks: {
       intro: 'New unique tasks.',
-      zaken: 'Pirate King – Participate in the Zaken battle, deal damage and stay within 2000 range when the boss is killed.',
-      orfen: 'Forty Arms – Participate in the Orfen battle, deal damage and stay within 2000 range when the boss is killed.',
+      zaken:
+        'Pirate King – Participate in the Zaken battle, deal damage and stay within 2000 range when the boss is killed.',
+      orfen:
+        'Forty Arms – Participate in the Orfen battle, deal damage and stay within 2000 range when the boss is killed.',
       ant: 'Centipede – Participate in the Queen Ant battle, deal damage and stay within 2000 range when the boss is killed.',
-      baium: 'Cursed Emperor – Participate in the Baium battle, deal damage and stay within 2000 range when the boss is killed.',
-      phantom: 'Phantom Battles – Defeat 100 phantom mobs summoned by Phantom Mask or Blessed Phantom Mask.',
-      olympiad: 'Not for Everyone – Win 10 consecutive matches in the Olympiad.',
+      baium:
+        'Cursed Emperor – Participate in the Baium battle, deal damage and stay within 2000 range when the boss is killed.',
+      phantom:
+        'Phantom Battles – Defeat 100 phantom mobs summoned by Phantom Mask or Blessed Phantom Mask.',
+      olympiad:
+        'Not for Everyone – Win 10 consecutive matches in the Olympiad.',
     },
-    buyAllLevels: 'A button has appeared to instantly purchase all task levels for 40,000 L Coins.',
+    buyAllLevels:
+      'A button has appeared to instantly purchase all task levels for 40,000 L Coins.',
   },
   metaTagsInfo: {
     mainPage: {
-      title: "Rebirth",
-      description: "Описание главной страницы"
+      title: 'Rebirth',
+      description: 'Описание главной страницы',
     },
     wikiPage: {
-      title: "About Rebirth server",
-      description: "Описание вики"
+      title: 'About Rebirth server',
+      description: 'Описание вики',
     },
     default: {
-      title: "Rebirth",
-      description: "Lineage II Essence сервер"
-    }
-  }
+      title: 'Rebirth',
+      description: 'Lineage II Essence сервер',
+    },
+  },
 };
 
 export default en;

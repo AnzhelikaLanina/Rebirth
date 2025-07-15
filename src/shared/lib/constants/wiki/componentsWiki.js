@@ -6,7 +6,7 @@ import {
   WikiOfflineHuntingContentLazy,
   WikiRewardsForTasksContentLazy,
   WikiWorldTradeContentLazy,
-} from '../lazy/lazy';
+} from '../../lazy/lazy';
 
 export const componentsWiki = [
   WikiMainInfoContentLazy,

@@ -1,5 +1,5 @@
-import costumeIcon from '../../assets/images/items/costume.png';
-import sAssassinArmorChange from '../../assets/images/items/s-assassin-armor-change.png';
+import costumeIcon from '../../../assets/images/items/costume.png';
+import sAssassinArmorChange from '../../../assets/images/items/s-assassin-armor-change.png';
 
 export const costumesItemsData = [
   {

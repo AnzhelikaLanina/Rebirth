@@ -3,13 +3,19 @@ import bmlcoin from '../../shared/assets/images/items/bm-lcoin.png';
 import { Table } from '../Table';
 import { useLocalizedData } from '@/shared/lib/hooks';
 import { mapWithLocalization } from '@/shared/lib/utils/mapWithLocalization';
-import { systemRewards } from '@/shared/lib/constants/systemRewards';
-import { uniqueTasks } from '@/shared/lib/constants/uniqueTasks';
+import { systemRewards } from '@/shared/lib/constants/wiki/systemRewards';
+import { uniqueTasks } from '@/shared/lib/constants/wiki/uniqueTasks';
 
 export const WikiRewardsForTasksContent = () => {
   const { rewardsForTasks } = useLocalizedData();
-  const itemsRewards = mapWithLocalization(systemRewards, rewardsForTasks.systemRewards);
-  const itemsTasks = mapWithLocalization(uniqueTasks, rewardsForTasks.uniqueTasks);
+  const itemsRewards = mapWithLocalization(
+    systemRewards,
+    rewardsForTasks.systemRewards,
+  );
+  const itemsTasks = mapWithLocalization(
+    uniqueTasks,
+    rewardsForTasks.uniqueTasks,
+  );
 
   return (
     <div className={styles.content}>

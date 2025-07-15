@@ -3,10 +3,15 @@ import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import { PATHS } from '@/shared/lib/constants/paths';
-import { ButtonsHeaderSection, DropDown, HeaderMenu, HeaderMenuMobile } from './ui';
+import {
+  ButtonsHeaderSection,
+  DropDown,
+  HeaderMenu,
+  HeaderMenuMobile,
+} from './ui';
 import { MenuIcon } from '@/shared/assets/images';
 import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
-import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url'
+import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url';
 import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/mediaQueries';
 
 export const Header = () => {
@@ -26,7 +31,11 @@ export const Header = () => {
           </Link>
           <div className={styles.line} />
           <div className={styles.onlineStatus}>
-            <img src={onlineIcon} className={styles.onlineIcon} loading="lazy" />
+            <img
+              src={onlineIcon}
+              className={styles.onlineIcon}
+              loading="lazy"
+            />
             <div className={styles.description}>
               <p className={styles.textBig}>Online</p>
               <p className={styles.textSmall}>Essence x1</p>
@@ -42,14 +51,8 @@ export const Header = () => {
           </div>
         ) : (
           <>
-            <MenuIcon
-              className={styles.iconMenu}
-              onClick={toggleMenu}
-            />
-            <HeaderMenuMobile
-              toggleMenu={toggleMenu}
-              menuOpen={menuOpen}
-            />
+            <MenuIcon className={styles.iconMenu} onClick={toggleMenu} />
+            <HeaderMenuMobile toggleMenu={toggleMenu} menuOpen={menuOpen} />
           </>
         )}
       </div>

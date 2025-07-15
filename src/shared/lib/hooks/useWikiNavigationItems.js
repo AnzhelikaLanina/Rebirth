@@ -1,5 +1,5 @@
 import { useLocalizedData } from './useLocalizedData';
-import { wikiNavData } from '../constants/wikiNavData';
+import { wikiNavData } from '../constants/wiki/wikiNavData';
 import { mapWithLocalization } from '../utils/mapWithLocalization';
 
 export const useWikiNavigationItems = () => {

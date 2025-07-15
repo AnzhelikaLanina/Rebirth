@@ -1,4 +1,4 @@
-import offlineRune from '../../assets/images/items/offline-rune.png';
+import offlineRune from '../../../assets/images/items/offline-rune.png';
 
 export const offlineHuntingData = [
   {

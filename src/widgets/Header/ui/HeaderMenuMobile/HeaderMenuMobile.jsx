@@ -22,11 +22,13 @@ export const HeaderMenuMobile = ({ toggleMenu, menuOpen }) => {
     <nav className={`${styles.nav} ${menuOpen && styles.open}`}>
       <CloseIcon onClick={toggleMenu} className={styles.closeIcon} />
       <div className={styles.box} onClick={handleNavClick}>
-        <Link className={styles.link} to={PATHS.WIKI}>{layout.server}</Link>
+        <Link className={styles.link} to={PATHS.WIKI}>
+          {layout.server}
+        </Link>
         <ExternalLink
-            href={EXTERNAL_LINKS.DISCORD}
-            children={layout.files}
-            className={styles.link}
+          href={EXTERNAL_LINKS.DISCORD}
+          children={layout.files}
+          className={styles.link}
         />
         <ExternalLink
           href={EXTERNAL_LINKS.REGISTRATION}

@@ -6,10 +6,9 @@ import clsx from 'clsx';
 
 export const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { buttonToTop} = useLocalizedData();
+  const { buttonToTop } = useLocalizedData();
 
   useEffect(() => {
-
     const handleScroll = () => {
       window.requestAnimationFrame(() => {
         setIsVisible(window.scrollY > 200);
@@ -21,12 +20,18 @@ export const ScrollToTopButton = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  };
 
   return (
-    <div className={clsx(styles.scrollButton, isVisible && styles.scrollButtonVisible)} onClick={scrollToTop}>
+    <div
+      className={clsx(
+        styles.scrollButton,
+        isVisible && styles.scrollButtonVisible,
+      )}
+      onClick={scrollToTop}
+    >
       <img src={ArrowTopIcon} alt="Arrow Top" className={styles.img} />
       <span>{buttonToTop.backToTop}</span>
     </div>
-  )
-}
+  );
+};

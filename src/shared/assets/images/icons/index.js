@@ -22,7 +22,6 @@ export { default as MainInfoIcon } from './main-info-icon.svg?react';
 export { default as MainInfoActiveIcon } from './main-info-icon-active.svg?react';
 export { default as OlympIcon } from './olymp.svg?react';
 export { default as OlympActiveIcon } from './olymp-active.svg?react';
-export { default as PlusIcon } from './plus.svg?react';
 export { default as RaidIcon } from './raid-icon.svg?react';
 export { default as RaidActiveIcon } from './raid-icon-active.svg?react';
 export { default as SealsIcon } from './seals-icon.svg?react';

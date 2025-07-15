@@ -1,17 +1,17 @@
-import venez from '../../assets/images/items/venez.png';
-import helmet from '../../assets/images/items/helmet.png';
-import gloves from '../../assets/images/items/gloves.png';
-import boots from '../../assets/images/items/boots.png';
-import aq from '../../assets/images/items/aq.png';
-import baiumRing from '../../assets/images/items/baium-ring.png';
-import ringOfCore from '../../assets/images/items/ring-of-core.png';
-import earringOfZaken from '../../assets/images/items/earring-of-zaken.png';
-import earringOfOrfen from '../../assets/images/items/earring-of-orfen.png';
-import necklaceOfFrintessa from '../../assets/images/items/necklace-of-frintessa.png';
-import dragonBelt from '../../assets/images/items/dragon-belt.png';
-import shieldOfRevenge from '../../assets/images/items/shield-of-revenge.png';
-import elos from '../../assets/images/items/elos.png';
-import etcMissionPoint from '../../assets/images/items/etc-mission-point.png';
+import venez from '../../../assets/images/items/venez.png';
+import helmet from '../../../assets/images/items/helmet.png';
+import gloves from '../../../assets/images/items/gloves.png';
+import boots from '../../../assets/images/items/boots.png';
+import aq from '../../../assets/images/items/aq.png';
+import baiumRing from '../../../assets/images/items/baium-ring.png';
+import ringOfCore from '../../../assets/images/items/ring-of-core.png';
+import earringOfZaken from '../../../assets/images/items/earring-of-zaken.png';
+import earringOfOrfen from '../../../assets/images/items/earring-of-orfen.png';
+import necklaceOfFrintessa from '../../../assets/images/items/necklace-of-frintessa.png';
+import dragonBelt from '../../../assets/images/items/dragon-belt.png';
+import shieldOfRevenge from '../../../assets/images/items/shield-of-revenge.png';
+import elos from '../../../assets/images/items/elos.png';
+import etcMissionPoint from '../../../assets/images/items/etc-mission-point.png';
 
 export const systemRewards = [
   {

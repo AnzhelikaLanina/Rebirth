@@ -1,10 +1,10 @@
-import earringOfZaken from '../../assets/images/items/earring-of-zaken.png';
-import earringOfOrfen from '../../assets/images/items/earring-of-orfen.png';
-import etcMissionPoint from '../../assets/images/items/etc-mission-point.png';
-import accessoryRingOfQueenAnt from '../../assets/images/items/accessory-ring-of-queen-ant.png';
-import baiumTalismanNew from '../../assets/images/items/baium-talisman-new.png';
-import blessMaskOfPhantom from '../../assets/images/items/bless-mask-of-phantom.png';
-import etcEvKalieToken from '../../assets/images/items/etc-ev-kalie-token.png';
+import earringOfZaken from '../../../assets/images/items/earring-of-zaken.png';
+import earringOfOrfen from '../../../assets/images/items/earring-of-orfen.png';
+import etcMissionPoint from '../../../assets/images/items/etc-mission-point.png';
+import accessoryRingOfQueenAnt from '../../../assets/images/items/accessory-ring-of-queen-ant.png';
+import baiumTalismanNew from '../../../assets/images/items/baium-talisman-new.png';
+import blessMaskOfPhantom from '../../../assets/images/items/bless-mask-of-phantom.png';
+import etcEvKalieToken from '../../../assets/images/items/etc-ev-kalie-token.png';
 
 export const uniqueTasks = [
   {

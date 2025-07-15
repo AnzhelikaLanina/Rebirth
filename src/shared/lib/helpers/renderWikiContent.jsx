@@ -1,4 +1,4 @@
-import { componentsWiki } from '../constants/componentsWiki';
+import { componentsWiki } from '../constants/wiki/componentsWiki';
 
 export const renderWikiComponent = (index) => {
   const Component = componentsWiki[index];

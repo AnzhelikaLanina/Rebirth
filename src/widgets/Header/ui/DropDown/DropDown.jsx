@@ -2,7 +2,12 @@ import clsx from 'clsx';
 import React, { useEffect, useState } from 'react';
 import styles from './DropDown.module.css';
 import { useLanguage, useLocalizedData } from '@/shared/lib/hooks';
-import { ArrowDownActiveIcon, ArrowDownIcon, FlagEnIcon, FlagRuIcon } from '@/shared/assets/images';
+import {
+  ArrowDownActiveIcon,
+  ArrowDownIcon,
+  FlagEnIcon,
+  FlagRuIcon,
+} from '@/shared/assets/images';
 import PropTypes from 'prop-types';
 
 export const DropDown = ({ onLanguageChange }) => {
@@ -46,16 +51,15 @@ export const DropDown = ({ onLanguageChange }) => {
         <p className={clsx(styles.header, isOpen && styles.headerActive)}>
           {layout.language}
         </p>
-        <Arrow className={clsx(styles.dropDownArrow, isOpen && styles.rotate)} />
+        <Arrow
+          className={clsx(styles.dropDownArrow, isOpen && styles.rotate)}
+        />
       </div>
       <div className={clsx(styles.dropDownContainer, isOpen && styles.show)}>
         <div className={styles.dropDownLine} />
         <div className={styles.dropDownBoxFlags}>
           <OppositeFlag className={styles.imageFlag} />
-          <p
-            className={styles.header}
-            onClick={handleLanguageChange}
-          >
+          <p className={styles.header} onClick={handleLanguageChange}>
             {layout.changeLanguage}
           </p>
         </div>

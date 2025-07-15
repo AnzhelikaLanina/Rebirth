@@ -1,26 +1,24 @@
-import '../page.css';
 import { useMediaQuery } from 'react-responsive';
 import styles from './WikiPage.module.css';
-import ru from '@/shared/assets/locales/ru/ru';
-import en from '@/shared/assets/locales/en/en';
-import { useLanguage } from '@/shared/lib/hooks';
+import { useLocalizedData } from '@/shared/lib/hooks';
 import { WrapperWikiMobile, WrapperWiki } from '@/widgets';
 import sparksNewsBottomEffect from '../../shared/assets/images/effects/sparks-news-bottom.svg?/url';
 import sparksNewsTopEffect from '../../shared/assets/images/effects/sparks-news-top.svg?/url';
 import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/mediaQueries';
 
 export const WikiPage = () => {
-  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_MAX_WIDTH });
-  const { language } = useLanguage();
-  const data = language === 'ru' ? ru : en;
+  const isDesktop = useMediaQuery({
+    query: MEDIA_BREAKPOINTS.DESKTOP_MAX_WIDTH,
+  });
+  const { wiki } = useLocalizedData();
   return (
     <>
-      <div className="main">
-        <img src={sparksNewsTopEffect} className="sparksTop" />
-        <img src={sparksNewsBottomEffect} className="sparksBottom" />
-        <div className="patternBox" />
+      <div className={styles.page}>
+        <img src={sparksNewsTopEffect} className={styles.sparksTop} />
+        <img src={sparksNewsBottomEffect} className={styles.sparksBottom} />
+        <div className={styles.patternBox} />
         <div className={styles.headerBox}>
-          <h1 className={styles.header}>{data.wiki.header}</h1>
+          <h1 className={styles.header}>{wiki.header}</h1>
         </div>
         {isDesktop ? <WrapperWikiMobile /> : <WrapperWiki />}
       </div>

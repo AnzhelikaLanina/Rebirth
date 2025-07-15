@@ -69,9 +69,7 @@ export const Footer = () => {
             NCSoft Corp, all rights reserved.
           </p>
           <div className={styles.designerBox}>
-            <p className={styles.textDescription}>
-              {layout.design} — UPNOVA
-            </p>
+            <p className={styles.textDescription}>{layout.design} — UPNOVA</p>
             <img src={polygonIcon} className={styles.arrow} />
           </div>
         </div>

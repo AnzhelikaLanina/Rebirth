@@ -1,8 +1,8 @@
-import exp from '../../assets/images/items/exp.png';
-import sp from '../../assets/images/items/sp.png';
-import adena from '../../assets/images/items/adena.png';
-import drop from '../../assets/images/items/drop.png';
-import spoil from '../../assets/images/items/spoil.png';
+import exp from '../../../assets/images/items/exp.png';
+import sp from '../../../assets/images/items/sp.png';
+import adena from '../../../assets/images/items/adena.png';
+import drop from '../../../assets/images/items/drop.png';
+import spoil from '../../../assets/images/items/spoil.png';
 
 export const mainInfoWikiRatesData = [
   { key: 'header', header: true, img: false },

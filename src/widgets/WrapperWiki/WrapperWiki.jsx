@@ -21,6 +21,5 @@ export const WrapperWiki = () => {
         </div>
       </Suspense>
     </div>
-
   );
 };

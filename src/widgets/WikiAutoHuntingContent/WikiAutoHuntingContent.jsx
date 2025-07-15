@@ -18,9 +18,7 @@ export const WikiAutoHuntingContent = () => {
         <h3 className={styles.header}>{autoHunting.title}</h3>
         <div className={styles.image} />
       </div>
-      <p className={styles.text}>
-        {autoHunting.description}
-      </p>
+      <p className={styles.text}>{autoHunting.description}</p>
       {list.map((text, index) => (
         <div className={styles.box} key={index}>
           <p className={styles.text}>&bull; {text}</p>
