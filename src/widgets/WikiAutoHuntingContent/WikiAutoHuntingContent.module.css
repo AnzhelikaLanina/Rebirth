@@ -50,8 +50,34 @@
   gap: 15px;
 }
 
-.img {
-  width: 26px;
-  height: 26px;
-  object-fit: cover;
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+  .content {
+    padding: 16px 14px;
+    max-width: 343px;
+  }
+
+  .list {
+    gap: 14px;
+  }
+
+  .header {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .image {
+    width: 315px;
+    height: 243px;
+  }
 }

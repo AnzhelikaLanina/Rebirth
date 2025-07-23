@@ -55,3 +55,29 @@
   height: 26px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1450px) {
+  .content {
+    padding: 16px 14px;
+    max-width: 343px;
+  }
+
+  .image {
+    width: 315px;
+    height: 243px;
+  }
+
+  .header {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .box {
+    align-items: center;
+  }
+}

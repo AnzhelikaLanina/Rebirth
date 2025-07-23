@@ -7,7 +7,7 @@ export const TableItem = ({ header, img, src, alt, text }) => {
       className={clsx(styles.tableElement, header && styles.tableElementHead)}
     >
       {img && <img src={src} className={styles.img} alt={alt} />}
-      <p className={styles.tableText}>{text}</p>
+      <p className={clsx(styles.tableText, header && styles.tableTextHead)}>{text}</p>
     </div>
   );
 };

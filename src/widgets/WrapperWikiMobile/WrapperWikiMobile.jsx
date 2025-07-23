@@ -24,10 +24,12 @@ export const WrapperWikiMobile = () => {
             activeIcon={item.activeIcon}
           />
           <Suspense fallback={<Spinner />}>
-            {activeIndex === index && renderWikiComponent(activeIndex)}
+            <div className={styles.contentAppear}>
+              {activeIndex === index && renderWikiComponent(activeIndex)}
+            </div>
           </Suspense>
         </div>
-      ))}
+        ))}
     </div>
   );
 };

@@ -16,12 +16,27 @@
   padding: 0;
   font-family: OpenSans, Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 26px;
+}
+
+.tableTextHead {
+  font-weight: 600;
 }
 
 .img {
   width: 26px;
   height: 26px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1450px) {
+  .tableElement {
+    align-items: center;
+  }
+
+  .tableText {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
