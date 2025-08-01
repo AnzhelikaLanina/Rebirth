@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', 'build'],
@@ -18,7 +19,13 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react', 'react-refresh', 'simple-import-sort'],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    'react',
+    'react-refresh',
+    'simple-import-sort',
+    '@typescript-eslint',
+  ],
   settings: {
     react: {
       version: 'detect',
@@ -29,12 +36,13 @@ module.exports = {
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': 'warn',
     'react-refresh/only-export-components': 'off',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
     'no-console': 'warn',
   },
   overrides: [
     {
-      files: ['*.js', '*.jsx'],
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       rules: {
         'simple-import-sort/imports': [
           'warn',
