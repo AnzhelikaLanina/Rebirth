@@ -24,7 +24,13 @@ export const HeaderMenuMobile = ({
 
   return (
     <nav className={`${styles.nav} ${menuOpen && styles.open}`}>
-      <CloseIcon onClick={toggleMenu} className={styles.closeIcon} />
+      <button
+        className={styles.buttonClose}
+        onClick={toggleMenu}
+        aria-label="Закрыть меню"
+      >
+        <CloseIcon className={styles.closeIcon} />
+      </button>
       <div className={styles.box} onClick={handleNavClick}>
         <Link className={styles.link} to={PATHS.WIKI}>
           {layout.server}
