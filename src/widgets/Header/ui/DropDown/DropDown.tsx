@@ -54,7 +54,9 @@ export const DropDown = ({ onLanguageChange }: DropdownProps) => {
   return (
     <div className={styles.dropDown} onClick={toggleDropdown}>
       <div className={styles.box}>
-        <Flag className={styles.imageFlag} />
+        <div className={styles.image}>
+          <Flag className={styles.imageFlag} />
+        </div>
         <p className={clsx(styles.header, isOpen && styles.headerActive)}>
           {layout.language}
         </p>
@@ -65,7 +67,9 @@ export const DropDown = ({ onLanguageChange }: DropdownProps) => {
       <div className={clsx(styles.dropDownContainer, isOpen && styles.show)}>
         <div className={styles.dropDownLine} />
         <div className={styles.dropDownBoxFlags}>
-          <OppositeFlag className={styles.imageFlag} />
+          <div className={styles.image}>
+            <OppositeFlag className={styles.imageFlag} />
+          </div>
           <p className={styles.header} onClick={handleLanguageChange}>
             {layout.changeLanguage}
           </p>
