@@ -29,6 +29,7 @@ export const TitleSection = () => {
         <img src={elfWomanCharacter} className={styles.imageElfWoman} />
         <img src={humanWarCharacter} className={styles.imageWarHuman} />
         <img src={circlesMainEffect} className={styles.circles} />
+        <Frame />
       </div>
       <img src={sparksLeftEffect} className={styles.sparksLeft} />
       <img src={sparksRightEffect} className={styles.sparksRight} />
@@ -36,7 +37,6 @@ export const TitleSection = () => {
         <h1 className={styles.header}>Rebirth</h1>
         <h2 className={styles.subheader}>{mainInfo.subheader}</h2>
         <p className={styles.description}>{mainInfo.description}</p>
-        <Frame />
         <div className={styles.buttons}>
           <Button
             className={styles.buttonBlue}
