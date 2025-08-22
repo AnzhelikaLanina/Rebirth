@@ -12,24 +12,23 @@ import variationMineralHighBm from '../../../assets/images/items/variation-miner
 import adenRuneHigh from '../../../assets/images/items/aden-rune-high.png';
 import coin from '../../../assets/images/items/coin.png';
 
-export const supportItemsData = [
-  { key: 'couponIntro', src: coupon, alt: 'coupon' },
-  { key: 'personalStorage', src: coupon, alt: 'coupon' },
-  { key: 'grocer', src: coupon, alt: 'coupon' },
-  { key: 'sealedNecklace', src: pet, alt: 'pet' },
-  { key: 'ravenDrop', src: ravenContract, alt: 'raven contract' },
-  { key: 'vulkanDrop', src: vulkanContract, alt: 'vulkan contract' },
-  { key: 'gemCoupon', src: couponStone, alt: 'coupon stone' },
-  { key: 'relicExchange', src: essenceOfGiant, alt: 'essence of giant' },
-  { key: 'relicToBook', src: bmHeroBookMineral, alt: 'bm hero book mineral' },
-  { key: 'soulBead', src: soulBead, alt: 'soul bead' },
-  { key: 'epicScroll', src: scrollEpic, alt: 'scroll epic' },
-  { key: 'gearShop', src: weaponSchlaeger, alt: 'weapon schlaeger' },
+export const gameAssistantData = [
+  { key: 'personalStorageAvailable', src: coupon, alt: 'coupon' },
+  { key: 'grocerAvailable', src: coupon, alt: 'coupon' },
+  { key: 'sealedNecklaceChest', src: pet, alt: 'pet' },
+  { key: 'ravenAndVulkanChance', src: ravenContract, alt: 'raven contract' },
+  { key: 'glassiaChance', src: vulkanContract, alt: 'vulkan contract' },
+  { key: 'gemsAndChestsExchange', src: couponStone, alt: 'coupon stone' },
+  { key: 'relicFragmentExchange', src: essenceOfGiant, alt: 'essence of giant' },
+  { key: 'relicFragmentToDiary', src: bmHeroBookMineral, alt: 'bm hero book mineral' },
+  { key: 'soulBeadExchange', src: soulBead, alt: 'soul bead' },
+  { key: 'epicJewelryScroll', src: scrollEpic, alt: 'scroll epic' },
+  { key: 'equipmentSale', src: weaponSchlaeger, alt: 'weapon schlaeger' },
   {
-    key: 'enchantStones',
+    key: 'enchantmentStoneInterface',
     src: variationMineralHighBm,
     alt: 'variation mineral high bm',
   },
-  { key: 'soulCrystal', src: adenRuneHigh, alt: 'aden rune high' },
-  { key: 'itemTransfer', src: coin, alt: 'coin' },
+  { key: 'soulCrystalInsertion', src: adenRuneHigh, alt: 'aden rune high' },
+  { key: 'itemTransferBlocked', src: coin, alt: 'coin' },
 ];

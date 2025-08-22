@@ -1,7 +1,7 @@
 .slide {
   margin: 0 auto;
   width: 100%;
-  max-width: 669px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -11,7 +11,7 @@
 .header {
   margin: 0;
   font-size: 34px;
-  max-width: 669px;
+  max-width: 800px;
   padding: 0 0 12px;
   font-family: TrajanPro3, Arial, sans-serif;
   font-weight: 600;
@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  max-width: 669px;
+  max-width: 800px;
   font-family: OpenSans, Arial, sans-serif;
   font-weight: 400;
   line-height: 26px;
@@ -45,5 +45,8 @@
     max-width: 283px;
     font-size: 16px;
     line-height: 22px;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
   }
 }

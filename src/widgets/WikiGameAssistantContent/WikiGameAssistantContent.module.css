@@ -39,9 +39,9 @@
 .image {
   width: 862px;
   height: 411px;
-  background-image: url('../../shared/assets/images/backgrounds/shop.png');
+  background-image: url('../../shared/assets/images/backgrounds/human.png');
   background-size: cover;
-  background-position: 50% 20%;
+  background-position: top;
 }
 
 .box {

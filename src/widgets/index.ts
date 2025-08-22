@@ -19,3 +19,4 @@ export * from './WrapperWiki';
 export * from './Table';
 export * from './ScrollToTopButton';
 export * from './NewsSection';
+export * from './WikiStarterKitContent';

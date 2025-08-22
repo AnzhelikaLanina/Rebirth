@@ -28,11 +28,11 @@ export const PaginationInfo = ({
   const { pagination } = useLocalizedData();
 
   const labels = [
-    pagination.balance,
-    pagination.craft,
-    pagination.clans,
-    pagination.olymp,
-    pagination.interface,
+    pagination.honestStart,
+    pagination.roseVainUpdate,
+    pagination.coinsL,
+    pagination.olympiad,
+    pagination.itemDropSystem,
   ];
 
   const images = [

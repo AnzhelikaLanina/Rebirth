@@ -1,4 +1,17 @@
 import { lazy } from 'react';
+import { WikiRewardsSeasonPassContent } from '@/widgets/WikiRewardsSeasonPassContent';
+import { WikiRewardsCalendarContent } from '@/widgets/WikiRewardsCalendarContent';
+import { WikiAchievementBoxesRewardsContent } from '@/widgets/WikiAchievementBoxesRewardsContent';
+import { WikiNormalCreationContent } from '@/widgets/WikiNormalCreationContent';
+import { WikiGuaranteedEnhancementContent } from '@/widgets/WikiGuaranteedEnhancementContent';
+import { WikiQuestsContent } from '@/widgets/WikiQuestsContent';
+import { WikiInterfaceContent } from '@/widgets/WikiInterfaceContent';
+import { WikiLocationsAndHuntingZonesContent } from '@/widgets/WikiLocationsAndHuntingZonesContent';
+import { WikiOlympiadContent } from '@/widgets/WikiOlympiadContent/WikiOlympiadContent';
+import { WikiLCoinDropSystemContent } from '@/widgets/WikiLCoinDropSystemContent';
+import { WikiDropFrom90PlusMobsContent } from '@/widgets/WikiDropFrom90PlusMobsContent';
+import { WikiClanBonusesContent } from '@/widgets/WikiClanBonusesContent';
+import { WikiTreasureChestContent } from '@/widgets/WikiTreasureChestContent';
 
 export const WikiMainInfoContentLazy = lazy(() =>
   import('../../../widgets/WikiMainInfoContent').then((module) => ({
@@ -33,5 +46,94 @@ export const WikiAutoHuntingContentLazy = lazy(() =>
 export const WikiOfflineHuntingContentLazy = lazy(() =>
   import('../../../widgets/WikiOfflineHuntingContent').then((module) => ({
     default: module.WikiOfflineHuntingContent,
+  })),
+);
+export const WikiStarterKitContentLazy = lazy(() =>
+  import('../../../widgets/WikiStarterKitContent').then((module) => ({
+    default: module.WikiStarterKitContent,
+  })),
+);
+
+export const WikiNewUniqueTasksContentLazy = lazy(() =>
+  import('../../../widgets/WikiNewUniqueTasksContent').then((module) => ({
+    default: module.WikiNewUniqueTasksContent,
+  })),
+);
+
+export const WikiRewardsSeasonPassContentLazy = lazy(() =>
+  import('../../../widgets/WikiRewardsSeasonPassContent').then((module) => ({
+    default: module.WikiRewardsSeasonPassContent,
+  })),
+);
+
+export const WikiRewardsCalendarContentLazy = lazy(() =>
+  import('../../../widgets/WikiRewardsCalendarContent').then((module) => ({
+    default: module.WikiRewardsCalendarContent,
+  })),
+);
+
+export const WikiAchievementBoxesRewardsContentLazy = lazy(() =>
+  import('../../../widgets/WikiAchievementBoxesRewardsContent').then((module) => ({
+    default: module.WikiAchievementBoxesRewardsContent,
+  })),
+);
+
+export const WikiNormalCreationContentLazy = lazy(() =>
+  import('../../../widgets/WikiNormalCreationContent').then((module) => ({
+    default: module.WikiNormalCreationContent,
+  })),
+);
+
+export const WikiGuaranteedEnhancementContentLazy = lazy(() =>
+  import('../../../widgets/WikiGuaranteedEnhancementContent').then((module) => ({
+    default: module.WikiGuaranteedEnhancementContent,
+  })),
+);
+
+export const WikiQuestsContentLazy = lazy(() =>
+  import('../../../widgets/WikiQuestsContent').then((module) => ({
+    default: module.WikiQuestsContent,
+  })),
+);
+
+export const WikiInterfaceContentLazy = lazy(() =>
+  import('../../../widgets/WikiInterfaceContent').then((module) => ({
+    default: module.WikiInterfaceContent,
+  })),
+);
+
+export const WikiLocationsAndHuntingZonesContentLazy = lazy(() =>
+  import('../../../widgets/WikiLocationsAndHuntingZonesContent').then((module) => ({
+    default: module.WikiLocationsAndHuntingZonesContent,
+  })),
+);
+
+export const WikiOlympiadContentLazy = lazy(() =>
+  import('../../../widgets/WikiOlympiadContent').then((module) => ({
+    default: module.WikiOlympiadContent,
+  })),
+);
+
+export const WikiLCoinDropSystemContentLazy = lazy(() =>
+  import('../../../widgets/WikiLCoinDropSystemContent').then((module) => ({
+    default: module.WikiLCoinDropSystemContent,
+  })),
+);
+
+export const WikiDropFrom90PlusMobsContentLazy = lazy(() =>
+  import('../../../widgets/WikiDropFrom90PlusMobsContent').then((module) => ({
+    default: module.WikiDropFrom90PlusMobsContent,
+  })),
+);
+
+export const WikiClanBonusesContentLazy = lazy(() =>
+  import('../../../widgets/WikiClanBonusesContent').then((module) => ({
+    default: module.WikiClanBonusesContent,
+  })),
+);
+
+export const WikiTreasureChestContentLazy = lazy(() =>
+  import('../../../widgets/WikiTreasureChestContent').then((module) => ({
+    default: module.WikiTreasureChestContent,
   })),
 );

@@ -21,28 +21,57 @@ import {
 
 export const wikiNavData = [
   { key: 'mainInfoHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
-  {
-    key: 'gameAssistantHeader',
-    icon: FeaturesIcon,
-    activeIcon: FeaturesActiveIcon,
-  },
-  { key: 'costumesHeader', icon: ClansIcon, activeIcon: ClansActiveIcon },
-  { key: 'worldTradeHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  { key: 'starterKitHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
   {
     key: 'rewardsForTasksHeader',
     icon: OlympIcon,
     activeIcon: OlympActiveIcon,
   },
   {
-    key: 'autoHuntingHeader',
-    icon: BalanceIcon,
-    activeIcon: BalanceActiveIcon,
+    key: 'newUniqueTasksHeader',
+    icon: MainInfoIcon,
+    activeIcon: MainInfoActiveIcon,
   },
-  { key: 'offlineHuntingHeader', icon: SealsIcon, activeIcon: SealsActiveIcon },
-  { key: 'craftingSystemHeader', icon: CraftIcon, activeIcon: CraftActiveIcon },
+  {
+    key: 'rewardsSeasonPassHeader',
+    icon: OlympIcon,
+    activeIcon: OlympActiveIcon,
+  },
+  {
+    key: 'rewardsCalendarHeader',
+    icon: OlympIcon,
+    activeIcon: OlympActiveIcon,
+  },
+  {
+    key: 'achievementBoxesRewardsHeader',
+    icon: OlympIcon,
+    activeIcon: OlympActiveIcon,
+  },
+  {
+    key: 'autoHuntingHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon
+  },
+  { key: 'offlineHuntingHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  { key: 'costumesHeader', icon: SealsIcon, activeIcon: SealsActiveIcon },
+  { key: 'worldTradeHeader', icon: BalanceIcon, activeIcon: BalanceActiveIcon },
+  { key: 'normalCreationHeader', icon: CraftIcon, activeIcon: CraftActiveIcon },
+  { key: 'guaranteedEnhancementHeader', icon: CraftIcon, activeIcon: CraftActiveIcon },
+  { key: 'questsHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
   {
     key: 'interfaceHeader',
     icon: InterfaceIcon,
     activeIcon: InterfaceActiveIcon,
   },
+  {
+    key: 'gameAssistantHeader',
+    icon: InterfaceIcon,
+    activeIcon: InterfaceActiveIcon,
+  },
+  { key: 'locationsAndHuntingZonesHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  { key: 'olympiadHeader', icon: FeaturesIcon, activeIcon: FeaturesActiveIcon },
+  { key: 'lCoinDropSystemHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  { key: 'dropFrom90PlusMobsHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  { key: 'clanBonusesHeader', icon: ClansIcon, activeIcon: ClansActiveIcon },
+  { key: 'treasureChestHeader', icon: OlympIcon, activeIcon: OlympActiveIcon },
 ];

@@ -20,7 +20,6 @@ export const DiscordSection = () => {
         <Ornament className={styles.ornament} />
         <DiscordBlock />
       </div>
-      <div className={styles.widget} />
     </section>
   );
 };

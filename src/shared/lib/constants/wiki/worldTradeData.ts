@@ -1,5 +1,4 @@
 import worldShop from '../../../assets/images/items/world-shop.png';
-import arenda from '../../../assets/images/items/arenda.png';
 
 export const worldTradeData = [
   {
@@ -11,10 +10,5 @@ export const worldTradeData = [
     key: 'equipmentTrade',
     src: worldShop,
     alt: 'world shop',
-  },
-  {
-    key: 'rental',
-    src: arenda,
-    alt: 'arenda',
   },
 ];

@@ -47,7 +47,7 @@
 
 .box {
   margin: 0 auto;
-  padding: 162.98px 0 0;
+  padding: 100px 0 0;
   max-width: 1073.2px;
   min-width: 1073.2px;
   position: relative;
@@ -157,7 +157,7 @@
   }
 
   .box {
-    padding-top: 50%;
+    padding-top: 40%;
     max-width: 315px;
     min-width: 315px;
   }

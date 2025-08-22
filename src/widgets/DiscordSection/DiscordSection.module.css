@@ -3,18 +3,7 @@
   padding: 99px 0 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-.widget {
-  max-width: 570px;
-  max-height: 462px;
-  min-width: 570px;
-  min-height: 462px;
-  border-radius: 6px;
-  background-color: blue;
-  background-size: 100%;
-  z-index: 3;
+  justify-content: center;
 }
 
 .ornamentBox {
@@ -71,13 +60,6 @@
     min-width: 343px;
     padding-top: 60px;
     padding-bottom: 80px;
-  }
-
-  .widget {
-    max-width: 343px;
-    min-width: 343px;
-    min-height: 462px;
-    max-height: 462px;
   }
 
   .ornamentBox {

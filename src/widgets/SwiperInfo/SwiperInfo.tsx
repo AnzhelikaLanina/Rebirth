@@ -14,11 +14,11 @@ export const SwiperInfo = () => {
   const { swiperText } = useLocalizedData();
 
   const slides = [
-    { header: swiperText.header, text: swiperText.text },
-    { header: swiperText.header, text: swiperText.text },
-    { header: swiperText.header, text: swiperText.text },
-    { header: swiperText.header, text: swiperText.text },
-    { header: swiperText.header, text: swiperText.text },
+    { header: swiperText.startWithoutDonationsHeader, text: swiperText.startWithoutDonationsText },
+    { header: swiperText.roseVainUpdateHeader, text: swiperText.roseVainUpdateText },
+    { header: swiperText.coinsLHeader, text: swiperText.coinsLText },
+    { header: swiperText.olympiadHeader, text: swiperText.olympiadText },
+    { header: swiperText.itemDropSystemHeader, text: swiperText.itemDropSystemText },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

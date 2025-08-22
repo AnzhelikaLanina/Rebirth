@@ -24,6 +24,7 @@ export const WikiMainInfoContent = () => {
       <div className={styles.info}>
         <h3 className={styles.header}>{mainInfoWiki.header}</h3>
         <div className={styles.image} />
+        <p className={styles.text}>{mainInfoWiki.description}</p>
         <div className={styles.box}>
           <p className={styles.text}>
             <span className={styles.textColor}>

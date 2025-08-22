@@ -29,7 +29,6 @@
 .wrapper {
   margin: 0 auto;
   padding: 162.5px 0 0;
-  max-width: 669px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -64,12 +63,12 @@
   }
 
   .btnNext {
-    top: 25%;
-    right: 5%;
+    top: 8%;
+    right: -4%;
   }
 
   .btnPrev {
-    top: 25%;
-    left: 5%;
+    top: 8%;
+    left: -4%;
   }
 }

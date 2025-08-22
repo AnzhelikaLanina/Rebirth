@@ -1,60 +1,60 @@
-import venez from '../../../assets/images/items/venez.png';
-import helmet from '../../../assets/images/items/helmet.png';
-import gloves from '../../../assets/images/items/gloves.png';
-import boots from '../../../assets/images/items/boots.png';
+import dollSummon1TicketLv6 from '@/shared/assets/images/items/doll_summon_ticket_lv6.png';
+import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll_summon_ticket_lv5.png';
 import aq from '../../../assets/images/items/aq.png';
 import baiumRing from '../../../assets/images/items/baium-ring.png';
 import ringOfCore from '../../../assets/images/items/ring-of-core.png';
 import earringOfZaken from '../../../assets/images/items/earring-of-zaken.png';
 import earringOfOrfen from '../../../assets/images/items/earring-of-orfen.png';
 import necklaceOfFrintessa from '../../../assets/images/items/necklace-of-frintessa.png';
-import dragonBelt from '../../../assets/images/items/dragon-belt.png';
-import shieldOfRevenge from '../../../assets/images/items/shield-of-revenge.png';
-import elos from '../../../assets/images/items/elos.png';
 import etcMissionPoint from '../../../assets/images/items/etc-mission-point.png';
+import levelRewardImmortalRing from '@/shared/assets/images/items/level_reward_immortal_ring.png';
+import fireSwordAden from '@/shared/assets/images/items/fire_sword_aden.png';
+import bmLCoin from '@/shared/assets/images/items/bm-lcoin.png';
+import etcRoyalSealOfLord from '@/shared/assets/images/items/etc_royal_seal_of_lord.png';
+import etcAncientAdena from '@/shared/assets/images/items/etc_ancient_adena.png';
 
-export const systemRewards = [
+export const systemRewardsData = [
   {
     header: true,
     image: true,
     src: etcMissionPoint,
     alt: 'etc mission point',
-    key: 'intro',
+    key: 'header',
   },
   {
     header: false,
     image: true,
-    src: venez,
-    alt: 'venez',
-    key: 'venez',
+    src: dollSummon1TicketLv6,
+    alt: 'doll summon ticket lv6',
+    key: 'legendaryDollCoupons',
   },
   {
     header: false,
     image: true,
-    src: helmet,
-    alt: 'helmet',
-    key: 'helmet',
+    src: dollSummon1TicketLv5,
+    alt: 'doll summon ticket lv5',
+    key: 'heroicDollCoupons',
   },
   {
     header: false,
     image: true,
-    src: gloves,
-    alt: 'gloves',
-    key: 'gloves',
+    src: levelRewardImmortalRing,
+    alt: 'level reward immortal ring',
+    key: 'immortalRing',
   },
   {
     header: false,
     image: true,
-    src: boots,
-    alt: 'boots',
-    key: 'boots',
+    src: fireSwordAden,
+    alt: 'fire sword aden',
+    key: 'immortalWeapon',
   },
   {
     header: false,
     image: true,
     src: aq,
     alt: 'aq',
-    key: 'aq',
+    key: 'queenAntRing',
   },
   {
     header: false,
@@ -68,7 +68,7 @@ export const systemRewards = [
     image: true,
     src: ringOfCore,
     alt: 'ring of core',
-    key: 'ringOfCore',
+    key: 'coreRing',
   },
   {
     header: false,
@@ -94,22 +94,22 @@ export const systemRewards = [
   {
     header: false,
     image: true,
-    src: dragonBelt,
-    alt: 'dragon belt',
-    key: 'dragonBelt',
+    src: bmLCoin,
+    alt: 'bm L Coin',
+    key: 'lCoins',
   },
   {
     header: false,
     image: true,
-    src: shieldOfRevenge,
-    alt: 'shield of revenge',
-    key: 'shieldOfRevenge',
+    src: etcRoyalSealOfLord,
+    alt: 'etc royal seal of lord',
+    key: 'giranSeals',
   },
   {
     header: false,
     image: true,
-    src: elos,
-    alt: 'elos',
-    key: 'elos',
+    src: etcAncientAdena,
+    alt: 'etc ancient adena',
+    key: 'ancientAdena',
   },
 ];

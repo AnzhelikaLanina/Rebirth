@@ -1,0 +1,25 @@
+import styles from './WikiStarterKitContent.module.css';
+import { mapWithLocalization, renderItemCards, useLocalizedData } from '@/shared/lib';
+import { starterKitData } from '@/shared/lib/constants/wiki/starterKitData';
+import { Table } from '@/widgets';
+import { packageItemsData } from '@/shared/lib/constants/wiki/packageItemsData';
+
+export const WikiStarterKitContent = () => {
+  const { starterKit } = useLocalizedData();
+
+  const localizedItemsTop = mapWithLocalization(starterKitData, starterKit, 'text');
+  const localizedItemsBottom = mapWithLocalization(starterKitData, starterKit, 'text');
+  const localizedItemsPackage = mapWithLocalization(packageItemsData, starterKit.package, 'text');
+
+  return (
+    <div className={styles.content}>
+      <div className={styles.info}>
+        <h3 className={styles.header}>{starterKit.header}</h3>
+        <div className={styles.image} />
+      </div>
+      {renderItemCards(localizedItemsTop)}
+      <Table list={localizedItemsPackage} />
+      {renderItemCards(localizedItemsBottom)}
+    </div>
+  )
+}

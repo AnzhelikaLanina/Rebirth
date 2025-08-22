@@ -1,23 +1,16 @@
 import styles from './WikiRewardsForTasksContent.module.css';
 import {
-  systemRewards,
-  uniqueTasks,
+  systemRewardsData,
   useLocalizedData,
   mapWithLocalization
 } from '@/shared/lib';
 import { Table } from '../Table';
-import bmlcoin from '../../shared/assets/images/items/bm-lcoin.png';
 
 export const WikiRewardsForTasksContent = () => {
   const { rewardsForTasks } = useLocalizedData();
   const itemsRewards = mapWithLocalization(
-    systemRewards,
-    rewardsForTasks.systemRewards,
-    'text',
-  );
-  const itemsTasks = mapWithLocalization(
-    uniqueTasks,
-    rewardsForTasks.uniqueTasks,
+    systemRewardsData,
+    rewardsForTasks.rewards,
     'text',
   );
   return (
@@ -27,11 +20,6 @@ export const WikiRewardsForTasksContent = () => {
         <div className={styles.image} />
       </div>
       <Table list={itemsRewards} />
-      <Table list={itemsTasks} />
-      <div className={styles.box}>
-        <img className={styles.img} src={bmlcoin} alt="bm lcoin" />
-        <p className={styles.text}>{rewardsForTasks.buyAllLevels}</p>
-      </div>
     </div>
   );
 };
