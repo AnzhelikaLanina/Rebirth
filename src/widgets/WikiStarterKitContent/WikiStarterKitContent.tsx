@@ -7,8 +7,8 @@ import { packageItemsData } from '@/shared/lib/constants/wiki/packageItemsData';
 export const WikiStarterKitContent = () => {
   const { starterKit } = useLocalizedData();
 
-  const localizedItemsTop = mapWithLocalization(starterKitData, starterKit, 'text');
-  const localizedItemsBottom = mapWithLocalization(starterKitData, starterKit, 'text');
+  const localizedItemsTop = mapWithLocalization(starterKitData.slice(0, 2), starterKit, 'text');
+  const localizedItemsBottom = mapWithLocalization(starterKitData.slice(2, 3), starterKit, 'text');
   const localizedItemsPackage = mapWithLocalization(packageItemsData, starterKit.package, 'text');
 
   return (
