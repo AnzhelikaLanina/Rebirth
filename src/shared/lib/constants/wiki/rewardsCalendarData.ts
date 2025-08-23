@@ -1,8 +1,8 @@
 import etcEvKalieToken from '@/shared/assets/images/items/etc-ev-kalie-token.png';
-import agathionValakas from '@/shared/assets/images/items/agathion_valakas.png';
-import bmPendantOfGrankain from '@/shared/assets/images/items/bm_pendant_of_grankain.png';
-import noblessCloak from '@/shared/assets/images/items/nobless_cloak.png';
-import frozenWeaponTicket from '@/shared/assets/images/items/frozen_weapon_ticket.png';
+import agathionValakas from '@/shared/assets/images/items/agathion-valakas.png';
+import bmPendantOfGrankain from '@/shared/assets/images/items/bm-pendant-of-grankain.png';
+import noblessCloak from '@/shared/assets/images/items/nobless-cloak.png';
+import frozenWeaponTicket from '@/shared/assets/images/items/frozen-weapon-ticket.png';
 
 export const rewardsCalendarData = [
   {

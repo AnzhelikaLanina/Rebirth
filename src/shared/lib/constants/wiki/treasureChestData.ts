@@ -1,4 +1,4 @@
-import bmDragonKey from '../../../assets/images/items/bm_dragon_key.png';
+import bmDragonKey from '../../../assets/images/items/bm-dragon-key.png';
 
 export const treasureChestData = [
   {

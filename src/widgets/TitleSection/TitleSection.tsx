@@ -22,17 +22,17 @@ export const TitleSection = () => {
       <div className={styles.background} />
       <div className={styles.shadow} />
       <div className={styles.imageContainer}>
-        <img src={ellipseConcaveEffect} className={styles.ellipseConcave} />
-        <img src={ellipseConvexEffect} className={styles.ellipseConvex} />
-        <img src={flareEffect} className={styles.flare} />
-        <img src={bigLogo} className={styles.logo} />
-        <img src={elfWomanCharacter} className={styles.imageElfWoman} />
-        <img src={humanWarCharacter} className={styles.imageWarHuman} />
-        <img src={circlesMainEffect} className={styles.circles} />
+        <img src={ellipseConcaveEffect} className={styles.ellipseConcave} alt="" />
+        <img src={ellipseConvexEffect} className={styles.ellipseConvex} alt="" />
+        <img src={flareEffect} className={styles.flare} alt="" />
+        <img src={bigLogo} className={styles.logo} alt="" />
+        <img src={elfWomanCharacter} className={styles.imageElfWoman} alt={mainInfo.altElf} />
+        <img src={humanWarCharacter} className={styles.imageWarHuman} alt={mainInfo.altHumanWar} />
+        <img src={circlesMainEffect} className={styles.circles} alt="" />
         <Frame />
       </div>
-      <img src={sparksLeftEffect} className={styles.sparksLeft} />
-      <img src={sparksRightEffect} className={styles.sparksRight} />
+      <img src={sparksLeftEffect} className={styles.sparksLeft} alt="" />
+      <img src={sparksRightEffect} className={styles.sparksRight} alt="" />
       <div className={styles.textBox}>
         <h1 className={styles.header}>Rebirth</h1>
         <h2 className={styles.subheader}>{mainInfo.subheader}</h2>

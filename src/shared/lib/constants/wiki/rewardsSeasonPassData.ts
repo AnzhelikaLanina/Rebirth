@@ -1,10 +1,10 @@
 import etcEvKalieToken from '../../../assets/images/items/etc-ev-kalie-token.png';
-import accessoryNecklaceOfPerion from '../../../assets/images/items/accessory_necklace_of_perion.png';
+import accessoryNecklaceOfPerion from '../../../assets/images/items/accessory-necklace-of-perion.png';
 import armor_t702 from '../../../assets/images/items/armor-t702.png';
-import armorLightShoes from '../../../assets/images/items/armor_light_shoes.png';
-import armorLeatherHelmet from '../../../assets/images/items/armor_leather_helmet.png';
-import expandedDyePotential from '../../../assets/images/items/sb_expand_dye_potential.png';
-import bmSilverLureBox from '../../../assets/images/items/bm_silver_lure_box.png';
+import armorLightShoes from '../../../assets/images/items/armor-light-shoes.png';
+import armorLeatherHelmet from '../../../assets/images/items/armor-leather-helmet.png';
+import expandedDyePotential from '../../../assets/images/items/sb-expand-dye-potential.png';
+import bmSilverLureBox from '../../../assets/images/items/bm-silver-lure-box.png';
 
 export const rewardsSeasonPassData = [
   {

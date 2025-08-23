@@ -4,8 +4,9 @@ import {
   useLocalizedData,
   mapWithLocalization, renderItemCards,
 } from '@/shared/lib';
+import { WikiComponentProps } from '@/shared/types';
 
-export const WikiWorldTradeContent = () => {
+export const WikiWorldTradeContent = ({ id }: WikiComponentProps) => {
   const { worldTrade } = useLocalizedData();
   const localizedItems = mapWithLocalization(
     worldTradeData,
@@ -13,7 +14,7 @@ export const WikiWorldTradeContent = () => {
     'text',
   );
   return (
-    <div className={styles.content}>
+    <div className={styles.content} id={id}>
       <div className={styles.info}>
         <h3 className={styles.header}>{worldTrade.header}</h3>
         <div className={styles.image} />

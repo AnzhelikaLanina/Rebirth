@@ -1,4 +1,4 @@
-import sNonpvpPeace from '@/shared/assets/images/items/s_nonpvp_peace.png';
+import sNonpvpPeace from '@/shared/assets/images/items/s-nonpvp-peace.png';
 
 export const locationsAndHuntingZonesData = [
   {

@@ -1,17 +1,4 @@
 import { lazy } from 'react';
-import { WikiRewardsSeasonPassContent } from '@/widgets/WikiRewardsSeasonPassContent';
-import { WikiRewardsCalendarContent } from '@/widgets/WikiRewardsCalendarContent';
-import { WikiAchievementBoxesRewardsContent } from '@/widgets/WikiAchievementBoxesRewardsContent';
-import { WikiNormalCreationContent } from '@/widgets/WikiNormalCreationContent';
-import { WikiGuaranteedEnhancementContent } from '@/widgets/WikiGuaranteedEnhancementContent';
-import { WikiQuestsContent } from '@/widgets/WikiQuestsContent';
-import { WikiInterfaceContent } from '@/widgets/WikiInterfaceContent';
-import { WikiLocationsAndHuntingZonesContent } from '@/widgets/WikiLocationsAndHuntingZonesContent';
-import { WikiOlympiadContent } from '@/widgets/WikiOlympiadContent/WikiOlympiadContent';
-import { WikiLCoinDropSystemContent } from '@/widgets/WikiLCoinDropSystemContent';
-import { WikiDropFrom90PlusMobsContent } from '@/widgets/WikiDropFrom90PlusMobsContent';
-import { WikiClanBonusesContent } from '@/widgets/WikiClanBonusesContent';
-import { WikiTreasureChestContent } from '@/widgets/WikiTreasureChestContent';
 
 export const WikiMainInfoContentLazy = lazy(() =>
   import('../../../widgets/WikiMainInfoContent').then((module) => ({

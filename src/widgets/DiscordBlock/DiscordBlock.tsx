@@ -16,7 +16,11 @@ export const DiscordBlock = () => {
         <img src={circlesRightEffect} className={styles.circlesRight} alt="" />
         <img src={circlesLeftEffect} className={styles.circlesLeft} alt="" />
       </div>
-      <img src={darkElfWomanCharacter} className={styles.characterImage} />
+      <img
+        src={darkElfWomanCharacter}
+        className={styles.characterImage}
+        alt={discord.altDarkElf}
+      />
       <h2 className={styles.header}>{discord.header}</h2>
       <p className={styles.description}>{discord.description}</p>
       <Button

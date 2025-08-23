@@ -10,6 +10,8 @@ const en = {
     privacyPolicy: 'Privacy Policy',
     design: 'Design',
     changeLanguage: 'Русский',
+    altLogo: '',
+    altOnlineIcon: ''
   },
   wiki: {
     header: 'Описание сервера',
@@ -42,6 +44,8 @@ const en = {
       'Stable Low-Rate Essence x1 with an excellent community, constant support and updates',
     newGame: 'New Game',
     info: 'Information',
+    altElf: '',
+    altHumanWar: ''
   },
   features: {
     uniqueFeatures: 'Unique Features',
@@ -51,6 +55,7 @@ const en = {
     header: 'Join community',
     description:
       'Keep up to date with all the events! Important announcements, sweepstakes, creativity and a space for communication.',
+    altDarkElf: 'dark elf'
   },
   timer: {
     days: 'Days',

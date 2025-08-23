@@ -1,7 +1,8 @@
 import styles from './WikiCostumesContent.module.css';
 import { costumesData, useLocalizedData, mapWithLocalization, renderItemCards } from '@/shared/lib';
+import { WikiComponentProps } from '@/shared/types';
 
-export const WikiCostumesContent = () => {
+export const WikiCostumesContent = ({ id }: WikiComponentProps) => {
   const { costumes } = useLocalizedData();
   const localizedCostumeList = mapWithLocalization(
     costumesData,
@@ -9,7 +10,7 @@ export const WikiCostumesContent = () => {
     'text',
   );
   return (
-    <div className={styles.content}>
+    <div className={styles.content} id={id}>
       <div className={styles.info}>
         <h3 className={styles.header}>{costumes.header}</h3>
         <div className={styles.image} />

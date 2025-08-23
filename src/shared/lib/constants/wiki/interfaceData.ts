@@ -1,4 +1,4 @@
-import sNonpvpBattle from '@/shared/assets/images/items/s_nonpvp_battle.png';
+import sNonpvpBattle from '@/shared/assets/images/items/s-nonpvp-battle.png';
 
 export const interfaceData = [
   {

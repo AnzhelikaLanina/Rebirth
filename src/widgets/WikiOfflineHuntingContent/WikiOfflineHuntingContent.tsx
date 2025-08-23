@@ -4,8 +4,9 @@ import {
   useLocalizedData,
   mapWithLocalization, renderItemCards,
 } from '@/shared/lib';
+import { WikiComponentProps } from '@/shared/types';
 
-export const WikiOfflineHuntingContent = () => {
+export const WikiOfflineHuntingContent = ({ id }: WikiComponentProps) => {
   const { offlineHunting } = useLocalizedData();
   const localizedItemsOfflineHunting = mapWithLocalization(
     offlineHuntingData,
@@ -13,7 +14,7 @@ export const WikiOfflineHuntingContent = () => {
     'text',
   );
   return (
-    <div className={styles.content}>
+    <div className={styles.content} id={id}>
       <div className={styles.info}>
         <h3 className={styles.header}>{offlineHunting.header}</h3>
         <div className={styles.image} />

@@ -5,8 +5,9 @@ import {
   mapWithLocalization
 } from '@/shared/lib';
 import { Table } from '../Table';
+import { WikiComponentProps } from '@/shared/types';
 
-export const WikiMainInfoContent = () => {
+export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
   const { mainInfoWiki } = useLocalizedData();
   const localizedItemsWithoutPremium = mapWithLocalization(
     mainInfoWikiRatesData,
@@ -20,7 +21,7 @@ export const WikiMainInfoContent = () => {
     'text',
   );
   return (
-    <div className={styles.content}>
+    <div className={styles.content} id={id}>
       <div className={styles.info}>
         <h3 className={styles.header}>{mainInfoWiki.header}</h3>
         <div className={styles.image} />

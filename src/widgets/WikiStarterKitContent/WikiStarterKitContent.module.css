@@ -39,7 +39,7 @@
 .image {
     width: 862px;
     height: 411px;
-    background-image: url('../../shared/assets/images/backgrounds/start_box.png');
+    background-image: url('../../shared/assets/images/backgrounds/start-box.png');
     background-size: cover;
     background-position: center;
 }

@@ -15,8 +15,8 @@ export const WikiPage = () => {
   return (
     <>
       <div className={styles.page}>
-        <img src={sparksNewsTopEffect} className={styles.sparksTop} />
-        <img src={sparksNewsBottomEffect} className={styles.sparksBottom} />
+        <img src={sparksNewsTopEffect} className={styles.sparksTop} alt="" />
+        <img src={sparksNewsBottomEffect} className={styles.sparksBottom} alt="" />
         <div className={styles.patternBox} />
         <div className={styles.headerBox}>
           <h1 className={styles.header}>{wiki.header}</h1>

@@ -1,11 +1,11 @@
-import belMarkClear from '@/shared/assets/images/items/bel_mark_clear.png';
+import belMarkClear from '@/shared/assets/images/items/bel-mark-clear.png';
 import skill1374 from '@/shared/assets/images/items/skill1374.png';
 import skill0396 from '@/shared/assets/images/items/skill0396.png';
 import skill19226 from '@/shared/assets/images/items/skill19226.png';
-import giantScrlOfEnchAmA from '@/shared/assets/images/items/giant_scrl_of_ench_am_a.png';
-import giantScrlOfEnchWpA from '@/shared/assets/images/items/giant_scrl_of_ench_wp_a.png';
-import etcStableScrlOfEnchFallenAngel from '@/shared/assets/images/items/etc_stable_scrl_of_ench_fallen_angel.png';
-import gRuneItemdropUp from '@/shared/assets/images/items/g_rune_itemdrop_up.png';
+import giantScrlOfEnchAmA from '@/shared/assets/images/items/giant-scrl-of-ench-am-a.png';
+import giantScrlOfEnchWpA from '@/shared/assets/images/items/giant-scrl-of-ench-wp-a.png';
+import etcStableScrlOfEnchFallenAngel from '@/shared/assets/images/items/etc-stable-scrl-of-ench-fallen-angel.png';
+import gRuneItemdropUp from '@/shared/assets/images/items/g-rune-itemdrop-up.png';
 
 export const olympiadData = [
   {

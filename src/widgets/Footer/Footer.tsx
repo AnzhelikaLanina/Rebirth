@@ -12,7 +12,7 @@ export const Footer = () => {
       <div className={styles.container}>
         <ul className={styles.info}>
           <li className={styles.box}>
-            <img src={nameAndLogo} className={styles.logo} />
+            <img src={nameAndLogo} className={styles.logo} alt={layout.altLogo} />
             <div className={styles.line} />
             <p className={styles.text}>Lineage 2 Essence x1 Server</p>
           </li>
@@ -66,7 +66,7 @@ export const Footer = () => {
           </p>
           <div className={styles.designerBox}>
             <p className={styles.textDescription}>{layout.design} — UPNOVA</p>
-            <img src={polygonIcon} className={styles.arrow} />
+            <img src={polygonIcon} className={styles.arrow} alt="" />
           </div>
         </div>
       </div>

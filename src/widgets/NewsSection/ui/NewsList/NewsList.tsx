@@ -6,24 +6,29 @@ import {
   OrnamentNewsSmallMobileFrame,
 } from '@/shared/assets/images';
 import { NewsItem } from '../NewsItem';
+import { useNavigate } from 'react-router-dom';
 
 export const NewsList = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP });
   const { newsList } = useLocalizedData();
   const { bonusesForClans, rewardsSeasonPass, newUniqueTasks } = newsList;
+  const navigate = useNavigate();
 
   const newsData = [
     {
       ...bonusesForClans,
       style: styles.itemTop,
+      sectionId: 20
     },
     {
       ...rewardsSeasonPass,
       style: styles.itemCenter,
+      sectionId: 4
     },
     {
       ...newUniqueTasks,
       style: styles.itemBottom,
+      sectionId: 3
     },
   ];
 
@@ -31,10 +36,14 @@ export const NewsList = () => {
     ? OrnamentNewsSmallFrame
     : OrnamentNewsSmallMobileFrame;
 
+  const handleClick = (sectionId: number) => {
+    navigate(`/wiki?section=${sectionId}`);
+  };
+
   return (
     <>
       {newsData.map((newsItem, index) => (
-        <div className={styles.ornamentBox} key={index}>
+        <div className={styles.ornamentBox} key={index} onClick={() => handleClick(newsItem.sectionId)}>
           <Ornament className={styles.ornament} />
           <NewsItem
             headerText={newsItem.header}

@@ -1,5 +1,5 @@
 import etcEvKalieToken from '@/shared/assets/images/items/etc-ev-kalie-token.png';
-import stageScrollPack from '@/shared/assets/images/items/stage_scroll_pack.png';
+import stageScrollPack from '@/shared/assets/images/items/stage-scroll-pack.png';
 
 export const questsData = [
   {

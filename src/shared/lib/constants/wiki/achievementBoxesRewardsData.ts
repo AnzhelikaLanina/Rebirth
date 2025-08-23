@@ -1,8 +1,8 @@
-import sNonpvpPeace from '@/shared/assets/images/items/s_nonpvp_peace.png';
-import sNonpvpBattle from '@/shared/assets/images/items/s_nonpvp_battle.png';
+import sNonpvpPeace from '@/shared/assets/images/items/s-nonpvp-peace.png';
+import sNonpvpBattle from '@/shared/assets/images/items/s-nonpvp-battle.png';
 import bmHeroBookMineral from '@/shared/assets/images/items/bm-hero-book-mineral.png';
 import adenRuneHigh from '@/shared/assets/images/items/aden-rune-high.png';
-import adenRune from '@/shared/assets/images/items/aden_rune.png';
+import adenRune from '@/shared/assets/images/items/aden-rune.png';
 
 export const achievementBoxesRewardsData = [
   {

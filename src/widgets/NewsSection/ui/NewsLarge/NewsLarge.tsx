@@ -6,11 +6,13 @@ import {
   OrnamentNewsLargeFrame,
 } from '@/shared/assets/images';
 import { TableItemProps } from '@/shared/types';
+import { useNavigate } from 'react-router-dom';
 
 export const NewsLarge = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP });
   const { newsList } = useLocalizedData();
   const { mainInfoWiki } = newsList;
+  const navigate = useNavigate();
 
   const localizedItemsWithoutPremium = mapWithLocalization(
     mainInfoWikiRatesData,
@@ -29,7 +31,7 @@ export const NewsLarge = () => {
     : OrnamentFeaturesMobileFrame;
 
   return (
-    <div className={styles.ornamentBox}>
+    <div className={styles.ornamentBox} onClick={() => navigate('/wiki?section=0')}>
       <Ornament className={styles.ornament} />
       <div className={styles.item}>
         <div className={styles.overlay} />

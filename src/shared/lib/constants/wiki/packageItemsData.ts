@@ -1,5 +1,5 @@
 import etcEvKalieToken from '@/shared/assets/images/items/etc-ev-kalie-token.png';
-import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll_summon_ticket_lv5.png';
+import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll-summon-ticket-lv5.png';
 import aq from '@/shared/assets/images/items/aq.png';
 import baiumRing from '@/shared/assets/images/items/baium-ring.png';
 import ringOfCore from '@/shared/assets/images/items/ring-of-core.png';
@@ -7,8 +7,8 @@ import earringOfZaken from '@/shared/assets/images/items/earring-of-zaken.png';
 import earringOfOrfen from '@/shared/assets/images/items/earring-of-orfen.png';
 import necklaceOfFrintessa from '@/shared/assets/images/items/necklace-of-frintessa.png';
 import armorT702G from '@/shared/assets/images/items/armor-t702.png';
-import armorLLightShoes from '@/shared/assets/images/items/armor_light_shoes.png';
-import armorLeatherHelmet from '@/shared/assets/images/items/armor_leather_helmet.png';
+import armorLLightShoes from '@/shared/assets/images/items/armor-light-shoes.png';
+import armorLeatherHelmet from '@/shared/assets/images/items/armor-leather-helmet.png';
 
 export const packageItemsData = [
   {

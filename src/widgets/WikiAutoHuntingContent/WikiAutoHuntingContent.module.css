@@ -39,9 +39,16 @@
 .image {
   width: 862px;
   height: 411px;
-  background-image: url('../../shared/assets/images/backgrounds/auto-hunting.png');
   background-size: cover;
   background-position: bottom;
+}
+
+.imageRu {
+  background-image: url('../../shared/assets/images/backgrounds/auto-hunting-ru.png');
+}
+
+.imageEn {
+  background-image: url('../../shared/assets/images/backgrounds/auto-hunting-en.jpg');
 }
 
 .box {
@@ -78,6 +85,8 @@
 
   .image {
     width: 315px;
-    height: 243px;
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

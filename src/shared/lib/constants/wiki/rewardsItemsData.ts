@@ -1,5 +1,5 @@
-import sNonpvpPeace from '@/shared/assets/images/items/s_nonpvp_peace.png';
-import sNonpvpBattle from '@/shared/assets/images/items/s_nonpvp_battle.png';
+import sNonpvpPeace from '@/shared/assets/images/items/s-nonpvp-peace.png';
+import sNonpvpBattle from '@/shared/assets/images/items/s-nonpvp-battle.png';
 
 export const rewardsItemsData = [
   {

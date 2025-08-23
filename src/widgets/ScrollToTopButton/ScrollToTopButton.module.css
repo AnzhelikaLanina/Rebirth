@@ -1,4 +1,6 @@
 .scrollButton {
+  all: unset;
+  box-sizing: border-box;
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
@@ -39,6 +41,7 @@
 .scrollButton:hover {
   opacity: 1;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  transition: opacity 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
 }
 
 @media (max-width: 768px) {

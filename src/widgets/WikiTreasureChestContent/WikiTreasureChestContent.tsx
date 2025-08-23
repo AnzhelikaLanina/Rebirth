@@ -4,14 +4,15 @@ import { Table } from '@/widgets';
 import { treasureChestData } from '@/shared/lib/constants/wiki/treasureChestData';
 import { locationsItemsData } from '@/shared/lib/constants/wiki/locationsItemsData';
 import { chestContentItemsData } from '@/shared/lib/constants/wiki/chestContentItemsData';
+import { WikiComponentProps } from '@/shared/types';
 
-export const WikiTreasureChestContent = () => {
+export const WikiTreasureChestContent = ({ id }: WikiComponentProps) => {
   const { treasureChest } = useLocalizedData();
   const localizedItems = mapWithLocalization(treasureChestData, treasureChest, 'text');
   const localizedItemsLocations = mapWithLocalization(locationsItemsData, treasureChest.locations, 'text');
   const localizedItemsChestContent = mapWithLocalization(chestContentItemsData, treasureChest.chestContent, 'text');
   return (
-    <div className={styles.content}>
+    <div className={styles.content} id={id}>
       <div className={styles.info}>
         <h3 className={styles.header}>{treasureChest.header}</h3>
         <div className={styles.image} />

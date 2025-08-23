@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { LanguageContext } from './LanguageContext';
+import { Language } from '@/shared/types';
 
 type LanguageProviderProps = {
   children: ReactNode;
@@ -8,14 +9,23 @@ type LanguageProviderProps = {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children,
 }) => {
-  const [language, setLanguage] = useState<'ru' | 'en'>('ru');
+  const defaultLang =
+    (localStorage.getItem('language') as Language) ||
+    (navigator.language.startsWith('en') ? 'en' : 'ru');
+
+  const [language, setLanguageState] = useState<Language>(defaultLang);
+
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    localStorage.setItem('language', lang);
+  };
 
   const toggleLanguage = () => {
-    setLanguage((prevLang) => (prevLang === 'ru' ? 'en' : 'ru'));
+    setLanguage(language === 'ru' ? 'en' : 'ru');
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, toggleLanguage, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

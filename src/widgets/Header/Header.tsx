@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-import { PATHS, MEDIA_BREAKPOINTS } from '@/shared/lib';
+import { PATHS, MEDIA_BREAKPOINTS, useLocalizedData } from '@/shared/lib';
 import { MenuIcon } from '@/shared/assets/images';
 import {
   ButtonsHeaderSection,
@@ -14,6 +14,7 @@ import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
 import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url';
 
 export const Header = () => {
+  const { layout } = useLocalizedData();
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_XL });
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,7 +27,7 @@ export const Header = () => {
       <div className={styles.container}>
         <div className={styles.box}>
           <Link to={PATHS.HOME}>
-            <img src={smallLogo} className={styles.logo} alt="Logo" />
+            <img src={smallLogo} className={styles.logo} alt={layout.altLogo} />
           </Link>
           <div className={styles.line} />
           <div className={styles.onlineStatus}>
@@ -34,6 +35,7 @@ export const Header = () => {
               src={onlineIcon}
               className={styles.onlineIcon}
               loading="lazy"
+              alt={layout.altOnlineIcon}
             />
             <div className={styles.description}>
               <p className={styles.textBig}>Online</p>

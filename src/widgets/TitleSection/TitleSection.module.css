@@ -43,6 +43,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  right: 50%;
   transform: translateX(-50%);
   width: 1761px;
   height: 100%;
@@ -54,14 +55,14 @@
   height: 567px;
   position: absolute;
   top: 116.5px;
-  left: 557px;
+  left: 477px;
   z-index: 2;
 }
 
 .ellipseConvex {
   position: absolute;
   top: 158.5px;
-  left: 684px;
+  left: 604px;
   z-index: 2;
   width: 478px;
   height: 329px;
@@ -72,7 +73,7 @@
   width: 1760.04px;
   height: 1210.56px;
   top: -203.5px;
-  left: 61px;
+  left: -20px;
   transform: rotate(0deg);
   z-index: 3;
 }
@@ -82,7 +83,7 @@
   max-height: 725px;
   position: absolute;
   top: 103px;
-  left: 597px;
+  left: 517px;
   z-index: 2;
   width: 100%;
   height: auto;
@@ -91,7 +92,7 @@
 .imageElfWoman {
   position: absolute;
   top: 0.5px;
-  left: 688px;
+  left: 600px;
   z-index: 3;
   width: 100%;
   height: auto;
@@ -101,7 +102,7 @@
 .imageWarHuman {
   position: absolute;
   top: 138px;
-  left: 399px;
+  left: 319px;
   z-index: 2;
   width: 100%;
   height: auto;
@@ -111,7 +112,7 @@
 .circles {
   position: absolute;
   top: 215px;
-  left: 782px;
+  left: 702px;
   z-index: 2;
   width: 237px;
   height: 110px;
@@ -130,7 +131,7 @@
 .sparksRight {
   position: absolute;
   top: 218px;
-  left: 1264px;
+  right: 129px;
   z-index: 3;
   mix-blend-mode: screen;
   width: 527px;
@@ -240,12 +241,6 @@
 
 .buttonYellow:hover::after {
   opacity: 0.5;
-}
-
-@media screen and (min-width: 2000px) {
-  .imageContainer {
-    left: 50%;
-  }
 }
 
 @media screen and (max-width: 700px) {

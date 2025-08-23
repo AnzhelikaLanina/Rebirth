@@ -1,4 +1,4 @@
-import bmDragonPosion from '@/shared/assets/images/items/bm_dragon_posion.png';
+import bmDragonPosion from '@/shared/assets/images/items/bm-dragon-posion.png';
 
 export const dragonPotionItemsData = [
   {

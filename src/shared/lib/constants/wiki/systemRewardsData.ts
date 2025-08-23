@@ -1,5 +1,5 @@
-import dollSummon1TicketLv6 from '@/shared/assets/images/items/doll_summon_ticket_lv6.png';
-import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll_summon_ticket_lv5.png';
+import dollSummon1TicketLv6 from '@/shared/assets/images/items/doll-summon-ticket-lv6.png';
+import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll-summon-ticket-lv5.png';
 import aq from '../../../assets/images/items/aq.png';
 import baiumRing from '../../../assets/images/items/baium-ring.png';
 import ringOfCore from '../../../assets/images/items/ring-of-core.png';
@@ -7,11 +7,11 @@ import earringOfZaken from '../../../assets/images/items/earring-of-zaken.png';
 import earringOfOrfen from '../../../assets/images/items/earring-of-orfen.png';
 import necklaceOfFrintessa from '../../../assets/images/items/necklace-of-frintessa.png';
 import etcMissionPoint from '../../../assets/images/items/etc-mission-point.png';
-import levelRewardImmortalRing from '@/shared/assets/images/items/level_reward_immortal_ring.png';
-import fireSwordAden from '@/shared/assets/images/items/fire_sword_aden.png';
+import levelRewardImmortalRing from '@/shared/assets/images/items/level-reward-immortal-ring.png';
+import fireSwordAden from '@/shared/assets/images/items/fire-sword-aden.png';
 import bmLCoin from '@/shared/assets/images/items/bm-lcoin.png';
-import etcRoyalSealOfLord from '@/shared/assets/images/items/etc_royal_seal_of_lord.png';
-import etcAncientAdena from '@/shared/assets/images/items/etc_ancient_adena.png';
+import etcRoyalSealOfLord from '@/shared/assets/images/items/etc-royal-seal-of-lord.png';
+import etcAncientAdena from '@/shared/assets/images/items/etc-ancient-adena.png';
 
 export const systemRewardsData = [
   {

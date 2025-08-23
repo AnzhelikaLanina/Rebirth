@@ -11,8 +11,8 @@ export const NewsSection = () => {
   const { newsBlock } = useLocalizedData();
   return (
     <section className={styles.news}>
-      <img src={sparksNewsTopEffect} className={styles.sparksTop} />
-      <img src={sparksNewsBottomEffect} className={styles.sparksBottom} />
+      <img src={sparksNewsTopEffect} className={styles.sparksTop} alt="" />
+      <img src={sparksNewsBottomEffect} className={styles.sparksBottom} alt="" />
       <div className={styles.patternBox} />
       <h2 className={styles.header}>{newsBlock.header}</h2>
       <div className={styles.container}>
