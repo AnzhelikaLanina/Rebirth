@@ -94,11 +94,6 @@ export const dragonPotionItemsData = [
     image: false
   },
   {
-    key: 'syahkiProtectionCost',
-    header: false,
-    image: false
-  },
-  {
     key: 'damageToHpConversion',
     header: false,
     image: false

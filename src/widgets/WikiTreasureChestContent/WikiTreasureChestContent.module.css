@@ -74,7 +74,9 @@
 
     .image {
         width: 315px;
-        height: 243px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .box {

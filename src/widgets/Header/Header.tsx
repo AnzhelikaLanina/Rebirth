@@ -39,7 +39,7 @@ export const Header = () => {
             />
             <div className={styles.description}>
               <p className={styles.textBig}>Online</p>
-              <p className={styles.textSmall}>Essence x1</p>
+              <p className={styles.textSmall}>Essence x5</p>
             </div>
           </div>
           {isDesktop && <HeaderMenu />}

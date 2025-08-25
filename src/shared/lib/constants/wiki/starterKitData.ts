@@ -8,11 +8,6 @@ export const starterKitData = [
     alt: 'starter package',
   },
   {
-    key: 'packageSecond',
-    src: starterPackage,
-    alt: 'starter package',
-  },
-  {
     key: 'pccafePremium',
     src: etcPccafePoint,
     alt: 'etc pccafe point',

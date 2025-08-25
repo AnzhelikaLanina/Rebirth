@@ -42,7 +42,7 @@ export const TitleSection = () => {
             className={styles.buttonBlue}
             text={mainInfo.newGame}
             icon={<SwordIcon />}
-            onClick={() => openInNewTab(EXTERNAL_LINKS.DISCORD)}
+            onClick={() => openInNewTab(EXTERNAL_LINKS.PERSONAL_ACCOUNT)}
           />
           <Button
             className={styles.buttonYellow}

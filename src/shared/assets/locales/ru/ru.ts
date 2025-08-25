@@ -19,7 +19,7 @@ const ru = {
     starterKitHeader: 'Стартовый набор',
     rewardsForTasksHeader: 'Награды за задания',
     newUniqueTasksHeader: 'Новые уникальные задания',
-    rewardsSeasonPassHeader: 'Награды сезонного пропуска',
+    rewardsSeasonPassHeader: 'Награды Сезонного Пропуска',
     rewardsCalendarHeader: "Награды Календаря Подарков",
     achievementBoxesRewardsHeader: "Награды Коробки Достижений",
     autoHuntingHeader: 'Автоохота',
@@ -39,9 +39,9 @@ const ru = {
     treasureChestHeader: "Сундук с сокровищами",
   },
   mainInfo: {
-    subheader: 'Твоя легенда начинается здесь',
+    subheader: 'Старт без доната для всех игроков',
     description:
-      'Стабильный Лоу-рейт Essence x1 с превосходным комьюнити, постоянной поддержкой и обновлениями',
+      'Стабильный сервер Essence x5 без вайпов, с сохраненной оригинальностью игры и регулярными обновлениями',
     newGame: 'Начать игру',
     info: 'Описание',
     altElf: 'Эльфийка с луком',
@@ -192,9 +192,8 @@ const ru = {
     header: 'Стартовый набор',
     packageFree: "В разделе ивенты и акции Магазина L доступен приветственный бесплатный стартовый набор за 0 L Монет. " +
       "Он включает всю необходимую экипировку для комфортной игры.",
-    packageSecond: "В Магазине, ЧЕРЕЗ СУТКИ после старта будет доступен еще один стартовый набор.",
     package: {
-      header: "Стартовые наборы доступны по 1 шт. на аккаунт и включают в себя различные предметы.",
+      header: "Стартовый набор доступен по 1 шт. на аккаунт и включает в себя различные предметы.",
       heroicDollTicket: "Купоны Героических Кукол",
       orfenDollTicket: "Купон Куклы Орфен",
       queenAntDollTicket: "Купон Куклы Королевы Муравьев",
@@ -228,7 +227,7 @@ const ru = {
       necklaceOfFrintessa: "Ожерелье Фринтезы",
       lCoins: "Монеты L",
       giranSeals: "Печати Гирана",
-      ancientAdena: "Старая Адена",
+      ancientAdena: "Древняя Адена",
     },
     bonusForReading: "А также, если вы это читаете, то для вас приготовлена дополнительная награда по промокоду FFBB-KLMU-RECN-ASDF."
   },
@@ -328,7 +327,6 @@ const ru = {
       magicalCritPower: "Сила Маг. Крит. Атк. +10%",
       experienceBonus: "Бонус опыта +50%",
       spBonus: "Бонус SP +50%",
-      syahkiProtectionCost: "Расход Покровительства Сайхи -20%",
       damageToHpConversion: "Преобразует 5% нанесенного урона в HP (срабатывает с определенной вероятностью)"
     },
     dragonPotionLvl2: {
@@ -350,7 +348,6 @@ const ru = {
       magicalCritPower: "Сила Маг. Крит. Атк. +12%",
       experienceBonus: "Бонус опыта +50%",
       spBonus: "Бонус SP +50%",
-      syahkiProtectionCost: "Расход Покровительства Сайхи -25%",
       damageToHpConversion: "Преобразует 7% нанесенного урона в HP (срабатывает с определенной вероятностью)"
     }
   },
