@@ -178,14 +178,14 @@ const en = {
     bonusForReading: "And also, if you are reading this, then an additional promo code reward has been prepared for you FFBB-KLMU-RECN-ASDF."
   },
   newUniqueTasks: {
-    header: 'Новые уникальные задания',
-    earringOfZaken: 'Король Пиратов – При участии в сражении с Закеном нанесите урон и будьте в радиусе 2000 при убийстве Босса.',
-    earringOfOrfen: 'Сорокоручка – При участии в сражении с Орфен нанесите урон и будьте в радиусе 2000 при убийстве Босса.',
-    accessoryRingOfQueenAnt: 'Сороконожка – При участии в сражении с Королевой Муравьев нанесите урон и будьте в радиусе 2000 при убийстве Босса.',
-    baiumTalismanNew: 'Проклятый Император – При участии в сражении с Баюмом нанесите урон и будьте в радиусе 2000 при убийстве Босса.',
-    blessMaskOfPhantom: 'Призрачные Бои – Победите 100 призрачных мобов, призванных маской фантома и благословенной маской фантома. ' +
-      'Кстати, для тех кто не ленится читать, подготовлен бонус по промокоду HFCV-TRYH-ERFD-YLPO.',
-    etcEvKalieToken: 'Не Каждому Дано – Одержите 10 побед подряд на Олимпиаде.',
+    header: 'New Unique Tasks',
+    earringOfZaken: 'Pirate King – When participating in a battle with Zaken, deal damage and stay within a 2000 radius when killing the Boss.',
+    earringOfOrfen: 'Forty Hands – When participating in the battle with Orfen, deal damage and be within a radius of 2000 when killing the Boss.',
+    accessoryRingOfQueenAnt: 'Centipede – When participating in the battle with the Ant Queen, deal damage and be within a radius of 2000 when killing the Boss.',
+    baiumTalismanNew: 'Cursed Emperor – When participating in the battle with Baium, deal damage and be within a radius of 2000 when killing the Boss.',
+    blessMaskOfPhantom: 'Ghost Fights – Defeat 100 ghost mobs summoned by the phantom mask and the blessed phantom mask. ' +
+      'By the way, for those who are not lazy to read, a bonus has been prepared using the promo code HFCV-TRYH-ERFD-YLPO.',
+    etcEvKalieToken: 'It\'s not Given to Everyone – Win 10 consecutive Olympic Games.',
   },
   rewardsSeasonPass: {
     header: 'Season Pass Awards',
@@ -430,8 +430,8 @@ const en = {
       armorT702: "Breastplate of Protection",
       armorLightShoes: "Sea Boots",
       armorLeatherHelmet: "Wild Wind Helmet",
-      dollSummonTicketLv6: "Купоны Легендарных Кукол",
-      dollSummonTicketLv5: "Купоны Героических Кукол",
+      dollSummonTicketLv6: "Coupons Legendary Dolls",
+      dollSummonTicketLv5: "Coupons Heroic Dolls",
       armorT901U: "Breastplate of Protection",
       armorT901L: "Gaiters of Protection",
       armorT902U: "Leather Armor of Protection",
@@ -497,8 +497,8 @@ const en = {
       description: 'Each time a monster is destroyed, the hunting score increases by 1, and when monsters are destroyed in session zones, the hunting score increases by 2.',
     },
     newUniqueTasks: {
-      header: '',
-      description: '',
+      header: 'New Unique Tasks',
+      description: 'In battles against epic bosses, rewards are given to all participants who deal damage and are within a 2000 radius when killing a Boss.',
     },
   },
 };

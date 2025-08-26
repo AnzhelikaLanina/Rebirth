@@ -14,7 +14,7 @@ export const Footer = () => {
           <li className={styles.box}>
             <img src={nameAndLogo} className={styles.logo} alt={layout.altLogo} />
             <div className={styles.line} />
-            <p className={styles.text}>Lineage 2 Essence x1 Server</p>
+            <p className={styles.text}>Lineage 2 Essence x5 Server</p>
           </li>
           <li>
             <ExternalLink
@@ -60,10 +60,15 @@ export const Footer = () => {
           </li>
         </ul>
         <div className={styles.description}>
-          <p className={styles.textDescription}>
-            Copyright &copy; 2025, Rebirth. Lineage is a trademark owned by
-            NCSoft Corp, all rights reserved.
-          </p>
+          <div className={styles.serverBox}>
+            <p className={styles.textDescription}>
+              This is only a test server for Rebirth.
+            </p>
+            <p className={styles.textDescription}>
+              Copyright &copy; 2025, Rebirth. Lineage is a trademark owned by
+              NCSoft Corp, all rights reserved.
+            </p>
+          </div>
           <div className={styles.designerBox}>
             <p className={styles.textDescription}>{layout.design} — UPNOVA</p>
             <img src={polygonIcon} className={styles.arrow} alt="" />
