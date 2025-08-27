@@ -12,8 +12,9 @@ import {
 } from './ui';
 import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
 import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url';
+import { OpenModal } from '@/shared/types';
 
-export const Header = () => {
+export const Header = ({ onOpenModal }: OpenModal) => {
   const { layout } = useLocalizedData();
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_XL });
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,7 +35,6 @@ export const Header = () => {
             <img
               src={onlineIcon}
               className={styles.onlineIcon}
-              loading="lazy"
               alt={layout.altOnlineIcon}
             />
             <div className={styles.description}>
@@ -42,7 +42,7 @@ export const Header = () => {
               <p className={styles.textSmall}>Essence x5</p>
             </div>
           </div>
-          {isDesktop && <HeaderMenu />}
+          {isDesktop && <HeaderMenu onOpenModal={onOpenModal} />}
         </div>
 
         {isDesktop ? (
@@ -53,7 +53,11 @@ export const Header = () => {
         ) : (
           <>
             <MenuIcon className={styles.iconMenu} onClick={toggleMenu} />
-            <HeaderMenuMobile toggleMenu={toggleMenu} menuOpen={menuOpen} />
+            <HeaderMenuMobile
+              toggleMenu={toggleMenu}
+              menuOpen={menuOpen}
+              onOpenModal={onOpenModal}
+            />
           </>
         )}
       </div>

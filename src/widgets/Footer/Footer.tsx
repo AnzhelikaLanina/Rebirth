@@ -17,23 +17,28 @@ export const Footer = () => {
             <p className={styles.text}>Lineage 2 Essence x5 Server</p>
           </li>
           <li>
-            <ExternalLink
-              href={EXTERNAL_LINKS.USER_AGREEMENT}
-              children={layout.userAgreement}
+            <Link
+              to={PATHS.USER_AGREEMENT}
               className={styles.link}
-            />
+            >
+              {layout.userAgreement}
+            </Link>
           </li>
           <li>
-            <ExternalLink
-              href={EXTERNAL_LINKS.PRIVACY_POLICY}
-              children={layout.privacyPolicy}
+            <Link
+              to={PATHS.PRIVACY_POLICY}
               className={styles.link}
-            />
+            >
+              {layout.privacyPolicy}
+            </Link>
           </li>
         </ul>
         <ul className={styles.links}>
           <li className={styles.element1}>
-            <Link to={PATHS.WIKI} className={styles.link}>
+            <Link
+              to={PATHS.WIKI}
+              className={styles.link}
+            >
               {layout.server}
             </Link>
           </li>

@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import styles from './HeaderMenu.module.css';
 import { PATHS, EXTERNAL_LINKS, useLocalizedData } from '@/shared/lib';
 import { ExternalLink } from '@/shared/ui';
+import { OpenModal } from '@/shared/types';
 
-export const HeaderMenu = () => {
+export const HeaderMenu = ({ onOpenModal }: OpenModal) => {
   const { layout } = useLocalizedData();
   return (
     <>
@@ -15,11 +16,9 @@ export const HeaderMenu = () => {
           </Link>
         </div>
         <div className={styles.element}>
-          <ExternalLink
-            href={EXTERNAL_LINKS.DISCORD}
-            children={layout.files}
-            className={styles.link}
-          />
+          <p className={styles.link} onClick={onOpenModal}>
+            {layout.files}
+          </p>
         </div>
         <div className={styles.element}>
           <ExternalLink

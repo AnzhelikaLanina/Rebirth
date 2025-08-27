@@ -1,6 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { LanguageContext } from './LanguageContext';
 import { Language } from '@/shared/types';
+import { scrollToTop } from '@/shared/lib';
 
 type LanguageProviderProps = {
   children: ReactNode;
@@ -22,6 +23,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
 
   const toggleLanguage = () => {
     setLanguage(language === 'ru' ? 'en' : 'ru');
+    scrollToTop();
   };
 
   return (
