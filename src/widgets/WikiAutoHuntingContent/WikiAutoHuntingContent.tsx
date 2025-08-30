@@ -1,9 +1,14 @@
-import styles from './WikiAutoHuntingContent.module.css';
-import { mapWithLocalization, useLanguage, useLocalizedData } from '@/shared/lib';
-import { Table } from '@/widgets';
-import { autoHuntingData } from '@/shared/lib/constants/wiki/autoHuntingData';
-import { WikiComponentProps } from '@/shared/types';
 import clsx from 'clsx';
+import styles from './WikiAutoHuntingContent.module.css';
+import { Table } from '@/widgets';
+import {
+  autoHuntingData,
+  mapWithLocalization,
+  useLanguage,
+  useLocalizedData,
+  WikiComponentProps,
+  WikiLayout,
+} from '@/shared';
 
 export const WikiAutoHuntingContent = ({ id }: WikiComponentProps) => {
   const { autoHunting } = useLocalizedData();
@@ -13,14 +18,13 @@ export const WikiAutoHuntingContent = ({ id }: WikiComponentProps) => {
     autoHunting.description,
     'text',
   );
-
   return (
-    <div className={styles.content} id={id}>
-      <div className={styles.info}>
-        <h3 className={styles.header}>{autoHunting.header}</h3>
-        <div className={clsx(styles.image, language === 'ru' ? styles.imageRu : styles.imageEn)} />
-      </div>
+    <WikiLayout
+      id={id}
+      title={autoHunting.header}
+      imgStyle={clsx(styles.image, language === 'ru' ? styles.imageRu : styles.imageEn)}
+    >
       <Table list={localizedItems} />
-    </div>
+    </WikiLayout>
   );
 };

@@ -15,7 +15,7 @@ export type TableItemProps = {
 };
 
 export type WikiComponentProps = {
-  id?: string;
+  id: string;
 };
 
 export type Language = 'ru' | 'en';

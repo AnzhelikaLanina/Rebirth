@@ -1,13 +1,14 @@
 import { useMediaQuery } from 'react-responsive';
 import styles from './Features.module.css';
-import { SwiperInfo } from '@/widgets';
-import { useLocalizedData, MEDIA_BREAKPOINTS } from '@/shared/lib';
-import {
-  OrnamentFeaturesFrame,
-  OrnamentFeaturesMobileFrame,
-} from '../../shared/assets/images';
 import sparksFeaturesLeftEffect from '../../shared/assets/images/effects/sparks-features-left.svg?url';
 import sparksFeaturesRightEffect from '../../shared/assets/images/effects/sparks-features-right.svg?url';
+import { SwiperInfo } from '@/widgets';
+import {
+  MEDIA_BREAKPOINTS,
+  OrnamentFeaturesFrame,
+  OrnamentFeaturesMobileFrame,
+  useLocalizedData
+} from '@/shared';
 
 export const Features = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_LARGE });

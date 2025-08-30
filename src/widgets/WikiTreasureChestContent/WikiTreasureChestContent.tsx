@@ -1,25 +1,42 @@
 import styles from './WikiTreasureChestContent.module.css';
-import { mapWithLocalization, renderItemCards, useLocalizedData } from '@/shared/lib';
 import { Table } from '@/widgets';
-import { treasureChestData } from '@/shared/lib/constants/wiki/treasureChestData';
-import { locationsItemsData } from '@/shared/lib/constants/wiki/locationsItemsData';
-import { chestContentItemsData } from '@/shared/lib/constants/wiki/chestContentItemsData';
-import { WikiComponentProps } from '@/shared/types';
+import {
+  chestContentItemsData,
+  locationsItemsData,
+  mapWithLocalization,
+  renderItemCards,
+  treasureChestData,
+  useLocalizedData,
+  WikiComponentProps,
+  WikiLayout,
+} from '@/shared';
 
 export const WikiTreasureChestContent = ({ id }: WikiComponentProps) => {
   const { treasureChest } = useLocalizedData();
-  const localizedItems = mapWithLocalization(treasureChestData, treasureChest, 'text');
-  const localizedItemsLocations = mapWithLocalization(locationsItemsData, treasureChest.locations, 'text');
-  const localizedItemsChestContent = mapWithLocalization(chestContentItemsData, treasureChest.chestContent, 'text');
+  const localizedItems = mapWithLocalization(
+    treasureChestData,
+    treasureChest,
+    'text'
+  );
+  const localizedItemsLocations = mapWithLocalization(
+    locationsItemsData,
+    treasureChest.locations,
+    'text'
+  );
+  const localizedItemsChestContent = mapWithLocalization(
+    chestContentItemsData,
+    treasureChest.chestContent,
+    'text'
+  );
   return (
-    <div className={styles.content} id={id}>
-      <div className={styles.info}>
-        <h3 className={styles.header}>{treasureChest.header}</h3>
-        <div className={styles.image} />
-      </div>
+    <WikiLayout
+      title={treasureChest.header}
+      id={id}
+      imgStyle={styles.image}
+    >
       <Table list={localizedItemsLocations} />
       {renderItemCards(localizedItems)}
       <Table list={localizedItemsChestContent} />
-    </div>
+    </WikiLayout>
   )
 }

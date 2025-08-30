@@ -5,3 +5,5 @@ export * from './Spinner';
 export * from './HeadMeta';
 export * from './ItemCard';
 export * from './ButtonClose';
+export * from './PageLayout';
+export * from './WikiLayout';

@@ -1,9 +1,14 @@
 import { Suspense, useEffect, useState } from 'react';
 import styles from './WrapperWikiMobile.module.css';
-import { useWikiNavigationItems, renderWikiComponent, useSectionFromUrl } from '@/shared/lib';
-import { NavigationItem, Spinner } from '@/shared/ui';
-import { NavigationItemProps } from '@/shared/types';
-import { scrollToSection } from '@/shared/lib/helpers/scrollToSection';
+import {
+  NavigationItem,
+  NavigationItemProps,
+  renderWikiComponent,
+  scrollToSection,
+  Spinner,
+  useSectionFromUrl,
+  useWikiNavigationItems,
+} from '@/shared';
 
 export const WrapperWikiMobile = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

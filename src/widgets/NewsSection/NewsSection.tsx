@@ -1,10 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './NewsSection.module.css';
-import { PATHS, useLocalizedData } from '@/shared/lib';
-import { Button } from '@/shared/ui';
-import { NewsLarge, NewsList } from './ui';
 import sparksNewsTopEffect from '../../shared/assets/images/effects/sparks-news-top.svg?url';
 import sparksNewsBottomEffect from '../../shared/assets/images/effects/sparks-news-bottom.svg?url';
+import { NewsLarge, NewsList } from './ui';
+import { Button, PATHS, useLocalizedData } from '@/shared';
 
 export const NewsSection = () => {
   const navigate = useNavigate();

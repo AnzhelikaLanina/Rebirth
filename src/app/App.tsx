@@ -1,11 +1,19 @@
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import styles from './App.module.css';
-import { MainPage, WikiPage } from '@/pages';
-import { Footer, Header, ScrollToTopButton } from '@/widgets';
-import { HeadMeta } from '@/shared/ui';
-import { PATHS, ScrollToTop } from '@/shared/lib';
-import { useState } from 'react';
-import { Modal } from '@/widgets/Modal';
+import {
+  MainPage,
+  WikiPage,
+  PrivacyPolicyPage,
+  UserAgreementPage
+} from '@/pages';
+import {
+  Footer,
+  Header,
+  ScrollToTopButton,
+  Modal
+} from '@/widgets';
+import { HeadMeta, PATHS, ScrollToTop } from '@/shared';
 
 export const App = () => {
   const [isOpenModal, setOpenModal] = useState(false);
@@ -21,6 +29,8 @@ export const App = () => {
         <Routes>
           <Route path={PATHS.HOME} element={<MainPage />} />
           <Route path={PATHS.WIKI} element={<WikiPage />} />
+          <Route path={PATHS.USER_AGREEMENT} element={<UserAgreementPage />} />
+          <Route path={PATHS.PRIVACY_POLICY} element={<PrivacyPolicyPage />} />
         </Routes>
       </main>
       <Footer />

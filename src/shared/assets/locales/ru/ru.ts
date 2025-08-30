@@ -500,7 +500,13 @@ const ru = {
       shieldOfImmortal: "Щит Берсерка",
       others: "И многие другие предметы"
     }
-  }
+  },
+  privacyPolicy: {
+    header: 'Политика конфиденциальности',
+  },
+  userAgreement: {
+    header: 'Пользовательское соглашение',
+  },
 };
 
 export default ru;

@@ -1,9 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './TitleSection.module.css';
-import { PATHS, EXTERNAL_LINKS, useLocalizedData, openInNewTab } from '@/shared/lib';
-import { Button } from '@/shared/ui';
-import { SwordIcon, TiedScrollIcon } from '@/shared/assets/images';
-import { Frame } from '../Frame';
 import bigLogo from '../../shared/assets/images/logos/big-logo.svg?url';
 import sparksRightEffect from '../../shared/assets/images/effects/sparks-right.svg?url';
 import sparksLeftEffect from '../../shared/assets/images/effects/sparks-left.svg?url';
@@ -13,6 +9,16 @@ import humanWarCharacter from '../../shared/assets/images/characters/human-war.s
 import circlesMainEffect from '../../shared/assets/images/effects/circles-main.svg?url';
 import ellipseConcaveEffect from '../../shared/assets/images/effects/ellipse-concave.svg?url';
 import ellipseConvexEffect from '../../shared/assets/images/effects/ellipse-convex.svg?url';
+import { Frame } from '../Frame';
+import {
+  PATHS,
+  EXTERNAL_LINKS,
+  useLocalizedData,
+  openInNewTab,
+  Button,
+  SwordIcon,
+  TiedScrollIcon,
+} from '@/shared';
 
 export const TitleSection = () => {
   const navigate = useNavigate();

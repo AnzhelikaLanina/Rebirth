@@ -1,12 +1,15 @@
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from 'react-router-dom';
 import styles from './NewsLarge.module.css';
-import { mainInfoWikiRatesData, mapWithLocalization, MEDIA_BREAKPOINTS, useLocalizedData } from '@/shared/lib';
 import {
+  mainInfoWikiRatesData,
+  mapWithLocalization,
+  MEDIA_BREAKPOINTS,
   OrnamentFeaturesMobileFrame,
   OrnamentNewsLargeFrame,
-} from '@/shared/assets/images';
-import { TableItemProps } from '@/shared/types';
-import { useNavigate } from 'react-router-dom';
+  TableItemProps,
+  useLocalizedData,
+} from '@/shared';
 
 export const NewsLarge = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP });
@@ -35,17 +38,17 @@ export const NewsLarge = () => {
       <Ornament className={styles.ornament} />
       <div className={styles.item}>
         <div className={styles.overlay} />
-        <div className={styles.containerLarge}>
-          <h3 className={styles.headerLarge}>{mainInfoWiki.header}</h3>
-          <p className={styles.descriptionLarge}>{mainInfoWiki.updateLabel}</p>
-          <p className={styles.descriptionLarge}>{mainInfoWiki.clientLimitLabel}</p>
+        <div className={styles.container}>
+          <h3 className={styles.header}>{mainInfoWiki.header}</h3>
+          <p className={styles.description}>{mainInfoWiki.updateLabel}</p>
+          <p className={styles.description}>{mainInfoWiki.clientLimitLabel}</p>
           <div className={styles.box1}>
             {localizedItemsWithoutPremium.map((item: TableItemProps, index: number) => (
               <div className={styles.box} key={index}>
                 {item.header ? '' :
                   <img className={styles.img} src={item.src} alt={item.alt} />
                 }
-                <p className={styles.descriptionLarge}>{item.text}</p>
+                <p className={styles.description}>{item.text}</p>
               </div>
             ))}
           </div>
@@ -55,7 +58,7 @@ export const NewsLarge = () => {
                 {item.header ? '' :
                   <img className={styles.img} src={item.src} alt={item.alt} />
                 }
-                <p className={styles.descriptionLarge}>{item.text}</p>
+                <p className={styles.description}>{item.text}</p>
               </div>
             ))}
           </div>

@@ -2,13 +2,14 @@ import type { MouseEvent as ReactMouseEvent } from 'react';
 import { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import styles from './DropDown.module.css';
-import { useLanguage, useLocalizedData } from '@/shared/lib';
 import {
   ArrowDownActiveIcon,
   ArrowDownIcon,
   FlagEnIcon,
   FlagRuIcon,
-} from '@/shared/assets/images';
+  useLanguage,
+  useLocalizedData
+} from '@/shared';
 
 type DropdownProps = {
   onLanguageChange?: () => void;

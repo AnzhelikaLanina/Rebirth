@@ -2,17 +2,21 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-import { PATHS, MEDIA_BREAKPOINTS, useLocalizedData } from '@/shared/lib';
-import { MenuIcon } from '@/shared/assets/images';
+import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
+import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url';
 import {
   ButtonsHeaderSection,
   DropDown,
   HeaderMenu,
   HeaderMenuMobile,
 } from './ui';
-import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
-import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url';
-import { OpenModal } from '@/shared/types';
+import {
+  MEDIA_BREAKPOINTS,
+  MenuIcon,
+  OpenModal,
+  PATHS,
+  useLocalizedData
+} from '@/shared';
 
 export const Header = ({ onOpenModal }: OpenModal) => {
   const { layout } = useLocalizedData();

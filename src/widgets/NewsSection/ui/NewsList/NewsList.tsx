@@ -1,12 +1,13 @@
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from 'react-router-dom';
 import styles from './NewsList.module.css';
-import { MEDIA_BREAKPOINTS, useLocalizedData } from '@/shared/lib';
+import { NewsItem } from '../NewsItem';
 import {
+  MEDIA_BREAKPOINTS,
   OrnamentNewsSmallFrame,
   OrnamentNewsSmallMobileFrame,
-} from '@/shared/assets/images';
-import { NewsItem } from '../NewsItem';
-import { useNavigate } from 'react-router-dom';
+  useLocalizedData
+} from '@/shared';
 
 export const NewsList = () => {
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP });

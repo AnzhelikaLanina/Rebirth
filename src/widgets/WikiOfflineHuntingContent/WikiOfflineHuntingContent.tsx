@@ -1,10 +1,12 @@
 import styles from './WikiOfflineHuntingContent.module.css';
 import {
+  mapWithLocalization,
   offlineHuntingData,
+  renderItemCards,
   useLocalizedData,
-  mapWithLocalization, renderItemCards,
-} from '@/shared/lib';
-import { WikiComponentProps } from '@/shared/types';
+  WikiComponentProps,
+  WikiLayout,
+} from '@/shared';
 
 export const WikiOfflineHuntingContent = ({ id }: WikiComponentProps) => {
   const { offlineHunting } = useLocalizedData();
@@ -14,12 +16,12 @@ export const WikiOfflineHuntingContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <div className={styles.content} id={id}>
-      <div className={styles.info}>
-        <h3 className={styles.header}>{offlineHunting.header}</h3>
-        <div className={styles.image} />
-      </div>
+    <WikiLayout
+      title={offlineHunting.header}
+      id={id}
+      imgStyle={styles.image}
+    >
       {renderItemCards(localizedItemsOfflineHunting)}
-    </div>
+    </WikiLayout>
   );
 };

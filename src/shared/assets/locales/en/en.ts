@@ -501,6 +501,12 @@ const en = {
       description: 'In battles against epic bosses, rewards are given to all participants who deal damage and are within a 2000 radius when killing a Boss.',
     },
   },
+  privacyPolicy: {
+    header: 'Privacy Policy',
+  },
+  userAgreement: {
+    header: 'User Agreement',
+  },
 };
 
 export default en;

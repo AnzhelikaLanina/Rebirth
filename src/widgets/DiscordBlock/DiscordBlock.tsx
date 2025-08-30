@@ -1,10 +1,14 @@
 import styles from './DiscordBlock.module.css';
-import { DiscordIcon } from '@/shared/assets/images';
-import { useLocalizedData, EXTERNAL_LINKS, openInNewTab } from '@/shared/lib';
-import { Button } from '@/shared/ui';
 import darkElfWomanCharacter from '../../shared/assets/images/characters/dark-elf-woman.svg?url';
 import circlesLeftEffect from '../../shared/assets/images/effects/circles-left.svg?url';
 import circlesRightEffect from '../../shared/assets/images/effects/circles-right.svg?url';
+import {
+  Button,
+  DiscordIcon,
+  EXTERNAL_LINKS,
+  openInNewTab,
+  useLocalizedData
+} from '@/shared';
 
 export const DiscordBlock = () => {
   const { discord } = useLocalizedData();

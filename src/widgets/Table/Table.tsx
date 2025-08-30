@@ -1,6 +1,6 @@
 import styles from './Table.module.css';
-import { TableItemProps } from '@/shared/types';
 import { TableItem } from './ui';
+import { TableItemProps } from '@/shared';
 
 type TableProps = {
   list: TableItemProps[];

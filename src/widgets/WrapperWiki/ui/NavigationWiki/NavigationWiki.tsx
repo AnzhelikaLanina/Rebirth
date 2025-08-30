@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './NavigationWiki.module.css';
-import { NavigationItem } from '@/shared/ui';
-import { useWikiNavigationItems } from '@/shared/lib';
-import { NavigationItemProps } from '@/shared/types';
+import {
+  NavigationItem,
+  NavigationItemProps,
+  useWikiNavigationItems
+} from '@/shared';
 
 type NavigationWikiProps = {
   activeIndex: number;

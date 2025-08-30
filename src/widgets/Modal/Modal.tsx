@@ -1,17 +1,18 @@
-import {
-  LineageIcon,
-  BlueLogoIcon,
-  UserIcon,
-  RawIcon,
-} from '@/shared/assets/images';
-import styles from './Modal.module.css';
-import { Button } from '@/shared/ui';
-import { EXTERNAL_LINKS, openInNewTab } from '@/shared/lib';
-import { ButtonDownload } from '@/widgets/Modal/ui';
-import { createPortal } from 'react-dom';
-import { ButtonClose } from '@/shared/ui/ButtonClose/ButtonClose';
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import clsx from 'clsx';
+import styles from './Modal.module.css';
+import { ButtonDownload } from './ui';
+import {
+  Button,
+  ButtonClose,
+  EXTERNAL_LINKS,
+  openInNewTab,
+  BlueLogoIcon,
+  LineageIcon,
+  RawIcon,
+  UserIcon,
+} from '@/shared';
 
 type ModalProps = {
   isOpen: boolean;

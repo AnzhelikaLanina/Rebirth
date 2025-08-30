@@ -1,10 +1,12 @@
 import styles from './WikiWorldTradeContent.module.css';
 import {
-  worldTradeData,
+  mapWithLocalization,
+  renderItemCards,
   useLocalizedData,
-  mapWithLocalization, renderItemCards,
-} from '@/shared/lib';
-import { WikiComponentProps } from '@/shared/types';
+  WikiComponentProps,
+  WikiLayout,
+  worldTradeData,
+} from '@/shared';
 
 export const WikiWorldTradeContent = ({ id }: WikiComponentProps) => {
   const { worldTrade } = useLocalizedData();
@@ -14,12 +16,12 @@ export const WikiWorldTradeContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <div className={styles.content} id={id}>
-      <div className={styles.info}>
-        <h3 className={styles.header}>{worldTrade.header}</h3>
-        <div className={styles.image} />
-      </div>
+    <WikiLayout
+      title={worldTrade.header}
+      id={id}
+      imgStyle={styles.image}
+    >
       {renderItemCards(localizedItems)}
-    </div>
+    </WikiLayout>
   );
 };

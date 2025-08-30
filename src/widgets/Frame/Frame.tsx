@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './Frame.module.css';
-import { useLocalizedData } from '@/shared/lib';
+import { useLocalizedData } from '@/shared';
 
 export const Frame = () => {
   const targetDate = new Date('2025-10-31T00:00:00').getTime();

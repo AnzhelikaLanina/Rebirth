@@ -1,10 +1,6 @@
 import { useMediaQuery } from 'react-responsive';
-import styles from './WikiPage.module.css';
-import { useLocalizedData } from '@/shared/lib';
 import { WrapperWikiMobile, WrapperWiki } from '@/widgets';
-import sparksNewsBottomEffect from '../../shared/assets/images/effects/sparks-news-bottom.svg?url';
-import sparksNewsTopEffect from '../../shared/assets/images/effects/sparks-news-top.svg?url';
-import { MEDIA_BREAKPOINTS } from '@/shared/lib/constants/common/mediaQueries';
+import { MEDIA_BREAKPOINTS, PageLayout, useLocalizedData } from '@/shared';
 
 export const WikiPage = () => {
   const isDesktop = useMediaQuery({
@@ -14,15 +10,9 @@ export const WikiPage = () => {
   const { wiki } = useLocalizedData();
   return (
     <>
-      <div className={styles.page}>
-        <img src={sparksNewsTopEffect} className={styles.sparksTop} alt="" />
-        <img src={sparksNewsBottomEffect} className={styles.sparksBottom} alt="" />
-        <div className={styles.patternBox} />
-        <div className={styles.headerBox}>
-          <h1 className={styles.header}>{wiki.header}</h1>
-        </div>
+      <PageLayout title={wiki.header}>
         {isDesktop ? <WrapperWikiMobile /> : <WrapperWiki />}
-      </div>
+      </PageLayout>
     </>
   );
 };

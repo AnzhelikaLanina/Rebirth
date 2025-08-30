@@ -3,12 +3,15 @@ import clsx from 'clsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperClass } from 'swiper';
 import { Navigation } from 'swiper/modules';
-import styles from './SwiperInfo.module.css';
 import 'swiper/css';
-import { useLocalizedData } from '@/shared/lib';
-import { PaginationInfo } from '@/widgets';
-import { ArrowLeftIcon, ArrowRightIcon } from '@/shared/assets/images';
+import styles from './SwiperInfo.module.css';
 import { Slide } from './ui';
+import { PaginationInfo } from '@/widgets';
+import {
+  useLocalizedData,
+  ArrowLeftIcon,
+  ArrowRightIcon
+} from '@/shared';
 
 export const SwiperInfo = () => {
   const { swiperText } = useLocalizedData();

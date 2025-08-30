@@ -1,9 +1,13 @@
 import { Suspense, useEffect, useState } from 'react';
 import styles from './WrapperWiki.module.css';
-import { renderWikiComponent, scrollToTop, useSectionFromUrl } from '@/shared/lib';
-import { Spinner } from '@/shared/ui';
 import { NavigationWiki } from './ui';
-import { scrollToSection } from '@/shared/lib/helpers/scrollToSection';
+import {
+  renderWikiComponent,
+  scrollToSection,
+  scrollToTop,
+  Spinner,
+  useSectionFromUrl
+} from '@/shared';
 
 export const WrapperWiki = () => {
   const [activeIndex, setActiveIndex] = useState(0);

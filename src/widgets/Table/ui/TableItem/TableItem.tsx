@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import styles from './TableItem.module.css';
-import { TableItemProps } from '@/shared/types';
+import { TableItemProps } from '@/shared';
 
 export const TableItem = ({
   header,

@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './HeaderMenu.module.css';
-import { PATHS, EXTERNAL_LINKS, useLocalizedData } from '@/shared/lib';
-import { ExternalLink } from '@/shared/ui';
-import { OpenModal } from '@/shared/types';
+import {
+  EXTERNAL_LINKS,
+  ExternalLink,
+  OpenModal,
+  PATHS,
+  useLocalizedData
+} from '@/shared';
 
 export const HeaderMenu = ({ onOpenModal }: OpenModal) => {
   const { layout } = useLocalizedData();

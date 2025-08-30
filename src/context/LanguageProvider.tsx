@@ -1,7 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { LanguageContext } from './LanguageContext';
-import { Language } from '@/shared/types';
-import { scrollToTop } from '@/shared/lib';
+import { Language, scrollToTop } from '@/shared';
 
 type LanguageProviderProps = {
   children: ReactNode;

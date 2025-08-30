@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import styles from './PaginationInfo.module.css';
-import { useLocalizedData } from '@/shared/lib';
 import {
+  useLocalizedData,
   BalanceActiveIcon,
   BalanceIcon,
   ClansActiveIcon,
@@ -14,7 +14,7 @@ import {
   OlympIcon,
   ProgressActiveFrame,
   ProgressFrame,
-} from '@/shared/assets/images';
+} from '@/shared';
 
 type PaginationInfoProps = {
   activeIndex: number;

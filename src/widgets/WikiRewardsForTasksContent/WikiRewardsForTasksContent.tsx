@@ -1,11 +1,12 @@
 import styles from './WikiRewardsForTasksContent.module.css';
+import { Table } from '../Table';
 import {
+  mapWithLocalization,
   systemRewardsData,
   useLocalizedData,
-  mapWithLocalization
-} from '@/shared/lib';
-import { Table } from '../Table';
-import { WikiComponentProps } from '@/shared/types';
+  WikiComponentProps,
+  WikiLayout
+} from '@/shared';
 
 export const WikiRewardsForTasksContent = ({ id }: WikiComponentProps) => {
   const { rewardsForTasks } = useLocalizedData();
@@ -15,12 +16,12 @@ export const WikiRewardsForTasksContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <div className={styles.content} id={id}>
-      <div className={styles.info}>
-        <h3 className={styles.header}>{rewardsForTasks.header}</h3>
-        <div className={styles.image} />
-      </div>
+    <WikiLayout
+      title={rewardsForTasks.header}
+      id={id}
+      imgStyle={styles.image}
+    >
       <Table list={itemsRewards} />
-    </div>
+    </WikiLayout>
   );
 };

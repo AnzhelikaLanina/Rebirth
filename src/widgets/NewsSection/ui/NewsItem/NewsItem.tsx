@@ -15,9 +15,9 @@ export const NewsItem = ({
   return (
     <div className={clsx(styles.item, itemStyle)}>
       <div className={styles.overlay} />
-      <div className={styles.containerSmall}>
-        <h3 className={styles.headerSmall}>{headerText}</h3>
-        <p className={styles.descriptionSmall}>{descriptionText}</p>
+      <div className={styles.container}>
+        <h3 className={styles.header}>{headerText}</h3>
+        <p className={styles.description}>{descriptionText}</p>
       </div>
     </div>
   );

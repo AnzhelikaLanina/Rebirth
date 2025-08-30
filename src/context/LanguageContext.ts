@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { Language } from '@/shared/types';
+import { Language } from '@/shared';
 
 type LanguageContextType = {
   language: Language;

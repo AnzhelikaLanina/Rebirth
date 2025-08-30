@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import styles from './ScrollToTopButton.module.css';
-import { scrollToTop, useLocalizedData } from '@/shared/lib';
 import ArrowTopIcon from '@/shared/assets/images/icons/arrow-top.png';
+import { scrollToTop, useLocalizedData } from '@/shared';
 
 export const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
