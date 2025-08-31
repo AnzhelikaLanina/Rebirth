@@ -5,7 +5,7 @@ import {
   ExternalLink,
   OpenModal,
   PATHS,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 export const HeaderMenu = ({ onOpenModal }: OpenModal) => {

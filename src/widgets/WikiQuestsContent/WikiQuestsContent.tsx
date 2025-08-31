@@ -10,14 +10,10 @@ import {
 
 export const WikiQuestsContent = ({ id }: WikiComponentProps) => {
   const { quests } = useLocalizedData();
-  const localizedItems = mapWithLocalization(questsData, quests, 'text')
+  const localizedItems = mapWithLocalization(questsData, quests, 'text');
   return (
-    <WikiLayout
-      title={quests.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={quests.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

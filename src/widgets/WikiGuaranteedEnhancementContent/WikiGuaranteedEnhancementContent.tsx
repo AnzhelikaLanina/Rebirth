@@ -8,12 +8,14 @@ import {
   WikiLayout,
 } from '@/shared';
 
-export const WikiGuaranteedEnhancementContent = ({ id }: WikiComponentProps) => {
+export const WikiGuaranteedEnhancementContent = ({
+  id,
+}: WikiComponentProps) => {
   const { guaranteedEnhancement } = useLocalizedData();
   const localizedItems = mapWithLocalization(
     guaranteedEnhancementData,
     guaranteedEnhancement,
-    'text'
+    'text',
   );
   return (
     <WikiLayout
@@ -24,4 +26,4 @@ export const WikiGuaranteedEnhancementContent = ({ id }: WikiComponentProps) => 
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

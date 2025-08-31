@@ -5,7 +5,7 @@ import {
   mapWithLocalization,
   useLocalizedData,
   WikiComponentProps,
-  WikiLayout
+  WikiLayout,
 } from '@/shared';
 
 export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
@@ -22,29 +22,23 @@ export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <WikiLayout
-      title={mainInfoWiki.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={mainInfoWiki.header} id={id} imgStyle={styles.image}>
       <p className={styles.text}>{mainInfoWiki.description}</p>
       <div className={styles.box}>
         <p className={styles.text}>
-            <span className={styles.textColor}>
-              {mainInfoWiki.serverStartLabel}
-            </span>
+          <span className={styles.textColor}>
+            {mainInfoWiki.serverStartLabel}
+          </span>
           {mainInfoWiki.serverStartDate}
         </p>
         <p className={styles.text}>
-            <span className={styles.textColor}>
-              {mainInfoWiki.obtStartLabel}
-            </span>
+          <span className={styles.textColor}>{mainInfoWiki.obtStartLabel}</span>
           {mainInfoWiki.obtStartDate}
         </p>
         <p className={styles.text}>
-            <span className={styles.textColor}>
-              {mainInfoWiki.serverTimeLabel}
-            </span>
+          <span className={styles.textColor}>
+            {mainInfoWiki.serverTimeLabel}
+          </span>
           {mainInfoWiki.serverTimeValue}
         </p>
         <p className={styles.text}>
@@ -52,9 +46,9 @@ export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
           {mainInfoWiki.updateValue}
         </p>
         <p className={styles.text}>
-            <span className={styles.textColor}>
-              {mainInfoWiki.clientLimitLabel}
-            </span>
+          <span className={styles.textColor}>
+            {mainInfoWiki.clientLimitLabel}
+          </span>
           {mainInfoWiki.clientLimitValue}
         </p>
       </div>

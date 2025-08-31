@@ -16,11 +16,7 @@ export const WikiCostumesContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <WikiLayout
-      id={id}
-      title={costumes.header}
-      imgStyle={styles.image}
-    >
+    <WikiLayout id={id} title={costumes.header} imgStyle={styles.image}>
       {renderItemCards(localizedCostumeList)}
     </WikiLayout>
   );

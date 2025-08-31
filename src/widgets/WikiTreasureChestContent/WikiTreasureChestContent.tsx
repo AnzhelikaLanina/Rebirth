@@ -16,27 +16,23 @@ export const WikiTreasureChestContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     treasureChestData,
     treasureChest,
-    'text'
+    'text',
   );
   const localizedItemsLocations = mapWithLocalization(
     locationsItemsData,
     treasureChest.locations,
-    'text'
+    'text',
   );
   const localizedItemsChestContent = mapWithLocalization(
     chestContentItemsData,
     treasureChest.chestContent,
-    'text'
+    'text',
   );
   return (
-    <WikiLayout
-      title={treasureChest.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={treasureChest.header} id={id} imgStyle={styles.image}>
       <Table list={localizedItemsLocations} />
       {renderItemCards(localizedItems)}
       <Table list={localizedItemsChestContent} />
     </WikiLayout>
-  )
-}
+  );
+};

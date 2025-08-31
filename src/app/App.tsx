@@ -5,14 +5,9 @@ import {
   MainPage,
   WikiPage,
   PrivacyPolicyPage,
-  UserAgreementPage
+  UserAgreementPage,
 } from '@/pages';
-import {
-  Footer,
-  Header,
-  ScrollToTopButton,
-  Modal
-} from '@/widgets';
+import { Footer, Header, ScrollToTopButton, Modal } from '@/widgets';
 import { HeadMeta, PATHS, ScrollToTop } from '@/shared';
 
 export const App = () => {

@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+}
+
+.itemBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.textBox {
+  max-width: 339px;
+  min-width: 339px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.textSmall {
+  margin: 0;
+  padding: 0;
+  font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+  color: rgba(132, 142, 156, 1);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}

@@ -13,15 +13,11 @@ export const WikiRewardsCalendarContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     rewardsCalendarData,
     rewardsCalendar,
-    'text'
+    'text',
   );
   return (
-    <WikiLayout
-      title={rewardsCalendar.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={rewardsCalendar.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

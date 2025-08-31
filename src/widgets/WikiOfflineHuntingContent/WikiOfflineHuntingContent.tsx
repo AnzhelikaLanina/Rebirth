@@ -16,11 +16,7 @@ export const WikiOfflineHuntingContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <WikiLayout
-      title={offlineHunting.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={offlineHunting.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItemsOfflineHunting)}
     </WikiLayout>
   );

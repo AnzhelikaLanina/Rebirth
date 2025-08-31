@@ -13,15 +13,11 @@ export const WikiInterfaceContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     interfaceData,
     interfaceContent,
-    'text'
+    'text',
   );
   return (
-    <WikiLayout
-      id={id}
-      title={interfaceContent.header}
-      imgStyle={styles.image}
-    >
+    <WikiLayout id={id} title={interfaceContent.header} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

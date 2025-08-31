@@ -6,7 +6,7 @@ import {
   EXTERNAL_LINKS,
   ExternalLink,
   PATHS,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 export const Footer = () => {
@@ -16,33 +16,28 @@ export const Footer = () => {
       <div className={styles.container}>
         <ul className={styles.info}>
           <li className={styles.box}>
-            <img src={nameAndLogo} className={styles.logo} alt={layout.altLogo} />
+            <img
+              src={nameAndLogo}
+              className={styles.logo}
+              alt={layout.altLogo}
+            />
             <div className={styles.line} />
             <p className={styles.text}>Lineage 2 Essence x5 Server</p>
           </li>
           <li>
-            <Link
-              to={PATHS.USER_AGREEMENT}
-              className={styles.link}
-            >
+            <Link to={PATHS.USER_AGREEMENT} className={styles.link}>
               {layout.userAgreement}
             </Link>
           </li>
           <li>
-            <Link
-              to={PATHS.PRIVACY_POLICY}
-              className={styles.link}
-            >
+            <Link to={PATHS.PRIVACY_POLICY} className={styles.link}>
               {layout.privacyPolicy}
             </Link>
           </li>
         </ul>
         <ul className={styles.links}>
           <li className={styles.element1}>
-            <Link
-              to={PATHS.WIKI}
-              className={styles.link}
-            >
+            <Link to={PATHS.WIKI} className={styles.link}>
               {layout.server}
             </Link>
           </li>

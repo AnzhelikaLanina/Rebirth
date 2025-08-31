@@ -34,7 +34,10 @@ export const NewsLarge = () => {
     : OrnamentFeaturesMobileFrame;
 
   return (
-    <div className={styles.ornamentBox} onClick={() => navigate('/wiki?section=0')}>
+    <div
+      className={styles.ornamentBox}
+      onClick={() => navigate('/wiki?section=0')}
+    >
       <Ornament className={styles.ornament} />
       <div className={styles.item}>
         <div className={styles.overlay} />
@@ -43,24 +46,32 @@ export const NewsLarge = () => {
           <p className={styles.description}>{mainInfoWiki.updateLabel}</p>
           <p className={styles.description}>{mainInfoWiki.clientLimitLabel}</p>
           <div className={styles.box1}>
-            {localizedItemsWithoutPremium.map((item: TableItemProps, index: number) => (
-              <div className={styles.box} key={index}>
-                {item.header ? '' :
-                  <img className={styles.img} src={item.src} alt={item.alt} />
-                }
-                <p className={styles.description}>{item.text}</p>
-              </div>
-            ))}
+            {localizedItemsWithoutPremium.map(
+              (item: TableItemProps, index: number) => (
+                <div className={styles.box} key={index}>
+                  {item.header ? (
+                    ''
+                  ) : (
+                    <img className={styles.img} src={item.src} alt={item.alt} />
+                  )}
+                  <p className={styles.description}>{item.text}</p>
+                </div>
+              ),
+            )}
           </div>
           <div className={styles.box1}>
-            {localizedItemsWithPremium.map((item: TableItemProps, index: number) => (
-              <div className={styles.box} key={index}>
-                {item.header ? '' :
-                  <img className={styles.img} src={item.src} alt={item.alt} />
-                }
-                <p className={styles.description}>{item.text}</p>
-              </div>
-            ))}
+            {localizedItemsWithPremium.map(
+              (item: TableItemProps, index: number) => (
+                <div className={styles.box} key={index}>
+                  {item.header ? (
+                    ''
+                  ) : (
+                    <img className={styles.img} src={item.src} alt={item.alt} />
+                  )}
+                  <p className={styles.description}>{item.text}</p>
+                </div>
+              ),
+            )}
           </div>
         </div>
       </div>

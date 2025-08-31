@@ -1,5 +1,5 @@
 import starterPackage from '@/shared/assets/images/items/bm-starter-package.png';
-import  etcPccafePoint from '@/shared/assets/images/items/etc-pccafe-point.png';
+import etcPccafePoint from '@/shared/assets/images/items/etc-pccafe-point.png';
 
 export const starterKitData = [
   {
@@ -11,5 +11,5 @@ export const starterKitData = [
     key: 'pccafePremium',
     src: etcPccafePoint,
     alt: 'etc pccafe point',
-  }
+  },
 ];

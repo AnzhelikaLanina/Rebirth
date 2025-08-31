@@ -13,7 +13,7 @@ export const WikiDropFrom90PlusMobsContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     dropFrom90PlusMobsData,
     dropFrom90PlusMobs.description,
-    'text'
+    'text',
   );
   return (
     <WikiLayout
@@ -23,5 +23,5 @@ export const WikiDropFrom90PlusMobsContent = ({ id }: WikiComponentProps) => {
     >
       <Table list={localizedItems} />
     </WikiLayout>
-  )
-}
+  );
+};

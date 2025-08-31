@@ -13,15 +13,11 @@ export const WikiClanBonusesContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     clanBonusesData,
     clanBonuses,
-    'text'
+    'text',
   );
   return (
-    <WikiLayout
-      id={id}
-      title={clanBonuses.header}
-      imgStyle={styles.image}
-    >
+    <WikiLayout id={id} title={clanBonuses.header} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
-  )
-}
+  );
+};

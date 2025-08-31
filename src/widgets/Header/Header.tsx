@@ -15,7 +15,7 @@ import {
   MenuIcon,
   OpenModal,
   PATHS,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 export const Header = ({ onOpenModal }: OpenModal) => {

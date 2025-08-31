@@ -14,7 +14,7 @@ import {
   useLocalizedData,
 } from '@/shared';
 
-type HeaderMenuMobileProps = OpenModal &{
+type HeaderMenuMobileProps = OpenModal & {
   toggleMenu: () => void;
   menuOpen: boolean;
 };
@@ -22,7 +22,7 @@ type HeaderMenuMobileProps = OpenModal &{
 export const HeaderMenuMobile = ({
   toggleMenu,
   menuOpen,
-  onOpenModal
+  onOpenModal,
 }: HeaderMenuMobileProps) => {
   const { layout } = useLocalizedData();
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_MEDIUM });
@@ -39,11 +39,11 @@ export const HeaderMenuMobile = ({
         <Link className={styles.link} to={PATHS.WIKI}>
           {layout.server}
         </Link>
-        {isDesktop &&
+        {isDesktop && (
           <p className={styles.link} onClick={onOpenModal}>
             {layout.files}
           </p>
-        }
+        )}
         <ExternalLink
           href={EXTERNAL_LINKS.REGISTRATION}
           children={layout.registration}

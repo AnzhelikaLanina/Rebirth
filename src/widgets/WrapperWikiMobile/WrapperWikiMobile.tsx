@@ -43,7 +43,10 @@ export const WrapperWikiMobile = () => {
             activeIcon={item.activeIcon}
           />
           <Suspense fallback={<Spinner />}>
-            <div className={styles.contentAppear} style={{ display: activeIndex === index ? 'block' : 'none' }}>
+            <div
+              className={styles.contentAppear}
+              style={{ display: activeIndex === index ? 'block' : 'none' }}
+            >
               {renderWikiComponent(index)}
             </div>
           </Suspense>

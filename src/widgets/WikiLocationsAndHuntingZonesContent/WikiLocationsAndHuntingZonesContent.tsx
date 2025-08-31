@@ -10,17 +10,19 @@ import {
   WikiLayout,
 } from '@/shared';
 
-export const WikiLocationsAndHuntingZonesContent = ({ id }: WikiComponentProps) => {
+export const WikiLocationsAndHuntingZonesContent = ({
+  id,
+}: WikiComponentProps) => {
   const { locationsAndHuntingZones } = useLocalizedData();
   const localizedItems = mapWithLocalization(
     locationsAndHuntingZonesData,
     locationsAndHuntingZones,
-    'text'
+    'text',
   );
   const localizedItemsRewards = mapWithLocalization(
     rewardsItemsData,
     locationsAndHuntingZones.rewards,
-    'text'
+    'text',
   );
   return (
     <WikiLayout
@@ -31,5 +33,5 @@ export const WikiLocationsAndHuntingZonesContent = ({ id }: WikiComponentProps) 
       {renderItemCards(localizedItems)}
       <Table list={localizedItemsRewards} />
     </WikiLayout>
-  )
-}
+  );
+};

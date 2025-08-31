@@ -8,12 +8,14 @@ import {
   WikiLayout,
 } from '@/shared';
 
-export const WikiAchievementBoxesRewardsContent = ({ id }: WikiComponentProps) => {
+export const WikiAchievementBoxesRewardsContent = ({
+  id,
+}: WikiComponentProps) => {
   const { achievementBoxesRewards } = useLocalizedData();
   const localizedItems = mapWithLocalization(
     achievementBoxesRewardsData,
     achievementBoxesRewards,
-    'text'
+    'text',
   );
   return (
     <WikiLayout
@@ -24,4 +26,4 @@ export const WikiAchievementBoxesRewardsContent = ({ id }: WikiComponentProps) =
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

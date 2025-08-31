@@ -1,1 +1,1 @@
-export * from "./WikiStarterKitContent";
+export * from './WikiStarterKitContent';

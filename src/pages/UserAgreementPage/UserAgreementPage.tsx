@@ -8,5 +8,5 @@ export const UserAgreementPage = () => {
         <div></div>
       </PageLayout>
     </>
-  )
-}
+  );
+};

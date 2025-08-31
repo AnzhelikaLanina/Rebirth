@@ -3,7 +3,7 @@ import styles from './Frame.module.css';
 import { useLocalizedData } from '@/shared';
 
 export const Frame = () => {
-  const targetDate = new Date('2025-10-31T00:00:00').getTime();
+  const targetDate = new Date('2025-11-14T20:00:00+03:00').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

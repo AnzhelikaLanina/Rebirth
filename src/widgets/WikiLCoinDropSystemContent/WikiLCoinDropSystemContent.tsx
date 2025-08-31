@@ -13,15 +13,11 @@ export const WikiLCoinDropSystemContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     lCoinDropSystemData,
     lCoinDropSystem,
-    'text'
+    'text',
   );
   return (
-    <WikiLayout
-      id={id}
-      title={lCoinDropSystem.header}
-      imgStyle={styles.image}
-    >
+    <WikiLayout id={id} title={lCoinDropSystem.header} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
-  )
-}
+  );
+};

@@ -22,7 +22,10 @@ export const WikiAutoHuntingContent = ({ id }: WikiComponentProps) => {
     <WikiLayout
       id={id}
       title={autoHunting.header}
-      imgStyle={clsx(styles.image, language === 'ru' ? styles.imageRu : styles.imageEn)}
+      imgStyle={clsx(
+        styles.image,
+        language === 'ru' ? styles.imageRu : styles.imageEn,
+      )}
     >
       <Table list={localizedItems} />
     </WikiLayout>

@@ -6,7 +6,7 @@ import {
   MEDIA_BREAKPOINTS,
   OrnamentNewsSmallFrame,
   OrnamentNewsSmallMobileFrame,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 export const NewsList = () => {
@@ -19,17 +19,17 @@ export const NewsList = () => {
     {
       ...bonusesForClans,
       style: styles.itemTop,
-      sectionId: 20
+      sectionId: 20,
     },
     {
       ...rewardsSeasonPass,
       style: styles.itemCenter,
-      sectionId: 4
+      sectionId: 4,
     },
     {
       ...newUniqueTasks,
       style: styles.itemBottom,
-      sectionId: 3
+      sectionId: 3,
     },
   ];
 
@@ -44,7 +44,11 @@ export const NewsList = () => {
   return (
     <>
       {newsData.map((newsItem, index) => (
-        <div className={styles.ornamentBox} key={index} onClick={() => handleClick(newsItem.sectionId)}>
+        <div
+          className={styles.ornamentBox}
+          key={index}
+          onClick={() => handleClick(newsItem.sectionId)}
+        >
           <Ornament className={styles.ornament} />
           <NewsItem
             headerText={newsItem.header}

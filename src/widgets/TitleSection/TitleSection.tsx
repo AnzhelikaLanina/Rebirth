@@ -28,12 +28,28 @@ export const TitleSection = () => {
       <div className={styles.background} />
       <div className={styles.shadow} />
       <div className={styles.imageContainer}>
-        <img src={ellipseConcaveEffect} className={styles.ellipseConcave} alt="" />
-        <img src={ellipseConvexEffect} className={styles.ellipseConvex} alt="" />
+        <img
+          src={ellipseConcaveEffect}
+          className={styles.ellipseConcave}
+          alt=""
+        />
+        <img
+          src={ellipseConvexEffect}
+          className={styles.ellipseConvex}
+          alt=""
+        />
         <img src={flareEffect} className={styles.flare} alt="" />
         <img src={bigLogo} className={styles.logo} alt="" />
-        <img src={elfWomanCharacter} className={styles.imageElfWoman} alt={mainInfo.altElf} />
-        <img src={humanWarCharacter} className={styles.imageWarHuman} alt={mainInfo.altHumanWar} />
+        <img
+          src={elfWomanCharacter}
+          className={styles.imageElfWoman}
+          alt={mainInfo.altElf}
+        />
+        <img
+          src={humanWarCharacter}
+          className={styles.imageWarHuman}
+          alt={mainInfo.altHumanWar}
+        />
         <img src={circlesMainEffect} className={styles.circles} alt="" />
         <Frame />
       </div>

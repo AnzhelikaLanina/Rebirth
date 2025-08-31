@@ -60,9 +60,11 @@ export const WikiRewardsCalendarContentLazy = lazy(() =>
 );
 
 export const WikiAchievementBoxesRewardsContentLazy = lazy(() =>
-  import('../../../widgets/WikiAchievementBoxesRewardsContent').then((module) => ({
-    default: module.WikiAchievementBoxesRewardsContent,
-  })),
+  import('../../../widgets/WikiAchievementBoxesRewardsContent').then(
+    (module) => ({
+      default: module.WikiAchievementBoxesRewardsContent,
+    }),
+  ),
 );
 
 export const WikiNormalCreationContentLazy = lazy(() =>
@@ -72,9 +74,11 @@ export const WikiNormalCreationContentLazy = lazy(() =>
 );
 
 export const WikiGuaranteedEnhancementContentLazy = lazy(() =>
-  import('../../../widgets/WikiGuaranteedEnhancementContent').then((module) => ({
-    default: module.WikiGuaranteedEnhancementContent,
-  })),
+  import('../../../widgets/WikiGuaranteedEnhancementContent').then(
+    (module) => ({
+      default: module.WikiGuaranteedEnhancementContent,
+    }),
+  ),
 );
 
 export const WikiQuestsContentLazy = lazy(() =>
@@ -90,9 +94,11 @@ export const WikiInterfaceContentLazy = lazy(() =>
 );
 
 export const WikiLocationsAndHuntingZonesContentLazy = lazy(() =>
-  import('../../../widgets/WikiLocationsAndHuntingZonesContent').then((module) => ({
-    default: module.WikiLocationsAndHuntingZonesContent,
-  })),
+  import('../../../widgets/WikiLocationsAndHuntingZonesContent').then(
+    (module) => ({
+      default: module.WikiLocationsAndHuntingZonesContent,
+    }),
+  ),
 );
 
 export const WikiOlympiadContentLazy = lazy(() =>

@@ -5,9 +5,14 @@ type WikiLayoutProps = {
   children: React.ReactNode;
   id: string;
   imgStyle: string;
-}
+};
 
-export const WikiLayout = ({ title, children, id, imgStyle }: WikiLayoutProps) => {
+export const WikiLayout = ({
+  title,
+  children,
+  id,
+  imgStyle,
+}: WikiLayoutProps) => {
   return (
     <div className={styles.content} id={id}>
       <div className={styles.info}>
@@ -17,4 +22,4 @@ export const WikiLayout = ({ title, children, id, imgStyle }: WikiLayoutProps) =
       {children}
     </div>
   );
-}
+};

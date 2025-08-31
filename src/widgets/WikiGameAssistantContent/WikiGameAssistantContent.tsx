@@ -12,14 +12,11 @@ export const WikiGameAssistantContent = ({ id }: WikiComponentProps) => {
   const { gameAssistant } = useLocalizedData();
   const localizedItems = mapWithLocalization(
     gameAssistantData,
-    gameAssistant, 'text'
+    gameAssistant,
+    'text',
   );
   return (
-    <WikiLayout
-      id={id}
-      title={gameAssistant.header}
-      imgStyle={styles.image}
-    >
+    <WikiLayout id={id} title={gameAssistant.header} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );

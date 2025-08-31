@@ -8,5 +8,5 @@ export const PrivacyPolicyPage = () => {
         <div></div>
       </PageLayout>
     </>
-  )
-}
+  );
+};

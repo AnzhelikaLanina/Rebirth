@@ -10,18 +10,10 @@ import {
 
 export const WikiOlympiadContent = ({ id }: WikiComponentProps) => {
   const { olympiad } = useLocalizedData();
-  const localizedItems = mapWithLocalization(
-    olympiadData,
-    olympiad,
-    'text'
-  );
+  const localizedItems = mapWithLocalization(olympiadData, olympiad, 'text');
   return (
-    <WikiLayout
-      title={olympiad.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={olympiad.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
-  )
-}
+  );
+};

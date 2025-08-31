@@ -7,7 +7,7 @@ import {
   MEDIA_BREAKPOINTS,
   OrnamentFeaturesFrame,
   OrnamentFeaturesMobileFrame,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 export const Features = () => {
@@ -21,8 +21,16 @@ export const Features = () => {
   return (
     <section className={styles.features}>
       <h2 className={styles.header}>{features.uniqueFeatures}</h2>
-      <img src={sparksFeaturesLeftEffect} className={styles.sparksLeft} alt="" />
-      <img src={sparksFeaturesRightEffect} className={styles.sparksRight} alt="" />
+      <img
+        src={sparksFeaturesLeftEffect}
+        className={styles.sparksLeft}
+        alt=""
+      />
+      <img
+        src={sparksFeaturesRightEffect}
+        className={styles.sparksRight}
+        alt=""
+      />
       <div className={styles.patternBox} />
       <div className={styles.ornamentBox}>
         <Ornament className={styles.ornament} />

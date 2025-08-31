@@ -2,26 +2,26 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import clsx from 'clsx';
 import styles from './Modal.module.css';
-import { ButtonDownload } from './ui';
+import { ModalItem } from './ui';
 import {
   Button,
   ButtonClose,
   EXTERNAL_LINKS,
   openInNewTab,
-  BlueLogoIcon,
-  LineageIcon,
-  RawIcon,
   UserIcon,
+  useLocalizedData,
+  modalItems,
 } from '@/shared';
 
 type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
-}
+};
 
 export const Modal = ({ isOpen, onClose }: ModalProps) => {
   const [render, setRender] = useState(isOpen);
   const [visible, setVisible] = useState(false);
+  const { modal } = useLocalizedData();
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -38,88 +38,44 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
     return () => clearTimeout(timeout);
   }, [isOpen, render]);
 
-  const items = [
-    {
-      icon: LineageIcon,
-      header: 'Игровой клиент (Eng + RU)',
-      description: 'клиент игры',
-      buttonGoogleHeader: 'Google Drive',
-      buttonYandexDiscHeader: 'Yandex Disc',
-      iconText: 'иконка lineage',
-      linkGoogle: '',
-      linkGYandex: ''
-    },
-    {
-      icon: RawIcon,
-      header: 'Игровой Патч',
-      description: 'Разархивировать в папку с игрой',
-      buttonGoogleHeader: 'Google Drive',
-      buttonYandexDiscHeader: 'Yandex Disc',
-      headerDownload: 'Скачать',
-      iconText: 'иконка rar',
-      linkGoogle: '',
-      linkGYandex: ''
-    },
-    {
-      icon: BlueLogoIcon,
-      header: 'Апдейтер',
-      description: 'Разархивировать в папку с игрой',
-      buttonGoogleHeader: 'Google Drive',
-      buttonYandexDiscHeader: 'Yandex Disc',
-      headerDownload: 'Скачать',
-      iconText: 'логотип',
-      linkGoogle: '',
-      linkGYandex: ''
-    }
-  ];
+  const items = modalItems.map((item) => ({
+    ...item,
+    header: modal[item.key].header,
+    description: modal[item.key].description,
+    altIcon: modal[item.key].altIcon,
+    buttonGoogleHeader: modal.buttonGoogle,
+    buttonYandexDiscHeader: modal.buttonYandexDisc,
+  }));
 
-return createPortal(
-  <div
-    className={clsx(styles.overlay, { [styles.overlayVisible]: visible })}
-    onClick={onClose}
-  >
+  return createPortal(
     <div
-      className={clsx(styles.modal, { [styles.modalVisible]: visible })}
-      onClick={(e) => e.stopPropagation()}
+      className={clsx(styles.overlay, { [styles.overlayVisible]: visible })}
+      onClick={onClose}
     >
-      <div className={styles.headerBox}>
-        <h2 className={styles.header}>Файлы для игры</h2>
-        <ButtonClose onClose={onClose} />
+      <div
+        className={clsx(styles.modal, { [styles.modalVisible]: visible })}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className={styles.headerBox}>
+          <h2 className={styles.header}>{modal.header}</h2>
+          <ButtonClose onClose={onClose} />
+        </div>
+        <div className={styles.content}>
+          {items.map(({ key, ...props }) => (
+            <ModalItem key={key} {...props} />
+          ))}
+        </div>
+        <div className={styles.footerBox}>
+          <p className={styles.text}>{modal.description}</p>
+          <Button
+            className={styles.buttonBlue}
+            icon={<UserIcon />}
+            text={modal.buttonReg}
+            onClick={() => openInNewTab(EXTERNAL_LINKS.PERSONAL_ACCOUNT)}
+          />
+        </div>
       </div>
-      <div className={styles.content}>
-        {items.map((item, index) => (
-          <div key={index} className={styles.item}>
-            <div className={styles.itemBox}>
-              {item.icon && <item.icon className={styles.icon} />}
-              <div className={styles.textBox}>
-                <h3 className={styles.text}>{item.header}</h3>
-                <p className={styles.textSmall}>{item.description}</p>
-              </div>
-            </div>
-            <div className={styles.buttons}>
-              <ButtonDownload
-                link={item.linkGoogle}
-                text={item.buttonGoogleHeader}
-              />
-              <ButtonDownload
-                link={item.linkGYandex}
-                text={item.buttonYandexDiscHeader}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className={styles.footerBox}>
-        <p className={styles.text}>Создайте игровой аккаунт</p>
-        <Button
-          className={styles.buttonBlue}
-          icon={<UserIcon />}
-          text={"Регистрация"}
-          onClick={() => openInNewTab(EXTERNAL_LINKS.PERSONAL_ACCOUNT)}
-        />
-      </div>
-    </div>
-  </div>,
-  document.getElementById('modal')!
-)
-}
+    </div>,
+    document.getElementById('modal')!,
+  );
+};

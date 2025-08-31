@@ -29,6 +29,3 @@ export { default as SealsActiveIcon } from './seals-icon-active.svg?react';
 export { default as SwordIcon } from './sword.svg?react';
 export { default as TiedScrollIcon } from './tied-scroll.svg?react';
 export { default as DownloadIcon } from './download-icon.svg?react';
-export { default as LineageIcon } from './lineage-icon.svg?react';
-export { default as BlueLogoIcon } from './blue-logo-icon.svg?react';
-export { default as RawIcon } from './raw.svg?react';

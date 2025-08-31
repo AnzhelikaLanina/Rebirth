@@ -13,15 +13,11 @@ export const WikiNewUniqueTasksContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     uniqueTasksData,
     newUniqueTasks,
-    'text'
+    'text',
   );
   return (
-    <WikiLayout
-      title={newUniqueTasks.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={newUniqueTasks.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

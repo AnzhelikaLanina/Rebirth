@@ -5,7 +5,7 @@ import {
   EXTERNAL_LINKS,
   openInNewTab,
   useLocalizedData,
-  UserIcon
+  UserIcon,
 } from '@/shared';
 
 export const ButtonsHeaderSection = () => {

@@ -21,7 +21,11 @@ import {
 
 export const wikiNavData = [
   { key: 'mainInfoHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
-  { key: 'starterKitHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
+  {
+    key: 'starterKitHeader',
+    icon: MainInfoIcon,
+    activeIcon: MainInfoActiveIcon,
+  },
   {
     key: 'rewardsForTasksHeader',
     icon: OlympIcon,
@@ -50,13 +54,17 @@ export const wikiNavData = [
   {
     key: 'autoHuntingHeader',
     icon: RaidIcon,
-    activeIcon: RaidActiveIcon
+    activeIcon: RaidActiveIcon,
   },
   { key: 'offlineHuntingHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
   { key: 'costumesHeader', icon: SealsIcon, activeIcon: SealsActiveIcon },
   { key: 'worldTradeHeader', icon: BalanceIcon, activeIcon: BalanceActiveIcon },
   { key: 'normalCreationHeader', icon: CraftIcon, activeIcon: CraftActiveIcon },
-  { key: 'guaranteedEnhancementHeader', icon: CraftIcon, activeIcon: CraftActiveIcon },
+  {
+    key: 'guaranteedEnhancementHeader',
+    icon: CraftIcon,
+    activeIcon: CraftActiveIcon,
+  },
   { key: 'questsHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
   {
     key: 'interfaceHeader',
@@ -68,10 +76,18 @@ export const wikiNavData = [
     icon: InterfaceIcon,
     activeIcon: InterfaceActiveIcon,
   },
-  { key: 'locationsAndHuntingZonesHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  {
+    key: 'locationsAndHuntingZonesHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
   { key: 'olympiadHeader', icon: FeaturesIcon, activeIcon: FeaturesActiveIcon },
   { key: 'lCoinDropSystemHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
-  { key: 'dropFrom90PlusMobsHeader', icon: RaidIcon, activeIcon: RaidActiveIcon },
+  {
+    key: 'dropFrom90PlusMobsHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
   { key: 'clanBonusesHeader', icon: ClansIcon, activeIcon: ClansActiveIcon },
   { key: 'treasureChestHeader', icon: OlympIcon, activeIcon: OlympActiveIcon },
 ];

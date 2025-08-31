@@ -19,8 +19,16 @@ export const gameAssistantData = [
   { key: 'ravenAndVulkanChance', src: ravenContract, alt: 'raven contract' },
   { key: 'glassiaChance', src: vulkanContract, alt: 'vulkan contract' },
   { key: 'gemsAndChestsExchange', src: couponStone, alt: 'coupon stone' },
-  { key: 'relicFragmentExchange', src: essenceOfGiant, alt: 'essence of giant' },
-  { key: 'relicFragmentToDiary', src: bmHeroBookMineral, alt: 'bm hero book mineral' },
+  {
+    key: 'relicFragmentExchange',
+    src: essenceOfGiant,
+    alt: 'essence of giant',
+  },
+  {
+    key: 'relicFragmentToDiary',
+    src: bmHeroBookMineral,
+    alt: 'bm hero book mineral',
+  },
   { key: 'soulBeadExchange', src: soulBead, alt: 'soul bead' },
   { key: 'epicJewelryScroll', src: scrollEpic, alt: 'scroll epic' },
   { key: 'equipmentSale', src: weaponSchlaeger, alt: 'weapon schlaeger' },

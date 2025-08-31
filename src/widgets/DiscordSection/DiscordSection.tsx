@@ -4,7 +4,7 @@ import { DiscordBlock } from '@/widgets';
 import {
   MEDIA_BREAKPOINTS,
   OrnamentDiscordFrame,
-  OrnamentDiscordMobileFrame
+  OrnamentDiscordMobileFrame,
 } from '@/shared';
 
 export const DiscordSection = () => {

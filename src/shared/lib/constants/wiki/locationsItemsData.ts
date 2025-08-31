@@ -11,36 +11,36 @@ export const locationsItemsData = [
   {
     key: 'campValakalakov',
     header: false,
-    image: false
+    image: false,
   },
   {
     key: 'landsOfShadows',
     header: false,
-    image: false
+    image: false,
   },
   {
     key: 'campTai',
     header: false,
-    image: false
+    image: false,
   },
   {
     key: 'wastelandOasis',
     header: false,
-    image: false
+    image: false,
   },
   {
     key: 'landsTakenByFairies',
     header: false,
-    image: false
+    image: false,
   },
   {
     key: 'fortressFavnos',
     header: false,
-    image: false
+    image: false,
   },
   {
     key: 'morgosMilitaryBase',
     header: false,
-    image: false
+    image: false,
   },
 ];

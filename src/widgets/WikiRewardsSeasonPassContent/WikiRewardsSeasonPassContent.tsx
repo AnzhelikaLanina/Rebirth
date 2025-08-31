@@ -13,7 +13,7 @@ export const WikiRewardsSeasonPassContent = ({ id }: WikiComponentProps) => {
   const localizedItems = mapWithLocalization(
     rewardsSeasonPassData,
     rewardsSeasonPass,
-    'text'
+    'text',
   );
   return (
     <WikiLayout
@@ -24,4 +24,4 @@ export const WikiRewardsSeasonPassContent = ({ id }: WikiComponentProps) => {
       {renderItemCards(localizedItems)}
     </WikiLayout>
   );
-}
+};

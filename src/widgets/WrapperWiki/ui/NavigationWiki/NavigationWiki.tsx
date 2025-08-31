@@ -3,7 +3,7 @@ import styles from './NavigationWiki.module.css';
 import {
   NavigationItem,
   NavigationItemProps,
-  useWikiNavigationItems
+  useWikiNavigationItems,
 } from '@/shared';
 
 type NavigationWikiProps = {

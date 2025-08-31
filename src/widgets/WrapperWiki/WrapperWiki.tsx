@@ -6,7 +6,7 @@ import {
   scrollToSection,
   scrollToTop,
   Spinner,
-  useSectionFromUrl
+  useSectionFromUrl,
 } from '@/shared';
 
 export const WrapperWiki = () => {

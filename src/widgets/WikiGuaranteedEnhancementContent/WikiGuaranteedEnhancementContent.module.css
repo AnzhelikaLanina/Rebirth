@@ -1,14 +1,14 @@
 .image {
-    width: 862px;
-    height: 411px;
-    background-image: url('../../shared/assets/images/backgrounds/boy.png');
-    background-size: cover;
-    background-position: 50% 45%;
+  width: 862px;
+  height: 411px;
+  background-image: url('../../shared/assets/images/backgrounds/boy.png');
+  background-size: cover;
+  background-position: 50% 45%;
 }
 
 @media screen and (max-width: 1450px) {
-    .image {
-        width: 315px;
-        height: 243px;
-    }
+  .image {
+    width: 315px;
+    height: 243px;
+  }
 }

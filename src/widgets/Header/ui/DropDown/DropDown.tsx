@@ -8,7 +8,7 @@ import {
   FlagEnIcon,
   FlagRuIcon,
   useLanguage,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 type DropdownProps = {

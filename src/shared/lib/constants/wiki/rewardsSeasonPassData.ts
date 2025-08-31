@@ -25,31 +25,31 @@ export const rewardsSeasonPassData = [
   {
     src: accessoryNecklaceOfPerion,
     alt: 'accessory necklace of perion',
-    key: 'necklaceOfPerion'
+    key: 'necklaceOfPerion',
   },
   {
     src: armor_t702,
     alt: 'armor t702',
-    key: 'crimsonGloves'
+    key: 'crimsonGloves',
   },
   {
     src: armorLightShoes,
     alt: 'armor light shoes',
-    key: 'seaBoots'
+    key: 'seaBoots',
   },
   {
     src: armorLeatherHelmet,
     alt: 'armor leather helmet',
-    key: 'wildWindHelmet'
+    key: 'wildWindHelmet',
   },
   {
     src: expandedDyePotential,
     alt: 'sb expanded dye potential',
-    key: 'expandedDyePotential'
+    key: 'expandedDyePotential',
   },
   {
     src: bmSilverLureBox,
     alt: 'bm silver lure box',
-    key: 'silverLureBox'
+    key: 'silverLureBox',
   },
 ];

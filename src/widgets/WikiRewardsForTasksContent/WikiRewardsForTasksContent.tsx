@@ -5,7 +5,7 @@ import {
   systemRewardsData,
   useLocalizedData,
   WikiComponentProps,
-  WikiLayout
+  WikiLayout,
 } from '@/shared';
 
 export const WikiRewardsForTasksContent = ({ id }: WikiComponentProps) => {
@@ -16,11 +16,7 @@ export const WikiRewardsForTasksContent = ({ id }: WikiComponentProps) => {
     'text',
   );
   return (
-    <WikiLayout
-      title={rewardsForTasks.header}
-      id={id}
-      imgStyle={styles.image}
-    >
+    <WikiLayout title={rewardsForTasks.header} id={id} imgStyle={styles.image}>
       <Table list={itemsRewards} />
     </WikiLayout>
   );

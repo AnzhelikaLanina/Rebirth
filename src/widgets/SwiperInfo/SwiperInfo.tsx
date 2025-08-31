@@ -7,21 +7,26 @@ import 'swiper/css';
 import styles from './SwiperInfo.module.css';
 import { Slide } from './ui';
 import { PaginationInfo } from '@/widgets';
-import {
-  useLocalizedData,
-  ArrowLeftIcon,
-  ArrowRightIcon
-} from '@/shared';
+import { useLocalizedData, ArrowLeftIcon, ArrowRightIcon } from '@/shared';
 
 export const SwiperInfo = () => {
   const { swiperText } = useLocalizedData();
 
   const slides = [
-    { header: swiperText.startWithoutDonationsHeader, text: swiperText.startWithoutDonationsText },
-    { header: swiperText.roseVainUpdateHeader, text: swiperText.roseVainUpdateText },
+    {
+      header: swiperText.startWithoutDonationsHeader,
+      text: swiperText.startWithoutDonationsText,
+    },
+    {
+      header: swiperText.roseVainUpdateHeader,
+      text: swiperText.roseVainUpdateText,
+    },
     { header: swiperText.coinsLHeader, text: swiperText.coinsLText },
     { header: swiperText.olympiadHeader, text: swiperText.olympiadText },
-    { header: swiperText.itemDropSystemHeader, text: swiperText.itemDropSystemText },
+    {
+      header: swiperText.itemDropSystemHeader,
+      text: swiperText.itemDropSystemText,
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

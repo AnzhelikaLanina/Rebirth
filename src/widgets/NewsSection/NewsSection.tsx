@@ -11,7 +11,11 @@ export const NewsSection = () => {
   return (
     <section className={styles.news}>
       <img src={sparksNewsTopEffect} className={styles.sparksTop} alt="" />
-      <img src={sparksNewsBottomEffect} className={styles.sparksBottom} alt="" />
+      <img
+        src={sparksNewsBottomEffect}
+        className={styles.sparksBottom}
+        alt=""
+      />
       <div className={styles.patternBox} />
       <h2 className={styles.header}>{newsBlock.header}</h2>
       <div className={styles.container}>

@@ -12,12 +12,16 @@ export const PageLayout = ({ title, children }: PageLayoutProps) => {
   return (
     <div className={styles.page}>
       <img src={sparksNewsTopEffect} className={styles.sparksTop} alt="" />
-      <img src={sparksNewsBottomEffect} className={styles.sparksBottom} alt="" />
+      <img
+        src={sparksNewsBottomEffect}
+        className={styles.sparksBottom}
+        alt=""
+      />
       <div className={styles.patternBox} />
       <div className={styles.headerBox}>
         <h1 className={styles.header}>{title}</h1>
       </div>
       {children}
     </div>
-  )
-}
+  );
+};

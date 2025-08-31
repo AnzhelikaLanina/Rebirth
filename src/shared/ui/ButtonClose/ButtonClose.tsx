@@ -14,5 +14,5 @@ export const ButtonClose = ({ onClose }: ButtonCloseProps) => {
     >
       <CloseIcon className={styles.closeIcon} />
     </button>
-  )
-}
+  );
+};

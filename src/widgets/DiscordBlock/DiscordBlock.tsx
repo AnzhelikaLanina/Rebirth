@@ -7,7 +7,7 @@ import {
   DiscordIcon,
   EXTERNAL_LINKS,
   openInNewTab,
-  useLocalizedData
+  useLocalizedData,
 } from '@/shared';
 
 export const DiscordBlock = () => {
