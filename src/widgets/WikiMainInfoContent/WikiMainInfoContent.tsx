@@ -52,8 +52,8 @@ export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
           {mainInfoWiki.clientLimitValue}
         </p>
       </div>
-      <Table list={localizedItemsWithoutPremium} />;
-      <Table list={localizedItemsWithPremium} />;
+      <Table list={localizedItemsWithoutPremium} />
+      <Table list={localizedItemsWithPremium} />
     </WikiLayout>
   );
 };

@@ -511,17 +511,20 @@ const en = {
   },
   metaTagsInfo: {
     mainPage: {
-      title: 'Rebirth',
-      description: 'Описание главной страницы',
+      title: 'Rebirth — Essence Server',
     },
     wikiPage: {
       title: 'About Rebirth Server',
-      description: 'Описание вики',
     },
-    default: {
-      title: 'Rebirth',
-      description: 'Lineage II Essence сервер',
+    userAgreementPage: {
+      title: 'User Agreement',
     },
+    privacyPolicyPage: {
+      title: 'Privacy Policy',
+    },
+    description: 'Rebirth — a Essence server for those who value fair play. ' +
+      'No donations at launch, premium for all players, up-to-date chronicles, and stable online.',
+    keywords: 'Rebirth, Essence, MMORPG, online game, Essence server'
   },
   newsList: {
     mainInfoWiki: {

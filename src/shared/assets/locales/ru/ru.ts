@@ -104,17 +104,20 @@ const ru = {
   },
   metaTagsInfo: {
     mainPage: {
-      title: 'Rebirth',
-      description: 'Описание главной страницы',
+      title: 'Rebirth — Essence сервер',
     },
     wikiPage: {
       title: 'Описание сервера Rebirth',
-      description: 'Описание вики',
     },
-    default: {
-      title: 'Rebirth',
-      description: 'Lineage II Essence сервер',
+    userAgreementPage: {
+      title: 'Пользовательское соглашение'
     },
+    privacyPolicyPage: {
+      title: 'Политика конфиденциальности'
+    },
+    description: 'Rebirth — сервер Lineage 2 Essence для тех, кто ценит честную игру. ' +
+      'Без доната на старте, премиум для всех игроков, актуальные хроники и стабильный онлайн.',
+    keywords: 'Rebirth, Essence, MMORPG, онлайн игра, Essence сервер'
   },
   newsList: {
     mainInfoWiki: {

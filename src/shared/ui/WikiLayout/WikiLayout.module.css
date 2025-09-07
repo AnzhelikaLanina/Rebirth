@@ -13,7 +13,7 @@
   max-width: 930px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 14px;
   box-sizing: border-box;
   background: rgba(23, 30, 47, 1);
   border: 1px solid rgba(44, 59, 94, 1);

@@ -2,6 +2,7 @@
   padding: 14px 14px 13px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 15px;
   border-bottom: 1px solid rgba(44, 59, 94, 1);
 }
@@ -31,10 +32,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .tableElement {
-    align-items: center;
-  }
-
   .tableText {
     font-size: 16px;
     line-height: 22px;
