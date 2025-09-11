@@ -59,7 +59,7 @@ export const NewsLarge = () => {
               ),
             )}
           </div>
-          <div className={styles.box1}>
+          <div className={styles.boxItems}>
             {localizedItemsWithPremium.map(
               (item: TableItemProps, index: number) => (
                 <div className={styles.box} key={index}>
