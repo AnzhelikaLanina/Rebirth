@@ -45,7 +45,7 @@ export const NewsLarge = () => {
           <h3 className={styles.header}>{mainInfoWiki.header}</h3>
           <p className={styles.description}>{mainInfoWiki.updateLabel}</p>
           <p className={styles.description}>{mainInfoWiki.clientLimitLabel}</p>
-          <div className={styles.box1}>
+          <div className={styles.boxItems}>
             {localizedItemsWithoutPremium.map(
               (item: TableItemProps, index: number) => (
                 <div className={styles.box} key={index}>

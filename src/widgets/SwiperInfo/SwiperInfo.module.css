@@ -63,12 +63,12 @@
   }
 
   .btnNext {
-    top: 8%;
-    right: -4%;
+    top: 110%;
+    right: 33%;
   }
 
   .btnPrev {
-    top: 8%;
-    left: -4%;
+    top: 110%;
+    left: 33%;
   }
 }
