@@ -66,7 +66,7 @@ export const SwiperInfo = () => {
     <div className={styles.swiper}>
       <Swiper
         onSlideChangeTransitionEnd={handleSlideChange}
-        loop={true}
+        loop={false}
         ref={swiperRef}
         modules={[Navigation]}
         pagination={false}
