@@ -1,6 +1,4 @@
-import { useLanguage } from '@/shared/lib';
-import ru from '../../assets/locales/ru/ru';
-import en from '../../assets/locales/en/en';
+import { useLanguage, ru, en } from '@/shared';
 
 export const useLocalizedData = () => {
   const { language } = useLanguage();

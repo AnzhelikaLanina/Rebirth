@@ -1,5 +1,4 @@
 import costumeIcon from '../../../assets/images/items/costume.png';
-import sAssassinArmorChange from '../../../assets/images/items/s-assassin-armor-change.png';
 
 export const costumesData = [
   {
@@ -16,10 +15,5 @@ export const costumesData = [
     key: 'boundToAccount',
     src: costumeIcon,
     alt: 'costume icon',
-  },
-  {
-    key: 'costumePrioritySkill',
-    src: sAssassinArmorChange,
-    alt: 's assassin armor change',
   },
 ];

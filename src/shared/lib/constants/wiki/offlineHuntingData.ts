@@ -21,4 +21,14 @@ export const offlineHuntingData = [
     src: offlineRune,
     alt: 'offline rune',
   },
+  {
+    key: 'serverRestartRestoreCharacters',
+    src: offlineRune,
+    alt: 'offline rune',
+  },
+  {
+    key: 'offlineHuntingDurationLimit',
+    src: offlineRune,
+    alt: 'offline rune',
+  },
 ];

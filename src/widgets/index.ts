@@ -4,6 +4,7 @@ export * from './Features';
 export * from './Footer';
 export * from './Frame';
 export * from './Header';
+export * from './LegalDocumentLayout';
 export * from './Modal';
 export * from './NewsSection';
 export * from './PaginationInfo';

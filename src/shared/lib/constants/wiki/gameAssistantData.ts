@@ -2,7 +2,6 @@ import coupon from '../../../assets/images/items/coupon.png';
 import pet from '../../../assets/images/items/pet.png';
 import ravenContract from '../../../assets/images/items/raven-contract.png';
 import vulkanContract from '../../../assets/images/items/vulkan-contract.png';
-import couponStone from '../../../assets/images/items/coupon-stone.png';
 import essenceOfGiant from '../../../assets/images/items/essence-of-giant.png';
 import bmHeroBookMineral from '../../../assets/images/items/bm-hero-book-mineral.png';
 import soulBead from '../../../assets/images/items/soul-bead.png';
@@ -18,7 +17,6 @@ export const gameAssistantData = [
   { key: 'sealedNecklaceChest', src: pet, alt: 'pet' },
   { key: 'ravenAndVulkanChance', src: ravenContract, alt: 'raven contract' },
   { key: 'glassiaChance', src: vulkanContract, alt: 'vulkan contract' },
-  { key: 'gemsAndChestsExchange', src: couponStone, alt: 'coupon stone' },
   {
     key: 'relicFragmentExchange',
     src: essenceOfGiant,

@@ -107,4 +107,11 @@ export const rewardsItemsData = [
     src: sNonpvpBattle,
     alt: 's nonpvp battle',
   },
+  {
+    header: false,
+    image: true,
+    key: 'royalCemeteryOfAden',
+    src: sNonpvpBattle,
+    alt: 's nonpvp battle',
+  },
 ];

@@ -15,19 +15,19 @@ export const modalItems: ModalItemType[] = [
   {
     icon: lineageLogo,
     key: 'gameClient',
-    linkGoogle: 'https://anzhelikalanina.github.io/Rebirth/',
-    linkGYandex: 'https://anzhelikalanina.github.io/Rebirth/',
+    linkGoogle: '',
+    linkGYandex: '',
   },
   {
     icon: winRarLogo,
     key: 'gamePatch',
-    linkGoogle: 'https://anzhelikalanina.github.io/Rebirth/',
-    linkGYandex: 'https://anzhelikalanina.github.io/Rebirth/',
+    linkGoogle: '',
+    linkGYandex: '',
   },
   {
     icon: blueLogo,
     key: 'updater',
-    linkGoogle: 'https://anzhelikalanina.github.io/Rebirth/',
-    linkGYandex: 'https://anzhelikalanina.github.io/Rebirth/',
+    linkGoogle: '',
+    linkGYandex: '',
   },
 ];
