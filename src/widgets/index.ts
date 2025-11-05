@@ -14,6 +14,7 @@ export * from './Table';
 export * from './TitleSection';
 export * from './WikiAchievementBoxesRewardsContent';
 export * from './WikiAutoHuntingContent';
+export * from './WikiCelestiaBattleContent';
 export * from './WikiClanBonusesContent';
 export * from './WikiCostumesContent';
 export * from './WikiDropFrom90PlusMobsContent';

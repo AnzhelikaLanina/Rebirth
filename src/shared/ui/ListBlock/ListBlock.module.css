@@ -1,0 +1,32 @@
+.list {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.text::marker {
+  content: '✧  ';
+  color: #ffffff;
+  font-size: 0.95em;
+}
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

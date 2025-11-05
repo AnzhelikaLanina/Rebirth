@@ -1,18 +1,22 @@
-import styles from './LegalDocumentSection.module.css';
+import styles from './SectionBlock.module.css';
 
 type PrivacyPolicyLayoutSectionProps = {
-  index: number;
+  index?: number;
   title: string;
   children: React.ReactNode;
-}
+};
 
-export const LegalDocumentSection = ({ index, title, children }: PrivacyPolicyLayoutSectionProps) => {
+export const SectionBlock = ({
+  index,
+  title,
+  children,
+}: PrivacyPolicyLayoutSectionProps) => {
   return (
     <section className={styles.section}>
       <h2 className={styles.header}>
-        <span>{index}.</span> {title}
+        {index && <span>{index}.</span>} {title}
       </h2>
       {children}
     </section>
   );
-}
+};

@@ -130,3 +130,9 @@ export const WikiTreasureChestContentLazy = lazy(() =>
     default: module.WikiTreasureChestContent,
   })),
 );
+
+export const WikiCelestiaBattleContentLazy = lazy(() =>
+  import('../../../widgets/WikiCelestiaBattleContent').then((module) => ({
+    default: module.WikiCelestiaBattleContent,
+  })),
+);

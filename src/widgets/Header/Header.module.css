@@ -138,6 +138,10 @@
     object-fit: cover;
   }
 
+  .box {
+    max-height: 48px;
+  }
+
   .textBig {
     font-size: 16px;
     line-height: 22px;

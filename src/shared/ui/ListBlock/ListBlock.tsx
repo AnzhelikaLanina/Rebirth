@@ -1,10 +1,10 @@
-import styles from './LegalDocumentList.module.css';
+import styles from './ListBlock.module.css';
 
-type PrivacyPolicyListProps = {
+type ListProps = {
   list: Record<string, any>;
 };
 
-export const LegalDocumentList= ({ list }: PrivacyPolicyListProps) => {
+export const ListBlock = ({ list }: ListProps) => {
   const { header, ...rest } = list;
 
   const items = Object.entries(rest)

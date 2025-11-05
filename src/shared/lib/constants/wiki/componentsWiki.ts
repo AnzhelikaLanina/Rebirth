@@ -21,6 +21,7 @@ import {
   WikiDropFrom90PlusMobsContentLazy,
   WikiClanBonusesContentLazy,
   WikiTreasureChestContentLazy,
+  WikiCelestiaBattleContentLazy,
 } from '../../lazy';
 
 export const componentsWiki = [
@@ -46,4 +47,5 @@ export const componentsWiki = [
   WikiDropFrom90PlusMobsContentLazy,
   WikiClanBonusesContentLazy,
   WikiTreasureChestContentLazy,
+  WikiCelestiaBattleContentLazy,
 ];

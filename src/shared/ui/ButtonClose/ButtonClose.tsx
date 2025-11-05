@@ -8,11 +8,11 @@ type ButtonCloseProps = {
 export const ButtonClose = ({ onClose }: ButtonCloseProps) => {
   return (
     <button
-      className={styles.buttonClose}
+      className={styles.button}
       onClick={onClose}
       aria-label="Закрыть меню"
     >
-      <CloseIcon className={styles.closeIcon} />
+      <CloseIcon className={styles.icon} />
     </button>
   );
 };

@@ -1,2 +1,1 @@
-export * from './PolicyLayout';
 export * from './UserAgreementLayout';

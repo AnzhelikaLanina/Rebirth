@@ -1,7 +1,7 @@
-import styles from './LegalDocumentParagraphs.module.css';
-import { isPlainObject } from '@/widgets';
+import styles from './TextBlock.module.css';
+import { isPlainObject } from '@/shared';
 
-type PrivacyPolicyParagraphsProps = {
+type ParagraphsProps = {
   block: Record<string, any>;
   from?: number;
   to?: number;
@@ -11,15 +11,15 @@ type PrivacyPolicyParagraphsProps = {
   capLet?: boolean;
 };
 
-export const LegalDocumentParagraphs = ({
+export const TextBlock = ({
   block,
   from = 0,
   to,
   sectionIndex,
   startAt = 1,
-  formatLabel= (s, n) => `${s}.${n}.`,
+  formatLabel = (s, n) => `${s}.${n}.`,
   capLet = false,
-}: PrivacyPolicyParagraphsProps) => {
+}: ParagraphsProps) => {
   const paragraphs = Object.entries(block)
     .filter(([key, val]) => key !== 'header' && !isPlainObject(val) && val)
     .map(([, val]) => val as React.ReactNode);
@@ -28,14 +28,19 @@ export const LegalDocumentParagraphs = ({
 
   const toUpperExceptDomain = (text: string) =>
     capLet
-      ? text.replaceAll('l2rebirth.net', '§TEMP§').toUpperCase().replaceAll('§TEMP§', 'l2rebirth.net')
+      ? text
+          .replaceAll('l2rebirth.net', '§TEMP§')
+          .toUpperCase()
+          .replaceAll('§TEMP§', 'l2rebirth.net')
       : text;
 
   return (
     <>
       {slice.map((text, i) => (
         <p className={styles.text} key={i}>
-          {sectionIndex && <span>{formatLabel(sectionIndex, startAt + i)} </span>}
+          {sectionIndex && (
+            <span>{formatLabel(sectionIndex, startAt + i)} </span>
+          )}
           {typeof text === 'string' ? toUpperExceptDomain(text) : text}
         </p>
       ))}

@@ -75,3 +75,9 @@
     line-height: 36px;
   }
 }
+
+@media screen and (max-width: 1264px) {
+  .page {
+    padding: 106px 0 80px;
+  }
+}

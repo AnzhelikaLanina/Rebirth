@@ -90,4 +90,9 @@ export const wikiNavData = [
   },
   { key: 'clanBonusesHeader', icon: ClansIcon, activeIcon: ClansActiveIcon },
   { key: 'treasureChestHeader', icon: OlympIcon, activeIcon: OlympActiveIcon },
+  {
+    key: 'celestiaBattleHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
 ];
