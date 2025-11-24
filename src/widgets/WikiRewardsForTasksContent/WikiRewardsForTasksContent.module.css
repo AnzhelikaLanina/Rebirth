@@ -6,9 +6,23 @@
   background-position: 50% 10%;
 }
 
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 @media screen and (max-width: 1450px) {
   .image {
     width: 315px;
     height: 243px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
   }
 }

@@ -28,3 +28,4 @@ export * from './starterKitData';
 export * from './treasureChestData';
 export * from './locationsItemsData';
 export * from './chestContentItemsData';
+export * from './rewardsTasksData';

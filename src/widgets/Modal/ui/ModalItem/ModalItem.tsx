@@ -1,26 +1,21 @@
 import styles from './ModalItem.module.css';
 import { ButtonDownload } from '../ButtonDownload';
+import { ButtonDef } from '@/shared';
 
 type ModalItemProps = {
   icon: string;
   header: string;
   description: string;
-  buttonGoogleHeader: string;
-  buttonYandexDiscHeader: string;
-  linkGoogle: string;
-  linkGYandex: string;
   altIcon: string;
+  buttons: ButtonDef[];
 };
 
 export const ModalItem = ({
   icon,
   header,
   description,
-  buttonGoogleHeader,
-  buttonYandexDiscHeader,
-  linkGoogle,
-  linkGYandex,
   altIcon,
+  buttons,
 }: ModalItemProps) => {
   return (
     <div className={styles.item}>
@@ -32,8 +27,9 @@ export const ModalItem = ({
         </div>
       </div>
       <div className={styles.buttons}>
-        <ButtonDownload link={linkGoogle} text={buttonGoogleHeader} />
-        <ButtonDownload link={linkGYandex} text={buttonYandexDiscHeader} />
+        {buttons.map((b) => (
+          <ButtonDownload key={b.key} link={b.link} text={b.text} />
+        ))}
       </div>
     </div>
   );

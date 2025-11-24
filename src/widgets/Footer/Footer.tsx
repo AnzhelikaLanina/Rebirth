@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import nameAndLogo from '../../shared/assets/images/logos/logo-name.svg?url';
 import polygonIcon from '../../shared/assets/images/icons/polygon.svg?url';
@@ -7,10 +6,12 @@ import {
   ExternalLink,
   PATHS,
   useLocalizedData,
+  useSmartNavigation,
 } from '@/shared';
 
 export const Footer = () => {
   const { layout } = useLocalizedData();
+  const { handleNavClick } = useSmartNavigation();
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -25,21 +26,33 @@ export const Footer = () => {
             <p className={styles.text}>Lineage 2 Essence x5 Server</p>
           </li>
           <li>
-            <Link to={PATHS.USER_AGREEMENT} className={styles.link}>
+            <a
+              href={PATHS.USER_AGREEMENT}
+              className={styles.link}
+              onClick={handleNavClick(PATHS.USER_AGREEMENT)}
+            >
               {layout.userAgreement}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to={PATHS.PRIVACY_POLICY} className={styles.link}>
+            <a
+              href={PATHS.PRIVACY_POLICY}
+              className={styles.link}
+              onClick={handleNavClick(PATHS.PRIVACY_POLICY)}
+            >
               {layout.privacyPolicy}
-            </Link>
+            </a>
           </li>
         </ul>
         <ul className={styles.links}>
           <li className={styles.element1}>
-            <Link to={PATHS.WIKI} className={styles.link}>
+            <a
+              href={PATHS.WIKI}
+              className={styles.link}
+              onClick={handleNavClick(PATHS.WIKI)}
+            >
               {layout.server}
-            </Link>
+            </a>
           </li>
           <li className={styles.element4}>
             <ExternalLink

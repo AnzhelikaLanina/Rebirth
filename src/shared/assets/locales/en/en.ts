@@ -73,7 +73,7 @@ export const en = {
       'The goal of our team is to create a sustainable project with up-to-date chronicles and an acceptable donation. ' +
       'Therefore, first we will give the players the opportunity to evaluate the project. ' +
       'Any donations will be unavailable at the start of the server!!! All players receive 7 days of a Premium Account. ' +
-      'The start is at 20:00 GMT+3 on November 14 without any preliminary expectations. Limited donations will be ' +
+      'The start is at 20:00 GMT+3 on November 21 without any preliminary expectations. Limited donations will be ' +
       'available 10 days after the server launch. We wish you a pleasant game.',
     roseVainUpdateHeader: 'Update ROSE VAIN',
     roseVainUpdateText:
@@ -114,13 +114,13 @@ export const en = {
       'The goal of our team is to create a sustainable project with up-to-date chronicles and an acceptable donation. ' +
       'Therefore, first we will give the players the opportunity to evaluate the project. Any donations will be ' +
       'unavailable at the start of the server!!! ' +
-      'All players receive 7 days of a Premium Account. The start is at 20:00 GMT+3 on November 14 without any preliminary ' +
+      'All players receive 7 days of a Premium Account. The start is at 20:00 GMT+3 on November 21 without any preliminary ' +
       'expectations. ' +
       'Limited donations will be available 10 days after the server launch. We wish you a pleasant game.',
     serverStartLabel: 'The opening is ',
-    serverStartDate: 'November 14, 20:00 GMT+3',
+    serverStartDate: 'November 21, 20:00 GMT+3',
     obtStartLabel: 'The start of the OBT is ',
-    obtStartDate: 'November 4, 20:00 GMT+3',
+    obtStartDate: 'November 14, 20:00 GMT+3',
     serverTimeLabel: 'Server time: ',
     serverTimeValue: 'GMT+3.',
     updateLabel: 'Update ',
@@ -196,26 +196,26 @@ export const en = {
     },
     bonusForReading:
       'And also, if you are reading this, then an additional promo code reward has been prepared for you ' +
-      'FFBB-KLMU-RECN-ASDF.',
+      'PROMOGO.',
   },
   newUniqueTasks: {
     header: 'New Unique Tasks',
     earringOfZaken:
-      'Pirate King – When participating in a battle with Zaken, deal damage and stay within a 2000 radius when ' +
+      'Pirate King – When participating in a battle with Zaken, deal damage and stay within a 3000 radius when ' +
       'killing the Boss.',
     earringOfOrfen:
-      'Forty Hands – When participating in the battle with Orfen, deal damage and be within a radius of 2000 when ' +
+      'Forty Hands – When participating in the battle with Orfen, deal damage and be within a radius of 3000 when ' +
       'killing the Boss.',
     accessoryRingOfQueenAnt:
-      'Centipede – When participating in the battle with the Ant Queen, deal damage and be within a radius of 2000 ' +
+      'Centipede – When participating in the battle with the Ant Queen, deal damage and be within a radius of 3000 ' +
       'when killing the Boss.',
     baiumTalismanNew:
-      'Cursed Emperor – When participating in the battle with Baium, deal damage and be within a radius of 2000 ' +
+      'Cursed Emperor – When participating in the battle with Baium, deal damage and be within a radius of 3000 ' +
       'when killing the Boss.',
     blessMaskOfPhantom:
       'Ghost Fights – Defeat 100 ghost mobs summoned by the phantom mask and the blessed phantom mask. ' +
       'By the way, for those who are not lazy to read, a bonus has been prepared using the promo code ' +
-      'HFCV-TRYH-ERFD-YLPO.',
+      'TASKSREADY.',
     etcEvKalieToken:
       "It's not Given to Everyone – Win 10 consecutive Olympic Games.",
   },
@@ -356,7 +356,7 @@ export const en = {
       'When successfully created or improved, the points are reset.',
     notForAllItems:
       'It does NOT work FOR ALL ITEMS, unlike for those who read this text, who can get additional benefits ' +
-      'when starting with a promo code GJPP-DFVB-DERT-AQNB',
+      'when starting with a promo code GARANT',
   },
   quests: {
     header: 'Quests',
@@ -430,7 +430,7 @@ export const en = {
       '(recommended for all characters after receiving 3 professions). ' +
       'It requires careful preparation for the passage. Starting from difficulty level 12, a mini boss appears, ' +
       'from which you can get Collection Tokens with a 100% chance. ' +
-      'And if you get a reward using the promo code GLPM-ERVB-UNIQ-USRF, it will be a little easier. ' +
+      'And if you get a reward using the promo code HUNTINGZONES, it will be a little easier. ' +
       'The higher the difficulty level, the significantly higher the amount of experience gained and the collection ' +
       'marks.',
     rewards: {
@@ -763,8 +763,7 @@ export const en = {
       personalDataDefinition:
         'Personal data of Users includes those provided by Users and the minimum required for ' +
         'registration on the Site.',
-      founderLabel: 'Founder:',
-      emailLabel: 'E-mail:',
+      emailLabel: 'E-mail: ruinf2020@gmail.com',
     },
   },
   userAgreement: {
@@ -1018,22 +1017,26 @@ export const en = {
     header: 'Game Files',
     description: 'Create your game account',
     buttonReg: 'Register',
-    buttonGoogle: 'Google Drive',
-    buttonYandexDisc: 'Yandex Disk',
     gameClient: {
       header: 'Game Client (Eng + RU)',
       description: 'Install the game client',
       altIcon: 'Lineage logo',
+      buttonGoogle: 'Google Drive',
+      buttonYandexDisc: 'Yandex Disk',
     },
     gamePatch: {
       header: 'Game Patch',
       description: 'Extract to your game folder',
       altIcon: 'WinRAR logo',
+      buttonMediafire: 'MediaFire',
+      buttonYandexDisc: 'Yandex Disk',
     },
     updater: {
       header: 'Updater',
       description: 'Extract to your game folder',
       altIcon: 'Rebirth logo on blue background',
+      buttonGoogle: 'Google Drive',
+      buttonYandexDisc: 'Yandex Disk',
     },
   },
 };

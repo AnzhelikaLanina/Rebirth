@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import smallLogo from '../../shared/assets/images/logos/logo-small.svg?url';
 import onlineIcon from '../../shared/assets/images/icons/online-icon.svg?url';
@@ -16,10 +15,12 @@ import {
   OpenModal,
   PATHS,
   useLocalizedData,
+  useSmartNavigation,
 } from '@/shared';
 
 export const Header = ({ onOpenModal }: OpenModal) => {
   const { layout } = useLocalizedData();
+  const { handleNavClick } = useSmartNavigation();
   const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_XL });
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,9 +32,12 @@ export const Header = ({ onOpenModal }: OpenModal) => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.box}>
-          <Link to={PATHS.HOME}>
+          <a
+            href={PATHS.HOME}
+            onClick={handleNavClick(PATHS.HOME)}
+          >
             <img src={smallLogo} className={styles.logo} alt={layout.altLogo} />
-          </Link>
+          </a>
           <div className={styles.line} />
           <div className={styles.onlineStatus}>
             <img

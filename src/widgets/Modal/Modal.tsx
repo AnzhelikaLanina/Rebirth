@@ -11,11 +11,21 @@ import {
   UserIcon,
   useLocalizedData,
   modalItems,
+  ButtonDef,
 } from '@/shared';
 
 type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
+};
+
+type ModalItemLocale = {
+  header: string;
+  description: string;
+  altIcon: string;
+  buttonGoogle?: string;
+  buttonYandexDisc?: string;
+  buttonMediafire?: string;
 };
 
 export const Modal = ({ isOpen, onClose }: ModalProps) => {
@@ -38,14 +48,30 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
     return () => clearTimeout(timeout);
   }, [isOpen, render]);
 
-  const items = modalItems.map((item) => ({
-    ...item,
-    header: modal[item.key].header,
-    description: modal[item.key].description,
-    altIcon: modal[item.key].altIcon,
-    buttonGoogleHeader: modal.buttonGoogle,
-    buttonYandexDiscHeader: modal.buttonYandexDisc,
-  }));
+  const items = modalItems.map((item) => {
+    const t = modal[item.key] as ModalItemLocale;
+
+    const buttons: ButtonDef[] = [];
+    if (t.buttonGoogle && item.linkGoogle) {
+      buttons.push({ key: 'google', text: t.buttonGoogle, link: item.linkGoogle });
+    }
+
+    if (t.buttonMediafire && item.linkMediafire) {
+      buttons.push({ key: 'mediafire', text: t.buttonMediafire, link: item.linkMediafire });
+    }
+
+    if (t.buttonYandexDisc && item.linkGYandex) {
+      buttons.push({ key: 'yandex', text: t.buttonYandexDisc, link: item.linkGYandex });
+    }
+
+    return {
+      ...item,
+      header: t.header,
+      description: t.description,
+      altIcon: t.altIcon,
+      buttons,
+    };
+  });
 
   return createPortal(
     <div

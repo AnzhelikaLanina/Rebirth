@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './HeaderMenu.module.css';
 import {
   EXTERNAL_LINKS,
@@ -6,18 +5,24 @@ import {
   OpenModal,
   PATHS,
   useLocalizedData,
+  useSmartNavigation,
 } from '@/shared';
 
 export const HeaderMenu = ({ onOpenModal }: OpenModal) => {
   const { layout } = useLocalizedData();
+  const { handleNavClick } = useSmartNavigation();
   return (
     <>
       <div className={styles.line} />
       <nav className={styles.nav}>
         <div className={styles.element}>
-          <Link to={PATHS.WIKI} className={styles.link}>
+          <a
+            href={PATHS.WIKI}
+            className={styles.link}
+            onClick={handleNavClick(PATHS.WIKI)}
+          >
             {layout.server}
-          </Link>
+          </a>
         </div>
         <div className={styles.element}>
           <p className={styles.link} onClick={onOpenModal}>

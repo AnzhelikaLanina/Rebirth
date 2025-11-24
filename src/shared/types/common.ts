@@ -23,3 +23,9 @@ export type Language = 'ru' | 'en';
 export type OpenModal = {
   onOpenModal: () => void;
 };
+
+export type ButtonDef = {
+  key: 'google' | 'yandex' | 'mediafire';
+  text: string;
+  link: string;
+};
