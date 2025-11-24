@@ -1017,6 +1017,7 @@ export const en = {
     header: 'Game Files',
     description: 'Create your game account',
     buttonReg: 'Register',
+    demoMessage: 'File downloads are available only on the official website.',
     gameClient: {
       header: 'Game Client (Eng + RU)',
       description: 'Install the game client',

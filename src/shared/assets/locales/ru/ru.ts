@@ -1001,9 +1001,7 @@ export const ru = {
     header: 'Файлы для игры',
     description: 'Создайте игровой аккаунт',
     buttonReg: 'Регистрация',
-    buttonGoogle: 'Google Drive',
-    buttonYandexDisc: 'Yandex Disc',
-    buttonMediafire: 'MediaFire',
+    demoMessage: 'Загрузка файлов доступна только на основном сайте.',
     gameClient: {
       header: 'Game Client (Eng + RU)',
       description: 'Install the game client',

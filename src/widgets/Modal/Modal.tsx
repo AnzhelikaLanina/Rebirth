@@ -73,6 +73,8 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
     };
   });
 
+  const hasAnyButtons = items.some((item) => item.buttons.length > 0);
+
   return createPortal(
     <div
       className={clsx(styles.overlay, { [styles.overlayVisible]: visible })}
@@ -90,6 +92,15 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
           {items.map(({ key, ...props }) => (
             <ModalItem key={key} {...props} />
           ))}
+
+          {!hasAnyButtons && (
+            <div className={styles.demoMessageBox}>
+              <p className={styles.text}>
+                {modal.demoMessage}
+              </p>
+            </div>
+          )}
+
         </div>
         <div className={styles.footerBox}>
           <p className={styles.text}>{modal.description}</p>
