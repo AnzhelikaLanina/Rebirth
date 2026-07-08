@@ -7,7 +7,12 @@ import 'swiper/css';
 import styles from './SwiperInfo.module.css';
 import { Slide } from './ui';
 import { PaginationInfo } from '@/widgets';
-import { useLocalizedData, ArrowLeftIcon, ArrowRightIcon } from '@/shared';
+import {
+  useLocalizedData,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  withChronicleUpdate,
+} from '@/shared';
 
 export const SwiperInfo = () => {
   const { swiperText } = useLocalizedData();
@@ -18,7 +23,7 @@ export const SwiperInfo = () => {
       text: swiperText.startWithoutDonationsText,
     },
     {
-      header: swiperText.roseVainUpdateHeader,
+      header: withChronicleUpdate(swiperText.roseVainUpdateHeader),
       text: swiperText.roseVainUpdateText,
     },
     { header: swiperText.coinsLHeader, text: swiperText.coinsLText },

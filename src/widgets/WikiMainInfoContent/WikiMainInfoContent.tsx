@@ -1,21 +1,28 @@
 import styles from './WikiMainInfoContent.module.css';
 import { Table } from '../Table';
 import {
+  mainInfoWikiIntroData,
   mainInfoWikiRatesData,
   mapWithLocalization,
+  renderItemCards,
   useLocalizedData,
   WikiComponentProps,
   WikiLayout,
+  withChronicleUpdate,
 } from '@/shared';
 
 export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
   const { mainInfoWiki } = useLocalizedData();
+  const localizedIntro = mapWithLocalization(
+    mainInfoWikiIntroData,
+    mainInfoWiki,
+    'text',
+  );
   const localizedItemsWithoutPremium = mapWithLocalization(
     mainInfoWikiRatesData,
     mainInfoWiki.withoutPremium,
     'text',
   );
-
   const localizedItemsWithPremium = mapWithLocalization(
     mainInfoWikiRatesData,
     mainInfoWiki.withPremium,
@@ -23,7 +30,7 @@ export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
   );
   return (
     <WikiLayout title={mainInfoWiki.header} id={id} imgStyle={styles.image}>
-      <p className={styles.text}>{mainInfoWiki.description}</p>
+      {renderItemCards(localizedIntro)}
       <div className={styles.box}>
         <p className={styles.text}>
           <span className={styles.textColor}>
@@ -43,13 +50,19 @@ export const WikiMainInfoContent = ({ id }: WikiComponentProps) => {
         </p>
         <p className={styles.text}>
           <span className={styles.textColor}>{mainInfoWiki.updateLabel}</span>
-          {mainInfoWiki.updateValue}
+          {withChronicleUpdate(mainInfoWiki.updateValue)}
         </p>
         <p className={styles.text}>
           <span className={styles.textColor}>
             {mainInfoWiki.clientLimitLabel}
           </span>
           {mainInfoWiki.clientLimitValue}
+        </p>
+        <p className={styles.text}>
+          <span className={styles.textColor}>
+            {mainInfoWiki.restartServerLabel}
+          </span>
+          {mainInfoWiki.restartServerValue}
         </p>
       </div>
       <Table list={localizedItemsWithoutPremium} />

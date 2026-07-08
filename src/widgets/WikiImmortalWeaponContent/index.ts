@@ -1,0 +1,1 @@
+export { WikiImmortalWeaponContent } from './WikiImmortalWeaponContent';

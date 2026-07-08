@@ -1,44 +1,39 @@
-import sNonpvpBattle from '@/shared/assets/images/items/s-nonpvp-battle.png';
+import sNonpvpPeace from '@/shared/assets/images/items/s-nonpvp-peace.png';
 
 export const interfaceData = [
   {
     key: 'systemChatAdded',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'battlePowerRating',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
-  },
-  {
-    key: 'inventorySearch',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'itemBattlePowerDisplay',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'prioritySkillsPanel',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'additionalSkillsPanel',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'partyTargetIndicators',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'playerItemTrade',
-    src: sNonpvpBattle,
-    alt: 's nonpvp battle',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
 ];

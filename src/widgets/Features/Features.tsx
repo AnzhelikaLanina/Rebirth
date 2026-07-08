@@ -7,20 +7,23 @@ import {
   MEDIA_BREAKPOINTS,
   OrnamentFeaturesFrame,
   OrnamentFeaturesMobileFrame,
-  useLocalizedData,
+  OrnamentSwiperFrame,
 } from '@/shared';
 
 export const Features = () => {
-  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_LARGE });
-  const { features } = useLocalizedData();
+  const isDesktopLarge = useMediaQuery({
+    query: MEDIA_BREAKPOINTS.DESKTOP_LARGE,
+  });
+  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.MOBILE_SWITCH });
 
-  const Ornament = isDesktop
+  const Ornament = isDesktopLarge
     ? OrnamentFeaturesFrame
-    : OrnamentFeaturesMobileFrame;
+    : isDesktop
+      ? OrnamentSwiperFrame
+      : OrnamentFeaturesMobileFrame;
 
   return (
     <section className={styles.features}>
-      <h2 className={styles.header}>{features.uniqueFeatures}</h2>
       <img
         src={sparksFeaturesLeftEffect}
         className={styles.sparksLeft}
@@ -33,7 +36,10 @@ export const Features = () => {
       />
       <div className={styles.patternBox} />
       <div className={styles.ornamentBox}>
-        <Ornament className={styles.ornament} />
+        <Ornament
+          className={styles.ornament}
+          preserveAspectRatio={isDesktop ? 'none' : undefined}
+        />
         <div className={styles.container}>
           <div className={styles.overlay} />
           <div className={styles.box}>

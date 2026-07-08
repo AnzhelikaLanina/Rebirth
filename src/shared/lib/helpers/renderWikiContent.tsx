@@ -1,4 +1,4 @@
-import { componentsWiki } from '@/shared/lib';
+import { componentsWiki } from '../constants/wiki/componentsWiki';
 
 export const renderWikiComponent = (index: number) => {
   const Component = componentsWiki[index];

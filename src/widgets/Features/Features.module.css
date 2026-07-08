@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+@media screen and (min-width: 1471px) {
+  .features {
+    padding-top: 64px;
+  }
+}
+
 .header {
   margin: 0;
   padding: 0 0 38px;
@@ -21,17 +27,19 @@
 }
 
 .container {
-  min-width: 1140px;
-  max-width: 1140px;
-  min-height: 444px;
-  max-height: 444px;
+  min-width: 1374px;
+  max-width: 1374px;
+  min-height: 460px;
+  max-height: 460px;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
   background-image: url('../../shared/assets/images/backgrounds/features.png');
   background-size: 100%;
-  background-position: center -54px;
+  background-position: center -65px;
+  border-radius: 30px;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -47,9 +55,9 @@
 
 .box {
   margin: 0 auto;
-  padding: 100px 0 0;
-  max-width: 1073.2px;
-  min-width: 1073.2px;
+  padding: 90px 0 0;
+  max-width: 1293px;
+  min-width: 1293px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -99,7 +107,7 @@
   background: linear-gradient(
     180deg,
     rgba(18, 24, 38, 0) 0%,
-    rgba(18, 24, 38, 1) 100%
+    rgba(18, 24, 38, 1) 70%
   );
 }
 
@@ -115,10 +123,10 @@
 .ornamentBox {
   position: relative;
   z-index: 1;
-  max-width: 1170px;
-  min-width: 1170px;
-  max-height: 454px;
-  min-height: 454px;
+  max-width: 1410px;
+  min-width: 1410px;
+  max-height: 472px;
+  min-height: 472px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -133,10 +141,45 @@
   left: 0;
   z-index: 1;
   pointer-events: none;
-  height: 454px;
+  height: 472px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1470px) {
+  .container {
+    min-width: 662px;
+    max-width: 662px;
+    min-height: 248px;
+    max-height: 248px;
+    background-position: center 25%;
+    background-size: cover;
+  }
+
+  .header {
+    font-size: 24px;
+    padding-bottom: 24px;
+    line-height: 36px;
+  }
+
+  .box {
+    padding-top: 48px;
+    max-width: 600px;
+    min-width: 600px;
+  }
+
+  .ornamentBox {
+    max-width: 690px;
+    min-width: 690px;
+    max-height: 260px;
+    min-height: 260px;
+  }
+
+  .ornament {
+    width: 690px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .features {
     max-width: 343px;
   }
@@ -146,8 +189,6 @@
     max-width: 315px;
     min-height: 450px;
     max-height: 450px;
-    background-position: center;
-    background-size: cover;
   }
 
   .header {
@@ -170,6 +211,7 @@
   }
 
   .ornament {
+    width: 343px;
     height: 460px;
   }
 }

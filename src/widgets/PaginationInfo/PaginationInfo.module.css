@@ -1,6 +1,6 @@
 .pagination {
   margin: 0 auto;
-  padding: 15px 0 0;
+  padding: 40px 0 0;
   max-width: 661px;
   width: 100%;
   display: flex;
@@ -87,7 +87,7 @@
   width: 48px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1470px) {
   .pagination {
     display: none;
   }

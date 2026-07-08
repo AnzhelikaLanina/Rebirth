@@ -14,6 +14,7 @@ import {
   OlympIcon,
   ProgressActiveFrame,
   ProgressFrame,
+  withChronicleUpdate,
 } from '@/shared';
 
 type PaginationInfoProps = {
@@ -29,7 +30,7 @@ export const PaginationInfo = ({
 
   const labels = [
     pagination.honestStart,
-    pagination.roseVainUpdate,
+    withChronicleUpdate(pagination.roseVainUpdate),
     pagination.coinsL,
     pagination.olympiad,
     pagination.itemDropSystem,

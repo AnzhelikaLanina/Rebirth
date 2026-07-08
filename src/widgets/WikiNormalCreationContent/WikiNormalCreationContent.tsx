@@ -1,9 +1,9 @@
 import styles from './WikiNormalCreationContent.module.css';
 import { Table } from '@/widgets';
 import {
-  dragonPotionItemsData,
   mapWithLocalization,
   normalCreationData,
+  normalCreationItemsData,
   renderItemCards,
   useLocalizedData,
   WikiComponentProps,
@@ -17,21 +17,17 @@ export const WikiNormalCreationContent = ({ id }: WikiComponentProps) => {
     normalCreation,
     'text',
   );
-  const localizedItemsLv1 = mapWithLocalization(
-    dragonPotionItemsData,
-    normalCreation.dragonPotionLvl1,
+
+  const localizedItemsRewards = mapWithLocalization(
+    normalCreationItemsData,
+    normalCreation.rewards,
     'text',
   );
-  const localizedItemsLv2 = mapWithLocalization(
-    dragonPotionItemsData,
-    normalCreation.dragonPotionLvl2,
-    'text',
-  );
+
   return (
     <WikiLayout title={normalCreation.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}
-      <Table list={localizedItemsLv1} />
-      <Table list={localizedItemsLv2} />
+      <Table list={localizedItemsRewards} />
     </WikiLayout>
   );
 };

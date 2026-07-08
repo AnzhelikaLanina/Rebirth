@@ -1,0 +1,49 @@
+.header {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.015em;
+}
+
+.headerBox {
+    padding-bottom: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(44, 59, 94, 1);
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.codes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.codeItem {
+    width: fit-content;
+    padding: 12px;
+    border: 1px solid rgba(44, 59, 94, 1);
+}
+
+.codeText {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}

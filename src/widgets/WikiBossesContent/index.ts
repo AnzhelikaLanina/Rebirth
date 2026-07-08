@@ -1,0 +1,1 @@
+export { WikiBossesContent } from './WikiBossesContent';

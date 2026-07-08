@@ -13,23 +13,30 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-.item {
+.list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: clamp(16px, 4vw, 48px);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 14px;
+  position: relative;
+  z-index: 3;
 }
 
-.list {
+.item {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 14px;
 }
 
 .contentAppear {
+  width: 100%;
   animation: fadeIn 0.5s ease-out;
-  flex: 1;
-  min-height: 100%;
   display: flex;
 }

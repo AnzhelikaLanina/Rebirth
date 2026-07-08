@@ -1,19 +1,19 @@
-import etcEvKalieToken from '@/shared/assets/images/items/etc-ev-kalie-token.png';
+import drop from '@/shared/assets/images/items/drop.png';
 
 export const guaranteedEnhancementData = [
   {
     key: 'synthesisAndModification',
-    src: etcEvKalieToken,
-    alt: 'etc ev kalie token',
+    src: drop,
+    alt: 'drop',
   },
   {
     key: 'pointsResetOnSuccess',
-    src: etcEvKalieToken,
-    alt: 'etc ev kalie token',
+    src: drop,
+    alt: 'drop',
   },
   {
     key: 'notForAllItems',
-    src: etcEvKalieToken,
-    alt: 'etc ev kalie token',
+    src: drop,
+    alt: 'drop',
   },
 ];

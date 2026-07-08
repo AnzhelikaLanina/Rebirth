@@ -1,0 +1,1 @@
+export { WikiAntharasContent } from './WikiAntharasContent';

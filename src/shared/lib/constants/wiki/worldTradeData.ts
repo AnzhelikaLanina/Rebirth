@@ -1,14 +1,14 @@
-import worldShop from '../../../assets/images/items/world-shop.png';
+import sNonpvpPeace from '../../../assets/images/items/s-nonpvp-peace.png';
 
 export const worldTradeData = [
   {
-    key: 'currency',
-    src: worldShop,
-    alt: 'world shop',
+    key: 'currencyHeader',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'equipmentTrade',
-    src: worldShop,
-    alt: 'world shop',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
 ];

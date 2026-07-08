@@ -1,8 +1,6 @@
-import {
-  useLocalizedData,
-  wikiNavData,
-  mapWithLocalization,
-} from '@/shared/lib';
+import { wikiNavData } from '../constants/wiki/wikiNavData';
+import { mapWithLocalization } from '../utils/mapWithLocalization';
+import { useLocalizedData } from './useLocalizedData';
 
 export const useWikiNavigationItems = () => {
   const { wiki } = useLocalizedData();

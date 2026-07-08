@@ -2,13 +2,16 @@ import styles from './HeaderMenu.module.css';
 import {
   EXTERNAL_LINKS,
   ExternalLink,
-  OpenModal,
+  HeaderProps,
+  MODALS,
   PATHS,
   useLocalizedData,
   useSmartNavigation,
 } from '@/shared';
 
-export const HeaderMenu = ({ onOpenModal }: OpenModal) => {
+export const HeaderMenu = ({
+   onOpenModal
+}: HeaderProps) => {
   const { layout } = useLocalizedData();
   const { handleNavClick } = useSmartNavigation();
   return (
@@ -25,7 +28,10 @@ export const HeaderMenu = ({ onOpenModal }: OpenModal) => {
           </a>
         </div>
         <div className={styles.element}>
-          <p className={styles.link} onClick={onOpenModal}>
+          <p
+            className={styles.link}
+            onClick={() => onOpenModal(MODALS.DOWNLOAD)}
+          >
             {layout.files}
           </p>
         </div>
@@ -35,6 +41,14 @@ export const HeaderMenu = ({ onOpenModal }: OpenModal) => {
             children={layout.registration}
             className={styles.link}
           />
+        </div>
+        <div className={styles.element}>
+          <p
+            className={styles.link}
+            onClick={() => onOpenModal(MODALS.PROMO_CODE)}
+          >
+            {layout.promoCode}
+          </p>
         </div>
       </nav>
     </>

@@ -1,19 +1,19 @@
-import costumeIcon from '../../../assets/images/items/costume.png';
+import sNonpvpPeace from '../../../assets/images/items/s-nonpvp-peace.png';
 
 export const costumesData = [
   {
     key: 'appearanceWeaponsArmor',
-    src: costumeIcon,
-    alt: 'costume icon',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'uiLocation',
-    src: costumeIcon,
-    alt: 'costume icon',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
   {
     key: 'boundToAccount',
-    src: costumeIcon,
-    alt: 'costume icon',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
   },
 ];

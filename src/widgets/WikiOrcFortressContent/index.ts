@@ -1,0 +1,1 @@
+export { WikiOrcFortressContent } from './WikiOrcFortressContent';

@@ -1,0 +1,1 @@
+export { WikiValakasContent } from './WikiValakasContent';

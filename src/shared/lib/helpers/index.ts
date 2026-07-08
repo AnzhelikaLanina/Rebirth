@@ -3,3 +3,5 @@ export * from './renderItemCards';
 export * from './scrollToSection';
 export * from './isPlainObject';
 export * from './pluralize';
+export * from './parseTextWithIcons';
+export * from './withChronicleUpdate';

@@ -1,9 +1,9 @@
-import bmLCoin from '@/shared/assets/images/items/bm-lcoin.png';
+import etcMissionPoint from '../../../assets/images/items/etc-mission-point.png';
 
 export const rewardsTasksData = [
   {
-    key: 'buyAllLevelsButton',
-    src: bmLCoin,
-    alt: 'bm L Coin',
+    key: 'rewardSystemRedesign',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
   },
 ];

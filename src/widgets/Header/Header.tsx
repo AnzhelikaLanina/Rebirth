@@ -10,19 +10,32 @@ import {
   HeaderMenuMobile,
 } from './ui';
 import {
+  DATES,
+  GENERAL,
   MEDIA_BREAKPOINTS,
   MenuIcon,
-  OpenModal,
+  HeaderProps,
   PATHS,
   useLocalizedData,
   useSmartNavigation,
 } from '@/shared';
 
-export const Header = ({ onOpenModal }: OpenModal) => {
+export const Header = ({ onOpenModal,}: HeaderProps) => {
   const { layout } = useLocalizedData();
   const { handleNavClick } = useSmartNavigation();
-  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_XL });
+  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.HEADER_DESKTOP });
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const date2025 = new Date(DATES.SERVER_2025);
+  const dateNewSeason = new Date(DATES.SERVER_2026_SEP);
+  const formatDate = (d: Date) => {
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+  const formattedDateLeft = formatDate(date2025);
+  const formattedDateRight = formatDate(dateNewSeason);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -47,10 +60,29 @@ export const Header = ({ onOpenModal }: OpenModal) => {
             />
             <div className={styles.description}>
               <p className={styles.textBig}>Online</p>
-              <p className={styles.textSmall}>Essence x5</p>
+              <p className={`${styles.textSmall} ${styles.textSmallRate}`}>
+                Essence {GENERAL.RATE_5}
+              </p>
+              <p className={styles.textSmall}>{formattedDateLeft}</p>
             </div>
           </div>
-          {isDesktop && <HeaderMenu onOpenModal={onOpenModal} />}
+          <div className={`${styles.line} ${styles.lineSecondary}`} />
+          <div className={`${styles.onlineStatus} ${styles.onlineStatusSecondary}`}>
+            <img
+              src={onlineIcon}
+              className={styles.onlineIcon}
+              alt={layout.altOnlineIcon}
+            />
+            <div className={styles.description}>
+              <p className={styles.textBig}>Online</p>
+              <p className={`${styles.textSmall} ${styles.textSmallRate}`}>
+                Essence {GENERAL.RATE_5}
+              </p>
+              <p className={styles.textSmall}>{formattedDateRight}</p>
+            </div>
+          </div>
+          {isDesktop &&
+            <HeaderMenu onOpenModal={onOpenModal} />}
         </div>
 
         {isDesktop ? (

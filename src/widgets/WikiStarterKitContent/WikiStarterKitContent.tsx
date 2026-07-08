@@ -14,12 +14,7 @@ export const WikiStarterKitContent = ({ id }: WikiComponentProps) => {
   const { starterKit } = useLocalizedData();
 
   const localizedItemsTop = mapWithLocalization(
-    starterKitData.slice(0, 1),
-    starterKit,
-    'text',
-  );
-  const localizedItemsBottom = mapWithLocalization(
-    starterKitData.slice(1, 2),
+    starterKitData,
     starterKit,
     'text',
   );
@@ -33,7 +28,6 @@ export const WikiStarterKitContent = ({ id }: WikiComponentProps) => {
     <WikiLayout title={starterKit.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItemsTop)}
       <Table list={localizedItemsPackage} />
-      {renderItemCards(localizedItemsBottom)}
     </WikiLayout>
   );
 };

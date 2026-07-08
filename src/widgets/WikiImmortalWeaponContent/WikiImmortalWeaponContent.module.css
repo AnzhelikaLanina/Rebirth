@@ -1,0 +1,29 @@
+.image {
+  width: 862px;
+  height: 411px;
+  background-image: url('../../shared/assets/images/backgrounds/immortal-weapon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.subheading {
+  margin: 0;
+  padding: 0;
+  font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.015em;
+}
+
+@media screen and (max-width: 1450px) {
+  .image {
+    width: 315px;
+    height: 243px;
+  }
+
+  .subheading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

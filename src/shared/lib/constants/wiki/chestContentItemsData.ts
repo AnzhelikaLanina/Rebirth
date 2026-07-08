@@ -1,3 +1,11 @@
+import etcEvKalieToken from '@/shared/assets/images/items/etc-ev-kalie-token.png';
+import dollSummonTicketFixedLv3 from '@/shared/assets/images/items/doll-summon-ticket-fixed-lv3.png';
+import dollSummonTicketFixedLv4 from '@/shared/assets/images/items/doll-summon-ticket-fixed-lv4.png';
+import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll-summon-ticket-lv5.png';
+import dollSummon1TicketLv6 from '@/shared/assets/images/items/doll-summon-ticket-lv6.png';
+import armorT702 from '@/shared/assets/images/items/armor-t702.png';
+import armorLightShoes from '@/shared/assets/images/items/armor-light-shoes.png';
+import armorLeatherHelmet from '@/shared/assets/images/items/armor-leather-helmet.png';
 import armorT901U from '@/shared/assets/images/items/armor-t901-u.png';
 import armorT901L from '@/shared/assets/images/items/armor-t901-l.png';
 import armorT902U from '@/shared/assets/images/items/armor-t902-u.png';
@@ -6,24 +14,45 @@ import armorT903U from '@/shared/assets/images/items/armor-t903-u.png';
 import armorT903L from '@/shared/assets/images/items/armor-t903-l.png';
 import sigilOfProtection from '@/shared/assets/images/items/sigil-of-protection.png';
 import shieldOfProtection from '@/shared/assets/images/items/shield-of-protection.png';
-import armorLeatherHelmet from '@/shared/assets/images/items/armor-leather-helmet.png';
 import armorT901G from '@/shared/assets/images/items/armor-t901-g.png';
 import armorT901B from '@/shared/assets/images/items/armor-t901-b.png';
 import sigilOfImmortal from '@/shared/assets/images/items/sigil-of-immortal.png';
 import shieldOfImmortal from '@/shared/assets/images/items/shield-of-immortal.png';
-import etcScrlOfEnchFallenAngel from '@/shared/assets/images/items/etc-scrl-of-ench-fallen-angel.png';
-import armorT702 from '@/shared/assets/images/items/armor-t702.png';
-import armorLightShoes from '@/shared/assets/images/items/armor-light-shoes.png';
-import dollSummon1TicketLv6 from '@/shared/assets/images/items/doll-summon-ticket-lv6.png';
-import dollSummon1TicketLv5 from '@/shared/assets/images/items/doll-summon-ticket-lv5.png';
-import bmDragonKey from '@/shared/assets/images/items/bm-dragon-key.png';
 
 export const chestContentItemsData = [
   {
-    key: 'header',
-    src: bmDragonKey,
-    alt: 'bm dragon key',
-    header: true,
+    key: 'bossExpeditionBadge',
+    src: etcEvKalieToken,
+    alt: 'etc ev kalie token',
+    header: false,
+    image: true,
+  },
+  {
+    key: 'exceptionalDollCoupon',
+    src: dollSummonTicketFixedLv3,
+    alt: 'doll summon ticket fixed lv3',
+    header: false,
+    image: true,
+  },
+  {
+    key: 'rareDollCoupon',
+    src: dollSummonTicketFixedLv4,
+    alt: 'doll summon ticket fixed lv4',
+    header: false,
+    image: true,
+  },
+  {
+    key: 'heroicDollCoupon',
+    src: dollSummon1TicketLv5,
+    alt: 'doll summon ticket lv5',
+    header: false,
+    image: true,
+  },
+  {
+    key: 'legendaryDollCoupon',
+    src: dollSummon1TicketLv6,
+    alt: 'doll summon ticket lv6',
+    header: false,
     image: true,
   },
   {
@@ -44,20 +73,6 @@ export const chestContentItemsData = [
     key: 'armorLeatherHelmet',
     src: armorLeatherHelmet,
     alt: 'armor leather helmet',
-    header: false,
-    image: true,
-  },
-  {
-    key: 'dollSummonTicketLv6',
-    src: dollSummon1TicketLv6,
-    alt: 'doll summon ticket lv6',
-    header: false,
-    image: true,
-  },
-  {
-    key: 'dollSummonTicketLv5',
-    src: dollSummon1TicketLv5,
-    alt: 'doll summon ticket lv5',
     header: false,
     image: true,
   },
@@ -149,13 +164,6 @@ export const chestContentItemsData = [
     key: 'shieldOfImmortal',
     src: shieldOfImmortal,
     alt: 'shield of immortal',
-    header: false,
-    image: true,
-  },
-  {
-    key: 'others',
-    src: etcScrlOfEnchFallenAngel,
-    alt: 'etc scrl of ench fallen angel',
     header: false,
     image: true,
   },

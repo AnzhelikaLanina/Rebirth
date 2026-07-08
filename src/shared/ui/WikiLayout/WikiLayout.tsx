@@ -17,7 +17,7 @@ export const WikiLayout = ({
     <div className={styles.content} id={id}>
       <div className={styles.info}>
         <h3 className={styles.header}>{title}</h3>
-        <div className={imgStyle} />
+        <div className={`${imgStyle} ${styles.imageFluid}`} />
       </div>
       {children}
     </div>

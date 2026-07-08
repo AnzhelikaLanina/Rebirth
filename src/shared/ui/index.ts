@@ -7,6 +7,7 @@ export * from './ItemCard';
 export * from './ButtonClose';
 export * from './PageLayout';
 export * from './WikiLayout';
+export * from './WikiSectionLink';
 export * from './ListBlock';
 export * from './SectionBlock';
 export * from './TextBlock';

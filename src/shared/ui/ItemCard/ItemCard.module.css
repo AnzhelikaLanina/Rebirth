@@ -7,6 +7,14 @@
   line-height: 26px;
 }
 
+.text img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+}
+
 .box {
   display: flex;
   flex-direction: row;

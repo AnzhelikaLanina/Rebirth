@@ -17,11 +17,6 @@ export const offlineHuntingData = [
     alt: 'offline rune',
   },
   {
-    key: 'store',
-    src: offlineRune,
-    alt: 'offline rune',
-  },
-  {
     key: 'serverRestartRestoreCharacters',
     src: offlineRune,
     alt: 'offline rune',

@@ -37,11 +37,11 @@
     z-index: 7;
     width: 100%;
     box-sizing: border-box;
-    justify-content: space-between;
-    min-width: 343px;
-    max-width: 343px;
-    gap: 10px;
-    text-align: center;
+    justify-content: flex-start;
+    min-width: 0;
+    max-width: none;
+    gap: 12px;
+    text-align: left;
   }
 
   .text {
@@ -51,6 +51,8 @@
 
   .arrow {
     transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: auto;
   }
 
   .arrow.rotate {
@@ -60,5 +62,6 @@
   .icon {
     width: 34px;
     height: 34px;
+    flex-shrink: 0;
   }
 }

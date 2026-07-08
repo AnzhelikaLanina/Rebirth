@@ -1,0 +1,1 @@
+export { WikiBossExterminationContent } from './WikiBossExterminationContent';

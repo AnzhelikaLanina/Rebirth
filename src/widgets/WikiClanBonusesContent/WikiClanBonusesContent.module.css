@@ -1,7 +1,7 @@
 .image {
   width: 862px;
   height: 411px;
-  background-image: url('../../shared/assets/images/backgrounds/clans.png');
+  background-image: url('../../shared/assets/images/backgrounds/clans.jpg');
   background-size: cover;
   background-position: 50% 20%;
 }
@@ -9,6 +9,8 @@
 @media screen and (max-width: 1450px) {
   .image {
     width: 315px;
-    height: 243px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

@@ -8,13 +8,14 @@ import {
   EXTERNAL_LINKS,
   ExternalLink,
   MEDIA_BREAKPOINTS,
-  OpenModal,
+  HeaderProps,
   PATHS,
   useLocalizedData,
   useSmartNavigation,
+  MODALS
 } from '@/shared';
 
-type HeaderMenuMobileProps = OpenModal & {
+type HeaderMenuMobileProps = HeaderProps & {
   toggleMenu: () => void;
   menuOpen: boolean;
 };
@@ -45,10 +46,25 @@ export const HeaderMenuMobile = ({
           {layout.server}
         </a>
         {isDesktop && (
-          <p className={styles.link} onClick={onOpenModal}>
+          <p
+            className={styles.link}
+            onClick={() => {
+              onOpenModal(MODALS.DOWNLOAD);
+              toggleMenu();
+            }}
+          >
             {layout.files}
           </p>
         )}
+        <p
+          className={styles.link}
+          onClick={() => {
+            onOpenModal(MODALS.PROMO_CODE);
+            toggleMenu();
+          }}
+        >
+          {layout.promoCode}
+        </p>
         <ExternalLink
           href={EXTERNAL_LINKS.REGISTRATION}
           children={layout.registration}

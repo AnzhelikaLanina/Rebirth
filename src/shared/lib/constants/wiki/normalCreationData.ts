@@ -1,9 +1,14 @@
-import etcEvKalieToken from '@/shared/assets/images/items/etc-ev-kalie-token.png';
+import bmStarterPackage from '../../../assets/images/items/bm-starter-package.png';
 
 export const normalCreationData = [
   {
     key: 'craftingRewards',
-    src: etcEvKalieToken,
-    alt: 'etc ev kalie token',
+    src: bmStarterPackage,
+    alt: 'bm starter package',
+  },
+  {
+    key: 'automaticCreation',
+    src: bmStarterPackage,
+    alt: 'bm starter package',
   },
 ];

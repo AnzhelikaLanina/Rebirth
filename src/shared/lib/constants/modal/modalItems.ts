@@ -8,31 +8,31 @@ type ModalItemKey = 'gameClient' | 'gamePatch' | 'updater';
 export type ModalItemType = {
   icon: string;
   key: ModalItemKey;
-  linkGoogle?: string;
   linkGYandex?: string;
   linkMediafire?: string;
 };
 
-const config = getRebirthConfig();
-const links = config?.downloadLinks;
+export const getModalItems = (): ModalItemType[] => {
+  const links = getRebirthConfig()?.downloadLinks;
 
-export const modalItems: ModalItemType[] = [
-  {
-    icon: lineageLogo,
-    key: 'gameClient',
-    linkGoogle: links?.gameClient?.google,
-    linkGYandex: links?.gameClient?.yandex,
-  },
-  {
-    icon: winRarLogo,
-    key: 'gamePatch',
-    linkMediafire: links?.gamePatch?.mediafire,
-    linkGYandex: links?.gamePatch?.yandex,
-  },
-  {
-    icon: blueLogo,
-    key: 'updater',
-    linkGoogle: links?.updater?.google,
-    linkGYandex: links?.updater?.yandex,
-  },
-];
+  return [
+    {
+      icon: lineageLogo,
+      key: 'gameClient',
+      linkMediafire: links?.gameClient?.mediafire,
+      linkGYandex: links?.gameClient?.yandex,
+    },
+    {
+      icon: winRarLogo,
+      key: 'gamePatch',
+      linkMediafire: links?.gamePatch?.mediafire,
+      linkGYandex: links?.gamePatch?.yandex,
+    },
+    {
+      icon: blueLogo,
+      key: 'updater',
+      linkMediafire: links?.updater?.mediafire,
+      linkGYandex: links?.updater?.yandex,
+    },
+  ];
+};

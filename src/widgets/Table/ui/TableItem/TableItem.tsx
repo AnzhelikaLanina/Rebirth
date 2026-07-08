@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import styles from './TableItem.module.css';
-import { TableItemProps } from '@/shared';
+import { TableItemProps, parseTextWithIcons } from '@/shared';
 
 export const TableItem = ({
   header,
@@ -13,9 +13,9 @@ export const TableItem = ({
     <div
       className={clsx(styles.tableElement, header && styles.tableElementHead)}
     >
-      {image && <img src={src} className={styles.img} alt={alt} />}
+      {image && src && <img src={src} className={styles.img} alt={alt} />}
       <p className={clsx(styles.tableText, header && styles.tableTextHead)}>
-        {text}
+        {parseTextWithIcons(text)}
       </p>
     </div>
   );

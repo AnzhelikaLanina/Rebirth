@@ -12,6 +12,7 @@ import fireSwordAden from '@/shared/assets/images/items/fire-sword-aden.png';
 import bmLCoin from '@/shared/assets/images/items/bm-lcoin.png';
 import etcRoyalSealOfLord from '@/shared/assets/images/items/etc-royal-seal-of-lord.png';
 import etcAncientAdena from '@/shared/assets/images/items/etc-ancient-adena.png';
+import sNonpvpPeace from '@/shared/assets/images/items/s-nonpvp-peace.png';
 
 export const systemRewardsData = [
   {
@@ -111,5 +112,12 @@ export const systemRewardsData = [
     src: etcAncientAdena,
     alt: 'etc ancient adena',
     key: 'ancientAdena',
+  },
+  {
+    header: false,
+    image: true,
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
+    key: 'etc',
   },
 ];

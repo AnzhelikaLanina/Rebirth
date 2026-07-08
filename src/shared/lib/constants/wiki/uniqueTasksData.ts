@@ -1,39 +1,39 @@
-import earringOfZaken from '../../../assets/images/items/earring-of-zaken.png';
-import earringOfOrfen from '../../../assets/images/items/earring-of-orfen.png';
-import accessoryRingOfQueenAnt from '../../../assets/images/items/accessory-ring-of-queen-ant.png';
-import baiumTalismanNew from '../../../assets/images/items/baium-talisman-new.png';
-import blessMaskOfPhantom from '../../../assets/images/items/bless-mask-of-phantom.png';
-import etcEvKalieToken from '../../../assets/images/items/etc-ev-kalie-token.png';
+import etcMissionPoint from '../../../assets/images/items/etc-mission-point.png';
 
 export const uniqueTasksData = [
   {
-    src: earringOfZaken,
-    alt: 'earring of zaken',
-    key: 'earringOfZaken',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'intro',
   },
   {
-    src: earringOfOrfen,
-    alt: 'earring of orfen',
-    key: 'earringOfOrfen',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'coreEmeraldTitle',
   },
   {
-    src: accessoryRingOfQueenAnt,
-    alt: 'accessory ring of queen ant',
-    key: 'accessoryRingOfQueenAnt',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'pirateKingTitle',
   },
   {
-    src: baiumTalismanNew,
-    alt: 'baium talisman new',
-    key: 'baiumTalismanNew',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'manyArmsTitle',
   },
   {
-    src: blessMaskOfPhantom,
-    alt: 'bless mask of phantom',
-    key: 'blessMaskOfPhantom',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'centipedeTitle',
   },
   {
-    src: etcEvKalieToken,
-    alt: 'etc ev kalie token',
-    key: 'etcEvKalieToken',
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'cursedEmperorTitle',
+  },
+  {
+    src: etcMissionPoint,
+    alt: 'etc mission point',
+    key: 'phantomBattlesTitle',
   },
 ];

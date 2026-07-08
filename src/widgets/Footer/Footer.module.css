@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 53px;
   padding-top: 54px;
   padding-bottom: 54px;
   width: 100vw;
@@ -148,7 +149,39 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 1410px) {
+@media screen and (max-width: 1470px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1462px) {
+  .footer {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .container {
+    min-width: 0;
+    max-width: 1410px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
+    flex-wrap: wrap;
+    gap: 24px 28px;
+  }
+
+  .links {
+    column-gap: 20px;
+  }
+
+  .description {
+    min-width: 0;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
   .footer {
     padding-top: 34px;
     padding-bottom: 34px;
@@ -200,5 +233,11 @@
 
   .serverBox {
     gap: 6px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    margin-top: 0;
   }
 }

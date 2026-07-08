@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { scrollToTop } from '@/shared';
+import { scrollToTop } from '../utils/scrollToTop';
 
 export const useSmartNavigation = () => {
   const location = useLocation();

@@ -1,12 +1,14 @@
 import styles from './WikiAchievementBoxesRewardsContent.module.css';
 import {
   achievementBoxesRewardsData,
+  achievementBoxesRewardsItemsData,
   mapWithLocalization,
   renderItemCards,
   useLocalizedData,
   WikiComponentProps,
   WikiLayout,
 } from '@/shared';
+import { Table } from '@/widgets';
 
 export const WikiAchievementBoxesRewardsContent = ({
   id,
@@ -17,6 +19,13 @@ export const WikiAchievementBoxesRewardsContent = ({
     achievementBoxesRewards,
     'text',
   );
+
+  const localizedItemsRewards = mapWithLocalization(
+    achievementBoxesRewardsItemsData,
+    achievementBoxesRewards.rewards,
+    'text',
+  );
+
   return (
     <WikiLayout
       id={id}
@@ -24,6 +33,7 @@ export const WikiAchievementBoxesRewardsContent = ({
       imgStyle={styles.image}
     >
       {renderItemCards(localizedItems)}
+      <Table list={localizedItemsRewards} />
     </WikiLayout>
   );
 };

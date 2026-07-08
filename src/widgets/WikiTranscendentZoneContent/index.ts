@@ -1,0 +1,1 @@
+export { WikiTranscendentZoneContent } from './WikiTranscendentZoneContent';

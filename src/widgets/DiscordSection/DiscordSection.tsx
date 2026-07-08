@@ -1,24 +1,54 @@
 import { useMediaQuery } from 'react-responsive';
 import styles from './DiscordSection.module.css';
-import { DiscordBlock } from '@/widgets';
+import darkElfWomanCharacter from '../../shared/assets/images/characters/dark-elf-woman.svg?url';
+import circlesLeftEffect from '../../shared/assets/images/effects/circles-left.svg?url';
+import circlesRightEffect from '../../shared/assets/images/effects/circles-right.svg?url';
 import {
+  Button,
+  DiscordIcon,
+  EXTERNAL_LINKS,
   MEDIA_BREAKPOINTS,
-  OrnamentDiscordFrame,
+  OrnamentNewsLargeFrame,
   OrnamentDiscordMobileFrame,
+  openInNewTab,
+  useLocalizedData,
 } from '@/shared';
 
 export const DiscordSection = () => {
-  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.DESKTOP_SMALL });
+  const isDesktop = useMediaQuery({ query: MEDIA_BREAKPOINTS.MOBILE_SWITCH });
+  const { discord } = useLocalizedData();
 
   const Ornament = isDesktop
-    ? OrnamentDiscordFrame
+    ? OrnamentNewsLargeFrame
     : OrnamentDiscordMobileFrame;
 
   return (
     <section className={styles.discord}>
       <div className={styles.ornamentBox}>
         <Ornament className={styles.ornament} />
-        <DiscordBlock />
+        <div className={styles.container}>
+          <div className={styles.shadow} />
+          <div className={styles.clipContainer}>
+            <div className={styles.ellipse} />
+            <img src={circlesRightEffect} className={styles.circlesRight} alt="" />
+            <img src={circlesLeftEffect} className={styles.circlesLeft} alt="" />
+          </div>
+          <img
+            src={darkElfWomanCharacter}
+            className={styles.characterImage}
+            alt={discord.altDarkElf}
+          />
+          <h2 className={styles.header}>{discord.header}</h2>
+          <p className={styles.description}>{discord.description}</p>
+          <Button
+            className={styles.buttonPink}
+            text={discord.community}
+            icon={<DiscordIcon />}
+            onClick={() =>
+              EXTERNAL_LINKS.DISCORD && openInNewTab(EXTERNAL_LINKS.DISCORD)
+            }
+          />
+        </div>
       </div>
     </section>
   );

@@ -23,7 +23,7 @@ export const Footer = () => {
               alt={layout.altLogo}
             />
             <div className={styles.line} />
-            <p className={styles.text}>Lineage 2 Essence x5 Server</p>
+            <p className={styles.text}>{layout.essenceServer}</p>
           </li>
           <li>
             <a
@@ -61,13 +61,15 @@ export const Footer = () => {
               className={styles.link}
             />
           </li>
-          <li className={styles.element5}>
-            <ExternalLink
-              href={EXTERNAL_LINKS.DISCORD}
-              children={'Discord'}
-              className={styles.link}
-            />
-          </li>
+          {EXTERNAL_LINKS.DISCORD && (
+            <li className={styles.element5}>
+              <ExternalLink
+                href={EXTERNAL_LINKS.DISCORD}
+                children={'Discord'}
+                className={styles.link}
+              />
+            </li>
+          )}
           <li className={styles.element6}>
             <ExternalLink
               href={EXTERNAL_LINKS.PERSONAL_ACCOUNT}

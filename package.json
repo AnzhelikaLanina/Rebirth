@@ -2,7 +2,7 @@
   "name": "rebirth",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AnzhelikaLanina.github.io/Rebirth",
+  "homepage": "https://github.com/AnzhelikaLanina/Rebirth",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -67,5 +67,8 @@
     "vite": "^6.3.5",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-svgr": "^4.3.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-darwin-x64": "^4.60.1"
   }
 }

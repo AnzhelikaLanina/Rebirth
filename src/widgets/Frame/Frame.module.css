@@ -1,12 +1,17 @@
 .frame {
   position: absolute;
-  top: 212px;
+  top: 132px;
   left: 177px;
   max-width: 350px;
   min-width: 350px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  z-index: 7;
+}
+
+.frameLower {
+  top: 312px;
 }
 
 .header {

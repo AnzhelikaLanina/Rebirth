@@ -1,0 +1,85 @@
+import secretGoldCoin from '@/shared/assets/images/items/secret-gold-coin.png';
+
+export const baseStatBonusesIntData = [
+  {
+    header: true,
+    key: 'title',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item1',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item2',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item3',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item4',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item5',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item6',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item7',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item8',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item9',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item10',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+  {
+    header: false,
+    image: true,
+    key: 'item11',
+    src: secretGoldCoin,
+    alt: 'secret gold coin',
+  },
+];

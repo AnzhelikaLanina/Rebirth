@@ -1,5 +1,5 @@
 import styles from './MainPage.module.css';
-import { DiscordSection, Features, TitleSection, NewsSection } from '@/widgets';
+import { Advantages, Features, TitleSection, ServerInfo } from '@/widgets';
 
 export const MainPage = () => {
   return (
@@ -7,8 +7,8 @@ export const MainPage = () => {
       <div className={styles.page}>
         <TitleSection />
         <Features />
-        <NewsSection />
-        <DiscordSection />
+        <Advantages />
+        <ServerInfo />
       </div>
     </>
   );

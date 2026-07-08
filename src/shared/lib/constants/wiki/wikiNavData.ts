@@ -22,6 +22,11 @@ import {
 export const wikiNavData = [
   { key: 'mainInfoHeader', icon: MainInfoIcon, activeIcon: MainInfoActiveIcon },
   {
+    key: 'eventScheduleHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
     key: 'starterKitHeader',
     icon: MainInfoIcon,
     activeIcon: MainInfoActiveIcon,
@@ -94,5 +99,160 @@ export const wikiNavData = [
     key: 'celestiaBattleHeader',
     icon: FeaturesIcon,
     activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'bossExterminationHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'orcFortressHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'ironSupplyBaseHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'catacombHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'contestForestHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'mafiaHideoutHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'pvpPveSystemHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'immortalWeaponHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'antharasHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'fafurionHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'revelationSkillsHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'telegramBotHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'valakasHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'bossesHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'ancientBossesHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'siegeOfAdenHeader',
+    icon: ClansIcon,
+    activeIcon: ClansActiveIcon,
+  },
+  {
+    key: 'transcendentZoneHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'baltusLuckHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'secretShopHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'letterCollectorHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'hellIslandHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'alligatorIslandHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'baseStatBonusesHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'combatPowerHeader',
+    icon: FeaturesIcon,
+    activeIcon: FeaturesActiveIcon,
+  },
+  {
+    key: 'siegeOfGiranHeader',
+    icon: ClansIcon,
+    activeIcon: ClansActiveIcon,
+  },
+  {
+    key: 'shiftingMirageHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'chaoticBossesHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'queenAntHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'coreBossHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'orfenHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'zakenHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
   },
 ];

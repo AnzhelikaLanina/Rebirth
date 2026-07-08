@@ -136,3 +136,195 @@ export const WikiCelestiaBattleContentLazy = lazy(() =>
     default: module.WikiCelestiaBattleContent,
   })),
 );
+
+export const WikiBossExterminationContentLazy = lazy(() =>
+  import('../../../widgets/WikiBossExterminationContent').then((module) => ({
+    default: module.WikiBossExterminationContent,
+  })),
+);
+
+export const WikiOrcFortressContentLazy = lazy(() =>
+  import('../../../widgets/WikiOrcFortressContent').then((module) => ({
+    default: module.WikiOrcFortressContent,
+  })),
+);
+
+export const WikiIronSupplyBaseContentLazy = lazy(() =>
+  import('../../../widgets/WikiIronSupplyBaseContent').then((module) => ({
+    default: module.WikiIronSupplyBaseContent,
+  })),
+);
+
+export const WikiCatacombContentLazy = lazy(() =>
+  import('../../../widgets/WikiCatacombContent').then((module) => ({
+    default: module.WikiCatacombContent,
+  })),
+);
+
+export const WikiContestForestContentLazy = lazy(() =>
+  import('../../../widgets/WikiContestForestContent').then((module) => ({
+    default: module.WikiContestForestContent,
+  })),
+);
+
+export const WikiMafiaHideoutContentLazy = lazy(() =>
+  import('../../../widgets/WikiMafiaHideoutContent').then((module) => ({
+    default: module.WikiMafiaHideoutContent,
+  })),
+);
+
+export const WikiPvpPveSystemContentLazy = lazy(() =>
+  import('../../../widgets/WikiPvpPveSystemContent').then((module) => ({
+    default: module.WikiPvpPveSystemContent,
+  })),
+);
+
+export const WikiImmortalWeaponContentLazy = lazy(() =>
+  import('../../../widgets/WikiImmortalWeaponContent').then((module) => ({
+    default: module.WikiImmortalWeaponContent,
+  })),
+);
+
+export const WikiAntharasContentLazy = lazy(() =>
+  import('../../../widgets/WikiAntharasContent').then((module) => ({
+    default: module.WikiAntharasContent,
+  })),
+);
+
+export const WikiFafurionContentLazy = lazy(() =>
+  import('../../../widgets/WikiFafurionContent').then((module) => ({
+    default: module.WikiFafurionContent,
+  })),
+);
+
+export const WikiRevelationSkillsContentLazy = lazy(() =>
+  import('../../../widgets/WikiRevelationSkillsContent').then((module) => ({
+    default: module.WikiRevelationSkillsContent,
+  })),
+);
+
+export const WikiTelegramBotContentLazy = lazy(() =>
+  import('../../../widgets/WikiTelegramBotContent').then((module) => ({
+    default: module.WikiTelegramBotContent,
+  })),
+);
+
+export const WikiValakasContentLazy = lazy(() =>
+  import('../../../widgets/WikiValakasContent').then((module) => ({
+    default: module.WikiValakasContent,
+  })),
+);
+
+export const WikiBossesContentLazy = lazy(() =>
+  import('../../../widgets/WikiBossesContent').then((module) => ({
+    default: module.WikiBossesContent,
+  })),
+);
+
+export const WikiAncientBossesContentLazy = lazy(() =>
+  import('../../../widgets/WikiAncientBossesContent').then((module) => ({
+    default: module.WikiAncientBossesContent,
+  })),
+);
+
+export const WikiSiegeOfAdenContentLazy = lazy(() =>
+  import('../../../widgets/WikiSiegeOfAdenContent').then((module) => ({
+    default: module.WikiSiegeOfAdenContent,
+  })),
+);
+
+export const WikiTranscendentZoneContentLazy = lazy(() =>
+  import('../../../widgets/WikiTranscendentZoneContent').then((module) => ({
+    default: module.WikiTranscendentZoneContent,
+  })),
+);
+
+export const WikiBaltusLuckContentLazy = lazy(() =>
+  import('../../../widgets/WikiBaltusLuckContent').then((module) => ({
+    default: module.WikiBaltusLuckContent,
+  })),
+);
+
+export const WikiSecretShopContentLazy = lazy(() =>
+  import('../../../widgets/WikiSecretShopContent').then((module) => ({
+    default: module.WikiSecretShopContent,
+  })),
+);
+
+export const WikiLetterCollectorContentLazy = lazy(() =>
+  import('../../../widgets/WikiLetterCollectorContent').then((module) => ({
+    default: module.WikiLetterCollectorContent,
+  })),
+);
+
+export const WikiHellIslandContentLazy = lazy(() =>
+  import('../../../widgets/WikiHellIslandContent').then((module) => ({
+    default: module.WikiHellIslandContent,
+  })),
+);
+
+export const WikiAlligatorIslandContentLazy = lazy(() =>
+  import('../../../widgets/WikiAlligatorIslandContent').then((module) => ({
+    default: module.WikiAlligatorIslandContent,
+  })),
+);
+
+export const WikiBaseStatBonusesContentLazy = lazy(() =>
+  import('../../../widgets/WikiBaseStatBonusesContent').then((module) => ({
+    default: module.WikiBaseStatBonusesContent,
+  })),
+);
+
+export const WikiCombatPowerContentLazy = lazy(() =>
+  import('../../../widgets/WikiCombatPowerContent').then((module) => ({
+    default: module.WikiCombatPowerContent,
+  })),
+);
+
+export const WikiSiegeOfGiranContentLazy = lazy(() =>
+  import('../../../widgets/WikiSiegeOfGiranContent').then((module) => ({
+    default: module.WikiSiegeOfGiranContent,
+  })),
+);
+
+export const WikiShiftingMirageContentLazy = lazy(() =>
+  import('../../../widgets/WikiShiftingMirageContent').then((module) => ({
+    default: module.WikiShiftingMirageContent,
+  })),
+);
+
+export const WikiChaoticBossesContentLazy = lazy(() =>
+  import('../../../widgets/WikiChaoticBossesContent').then((module) => ({
+    default: module.WikiChaoticBossesContent,
+  })),
+);
+
+export const WikiQueenAntContentLazy = lazy(() =>
+  import('../../../widgets/WikiQueenAntContent').then((module) => ({
+    default: module.WikiQueenAntContent,
+  })),
+);
+
+export const WikiCoreBossContentLazy = lazy(() =>
+  import('../../../widgets/WikiCoreBossContent').then((module) => ({
+    default: module.WikiCoreBossContent,
+  })),
+);
+
+export const WikiOrfenContentLazy = lazy(() =>
+  import('../../../widgets/WikiOrfenContent').then((module) => ({
+    default: module.WikiOrfenContent,
+  })),
+);
+
+export const WikiZakenContentLazy = lazy(() =>
+  import('../../../widgets/WikiZakenContent').then((module) => ({
+    default: module.WikiZakenContent,
+  })),
+);
+
+export const WikiEventScheduleContentLazy = lazy(() =>
+  import('../../../widgets/WikiEventScheduleContent').then((module) => ({
+    default: module.WikiEventScheduleContent,
+  })),
+);

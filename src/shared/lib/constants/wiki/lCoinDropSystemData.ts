@@ -12,6 +12,11 @@ export const lCoinDropSystemData = [
     alt: 'bm lcoin',
   },
   {
+    key: 'lcoinDropInterval',
+    src: bmLcoin,
+    alt: 'bm lcoin',
+  },
+  {
     key: 'lcoinAmountByLevel',
     src: bmLcoin,
     alt: 'bm lcoin',

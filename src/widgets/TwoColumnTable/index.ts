@@ -1,0 +1,1 @@
+export { TwoColumnTable } from './TwoColumnTable';

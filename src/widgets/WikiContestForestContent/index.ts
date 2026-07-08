@@ -1,0 +1,1 @@
+export { WikiContestForestContent } from './WikiContestForestContent';

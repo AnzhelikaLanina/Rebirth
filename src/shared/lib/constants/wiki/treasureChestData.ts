@@ -11,4 +11,9 @@ export const treasureChestData = [
     src: bmDragonKey,
     alt: 'bm dragon key',
   },
+  {
+    key: 'chestOpeningInfo',
+    src: bmDragonKey,
+    alt: 'bm dragon key',
+  },
 ];

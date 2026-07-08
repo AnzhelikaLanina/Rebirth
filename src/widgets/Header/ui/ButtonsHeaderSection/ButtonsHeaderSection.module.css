@@ -60,9 +60,11 @@
   }
 }
 
-@media screen and (max-width: 1264px) {
+@media screen and (max-width: 1462px) {
   .buttons {
     flex-direction: column;
+    align-items: center;
+    gap: 14px;
     padding-right: 0;
   }
 

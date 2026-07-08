@@ -16,7 +16,9 @@ export const ButtonsHeaderSection = () => {
         className={styles.buttonPink}
         icon={<DiscordIcon />}
         text={layout.community}
-        onClick={() => openInNewTab(EXTERNAL_LINKS.DISCORD)}
+        onClick={() =>
+          EXTERNAL_LINKS.DISCORD && openInNewTab(EXTERNAL_LINKS.DISCORD)
+        }
       />
       <Button
         className={styles.buttonBlue}

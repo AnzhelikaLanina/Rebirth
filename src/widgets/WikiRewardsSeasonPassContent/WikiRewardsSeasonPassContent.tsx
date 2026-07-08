@@ -3,16 +3,24 @@ import {
   mapWithLocalization,
   renderItemCards,
   rewardsSeasonPassData,
+  rewardsSeasonPassItemsData,
   useLocalizedData,
   WikiComponentProps,
   WikiLayout,
 } from '@/shared';
+import { Table } from '@/widgets';
 
 export const WikiRewardsSeasonPassContent = ({ id }: WikiComponentProps) => {
   const { rewardsSeasonPass } = useLocalizedData();
   const localizedItems = mapWithLocalization(
     rewardsSeasonPassData,
     rewardsSeasonPass,
+    'text',
+  );
+
+  const localizedItemsRewards = mapWithLocalization(
+    rewardsSeasonPassItemsData,
+    rewardsSeasonPass.rewards,
     'text',
   );
   return (
@@ -22,6 +30,7 @@ export const WikiRewardsSeasonPassContent = ({ id }: WikiComponentProps) => {
       imgStyle={styles.image}
     >
       {renderItemCards(localizedItems)}
+      <Table list={localizedItemsRewards} />
     </WikiLayout>
   );
 };

@@ -1,0 +1,1 @@
+export { WikiPvpPveSystemContent } from './WikiPvpPveSystemContent';

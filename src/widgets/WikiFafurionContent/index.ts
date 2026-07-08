@@ -1,0 +1,1 @@
+export { WikiFafurionContent } from './WikiFafurionContent';

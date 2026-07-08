@@ -20,8 +20,8 @@ export type WikiComponentProps = {
 
 export type Language = 'ru' | 'en';
 
-export type OpenModal = {
-  onOpenModal: () => void;
+export type HeaderProps = {
+  onOpenModal: (type: string) => void;
 };
 
 export type ButtonDef = {

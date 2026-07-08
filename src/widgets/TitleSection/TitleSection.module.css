@@ -10,6 +10,29 @@
   width: 100vw;
 }
 
+.advertisementWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.advertisementWrapper > * {
+  pointer-events: auto;
+}
+
+@media screen and (min-width: 1921px) {
+  .advertisementWrapper {
+    left: 50%;
+    right: auto;
+    width: 1920px;
+    margin-left: -960px;
+  }
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -48,6 +71,22 @@
   width: 1761px;
   height: 100%;
   z-index: 2;
+}
+
+.frameLayer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 1761px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.frameLayer > * {
+  pointer-events: auto;
 }
 
 .ellipseConcave {
@@ -164,11 +203,18 @@
   margin: -15px 0 0;
   padding: 0;
   max-width: 643px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: TrajanPro3, Arial, Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 38px;
   letter-spacing: 0.015em;
+}
+
+.subheaderLine {
+  white-space: nowrap;
 }
 
 .description {
@@ -243,7 +289,7 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .textBox {
     padding: 300px 0 0;
   }
@@ -258,8 +304,8 @@
   .subheader {
     margin: 0;
     max-width: 343px;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 17px;
+    line-height: 26px;
   }
 
   .description {

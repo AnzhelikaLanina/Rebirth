@@ -1,0 +1,112 @@
+.image {
+  width: 862px;
+  height: 411px;
+  background-image: url('../../shared/assets/images/backgrounds/event-schedule.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.table {
+  text-align: left;
+  width: 100%;
+}
+
+.element {
+  padding: 14px 14px 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid rgba(44, 59, 94, 1);
+}
+
+.element:last-child {
+  border-bottom: 1px solid rgba(44, 59, 94, 1);
+}
+
+.head {
+  background: rgba(44, 59, 94, 1);
+  padding-bottom: 14px;
+}
+
+.dayIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.dayName {
+  font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.time {
+  flex-shrink: 0;
+  min-width: 120px;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(255, 214, 68, 1);
+}
+
+.events {
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: rgba(255, 214, 68, 1);
+}
+
+@media screen and (max-width: 1450px) {
+  .image {
+    width: 315px;
+    height: 243px;
+    background-size: 100% 130%;
+    background-position: center center;
+  }
+
+  .dayName {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .time {
+    min-width: 96px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .events {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0 0 0 24px;
   min-width: 355px;
-  max-width: 355px;
+  gap: 15px;
   width: 100%;
   display: flex;
   flex-direction: row;

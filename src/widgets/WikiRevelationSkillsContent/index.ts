@@ -1,0 +1,1 @@
+export { WikiRevelationSkillsContent } from './WikiRevelationSkillsContent';

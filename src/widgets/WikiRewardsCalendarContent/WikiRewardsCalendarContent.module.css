@@ -3,7 +3,7 @@
   height: 411px;
   background-image: url('../../shared/assets/images/backgrounds/girl-in-black.png');
   background-size: cover;
-  background-position: top;
+  background-position: center 12%;
 }
 
 @media screen and (max-width: 1450px) {

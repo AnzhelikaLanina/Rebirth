@@ -146,14 +146,40 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1264px) {
+.box .header {
+  margin-left: 8px;
+}
+
+.box .dropDownArrow {
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1462px) {
   .text {
     font-size: 16px;
     line-height: 21.79px;
   }
 
+  .dropDown {
+    min-width: 327px;
+    max-width: 327px;
+    margin-top: 4px;
+    padding-bottom: 0;
+    align-items: stretch;
+  }
+
+  .box {
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 12px;
+  }
+
   .dropDownContainer {
     position: relative;
+    width: 100%;
   }
 
   .dropDownContainer.show {
@@ -169,7 +195,7 @@
   }
 
   .dropDownBox {
-    margin: 8px 0 0;
+    margin: 14px 0 0;
     align-items: center;
     background: rgba(18, 24, 38, 1);
     border: none;
@@ -179,20 +205,18 @@
   }
 
   .dropDownBoxFlags {
-    margin: 8px 0 0;
-    justify-content: flex-start;
+    margin: 12px 0 0;
+    justify-content: center;
+    gap: 10px;
     background: rgba(18, 24, 38, 1);
     border: none;
     min-width: 327px;
     max-width: 327px;
-    padding: 12px 0 12px 106px;
+    padding: 14px 20px;
+    box-sizing: border-box;
   }
 
   .gearWheel {
     display: none;
-  }
-
-  .dropDown {
-    padding-bottom: 0;
   }
 }

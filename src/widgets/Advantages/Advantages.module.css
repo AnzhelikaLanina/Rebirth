@@ -1,0 +1,179 @@
+.advantages {
+  padding-top: 90px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1410px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.ornamentBox {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.ornament {
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 2px);
+  height: calc(100% - 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.item {
+  position: relative;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  box-sizing: border-box;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 26px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.bgStarterKit {
+  background-image: url('../../shared/assets/images/backgrounds/start-box.jpg');
+}
+
+.bgCombatPower {
+  background-image: url('../../shared/assets/images/backgrounds/combat-power.jpg');
+  background-position: center 30%;
+}
+
+.bgBaseStatBonuses {
+  background-image: url('../../shared/assets/images/backgrounds/base-stat-bonuses.jpg');
+}
+
+.bgImmortalWeapon {
+  background-image: url('../../shared/assets/images/backgrounds/immortal-weapon.jpg');
+}
+
+.bgPvpPve {
+  background-image: url('../../shared/assets/images/backgrounds/girl-ass.jpg');
+}
+
+.bgEventsSchedule {
+  background-image: url('../../shared/assets/images/backgrounds/events-schedule.jpg');
+}
+
+.item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  transition: background 0.3s ease;
+}
+
+.clickable:hover .item {
+  transform: scale(1.005);
+}
+
+.clickable:hover .item .overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1470px) {
+  .advantages {
+    padding-top: 60px;
+  }
+
+  .grid {
+    max-width: 690px;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .item {
+    width: 662px;
+    height: 248px;
+    border-radius: 33px;
+  }
+
+  .bgImmortalWeapon {
+    background-position: top;
+  }
+
+  .bgPvpPve {
+    background-position: top;
+  }
+
+  .bgEventsSchedule {
+    background-position: center 20%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .advantages {
+    padding-top: 60px;
+  }
+
+  .grid {
+    max-width: 343px;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .item {
+    width: 315px;
+  }
+}

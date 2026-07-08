@@ -1,0 +1,30 @@
+import etcMissionPoint from '@/shared/assets/images/items/etc-mission-point.png';
+import sNonpvpBattle from '@/shared/assets/images/items/s-nonpvp-battle.png';
+
+export const contestForestData = [
+  { key: 'applicationTime1', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'applicationTime2', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'entryOncePerDay', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'massEntry1', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'massEntry2', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'reEntry1', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'reEntry2', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'entryClosed1', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'entryClosed2', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'reconnect', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'participantsCount', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'notifications', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'teleport', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'maxParticipants', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'matchStarts', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'matchFormat', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'victory', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'pointsTable', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'tie', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'centralSquare', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'nextRound', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'voting', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'finalReward', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'surrender', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'finalContinues', src: etcMissionPoint, alt: 'etc mission point' },
+];

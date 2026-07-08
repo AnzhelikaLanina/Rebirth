@@ -1,7 +1,9 @@
 import styles from './WikiRewardsForTasksContent.module.css';
 import { Table } from '../Table';
 import {
-  mapWithLocalization, renderItemCards, rewardsTasksData,
+  mapWithLocalization,
+  renderItemCards,
+  rewardsTasksData,
   systemRewardsData,
   useLocalizedData,
   WikiComponentProps,
@@ -25,7 +27,6 @@ export const WikiRewardsForTasksContent = ({ id }: WikiComponentProps) => {
     <WikiLayout title={rewardsForTasks.header} id={id} imgStyle={styles.image}>
       {renderItemCards(itemTop)}
       <Table list={itemsRewards} />
-      <p className={styles.text}>{(rewardsForTasks.bonusForReading)}</p>
     </WikiLayout>
   );
 };

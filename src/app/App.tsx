@@ -8,18 +8,22 @@ import {
   UserAgreementPage,
 } from '@/pages';
 import { Footer, Header, ScrollToTopButton, Modal } from '@/widgets';
-import { HeadMeta, PATHS, ScrollToTop } from '@/shared';
+import { HeadMeta, MODALS, PATHS, ScrollToTop } from '@/shared';
+
+type ModalType = (typeof MODALS)[keyof typeof MODALS];
 
 export const App = () => {
-  const [isOpenModal, setOpenModal] = useState(false);
-  const openModal = () => setOpenModal(true);
-  const closeModal = () => setOpenModal(false);
+  const [modalType, setModalType] = useState<ModalType | null>(null);
+
+  const closeModal = () => {
+    setModalType(null);
+  };
 
   return (
     <div className={styles.app}>
       <HeadMeta />
       <ScrollToTop />
-      <Header onOpenModal={openModal} />
+      <Header onOpenModal={setModalType} />
       <main className={styles.main}>
         <Routes>
           <Route path={PATHS.HOME} element={<MainPage />} />
@@ -29,7 +33,11 @@ export const App = () => {
         </Routes>
       </main>
       <Footer />
-      <Modal isOpen={isOpenModal} onClose={closeModal} />
+      <Modal
+        isOpen={modalType !== null}
+        type={modalType}
+        onClose={closeModal}
+      />
       <ScrollToTopButton />
     </div>
   );

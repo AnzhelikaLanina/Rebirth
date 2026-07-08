@@ -15,6 +15,7 @@ export const WikiWorldTradeContent = ({ id }: WikiComponentProps) => {
     worldTrade,
     'text',
   );
+
   return (
     <WikiLayout title={worldTrade.header} id={id} imgStyle={styles.image}>
       {renderItemCards(localizedItems)}

@@ -5,7 +5,6 @@
   align-items: center;
   background-color: rgba(9, 13, 23, 0.65);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   z-index: 100;
   position: fixed;
   top: 0;
@@ -52,13 +51,13 @@
 
 .onlineIcon {
   width: auto;
-  height: 82px;
+  height: 70px;
 }
 
 .onlineStatus {
-  padding-right: 24px;
-  max-width: 156px;
-  min-width: 156px;
+  padding-right: 12px;
+  max-width: 132px;
+  min-width: 132px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -68,6 +67,10 @@
 
 .onlineStatus .onlineIcon {
   animation: glow 2s infinite ease-in-out;
+}
+
+.onlineStatusSecondary {
+  display: flex;
 }
 
 @keyframes glow {
@@ -107,16 +110,20 @@
   line-height: 16px;
 }
 
+.textSmallRate {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 1470px) {
   .logo {
     padding-left: 24px;
   }
 }
 
-@media screen and (max-width: 1264px) {
+@media screen and (max-width: 1462px) {
   .header {
     min-width: 376px;
-    max-width: 1264px;
+    max-width: 1462px;
   }
 
   .container {
@@ -127,7 +134,7 @@
   }
 
   .onlineStatus {
-    min-width: 128px;
+    min-width: 140px;
     padding-right: 12px;
   }
 
@@ -139,7 +146,11 @@
   }
 
   .box {
-    max-height: 48px;
+    max-height: 56px;
+  }
+
+  .line {
+    height: 52px;
   }
 
   .textBig {
@@ -156,5 +167,45 @@
   .iconMenu:hover {
     opacity: 0.7;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 12px 12px;
+  }
+
+  .logo {
+    padding-left: 12px;
+    padding-right: 8px;
+    width: 40px;
+  }
+
+  .onlineStatus {
+    min-width: 118px;
+    max-width: 118px;
+    padding-right: 8px;
+  }
+
+  .onlineIcon {
+    height: 56px;
+  }
+
+  .line {
+    height: 44px;
+  }
+
+  .textBig {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .textSmall {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .iconMenu {
+    padding-right: 12px;
   }
 }
