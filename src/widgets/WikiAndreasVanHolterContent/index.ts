@@ -1,0 +1,1 @@
+export { WikiAndreasVanHolterContent } from './WikiAndreasVanHolterContent';

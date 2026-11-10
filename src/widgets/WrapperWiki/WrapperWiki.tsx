@@ -1,9 +1,10 @@
 import { Suspense, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './WrapperWiki.module.css';
 import { NavigationWiki } from './ui';
 import {
+  getWikiSectionPath,
   renderWikiComponent,
-  scrollToSection,
   scrollToTop,
   Spinner,
   useSectionFromUrl,
@@ -12,24 +13,27 @@ import {
 export const WrapperWiki = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionFromUrl = useSectionFromUrl();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (sectionFromUrl !== null) {
-      setActiveIndex(sectionFromUrl);
-    }
+    setActiveIndex(sectionFromUrl ?? 0);
   }, [sectionFromUrl]);
 
   useEffect(() => {
-    scrollToSection(activeIndex);
     scrollToTop();
   }, [activeIndex]);
+
+  const handleSectionSelect = (index: number) => {
+    setActiveIndex(index);
+    navigate(getWikiSectionPath(index), { replace: true });
+  };
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.navWrapper}>
         <NavigationWiki
           activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
+          setActiveIndex={handleSectionSelect}
         />
       </div>
       <Suspense fallback={<Spinner />}>

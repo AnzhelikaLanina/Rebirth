@@ -1,10 +1,12 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './WrapperWikiMobile.module.css';
 import {
+  getWikiSectionPath,
   NavigationItem,
   NavigationItemProps,
   renderWikiComponent,
-  scrollToSection,
+  scrollToElement,
   Spinner,
   useSectionFromUrl,
   useWikiNavigationItems,
@@ -14,27 +16,35 @@ export const WrapperWikiMobile = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const items = useWikiNavigationItems();
   const sectionFromUrl = useSectionFromUrl();
+  const navigate = useNavigate();
+  const itemRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   const handleItemClick = (index: number) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    const nextIndex = activeIndex === index ? null : index;
+    setActiveIndex(nextIndex);
+    navigate(getWikiSectionPath(nextIndex), { replace: true });
   };
 
   useEffect(() => {
-    if (sectionFromUrl !== null) {
-      setActiveIndex(sectionFromUrl);
-    }
+    setActiveIndex(sectionFromUrl);
   }, [sectionFromUrl]);
 
   useEffect(() => {
-    if (activeIndex !== null) {
-      scrollToSection(activeIndex);
-    }
+    if (activeIndex === null) return;
+
+    scrollToElement(itemRefs.current[activeIndex]);
   }, [activeIndex]);
 
   return (
     <div className={styles.list}>
       {items.map((item: NavigationItemProps, index: number) => (
-        <div key={index} className={styles.item}>
+        <div
+          key={index}
+          className={styles.item}
+          ref={(el) => {
+            itemRefs.current[index] = el;
+          }}
+        >
           <NavigationItem
             icon={item.icon}
             header={item.header}
@@ -42,14 +52,13 @@ export const WrapperWikiMobile = () => {
             onClick={() => handleItemClick(index)}
             activeIcon={item.activeIcon}
           />
-          <Suspense fallback={<Spinner />}>
-            <div
-              className={styles.contentAppear}
-              style={{ display: activeIndex === index ? 'block' : 'none' }}
-            >
-              {renderWikiComponent(index)}
-            </div>
-          </Suspense>
+          {activeIndex === index && (
+            <Suspense fallback={<Spinner />}>
+              <div className={styles.contentAppear}>
+                {renderWikiComponent(index)}
+              </div>
+            </Suspense>
+          )}
         </div>
       ))}
     </div>

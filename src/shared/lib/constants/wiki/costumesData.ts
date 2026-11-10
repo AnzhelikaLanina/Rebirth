@@ -16,4 +16,14 @@ export const costumesData = [
     src: sNonpvpPeace,
     alt: 's nonpvp peace',
   },
+  {
+    key: 'boundToEquipmentType',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
+  },
+  {
+    key: 'availableAfterThirdClass',
+    src: sNonpvpPeace,
+    alt: 's nonpvp peace',
+  },
 ];

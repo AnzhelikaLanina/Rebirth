@@ -52,7 +52,11 @@ export const Modal = ({ isOpen, type, onClose }: ModalProps) => {
       onClick={onClose}
     >
       <div
-        className={clsx(styles.modal, { [styles.modalVisible]: visible })}
+        className={clsx(
+          styles.modal,
+          { [styles.modalFluid]: type === MODALS.PROMO_CODE },
+          { [styles.modalVisible]: visible },
+        )}
         onClick={(e) => e.stopPropagation()}
       >
         {content}

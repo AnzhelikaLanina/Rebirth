@@ -2,6 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 import styles from './MainInfoCard.module.css';
 import {
+  getWikiSectionPath,
   mainInfoWikiRatesData,
   mapWithLocalization,
   MEDIA_BREAKPOINTS,
@@ -37,7 +38,7 @@ export const MainInfoCard = () => {
   return (
     <div
       className={styles.ornamentBox}
-      onClick={() => navigate('/wiki?section=0')}
+      onClick={() => navigate(getWikiSectionPath(0))}
     >
       <Ornament className={styles.ornament} />
       <div className={styles.item}>

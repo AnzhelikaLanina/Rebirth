@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 import styles from './Advantages.module.css';
 import {
+  getWikiSectionPath,
   MEDIA_BREAKPOINTS,
   OrnamentAdvantagesFrame,
   OrnamentAdvantagesMobileFrame,
@@ -50,7 +51,7 @@ export const Advantages = () => {
     if (!wikiKey) return;
     const sectionIndex = wikiNavData.findIndex((nav) => nav.key === wikiKey);
     if (sectionIndex >= 0) {
-      navigate(`/wiki?section=${sectionIndex}`);
+      navigate(getWikiSectionPath(sectionIndex));
     }
   };
 

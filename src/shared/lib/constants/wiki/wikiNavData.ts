@@ -255,4 +255,44 @@ export const wikiNavData = [
     icon: RaidIcon,
     activeIcon: RaidActiveIcon,
   },
+  {
+    key: 'frintessaHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'octavisHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'andreasVanHolterHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'cainVanHolterHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'heavenlyArmorHeader',
+    icon: CraftIcon,
+    activeIcon: CraftActiveIcon,
+  },
+  {
+    key: 'serverWarHeader',
+    icon: RaidIcon,
+    activeIcon: RaidActiveIcon,
+  },
+  {
+    key: 'raidPointHeader',
+    icon: ClansIcon,
+    activeIcon: ClansActiveIcon,
+  },
+  {
+    key: 'interfaceSettingsHeader',
+    icon: InterfaceIcon,
+    activeIcon: InterfaceActiveIcon,
+  },
 ];

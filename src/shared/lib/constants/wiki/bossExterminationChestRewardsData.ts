@@ -1,5 +1,4 @@
 import etcMissionPoint from '@/shared/assets/images/items/etc-mission-point.png';
-import drop from '@/shared/assets/images/items/drop.png';
 import dollSummonTicketFixedLv3 from '@/shared/assets/images/items/doll-summon-ticket-fixed-lv3.png';
 import dollSummonTicketFixedLv4 from '@/shared/assets/images/items/doll-summon-ticket-fixed-lv4.png';
 import dollSummonTicketLv5 from '@/shared/assets/images/items/doll-summon-ticket-lv5.png';

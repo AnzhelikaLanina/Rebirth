@@ -3,7 +3,7 @@ import { WrapperWikiMobile, WrapperWiki } from '@/widgets';
 import { MEDIA_BREAKPOINTS, PageLayout, useLocalizedData } from '@/shared';
 
 export const WikiPage = () => {
-  const isDesktop = useMediaQuery({
+  const isMobile = useMediaQuery({
     query: MEDIA_BREAKPOINTS.DESKTOP_MAX_WIDTH,
   });
 
@@ -11,7 +11,7 @@ export const WikiPage = () => {
   return (
     <>
       <PageLayout title={wiki.header}>
-        {isDesktop ? <WrapperWikiMobile /> : <WrapperWiki />}
+        {isMobile ? <WrapperWikiMobile /> : <WrapperWiki />}
       </PageLayout>
     </>
   );

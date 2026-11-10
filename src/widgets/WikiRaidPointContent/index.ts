@@ -1,0 +1,1 @@
+export { WikiRaidPointContent } from './WikiRaidPointContent';

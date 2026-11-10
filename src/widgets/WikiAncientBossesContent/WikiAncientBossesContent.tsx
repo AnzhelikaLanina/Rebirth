@@ -5,6 +5,7 @@ import {
   ancientBossesIceMonarchBossesData,
   ancientBossesVolcanoData,
   ancientBossesVolcanoBossesData,
+  ancientBossesStormRuinsData,
   ancientBossesQuestData,
   ancientBossesRewardData,
   mapWithLocalization,
@@ -49,6 +50,11 @@ export const WikiAncientBossesContent = ({ id }: WikiComponentProps) => {
     ancientBosses.volcanoBosses,
     'text',
   );
+  const localizedStormRuins = mapWithLocalization(
+    ancientBossesStormRuinsData,
+    ancientBosses,
+    'text',
+  );
   const localizedQuest = mapWithLocalization(
     ancientBossesQuestData,
     ancientBosses,
@@ -68,6 +74,7 @@ export const WikiAncientBossesContent = ({ id }: WikiComponentProps) => {
       <Table list={localizedIceMonarchBosses} />
       {renderItemCards(localizedVolcano)}
       <Table list={localizedVolcanoBosses} />
+      {renderItemCards(localizedStormRuins)}
       {renderItemCards(localizedQuest)}
       <Table list={localizedReward} />
     </WikiLayout>

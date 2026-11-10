@@ -36,6 +36,12 @@ export const ancientBossesVolcanoBossesData = [
   { header: false, image: false, key: 'boss2' },
 ];
 
+export const ancientBossesStormRuinsData = [
+  { key: 'stormRuinsHeader' },
+  { key: 'stormRuins1', src: sNonpvpBattle, alt: 's nonpvp battle' },
+  { key: 'stormRuins2', src: sNonpvpBattle, alt: 's nonpvp battle' },
+];
+
 export const ancientBossesQuestData = [
   { key: 'questTask1', src: etcMissionPoint, alt: 'etc mission point' },
   { key: 'questTask2', src: etcMissionPoint, alt: 'etc mission point' },

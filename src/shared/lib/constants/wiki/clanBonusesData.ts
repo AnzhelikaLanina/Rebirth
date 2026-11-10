@@ -3,7 +3,7 @@ import sNonpvpPeace from '@/shared/assets/images/items/s-nonpvp-peace.png';
 import etcFireCrystal from '@/shared/assets/images/items/etc-fire-crystal.png';
 import skill0391 from '@/shared/assets/images/items/skill0391.png';
 import skill32121 from '@/shared/assets/images/items/skill32121.png';
-import etcBloodpledgePoint from '@/shared/assets/images/items/etc-bloodpledge-point-i00.png';
+import etcBloodpledgePoint from '@/shared/assets/images/items/etc-bloodpledge-point.png';
 
 export const clanBonusesData = [
   {

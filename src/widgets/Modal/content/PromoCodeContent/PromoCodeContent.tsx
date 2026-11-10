@@ -5,7 +5,13 @@ import { getRebirthConfig } from '@/shared/config/getConfig';
 export const PromoCodeContent = ({ onClose }: { onClose: () => void }) => {
   const { modal } = useLocalizedData();
   const config = getRebirthConfig();
-  const promoCodes = config?.promoCodes ?? [];
+  const noWipeServerCodes = config?.promoCodes?.noWipeServer ?? [];
+  const newRebirthCodes = config?.promoCodes?.newRebirth ?? [];
+
+  const groups = [
+    { title: modal.promoCode.noWipeServerHeader, codes: noWipeServerCodes },
+    { title: modal.promoCode.newRebirthHeader, codes: newRebirthCodes },
+  ].filter((group) => group.codes.length > 0);
 
   return (
     <>
@@ -13,17 +19,24 @@ export const PromoCodeContent = ({ onClose }: { onClose: () => void }) => {
         <h2 className={styles.header}>{modal.promoCode.header}</h2>
         <ButtonClose onClose={onClose} />
       </div>
-      <div className={styles.codes}>
-          {promoCodes.length > 0 ? (
-            promoCodes.map((item: string) => (
-              <div key={item} className={styles.codeItem}>
-                <span className={styles.codeText}>{item}</span>
+      <div className={styles.groups}>
+        {groups.length > 0 ? (
+          groups.map((group) => (
+            <div key={group.title} className={styles.group}>
+              <h3 className={styles.groupHeader}>{group.title}</h3>
+              <div className={styles.codes}>
+                {group.codes.map((item) => (
+                  <div key={item} className={styles.codeItem}>
+                    <span className={styles.codeText}>{item}</span>
+                  </div>
+                ))}
               </div>
-            ))
-          ) : (
-            <p className={styles.text}>{modal.promoCode.description}</p>
-          )}
-        </div>
+            </div>
+          ))
+        ) : (
+          <p className={styles.text}>{modal.promoCode.description}</p>
+        )}
+      </div>
     </>
   );
 };

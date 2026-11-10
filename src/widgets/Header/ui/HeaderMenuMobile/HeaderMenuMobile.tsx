@@ -7,6 +7,7 @@ import {
   ButtonClose,
   EXTERNAL_LINKS,
   ExternalLink,
+  handleModalLinkClick,
   MEDIA_BREAKPOINTS,
   HeaderProps,
   PATHS,
@@ -56,15 +57,13 @@ export const HeaderMenuMobile = ({
             {layout.files}
           </p>
         )}
-        <p
+        <a
           className={styles.link}
-          onClick={() => {
-            onOpenModal(MODALS.PROMO_CODE);
-            toggleMenu();
-          }}
+          href={PATHS.PROMO_CODES}
+          onClick={handleModalLinkClick(() => onOpenModal(MODALS.PROMO_CODE))}
         >
           {layout.promoCode}
-        </p>
+        </a>
         <ExternalLink
           href={EXTERNAL_LINKS.REGISTRATION}
           children={layout.registration}

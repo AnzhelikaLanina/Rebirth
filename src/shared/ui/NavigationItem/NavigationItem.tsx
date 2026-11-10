@@ -12,7 +12,7 @@ export const NavigationItem = ({
   onClick,
   activeIcon,
 }: NavigationItemProps) => {
-  const isDesktop = useMediaQuery({
+  const isMobile = useMediaQuery({
     query: MEDIA_BREAKPOINTS.DESKTOP_MAX_WIDTH,
   });
   const Arrow = isActive ? ArrowDownActiveIcon : ArrowDownIcon;
@@ -24,7 +24,7 @@ export const NavigationItem = ({
       <h2 className={clsx(styles.text, isActive && styles.textActive)}>
         {header}
       </h2>
-      {isDesktop && (
+      {isMobile && (
         <Arrow className={clsx(styles.arrow, isActive && styles.rotate)} />
       )}
     </div>

@@ -1,4 +1,8 @@
-import { setRebirthConfig, type RebirthConfig } from './getConfig';
+import {
+  setRebirthConfig,
+  type PromoCodeGroups,
+  type RebirthConfig,
+} from './getConfig';
 
 const FALLBACK_CONFIG: RebirthConfig = {
   chronicleUpdateName: '',
@@ -8,7 +12,23 @@ const FALLBACK_CONFIG: RebirthConfig = {
     gamePatch: { mediafire: '', yandex: '' },
     updater: { mediafire: '', yandex: '' },
   },
-  promoCodes: [],
+  promoCodes: { noWipeServer: [], newRebirth: [] },
+};
+
+const toStringList = (value: unknown): string[] =>
+  Array.isArray(value) ? value.filter((item) => typeof item === 'string') : [];
+
+const normalizePromoCodes = (value: unknown): PromoCodeGroups => {
+  if (Array.isArray(value)) {
+    return { noWipeServer: [], newRebirth: toStringList(value) };
+  }
+
+  const groups = (value ?? {}) as Partial<Record<keyof PromoCodeGroups, unknown>>;
+
+  return {
+    noWipeServer: toStringList(groups.noWipeServer),
+    newRebirth: toStringList(groups.newRebirth),
+  };
 };
 
 export const loadConfig = async (): Promise<void> => {
@@ -18,7 +38,7 @@ export const loadConfig = async (): Promise<void> => {
     });
     if (!res.ok) throw new Error(`config.json: HTTP ${res.status}`);
     const data = (await res.json()) as RebirthConfig;
-    setRebirthConfig(data);
+    setRebirthConfig({ ...data, promoCodes: normalizePromoCodes(data.promoCodes) });
   } catch (error) {
     console.error('Не удалось загрузить config.json, используется фолбэк', error);
     setRebirthConfig(FALLBACK_CONFIG);

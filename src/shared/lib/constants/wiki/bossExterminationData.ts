@@ -1,5 +1,4 @@
 import etcMissionPoint from '@/shared/assets/images/items/etc-mission-point.png';
-import drop from '@/shared/assets/images/items/drop.png';
 
 export const bossExterminationData = [
   {

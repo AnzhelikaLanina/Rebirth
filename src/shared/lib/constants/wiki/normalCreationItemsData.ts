@@ -1,7 +1,6 @@
 import etcStoneGray from '../../../assets/images/items/etc-stone-gray.png';
 import etcRoyalSealOfLord from '../../../assets/images/items/etc-royal-seal-of-lord.png';
 import etcKalieHeroScroll from '../../../assets/images/items/etc-kalie-hero-scroll.png';
-import adenRuneRed from '../../../assets/images/items/aden-rune-red.png';
 import adenRuneAmYellow from '../../../assets/images/items/aden-rune-am-yellow.png';
 import adenRune from '../../../assets/images/items/aden-rune.png';
 import adenRuneHigh from '../../../assets/images/items/aden-rune-high.png';
@@ -46,7 +45,6 @@ import armorLightShoes from '../../../assets/images/items/armor-light-shoes.png'
 import armorLeatherHelmet from '../../../assets/images/items/armor-leather-helmet.png';
 import bmSayhaStorm from '../../../assets/images/items/bm-sayha-storm.png';
 import etcBattleSupportCoin from '../../../assets/images/items/etc-battle-support-coin.png';
-import baiumTalismanNew from '../../../assets/images/items/baium-talisman-new.png';
 import baiumTalismanNewScroll from '../../../assets/images/items/baium-talisman-new-scroll.png';
 import variationMineralHighWp from '../../../assets/images/items/variation-mineral-high-wp.png';
 import variationMineralHighAm from '../../../assets/images/items/variation-mineral-high-am.png';

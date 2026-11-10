@@ -1,0 +1,1 @@
+export { WikiHeavenlyArmorContent } from './WikiHeavenlyArmorContent';

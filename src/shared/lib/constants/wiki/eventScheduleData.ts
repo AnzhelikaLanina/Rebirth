@@ -34,7 +34,7 @@ const weekdayBase: EventScheduleEntry[] = [
   { time: '20:00', tokens: [link('ironSupplyBase', 'ironSupplyBaseHeader')] },
   { time: '20:30', tokens: [link('contestForest', 'contestForestHeader')] },
   { time: '21:00', tokens: [link('mafia', 'mafiaHideoutHeader')] },
-  { time: '21:30 - 22:30', tokens: [link('olympiad', 'olympiadHeader')] },
+  { time: '21:30 - 22:00', tokens: [link('olympiad', 'olympiadHeader')] },
   { time: '22:00', tokens: [link('ancientBosses', 'ancientBossesHeader')] },
   { time: '22:00 - 23:00', tokens: [link('catacomb', 'catacombHeader')] },
 ];

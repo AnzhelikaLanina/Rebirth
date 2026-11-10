@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
 import {
   eventScheduleData,
+  getWikiSectionPath,
   useLocalizedData,
   wikiNavData,
   WikiComponentProps,
@@ -21,7 +22,7 @@ export const WikiEventScheduleContent = ({ id }: WikiComponentProps) => {
   const goToSection = (wikiKey: string) => {
     const index = wikiNavData.findIndex((nav) => nav.key === wikiKey);
     if (index >= 0) {
-      navigate(`/wiki?section=${index}`);
+      navigate(getWikiSectionPath(index));
     }
   };
 

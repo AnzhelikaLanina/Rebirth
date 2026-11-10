@@ -1,0 +1,1 @@
+export { WikiServerWarContent } from './WikiServerWarContent';

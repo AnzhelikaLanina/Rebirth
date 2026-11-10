@@ -5,6 +5,7 @@ import {
   HeaderProps,
   MODALS,
   PATHS,
+  handleModalLinkClick,
   useLocalizedData,
   useSmartNavigation,
 } from '@/shared';
@@ -43,12 +44,13 @@ export const HeaderMenu = ({
           />
         </div>
         <div className={styles.element}>
-          <p
+          <a
+            href={PATHS.PROMO_CODES}
             className={styles.link}
-            onClick={() => onOpenModal(MODALS.PROMO_CODE)}
+            onClick={handleModalLinkClick(() => onOpenModal(MODALS.PROMO_CODE))}
           >
             {layout.promoCode}
-          </p>
+          </a>
         </div>
       </nav>
     </>

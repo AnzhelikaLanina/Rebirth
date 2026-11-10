@@ -1,0 +1,1 @@
+export { WikiOctavisContent } from './WikiOctavisContent';

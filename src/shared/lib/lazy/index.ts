@@ -197,6 +197,54 @@ export const WikiFafurionContentLazy = lazy(() =>
   })),
 );
 
+export const WikiFrintessaContentLazy = lazy(() =>
+  import('../../../widgets/WikiFrintessaContent').then((module) => ({
+    default: module.WikiFrintessaContent,
+  })),
+);
+
+export const WikiOctavisContentLazy = lazy(() =>
+  import('../../../widgets/WikiOctavisContent').then((module) => ({
+    default: module.WikiOctavisContent,
+  })),
+);
+
+export const WikiAndreasVanHolterContentLazy = lazy(() =>
+  import('../../../widgets/WikiAndreasVanHolterContent').then((module) => ({
+    default: module.WikiAndreasVanHolterContent,
+  })),
+);
+
+export const WikiCainVanHolterContentLazy = lazy(() =>
+  import('../../../widgets/WikiCainVanHolterContent').then((module) => ({
+    default: module.WikiCainVanHolterContent,
+  })),
+);
+
+export const WikiHeavenlyArmorContentLazy = lazy(() =>
+  import('../../../widgets/WikiHeavenlyArmorContent').then((module) => ({
+    default: module.WikiHeavenlyArmorContent,
+  })),
+);
+
+export const WikiServerWarContentLazy = lazy(() =>
+  import('../../../widgets/WikiServerWarContent').then((module) => ({
+    default: module.WikiServerWarContent,
+  })),
+);
+
+export const WikiRaidPointContentLazy = lazy(() =>
+  import('../../../widgets/WikiRaidPointContent').then((module) => ({
+    default: module.WikiRaidPointContent,
+  })),
+);
+
+export const WikiInterfaceSettingsContentLazy = lazy(() =>
+  import('../../../widgets/WikiInterfaceSettingsContent').then((module) => ({
+    default: module.WikiInterfaceSettingsContent,
+  })),
+);
+
 export const WikiRevelationSkillsContentLazy = lazy(() =>
   import('../../../widgets/WikiRevelationSkillsContent').then((module) => ({
     default: module.WikiRevelationSkillsContent,

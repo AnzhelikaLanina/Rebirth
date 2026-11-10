@@ -1,3 +1,8 @@
+export type PromoCodeGroups = {
+  noWipeServer: string[];
+  newRebirth: string[];
+};
+
 export type RebirthConfig = {
   chronicleUpdateName: string;
   discord: string;
@@ -15,7 +20,7 @@ export type RebirthConfig = {
       yandex: string;
     };
   };
-  promoCodes: string[];
+  promoCodes: PromoCodeGroups;
 };
 
 let config: RebirthConfig | undefined;

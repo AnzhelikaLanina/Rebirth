@@ -1,0 +1,61 @@
+import etcMissionPoint from '@/shared/assets/images/items/etc-mission-point.png';
+import gPassSayhaGracePoint from '@/shared/assets/images/items/g-pass-sayha-grace-point.png';
+
+export const raidPointIntroData = [
+  { key: 'currentPoints', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'shop', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'topDamage', src: etcMissionPoint, alt: 'etc mission point' },
+  { key: 'noClanWarning' },
+  { key: 'leaveClanWarning' },
+];
+
+const RAID_POINT_BOSSES: Array<[string, string]> = [
+  ['Anakim', '50'],
+  ['Lilith', '50'],
+  ['Queen Ant', '100'],
+  ['Core', '100'],
+  ['Orfen', '100'],
+  ['Zaken', '100'],
+  ['Chaotic Core', '150'],
+  ['Chaotic Orfen', '150'],
+  ['Chaotic Queen Ant', '150'],
+  ['Chaotic Zaken', '150'],
+  ['Behemoth', '150'],
+  ['Glakias Stage 1', '150'],
+  ['Glakias Stage 2', '150'],
+  ['Glakias Stage 3', '150'],
+  ['Vulcan Furnace Destroyer', '150'],
+  ['Tempest Storm Executioner', '150'],
+  ['Ultimate Behemoth', '200'],
+  ['Glakias Stage 4', '200'],
+  ['Vulcan Enraged Furnace Destroyer', '200'],
+  ['Tempest Storm Judge', '200'],
+  ['Scarlet van Halisha', '200'],
+  ['Octavis', '200'],
+  ['Andreas van Halter Seeress', '200'],
+  ['Kelbim', '200'],
+  ['Kain van Halter Dark Sovereign', '200'],
+  ['Andreas van Halter Seeress Instance', '200'],
+  ['Enraged Kelbim', '300'],
+  ['Andreas van Halter Bloody Seeress', '300'],
+  ['Ferion Celestial Emperor', '300'],
+  ['Kain van Halter Legate of Darkness', '300'],
+  ['Fafurion Water Dragon', '400'],
+  ['Valakas Fire Dragon', '400'],
+  ['Antharas Earth Dragon Stage 1', '400'],
+  ['Antharas Earth Dragon Stage 2', '450'],
+  ['Antharas Earth Dragon Stage 3', '500'],
+  ['Giran Siege', '200'],
+  ['Aden Siege', '200'],
+  ['Clan Arena', '200'],
+  ['Clan Dungeon', '200'],
+  ['Hero Reward', '200'],
+];
+
+export const raidPointBossesData = RAID_POINT_BOSSES.map(([name, points]) => ({
+  left: name,
+  right: points,
+  image: true as const,
+  src: gPassSayhaGracePoint,
+  alt: 'g pass sayha grace point',
+}));

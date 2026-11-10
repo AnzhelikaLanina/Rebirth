@@ -26,8 +26,36 @@
     line-height: 28px;
 }
 
-.codes {
+.groups {
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.group + .group {
+    padding-top: 28px;
+    border-top: 1px solid rgba(44, 59, 94, 1);
+}
+
+.groupHeader {
+    margin: 0;
+    padding: 0;
+    font-family: TrajanPro3, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.015em;
+    color: rgba(255, 214, 68, 1);
+}
+
+.codes {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -46,4 +74,47 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .headerBox {
+        padding-bottom: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .groups {
+        padding-top: 16px;
+        gap: 22px;
+    }
+
+    .group {
+        gap: 10px;
+    }
+
+    .group + .group {
+        padding-top: 22px;
+    }
+
+    .groupHeader {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .codeItem {
+        padding: 10px;
+    }
+
+    .codeText {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }

@@ -50,6 +50,14 @@ export const en = {
     immortalWeaponHeader: 'Weapon of Immortality',
     antharasHeader: 'Antharas',
     fafurionHeader: 'Fafurion',
+    frintessaHeader: 'FRINTESSA',
+    octavisHeader: 'OCTAVIS',
+    andreasVanHolterHeader: 'ANDREAS VAN HOLTER',
+    cainVanHolterHeader: 'CAIN VAN HOLTER',
+    heavenlyArmorHeader: 'HEAVENLY ARMOR',
+    serverWarHeader: 'SERVER WAR',
+    raidPointHeader: 'RAID POINT SYSTEM',
+    interfaceSettingsHeader: 'INTERFACE SETTINGS',
     revelationSkillsHeader: 'Skills of Revelation',
     telegramBotHeader: 'Telegram Bot',
     valakasHeader: 'Valakas',
@@ -442,7 +450,7 @@ export const en = {
   },
   achievementBoxesRewards: {
     header: 'Achievement Box Awards',
-    pveHuntReward: 'Reward for PVE hunting, for every 5000 points.',
+    pveHuntReward: 'Reward for PVE hunting, for every 10000 points.',
     pvpHuntReward: 'Reward for PVP hunting, for every 50 points.',
     rewards: {
       title: 'Rewards:',
@@ -490,6 +498,10 @@ export const en = {
     uiLocation:
       'The interface for changing the appearance is located in the game menu.',
     boundToAccount: 'The costumes are linked to the account.',
+    boundToEquipmentType:
+      'The costumes are linked to the type of Armor or Weapon.',
+    availableAfterThirdClass:
+      'The costumes can be applied after obtaining 3 professions.',
   },
   worldTrade: {
     header: 'World Trade',
@@ -1355,6 +1367,316 @@ export const en = {
     dragonRune2:
       'The lower the HP of the Dragon, the higher the level of the Dragon Rune.',
   },
+  frintessa: {
+    header: 'FRINTESSA',
+    entryLevel: 'Entrance to the Zone: 90+ level.',
+    entryNpc: 'The NPC for the Parme Entrance is located in Giran and Aden.',
+    minPlayers: 'Minimum number to enter: 2 characters.',
+    battleTime: 'Battle time: 30 minutes.',
+    stageOne: {
+      title: 'Stage 1',
+      description:
+        "During the first stage, when Scarlet Van Halish's HP is reduced to 10%, the stage will change to the next one.",
+    },
+    stageTwo: {
+      title: 'Stage 2',
+      description:
+        'Stage with increased physical damage, which turns into Stage 3 when dealing damage up to 10% HP.',
+    },
+    stageThree: {
+      title: 'Stage 3',
+      strongestForm:
+        'Scarlet Van Halisha will transform into her strongest form and use magical attacks on the area.',
+      portals:
+        'New portals appear in the Boss battle room. If the portals are not destroyed, monsters will appear from them attacking at 10% per hit and having a fixed damage output.',
+      rewardCondition:
+        'The reward can only be obtained for defeating the third stage of Scarlet Van Halish.',
+    },
+    quest: {
+      questTitle: 'Assignment:',
+      questTask: 'The battle with Frinthe is to defeat Scarlet Van Halish.',
+      rewardTitle: 'Reward:',
+      immortalWeaponCoupon: 'Weapon of Immortality Coupon',
+      frintessaNecklace: 'Necklace Frintessa',
+      giranSeal: 'Giran Seal',
+      clanPoints: 'Clan Points',
+    },
+  },
+  octavis: {
+    header: 'OCTAVIS',
+    entryLevel: 'Entrance to the Zone: 90+ level.',
+    minPlayers: 'Minimum number to enter: 2 characters.',
+    entryNpc: 'The NPC for the Parme Entrance is located in Giran and Aden.',
+    battleTime: 'Battle time: 30 minutes.',
+    stageOne: {
+      title: 'Stage 1',
+      chariot:
+        'During the first stage, Octavis will ride his chariot in a circle and periodically use square attacks.',
+      notTargetable: 'Octavis cannot be singled out as a target.',
+      beastHpBelow50:
+        'To damage Octavis, you must lower the HP of the Octavis Beast to less than 50%.',
+      beastHpAbove50:
+        'When the HP of the Octavis Beast is restored, more than 50% of Octavis cannot be allocated as a target again.',
+      stageChange:
+        "When Octavis' HP is reduced to 10%, the stage will change to the next one.",
+    },
+    stageTwo: {
+      title: 'Stage 2',
+      physicalStage: 'Physical Stage.',
+      gladiatorSword:
+        'Octavis steps down from a ruined chariot and uses his gladiator sword to battle the heroes.',
+      gladiatorMonsters:
+        'During the battle, Gladiator monsters with increased physical damage will come to Octavis aid.',
+    },
+    stageThree: {
+      title: 'Stage 3',
+      magicStage: 'Magic Stage.',
+      strongestForm:
+        'Octavis will transform into his strongest form and use magic attacks on the area.',
+      arenaHeroes:
+        'During the third stage of the battle, the Heroes of the Arena will come to his aid.',
+      rewardCondition:
+        'The reward can only be obtained for defeating the third stage of Octavis.',
+    },
+    quest: {
+      questTitle: 'Assignment:',
+      questTask: 'Extreme Battle with Octavis - Defeat Octavis.',
+      rewardTitle: 'Reward:',
+      immortalWeaponCoupon: 'Weapon of Immortality Coupon',
+      bloodCrystal: 'Blood Crystal',
+      giranSeal: 'Seal of Giran',
+      clanPoints: 'Clan Points',
+    },
+    victoryReward: {
+      title: 'Reward for Defeating Octavis:',
+      weaponFragment: 'Weapon Fragment',
+      cursedGrail: 'Cursed Grail',
+      tobaldPrediction: "Tobald's Prediction",
+      bloodCrystal: 'Blood Crystal',
+    },
+  },
+  andreasVanHolter: {
+    header: 'ANDREAS VAN HOLTER',
+    entryLevel: 'Entrance to the Zone: 90+ level.',
+    minPlayers: 'Minimum number to enter: 2 characters.',
+    entryNpc: 'The NPC for the Parme Entrance is located in Giran and Aden.',
+    battleTime: 'Battle time: 30 minutes.',
+    unlockEntrance:
+      'After moving to the battle zone, in order to unlock the entrance to Andreas Van Holter, you need to destroy Special monsters.',
+    unlockChance:
+      'The chance to open the entrance to the Boss may work after the first monster, which will be notified by the System message, if the entrance has not opened, then you need to continue searching for special monsters in the location.',
+    specialMonsters:
+      'There Are 16 Special Monsters In Total, Praetorian Andreas is the Martyr of Tyrol.',
+    quest: {
+      questTitle: 'Assignment:',
+      questTask: 'Battle with Andreas Van Holter - Defeat Andreas Van Holter.',
+      rewardTitle: 'Reward:',
+      immortalWeaponCoupon: 'Weapon of Immortality Coupon',
+      legendaryDollCoupon: 'Legendary Doll Coupon',
+      modificationScroll: 'Modification Scroll',
+      clanPoints: 'Clan Points',
+    },
+    victoryReward: {
+      title: 'Reward for Defeating Andreas Van Holter:',
+      weaponFragment: 'Weapon Fragment',
+      cursedGrail: 'Cursed Grail',
+      tobaldPrediction: "Tobald's Prediction",
+      bloodCrystal: 'Blood Crystal',
+    },
+  },
+  cainVanHolter: {
+    header: 'CAIN VAN HOLTER',
+    entryLevel: 'Entrance to the Zone: 90+ level.',
+    minPlayers: 'Minimum number to enter: 2 characters.',
+    entryNpc: 'The NPC for the Parme Entrance is located in Giran and Aden.',
+    battleTime: 'Battle time: 30 minutes.',
+    specialMonsters:
+      'Every 10% HP taken from Cain, Special Monsters appear that remain motionless for one minute, then they begin to move and impose a negative effect of Fear.',
+    targetSwitch:
+      'Every 30 seconds, Cain changes his attack target, ignoring aggression skills.',
+    enhancedSpawn:
+      'If Cain Van Holter has been defeated, an Enhanced Cain Van Holter will appear with a 20% chance.',
+    zoneTime:
+      'When an Enhanced Cain Van Holter appears, the zone time is not extended.',
+    quest: {
+      questTitle: 'Assignment:',
+      questTask: 'Fight the Dark Lord - Defeat Cain Van Holter.',
+      rewardTitle: 'Reward:',
+      immortalWeaponCoupon: 'Weapon of Immortality Coupon',
+      legendaryDollCoupon: 'Legendary Doll Coupon',
+      modificationScroll: 'Modification Scroll',
+      clanPoints: 'Clan Points',
+    },
+    victoryReward: {
+      title: 'Reward for Defeating Cain Van Holter:',
+      weaponFragment: 'Weapon Fragment',
+      cursedGrail: 'Cursed Grail',
+      tobaldPrediction: "Tobald's Prediction",
+      bloodCrystal: 'Blood Crystal',
+    },
+  },
+  heavenlyArmor: {
+    header: 'HEAVENLY ARMOR',
+    newArmorType: 'A new type of armor has been added - Heavenly Armor.',
+    modifyScroll:
+      'New armor can be modified using Scroll: Modify Legendary Equipment, which is available in a Special Creation.',
+    specialCreation:
+      'In a Special Creation, Heavenly Armor creation is available in the Weapons and Armor section.',
+    celestialShard:
+      'The Celestial Shard, which is required to create Heavenly Armor, can be obtained for Raid Points [[RAID POINT SYSTEM|raidPointHeader]].',
+    shardFragment:
+      'A fragment of the Celestial Shard can be obtained by defeating all 94+ monsters with a certain chance.',
+    shardExchange:
+      '100 Fragments of the Celestial Shard in Special Creation can be exchanged for 1 Celestial Shard.',
+    noArmorTypes:
+      'Heavenly Armor no longer has a division into Magic, Light and Heavy Armor.',
+    passiveSkills:
+      'The passive armor skills of the characters have been redesigned so that they always have effects when wearing Heavenly Armor.',
+    heavyLightMerge:
+      'Heavy Armor Proficiency and Light Armor Proficiency are combined into new Military Armor Proficiency and Combat Armor Proficiency, which apply the effect when wearing heavy or light armor.',
+    armorRequirements:
+      'Changed the armor requirements for the Dwarf Armor, Summoner Armor, and Priest Armor skills. Now, when wearing the appropriate types of armor, the final value of the amount is applied.',
+    casterSkills:
+      'The skills Caster Armor Mastery, Magic Armor Mastery, Heavy Armor Mastery, and Light Armor Mastery are replaced by the skills Caster Skill (Apostle) and Shaman Defense Mastery (Despot and Voice of Fate). Their effects are now independent of the type of armor being equipped.',
+    shamanSkills:
+      'The Shaman Armor (Despot and the Voice of Fate) and Light Armor (Shooting Master) skills have been replaced by the Shaman Defense and Sylph Armor skills.',
+    items: {
+      title: 'Transferable and Sealed Items added:',
+      helmet: 'Heavenly Armor - Helmet',
+      gauntlets: 'Heavenly Armor - Gauntlets',
+      boots: 'Heavenly Armor - Boots',
+      top: 'Heavenly Armor - Top',
+      bottom: 'Heavenly Armor - Bottom',
+      helmetSealed: 'Heavenly Armor - Helmet Sealed',
+      gauntletsSealed: 'Heavenly Armor - Gauntlets Sealed',
+      bootsSealed: 'Heavenly Armor - Boots Sealed',
+      topSealed: 'Heavenly Armor - Top Sealed',
+      bottomSealed: 'Heavenly Armor - Bottom Sealed',
+    },
+  },
+  interfaceSettings: {
+    header: 'INTERFACE SETTINGS',
+    skillPanelTitle: '**SETTING UP THE SKILL PANEL**',
+    skillPanelSkills:
+      'Press **K** or select the Skills section in the menu and drag the learned abilities from the Interface to the Skill Panel.',
+    skillPanelItems:
+      'Press **TAB** or **V** from the inventory window that opens, drag items to the Skill Bar.',
+    skillPanelPriority:
+      'There is a Skill Priority Panel in the upper-right corner.',
+    skillPanelProfiles:
+      'There is also a **Panel Setup** button on the right where you can create 3 Skill Panel profiles. Create additional profiles, drag the necessary skills to the panel and then switch between them with the **Select** button.',
+    skillPanelQuickAccess:
+      'There is also an **On/Off** button on the right additional quick access panels.',
+    skillPanelAutoPotions:
+      'In the settings of the **Automatic Potion Usage** Panel, you can set the CP/HP level scale at which the selected potion will be used automatically.',
+    skillPanelGuardianNote:
+      '❗ Please note that the guardian has a separate potion interface and it is located in the guardian display interface.',
+    skillPanelAutoSaveNote: '❗ The Skill bar is automatically saved.',
+    skillPanelDeviceNote: '❗ The settings are device-specific.',
+    windowsTitle: '**SETTING THE WINDOW LOCATION**',
+    windowsVitals:
+      'Setting the location of the Panel displaying the CP/HP/MP of the Character is saved only when pressing the menu button **X** in the lower right corner of the game window and exiting the game client.',
+    windowsBuffs:
+      'Setting the location of the Panel displaying the positive effects of the Character is saved only when you click the **X** menu button in the lower right corner of the game window and exit the game client.',
+    windowsDebuffs:
+      'Setting the location of the Panel displaying the negative effects of the Character is saved only when pressing the menu button **X** in the lower right corner of the game window and exiting the game client.',
+    windowsOther:
+      'Any other setting: The location of the map window, inventory, skill panel, and any other window inside the game is also saved only when you click the **X** menu button in the lower-right corner of the game window and exit the game client.',
+    windowsSetupNote:
+      '❗ You need to set all the windows inside the game in the desired form once and click exit the game.',
+    windowsDeviceNote: '❗ The settings are device-specific.',
+    effectsTitle: '**EFFECTS SETTINGS**',
+    effectsIntro:
+      'In the Game Assistant, in the **Effects Settings** section, you can enable and disable the following functions:',
+    effectsHideSkillAnimations: "Hide animations of other players' skills",
+    effectsHideVisualEffects:
+      'Hide the visual effects of other players and monsters',
+    effectsHideTransformations:
+      'Hide some transformations so as not to overlap the display of the costume or the appearance of the armor.',
+    effectsSimplifiedTree:
+      'Simplified view of the Tree of Life skills of Sephiroth Master class Master of the Elements',
+    effectsBuffIcons:
+      "Display the icon of applying positive and negative effects above the character's head",
+    effectsItemsAboveChat: 'Display of received items above the chat window.',
+    effectsCharacterNote: '❗ The settings are tied to a specific character.',
+    gameTitle: '**GAME SETTINGS**',
+    gameIntro:
+      'In the game menu, open **Settings** or press **ALT+SHIFT+O** here you can select:',
+    gameDamageText: 'Damage Text',
+    gameSystemChat: 'System chat Display',
+    gameVideoSettings: 'Video Settings',
+    gameKeyRemap: 'Key Reassignment',
+    gameAudioSettings: 'Audio Settings',
+    gameOtherSettings: 'And Many other settings',
+    gameDeviceNote: '❗ Settings are device-specific.',
+  },
+  serverWar: {
+    header: 'SERVER WAR',
+    weekly: 'The server war is conducted Weekly.',
+    period:
+      'The period starts on Wednesday at 6:30 GMT+3 and lasts until 00:00 GMT+3 on Tuesday.',
+    noPoints:
+      'No points will be awarded on Wednesday from 00:00 GMT+3 to 6:30 GMT+3.',
+    accumulatePoints:
+      'During the battle, the characters will have to accumulate Server Battle Points.',
+    ratingInterface:
+      'You can view the accumulated points in the Rating interface on the Server War tab.',
+    ratingTypes: 'There are two types of rating: server and single.',
+    serverRating:
+      'The server rating is determined based on the sum of all server war points received by the top 100 players on the server during the week.',
+    personalRating:
+      'Personal rating is determined based on the sum of all server war points received by the player on the server during the week.',
+    ratingSchedule:
+      'The rating is calculated weekly, every Wednesday from 00:00 to 06:30 GMT+3 time.',
+    darkFortress:
+      'For the Server Battle, a new special hunting zone has been added to the game — the Dark Fortress.',
+    stayTime: 'Stay time: Daily - 1 hour (extension — 1 hour)',
+    campBuff:
+      'The camp gives a positive effect to everyone nearby. The higher the level of the camp, the more effective the positive effect.',
+    outerGate:
+      'The Outer Gate opens when the Chief of the Fortress Guards, the Guardian of the Outer Gate, is defeated in the outer area.',
+    pointsIntro: 'Points can be obtained in several ways:',
+    sabotageSupply:
+      'Sabotage the Supply of the Dark Fortress - A reward is given for killing 50 Supplies of the Fortress in the Dark Fortress. The task can be completed once a day per account. The reward is 20 Server War points.',
+    eliminateBoss:
+      'Eliminating the Boss of the Dark Keep - The reward is given for interacting with the Stone of the Seal of Wrath, which appears after killing the boss in the fortress of the Dark Keep. The task can be completed once a day per account. The reward is 30 Server War points. At the beginning of each hour, a boss appears in the fortress, one of the Four Lords: Botan, Mercios, Charon or Mallak, and disappears after 29 minutes.',
+    battlefieldGhost:
+      'Deliver the final blow to the Ghost of the Battlefield in the special hunting zone Dark Keep. At the beginning of each hour, the Ghost of the Botan, Mercios, Charon, or Mallak Battlefield appears in the Backup Passage. When the boss is killed, the level of the allied camp increases. The reward is 2 Server War points, getting unlimited points.',
+    contestForest:
+      '30 Server Battle points are awarded for winning the Competition Forest event.',
+    mafiaHideout:
+      "The player who delivers the final blow to Boss Luciano at the Mafia's Secret Hideout event gets 30 Server Battle Points.",
+    rewardIntro:
+      'Depending on the personal rating, a reward is given, which can be collected in the rating interface in the Server War tab.',
+    ranking: {
+      place1: '1st place',
+      reward1: "Legate's Chest of Courage",
+      place2: '2nd place',
+      reward2: "Modest Legate's Chest of Courage",
+      place3: '3rd place',
+      reward3: "Small Legate's Chest of Courage",
+      place4: '4~10 places',
+      reward4: 'Packing: Dark Coins x300',
+      place5: '11~100 places',
+      reward5: 'Packing: Dark Coins x200',
+      place6: '101~1000 places',
+      reward6: 'Dark Coin x100',
+    },
+    newSeason:
+      'When the new season begins, the character who takes 1st place in the personal ranking gets the skills to Transform into the Guardian of the Kingdom and the Power of the Legate.',
+  },
+  raidPoint: {
+    header: 'RAID POINT SYSTEM',
+    currentPoints:
+      "The current number of Raid points can be viewed in the character's status.",
+    shop: "The 'Raid Point' store is available in the Clan menu.",
+    topDamage:
+      'The Command Channel, Group, or Character that deals the most damage to the following Raid Bosses receives a Raid Point.',
+    noClanWarning:
+      '❗ ATTENTION!!! No Raid Points are awarded to non-Clan characters.',
+    leaveClanWarning:
+      '❗ ATTENTION!!! When leaving the Clan, all Raid Points will be reset to zero.',
+  },
   revelationSkills: {
     header: 'SKILLS OF REVELATION',
     coinsIntro:
@@ -1469,6 +1791,9 @@ export const en = {
     wikiPage: {
       title: 'About Rebirth Server',
     },
+    promoCodesPage: {
+      title: 'Rebirth Promo Codes',
+    },
     userAgreementPage: {
       title: 'User Agreement',
     },
@@ -1476,8 +1801,7 @@ export const en = {
       title: 'Privacy Policy',
     },
     description:
-      'Rebirth — a Essence server for those who value fair play. ' +
-      'No donations at launch, premium for all players, up-to-date chronicles, and stable online.',
+      'Rebirth — an Essence server for those who value the game, up-to-date chronicles, and stable online.',
     keywords: 'Rebirth, Essence, MMORPG, online game, Essence server',
   },
   newsList: {
@@ -1588,10 +1912,15 @@ export const en = {
       boss1: 'Volcano The Destroyer of the Brazier',
       boss2: 'Volcano the Enraged Destroyer of the Brazier',
     },
+    stormRuinsHeader: '**STORM RUINS**',
+    stormRuins1:
+      'Storm The Storm Executioner appears randomly in one of the three parts of the location.',
+    stormRuins2:
+      "When the Storm Executioner's Storm is killed, there is a certain probability that another boss appears, the Storm Judge Storm.",
     questTask1:
       'The **Ancient Bosses** assignment is Monday - Thursday in the Ancient Ruins Special Area.',
     questTask2:
-      'When participating in a battle with Klakies, Monster or Volcano, deal damage and stay within a 3000 radius when killing the Boss.',
+      'When participating in a battle with Klakies, Monster, Volcano and Storm deal damage and stay within a 3000 radius when killing the Boss.',
     reward: {
       title: 'Reward:',
       couponCount: '1 Coupon for Immortality Weapon Sealed',
@@ -2618,6 +2947,8 @@ export const en = {
     promoCode: {
       header: 'Promo Codes',
       description: 'No promo codes available',
+      noWipeServerHeader: 'NO WIPE SERVER PROMO CODES',
+      newRebirthHeader: 'NEW REBIRTH PROMO CODES',
     },
   },
 };

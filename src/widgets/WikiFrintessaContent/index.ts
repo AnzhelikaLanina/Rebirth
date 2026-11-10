@@ -1,0 +1,1 @@
+export { WikiFrintessaContent } from './WikiFrintessaContent';

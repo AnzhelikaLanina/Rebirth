@@ -10,6 +10,7 @@ export const HeadMeta = () => {
   const currentPageKey = (() => {
     if (pathname === PATHS.HOME) return 'mainPage';
     if (pathname === PATHS.WIKI) return 'wikiPage';
+    if (pathname === PATHS.PROMO_CODES) return 'promoCodesPage';
     if (pathname === PATHS.USER_AGREEMENT) return 'userAgreementPage';
     if (pathname === PATHS.PRIVACY_POLICY) return 'privacyPolicyPage';
     console.warn('[HeadMeta] Missing meta config for path:', pathname);

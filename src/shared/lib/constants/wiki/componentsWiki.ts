@@ -54,6 +54,14 @@ import {
   WikiOrfenContentLazy,
   WikiZakenContentLazy,
   WikiEventScheduleContentLazy,
+  WikiFrintessaContentLazy,
+  WikiOctavisContentLazy,
+  WikiAndreasVanHolterContentLazy,
+  WikiCainVanHolterContentLazy,
+  WikiHeavenlyArmorContentLazy,
+  WikiServerWarContentLazy,
+  WikiRaidPointContentLazy,
+  WikiInterfaceSettingsContentLazy,
 } from '../../lazy';
 
 export const componentsWiki = [
@@ -112,4 +120,12 @@ export const componentsWiki = [
   WikiCoreBossContentLazy,
   WikiOrfenContentLazy,
   WikiZakenContentLazy,
+  WikiFrintessaContentLazy,
+  WikiOctavisContentLazy,
+  WikiAndreasVanHolterContentLazy,
+  WikiCainVanHolterContentLazy,
+  WikiHeavenlyArmorContentLazy,
+  WikiServerWarContentLazy,
+  WikiRaidPointContentLazy,
+  WikiInterfaceSettingsContentLazy,
 ];

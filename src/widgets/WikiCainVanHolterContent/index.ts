@@ -1,0 +1,1 @@
+export { WikiCainVanHolterContent } from './WikiCainVanHolterContent';

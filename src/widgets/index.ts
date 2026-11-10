@@ -29,6 +29,7 @@ export * from './WikiDropFrom90PlusMobsContent';
 export * from './WikiGameAssistantContent';
 export * from './WikiGuaranteedEnhancementContent';
 export * from './WikiInterfaceContent';
+export * from './WikiInterfaceSettingsContent';
 export * from './WikiLCoinDropSystemContent';
 export * from './WikiLocationsAndHuntingZonesContent';
 export * from './WikiMainInfoContent';
