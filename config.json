@@ -15,5 +15,8 @@
       "yandex": ""
     }
   },
-  "promoCodes": []
+  "promoCodes": {
+    "noWipeServer": [],
+    "newRebirth": []
+  }
 }
